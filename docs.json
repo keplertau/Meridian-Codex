@@ -52,12 +52,6 @@
               "essentials/settings",
               "essentials/navigation"
             ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/code"
-            ]
           }
         ]
       },
