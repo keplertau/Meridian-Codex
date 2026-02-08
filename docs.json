@@ -106,7 +106,7 @@
   },
   "description": "The Meridian Codex is a living framework for intellectual integrity and civilizational stability.",
   "background": {
-    "decoration": "gradient",
+    "decoration": "grid",
     "color": {
       "dark": "#1a2332"
     }
