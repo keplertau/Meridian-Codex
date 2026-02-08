@@ -68,9 +68,7 @@
           "overview",
           {
             "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": []
           }
         ]
       }
