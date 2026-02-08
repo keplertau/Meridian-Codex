@@ -13,8 +13,14 @@
       {
         "tab": "Codex",
         "icon": "code-commit",
-        "pages": [
-          "index",
+        "groups": [
+          {
+            "group": "Overview",
+            "icon": "house-chimney-blank",
+            "pages": [
+              "index"
+            ]
+          },
           {
             "group": "Start Here",
             "icon": "book-open-reader",
