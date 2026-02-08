@@ -71,12 +71,6 @@
             "pages": [
               "api-reference/introduction"
             ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get"
-            ]
           }
         ]
       }
