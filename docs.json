@@ -9,20 +9,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        },
-        {
-          "anchor": "Youtube",
-          "icon": "video",
-          "href": "https://meridiancodex"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Codex",
