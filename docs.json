@@ -29,23 +29,18 @@
         "icon": "code-commit",
         "pages": [
           "index",
-          {
-            "group": "The Codex",
-            "pages": [
-              "the-meridian",
-              "who-is-this-for",
-              "the-problem",
-              "the-proposition",
-              "the-foundation",
-              "the-knowledge",
-              "the-bond",
-              "the-practice",
-              "the-vision",
-              "the-governance",
-              "the-cloding",
-              "the-glossary"
-            ]
-          }
+          "the-meridian",
+          "who-is-this-for",
+          "the-problem",
+          "the-proposition",
+          "the-foundation",
+          "the-knowledge",
+          "the-bond",
+          "the-practice",
+          "the-vision",
+          "the-cloding",
+          "the-governance",
+          "the-glossary"
         ]
       },
       {
