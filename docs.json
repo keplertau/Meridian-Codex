@@ -3,9 +3,9 @@
   "theme": "almond",
   "name": "The Meridian Codex",
   "colors": {
-    "primary": "#2d3748",
-    "light": "#9ca3af",
-    "dark": "#6b8e7f"
+    "primary": "#1a2332",
+    "light": "#d4af37",
+    "dark": "#4a5568"
   },
   "favicon": "/favicon.svg",
   "navigation": {
