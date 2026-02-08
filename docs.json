@@ -38,6 +38,7 @@
           {
             "group": "The Meridian Codex",
             "icon": "circle-book-open",
+            "expanded": true,
             "pages": [
               "opening",
               "who-is-this-for",
