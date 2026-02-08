@@ -4,8 +4,8 @@
   "name": "The Meridian Codex",
   "colors": {
     "primary": "#2d3748",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#9ca3af",
+    "dark": "#6b8e7f"
   },
   "favicon": "/favicon.svg",
   "navigation": {
