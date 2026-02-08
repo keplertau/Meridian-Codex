@@ -57,8 +57,7 @@
             "group": "Writing content",
             "pages": [
               "essentials/markdown",
-              "essentials/code",
-              "essentials/images"
+              "essentials/code"
             ]
           }
         ]
