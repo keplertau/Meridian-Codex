@@ -45,19 +45,25 @@
               "the-proposition",
               "the-foundation",
               "the-knowledge",
-              "the-bond",
-              "the-vision",
-              "the-cloding",
-              "the-governance",
-              "the-glossary"
+              "the-bond"
             ]
           },
           {
             "group": "The Application",
-            "icon": "network-wired",
+            "icon": "pineapple",
             "pages": [
               "the-practice",
               "the-toolkit"
+            ]
+          },
+          {
+            "group": "The Future",
+            "icon": "timeline-arrow",
+            "pages": [
+              "the-vision",
+              "the-governance",
+              "the-cloding",
+              "the-glossary"
             ]
           }
         ]
