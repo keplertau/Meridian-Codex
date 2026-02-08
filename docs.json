@@ -46,11 +46,18 @@
               "the-foundation",
               "the-knowledge",
               "the-bond",
-              "the-practice",
               "the-vision",
               "the-cloding",
               "the-governance",
               "the-glossary"
+            ]
+          },
+          {
+            "group": "The Application",
+            "icon": "network-wired",
+            "pages": [
+              "the-practice",
+              "the-toolkit"
             ]
           }
         ]
