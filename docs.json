@@ -31,7 +31,7 @@
           "index",
           {
             "group": "Start Here",
-            "icon": "1",
+            "icon": "book-open-reader",
             "pages": [
               "opening",
               "who-is-this-for",
@@ -39,8 +39,8 @@
             ]
           },
           {
-            "group": "The Meridian Codex",
-            "icon": "circle-book-open",
+            "group": "The Framework",
+            "icon": "ball-pile",
             "pages": [
               "the-proposition",
               "the-foundation",
