@@ -27,12 +27,18 @@
       {
         "tab": "Codex",
         "icon": "code-commit",
-        "pages": [
+        "groups": [
+          {
+            "group": "Overview",
+            "icon": "ball-pile",
+            "pages": [
+              "index"
+            ]
+          },
           {
             "group": "The Meridian Codex",
             "icon": "circle-book-open",
             "pages": [
-              "index",
               "opening",
               "who-is-this-for",
               "the-problem",
