@@ -29,8 +29,8 @@
         "icon": "code-commit",
         "groups": [
           {
-            "group": "Overview",
-            "icon": "ball-pile",
+            "group": "Start Here",
+            "icon": "1",
             "pages": [
               "index"
             ]
