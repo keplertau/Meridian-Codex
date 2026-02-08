@@ -65,11 +65,7 @@
         "tab": "Toolkit",
         "icon": "chart-network",
         "pages": [
-          "overview",
-          {
-            "group": "API documentation",
-            "pages": []
-          }
+          "overview"
         ]
       }
     ]
