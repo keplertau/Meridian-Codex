@@ -27,21 +27,21 @@
       {
         "tab": "Codex",
         "icon": "code-commit",
-        "groups": [
+        "pages": [
+          "index",
           {
             "group": "Start Here",
             "icon": "1",
             "pages": [
-              "index"
+              "opening",
+              "who-is-this-for",
+              "the-problem"
             ]
           },
           {
             "group": "The Meridian Codex",
             "icon": "circle-book-open",
             "pages": [
-              "opening",
-              "who-is-this-for",
-              "the-problem",
               "the-proposition",
               "the-foundation",
               "the-knowledge",
