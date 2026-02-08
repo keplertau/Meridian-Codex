@@ -27,20 +27,26 @@
       {
         "tab": "Codex",
         "icon": "code-commit",
-        "pages": [
-          "index",
-          "opening",
-          "who-is-this-for",
-          "the-problem",
-          "the-proposition",
-          "the-foundation",
-          "the-knowledge",
-          "the-bond",
-          "the-practice",
-          "the-vision",
-          "the-cloding",
-          "the-governance",
-          "the-glossary"
+        "groups": [
+          {
+            "group": "The Meridian Codex",
+            "icon": "circle-book-open",
+            "pages": [
+              "index",
+              "opening",
+              "who-is-this-for",
+              "the-problem",
+              "the-proposition",
+              "the-foundation",
+              "the-knowledge",
+              "the-bond",
+              "the-practice",
+              "the-vision",
+              "the-cloding",
+              "the-governance",
+              "the-glossary"
+            ]
+          }
         ]
       },
       {
