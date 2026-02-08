@@ -108,7 +108,7 @@
   "background": {
     "decoration": "grid",
     "color": {
-      "dark": "#1a2332",
+      "dark": "#000000",
       "light": "#ffffff"
     }
   },
