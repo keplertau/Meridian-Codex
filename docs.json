@@ -28,11 +28,11 @@
         "tab": "Codex",
         "icon": "code-commit",
         "pages": [
-          "index",
           {
             "group": "The Meridian Codex",
             "icon": "circle-book-open",
             "pages": [
+              "index",
               "opening",
               "who-is-this-for",
               "the-problem",
@@ -98,7 +98,7 @@
     "decoration": "gradient"
   },
   "appearance": {
-    "default": "dark",
+    "default": "light",
     "strict": false
   },
   "banner": {
