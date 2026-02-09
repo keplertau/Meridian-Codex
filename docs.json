@@ -74,12 +74,7 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@meridiancodex.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
@@ -117,7 +112,7 @@
     "strict": false
   },
   "banner": {
-    "content": "Holding the line between the forces that have broken every civilization before us.",
+    "content": "The Codex is a living framework for stability and evolution.",
     "dismissible": true
   }
 }
