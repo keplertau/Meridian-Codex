@@ -23,7 +23,7 @@
           },
           {
             "group": "Start Here",
-            "icon": "book-open-reader",
+            "icon": "book",
             "pages": [
               "opening",
               "who-is-this-for",
@@ -42,7 +42,7 @@
           },
           {
             "group": "The Application",
-            "icon": "pineapple",
+            "icon": "arrows-spin",
             "pages": [
               "the-practice",
               "the-toolkit"
