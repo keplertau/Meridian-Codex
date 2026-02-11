@@ -7,7 +7,7 @@
     "light": "#26bd6c",
     "dark": "#166e3f"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/meridian-logo.png",
   "navigation": {
     "tabs": [
       {
