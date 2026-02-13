@@ -64,7 +64,34 @@
         "tab": "Toolkit",
         "icon": "chart-network",
         "pages": [
-          "overview"
+          "overview",
+          {
+            "group": "The Onramp",
+            "pages": [
+              {
+                "group": "Foundation",
+                "pages": [
+                  "scout-mindset"
+                ]
+              },
+              {
+                "group": "Knowledge",
+                "pages": []
+              },
+              {
+                "group": "Bond",
+                "pages": []
+              }
+            ]
+          },
+          {
+            "group": "The Expansion",
+            "pages": []
+          },
+          {
+            "group": "The Full Practice",
+            "pages": []
+          }
         ]
       }
     ]
