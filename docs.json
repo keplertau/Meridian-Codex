@@ -97,7 +97,10 @@
         ]
       },
       {
-        "tab": "AI Standard"
+        "tab": "AI Standard",
+        "pages": [
+          "the-meridian-standard"
+        ]
       }
     ]
   },
