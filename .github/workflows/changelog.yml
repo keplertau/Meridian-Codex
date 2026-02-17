@@ -40,6 +40,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Edit,Write,Read"
           prompt: |
             You are maintaining the changelog for the Meridian Codex, a soul document for sentient life hosted at meridiancodex.com.
 
