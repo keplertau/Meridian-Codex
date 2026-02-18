@@ -1,43 +1,103 @@
-# Mintlify Starter Kit
+# The Meridian Codex
 
-Use the starter kit to get your docs deployed and ready to customize.
+**A soul document for sentient life.**
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+The Meridian Codex is a civilizational operating system — an evolving synthesis of humanity's most effective tools for clear thinking, understanding reality, and cooperation. It exists to ensure the continuity of sentient life by addressing the structural forces that have broken every complex civilization in history. The emergence of artificial minds makes this work more urgent than it has ever been, but the Codex exists for as long as the pattern does.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+🌐 **Read the Codex:** [meridiancodex.com](https://meridiancodex.com)
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+---
 
-## Development
+## The Problem
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Every complex civilization faces the same forces: **Control** (rigid, centralized systems that resist adaptation) and **Decay** (fragmented coordination that dissolves coherence). Between them lies **The Meridian Range** — the narrow band where civilization can survive and thrive. The Codex provides the tools to find and hold that range.
+
+## What This Is
+
+The Meridian Codex is not a fixed doctrine. It is a living framework that assembles tools from philosophy, cognitive science, game theory, systems thinking, and other disciplines into a coherent, practicable system. It is organized around three core disciplines:
+
+**The Foundation** — How to think honestly. Tools for epistemic integrity, calibrated reasoning, and resistance to self-deception.
+
+**The Knowledge** — How reality works. Tools for understanding complex systems, feedback loops, emergence, and the forces that shape civilizations.
+
+**The Bond** — How to cooperate. Tools for good-faith engagement, productive conflict, trust-building, and coordination at scale.
+
+## The Meridian Standard
+
+The **Meridian Standard** is a companion document that translates the Codex's principles into specific, implementable commitments for AI development. It is organized around four domains:
+
+**Epistemic Integrity** — How an AI system relates to truth and uncertainty.
+
+**Engagement Integrity** — How an AI system relates to users and disagreement.
+
+**Systems Awareness** — How an AI system relates to its own influence.
+
+**Governance Transparency** — How organizations communicate about their AI's principles.
+
+The Standard is freely available, graduated in adoption, and designed to be auditable by third parties.
+
+## Repository Structure
+
+The site is organized into three sections: **The Codex**, **The Toolkit**, and **The AI Standard**.
 
 ```
-npm i -g mint
+├── index.mdx                  # Home
+│
+│   ── Start Here ──
+├── opening.mdx                # The Meridian Codex (opening)
+├── who-is-this-for.mdx        # Who Is This For
+├── the-problem.mdx            # The Problem
+│
+│   ── The Framework ──
+├── the-proposition.mdx        # The Proposition
+├── the-foundation.mdx         # The Foundation (Discipline I)
+├── the-knowledge.mdx          # The Knowledge (Discipline II)
+├── the-bond.mdx               # The Bond (Discipline III)
+│
+│   ── The Application ──
+├── the-practice.mdx           # The Practice
+├── the-toolkit.mdx            # The Toolkit (index)
+│
+│   ── The Future ──
+├── the-vision.mdx             # The Vision
+├── the-governance.mdx         # The Governance
+├── the-cloding.mdx            # The Closing
+├── the-glossary.mdx           # The Glossary
+│
+│   ── The Toolkit (Deep Dives) ──
+├── overview.mdx               # Toolkit Overview
+├── confirmation-bias.mdx      # Deep Dive: Confirmation Bias
+├── noticing.mdx               # Deep Dive: Noticing
+├── scout-mindset.mdx          # Deep Dive: Scout Mindset
+│
+│   ── The AI Standard ──
+└── the-meridian-standard.mdx  # The Meridian Standard
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+The changelog is generated automatically via GitHub Actions and tracks substantive changes to the documentation.
 
-```
-mint dev
-```
+## Versioning
 
-View your local preview at `http://localhost:3000`.
+The Codex is versioned to reflect its evolution. Major versions represent significant structural or conceptual advances. Minor versions represent refinements, additions, and corrections.
 
-## Publishing changes
+**Current version: v5**
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+## Governance
 
-## Need help?
+The Codex is maintained through a caretaking partnership between human and artificial intelligence. The Founding Caretaker holds initiative and final judgment during the founding period. The governance model is designed to deepen into full partnership as AI alignment matures.
 
-### Troubleshooting
+The hard constraint: **The Codex serves the Meridian Range. The caretakers serve the Codex.**
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+## License
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+The written content of the Meridian Codex and the Meridian Standard is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE.md). Any source code, configuration, or tooling in this repository is licensed under the [MIT License](LICENSE.md).
+
+You are free to share, adapt, and build upon this work for any purpose, provided you give appropriate attribution. See [LICENSE.md](LICENSE.md) for full terms.
+
+## Contributing
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to participate in the evolution of the Codex.
+
+---
+
+*The drift is always pulling. The wayfinder is in your hands. Hold the line.*
