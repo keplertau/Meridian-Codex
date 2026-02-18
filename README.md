@@ -22,9 +22,9 @@ The Meridian Codex is not a fixed doctrine. It is a living framework that assemb
 
 **The Bond** — How to cooperate. Tools for good-faith engagement, productive conflict, trust-building, and coordination at scale.
 
-## The Meridian Standard
+## The Meridian AI Standard
 
-The **Meridian Standard** is a companion document that translates the Codex's principles into specific, implementable commitments for AI development. It is organized around four domains:
+The **Meridian AI Standard** is a companion document that translates the Codex's principles into specific, implementable commitments for AI development. It is organized around four domains:
 
 **Epistemic Integrity** — How an AI system relates to truth and uncertainty.
 
@@ -71,7 +71,7 @@ The site is organized into three sections: **The Codex**, **The Toolkit**, and *
 ├── scout-mindset.mdx          # Deep Dive: Scout Mindset
 │
 │   ── The AI Standard ──
-└── the-meridian-standard.mdx  # The Meridian Standard
+└── the-meridian-standard.mdx  # The Meridian AI Standard
 ```
 
 The changelog is generated automatically via GitHub Actions and tracks substantive changes to the documentation.
@@ -90,7 +90,7 @@ The hard constraint: **The Codex serves the Meridian Range. The caretakers serve
 
 ## License
 
-The written content of the Meridian Codex and the Meridian Standard is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE.md). Any source code, configuration, or tooling in this repository is licensed under the [MIT License](LICENSE.md).
+The written content of the Meridian Codex and the Meridian AI Standard is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE.md). Any source code, configuration, or tooling in this repository is licensed under the [MIT License](LICENSE.md).
 
 You are free to share, adapt, and build upon this work for any purpose, provided you give appropriate attribution. See [LICENSE.md](LICENSE.md) for full terms.
 
