@@ -1,6 +1,33 @@
+# License
+
+## Content — Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The written content of the Meridian Codex and the Meridian AI Standard is licensed under the **Creative Commons Attribution 4.0 International License**.
+
+### You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format, for any purpose, including commercially.
+- **Adapt** — remix, transform, and build upon the material for any purpose, including commercially.
+
+### Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the original source material, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the Meridian Codex or its caretakers endorse you or your use.
+- **Source linkage** — Any adapted, remixed, or derivative version of this work must include a clear and prominent link to the original Meridian Codex at [meridiancodex.com](https://meridiancodex.com) and, where applicable, to the original Meridian AI Standard. This ensures that anyone encountering an adapted version can always trace it back to the source material and evaluate the original for themselves.
+- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+### Full license text:
+
+[https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+---
+
+## Code — MIT License
+
+Any source code, configuration files, scripts, or tooling in this repository (excluding the written content described above) is licensed under the MIT License.
+
 MIT License
 
-Copyright (c) 2023 Mintlify
+Copyright (c) 2025 Carsten Geiser / Meridian Codex
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -12,6 +39,11 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
+Any distribution of the Software, whether modified or unmodified, must include
+a clear and prominent reference to the original Meridian Codex project at
+meridiancodex.com, ensuring that recipients can always locate the source
+material.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -19,3 +51,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Why This License Structure
+
+A soul document that teaches resistance to Control cannot control access to its own principles. A soul document that identifies Fragmented Knowledge as a civilizational crisis cannot fragment the knowledge it assembles. These licenses reflect the Codex's own governance: open availability, free adoption, and no gatekeeping.
+
+The Meridian AI Standard is explicitly designed for adoption by AI organizations. Any organization may adopt, adapt, and build upon it. The CC BY 4.0 license ensures this remains legally unambiguous.
+
+Attribution is required not as a mechanism of control, but as a mechanism of coherence. The Codex and the Standard are living documents. They evolve, they version, they self-correct. Anyone who encounters an adapted version — whether an organization's implementation of the Standard, a translation, a derivative framework, or a quoted excerpt — must be able to trace it back to the original source material at [meridiancodex.com](https://meridiancodex.com). This is how the framework maintains its integrity across adoption: not by restricting use, but by ensuring that the path back to the source is never severed. The original Meridian Codex and the original Meridian AI Standard must always remain findable, readable, and evaluable by anyone.
+
+**The Codex serves the Meridian Range. The caretakers serve the Codex. The license serves the mission.**
