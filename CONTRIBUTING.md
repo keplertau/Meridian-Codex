@@ -40,9 +40,9 @@ For direct text contributions:
 3. Make your edits
 4. Submit a pull request with a clear description of what changed and why
 
-### Contribute to the Meridian Standard
+### Contribute to the Meridian AI Standard
 
-The Meridian Standard — the companion framework for AI development — benefits from feedback by researchers, developers, and practitioners working in AI alignment, safety, and governance. Contributions to the Standard follow the same process as contributions to the Codex.
+The Meridian AI Standard — the companion framework for AI development — benefits from feedback by researchers, developers, and practitioners working in AI alignment, safety, and governance. Contributions to the Standard follow the same process as contributions to the Codex.
 
 ## Principles for Contributing
 
