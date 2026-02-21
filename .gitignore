@@ -1,0 +1,16 @@
+# Cowork local workspace (never published or pushed)
+_cowork/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node (if running mint dev locally)
+node_modules/
