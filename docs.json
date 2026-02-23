@@ -3,11 +3,11 @@
   "theme": "almond",
   "name": "The Meridian Codex",
   "colors": {
-    "primary": "#166e3f",
-    "light": "#26bd6c",
-    "dark": "#166e3f"
+    "primary": "#3ecf6b",
+    "light": "#2db85a",
+    "dark": "#1e8c42"
   },
-  "favicon": "/images/meridian-logo.png",
+  "favicon": "/images/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -106,8 +106,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/LogoLight.svg",
+    "dark": "/images/LogoDark.svg"
   },
   "navbar": {
     "links": [],
@@ -139,7 +139,7 @@
   "background": {
     "decoration": "gradient",
     "color": {
-      "dark": "#000000",
+      "dark": "#1a1a1a",
       "light": "#ffffff"
     }
   },
