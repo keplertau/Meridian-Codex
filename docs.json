@@ -142,8 +142,7 @@
     "color": {
       "dark": "#1a1a1a",
       "light": "#ffffff"
-    },
-    "image": "/images/universal_upscale_0_0ed0ba5c-c3dd-4b2b-9f53-8d7a0fc9900c_0.jpg"
+    }
   },
   "appearance": {
     "default": "light",
