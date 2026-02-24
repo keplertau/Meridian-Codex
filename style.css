@@ -236,3 +236,77 @@
 .glass-card + .glass-card {
   margin-top: 16px;
 }
+
+/* ============================================
+   HERO BACKGROUND — index page hero banner
+   Background image constrained to content area
+   ============================================ */
+.mc-hero {
+  position: relative;
+  margin: -16px -24px 0 -24px;
+  padding: 80px 40px 60px 40px;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  background: url('/images/universal_upscale_0_0ed0ba5c-c3dd-4b2b-9f53-8d7a0fc9900c_0.jpg') center top / cover no-repeat;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.mc-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 255, 255, 0.85) 70%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .mc-hero::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 26, 26, 0.1) 0%,
+    rgba(26, 26, 26, 0.5) 40%,
+    rgba(26, 26, 26, 0.85) 70%,
+    rgba(26, 26, 26, 1) 100%
+  );
+}
+
+.mc-hero-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.mc-hero-tagline {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mc-green-dark);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.mc-hero-subtitle {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 0.95rem;
+  color: var(--mc-text-secondary);
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .mc-hero {
+    margin: -12px -16px 0 -16px;
+    padding: 60px 24px 40px 24px;
+    min-height: 200px;
+  }
+}
