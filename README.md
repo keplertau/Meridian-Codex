@@ -61,7 +61,7 @@ The site is organized into three sections: **The Codex**, **The Toolkit**, and *
 │   ── The Future ──
 ├── the-vision.mdx             # The Vision
 ├── the-governance.mdx         # The Governance
-├── the-cloding.mdx            # The Closing
+├── the-closing.mdx            # The Closing
 ├── the-glossary.mdx           # The Glossary
 │
 │   ── The Toolkit (Deep Dives) ──
