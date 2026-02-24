@@ -1,0 +1,276 @@
+/* ============================================
+   MERIDIAN CODEX — ELEMENTS FLOW SYSTEM
+   Global CSS for Mintlify integration
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ---- CSS Variables ---- */
+:root {
+  --mc-green: #3ECF6B;
+  --mc-green-dark: #2DB85A;
+  --mc-green-light: #E8F8EE;
+  --mc-green-subtle: #F2FBF5;
+  --mc-sky: #CCE9FF;
+  --mc-ink: #1A1A1A;
+  --mc-text: #333333;
+  --mc-text-secondary: #5A5A5A;
+  --mc-text-muted: #8A8A8A;
+  --mc-border: #D4D1CA;
+  --mc-border-light: #E8E5DE;
+  --mc-warm-paper: #F9F8F5;
+  --mc-earth: #A68B6B;
+  --mc-line: #C5C2BA;
+}
+
+/* ---- Dark mode overrides ---- */
+.dark {
+  --mc-ink: #E8E5DE;
+  --mc-text: #D4D1CA;
+  --mc-text-secondary: #A8A5A0;
+  --mc-text-muted: #787572;
+  --mc-border: #3A3835;
+  --mc-border-light: #2A2825;
+  --mc-warm-paper: #1F1E1C;
+  --mc-line: #4A4845;
+}
+
+/* ============================================
+   FLOW LABEL
+   Section markers with trailing line
+   ============================================ */
+.flow-label {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mc-green-dark);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.flow-label::after {
+  content: '';
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(90deg, var(--mc-green), transparent 70%);
+  max-width: 160px;
+  opacity: 0.4;
+}
+
+/* ============================================
+   GLASS CARD
+   Warm paper card with green hover accent
+   ============================================ */
+.glass-card {
+  background: var(--mc-warm-paper);
+  border: 1.5px solid var(--mc-border-light);
+  border-radius: 14px;
+  padding: 28px 32px;
+  position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--mc-green);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.04);
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 16%;
+  bottom: 16%;
+  width: 3px;
+  background: linear-gradient(180deg, transparent, var(--mc-green), transparent);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glass-card:hover::before {
+  opacity: 1;
+}
+
+.glass-card-title {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mc-green-dark);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.glass-card-text {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 0.85rem;
+  color: var(--mc-text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Grid for pillar cards */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   KEY PHRASE — inline highlight
+   ============================================ */
+.key-phrase {
+  display: inline;
+  background: linear-gradient(120deg, var(--mc-green-subtle) 0%, var(--mc-green-light) 100%);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--mc-green-dark);
+  font-weight: 600;
+}
+
+/* ============================================
+   TAG — pill badges
+   ============================================ */
+.mc-tag {
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--mc-green-subtle);
+  color: var(--mc-green-dark);
+  font-weight: 600;
+  border: 1.5px solid rgba(62, 207, 107, 0.18);
+}
+
+.tag-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+/* ============================================
+   BREATHING DIVIDER
+   SVG-based section separator
+   ============================================ */
+.breathing-divider {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.breathing-divider svg {
+  width: 100%;
+  max-width: 700px;
+  height: 28px;
+  overflow: visible;
+}
+
+/* ============================================
+   CONSTELLATION MARKER
+   Sparkle dots between sections
+   ============================================ */
+.constellation {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0;
+}
+
+.constellation svg {
+  opacity: 0.6;
+}
+
+/* ============================================
+   CTA LINK — call to action button
+   ============================================ */
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+  padding: 14px 24px 14px 16px;
+  border-radius: 12px;
+  border: 1.5px solid var(--mc-border-light);
+  background: var(--mc-warm-paper);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-link:hover {
+  border-color: var(--mc-green);
+  box-shadow: 0 4px 20px rgba(62, 207, 107, 0.1);
+}
+
+.cta-link span {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 0.88rem;
+  color: var(--mc-text);
+  font-weight: 500;
+}
+
+.cta-link:hover span {
+  color: var(--mc-green-dark);
+}
+
+/* ============================================
+   FLOW HERO — landing section enhancement
+   ============================================ */
+.flow-hero {
+  position: relative;
+  padding: 40px 0 20px;
+}
+
+.flow-hero h1 {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--mc-ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.flow-hero h1 span {
+  font-weight: 400;
+  color: var(--mc-text-secondary);
+}
+
+.flow-hero .subtitle {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-size: 1rem;
+  color: var(--mc-text-muted);
+  font-weight: 400;
+  max-width: 520px;
+  margin-top: 12px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   FLOW CONNECTOR — SVG diagram styling
+   ============================================ */
+.flow-connector {
+  margin: 28px 0;
+}
+
+.flow-connector svg {
+  width: 100%;
+  max-width: 600px;
+  height: 90px;
+}
