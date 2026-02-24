@@ -1,11 +1,29 @@
-# Cowork local workspace (never published or pushed)
+# ============================================
+#  LOCAL-ONLY FOLDERS (not pushed to GitHub)
+#  These live on your Mac only
+# ============================================
+
+# Brand assets, guidelines, Canva exports
+brand/
+
+# Video scripts, content planning, production notes
+video/
+
+# Logo source files (published logos live in /images/)
+logo/
+
+# Cowork session workspace
 _cowork/
 
-# OS files
+# ============================================
+#  SYSTEM / EDITOR FILES
+# ============================================
+
+# macOS
 .DS_Store
 Thumbs.db
 
-# Editor files
+# Editors
 *.swp
 *.swo
 *~
