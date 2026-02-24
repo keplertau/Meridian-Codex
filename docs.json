@@ -12,18 +12,18 @@
     "tabs": [
       {
         "tab": "Codex",
-        "icon": "code-commit",
+        "icon": "book-open",
         "groups": [
           {
             "group": "Overview",
-            "icon": "house-chimney-blank",
+            "icon": "circle-dot",
             "pages": [
               "index"
             ]
           },
           {
             "group": "Start Here",
-            "icon": "book",
+            "icon": "compass",
             "pages": [
               "opening",
               "who-is-this-for",
@@ -32,7 +32,7 @@
           },
           {
             "group": "The Framework",
-            "icon": "ball-pile",
+            "icon": "shapes",
             "pages": [
               "the-proposition",
               "the-foundation",
@@ -42,7 +42,7 @@
           },
           {
             "group": "The Application",
-            "icon": "arrows-spin",
+            "icon": "hands",
             "pages": [
               "the-practice",
               "the-toolkit"
@@ -50,7 +50,7 @@
           },
           {
             "group": "The Future",
-            "icon": "timeline-arrow",
+            "icon": "eye",
             "pages": [
               "the-vision",
               "the-governance",
@@ -63,7 +63,7 @@
       },
       {
         "tab": "Toolkit",
-        "icon": "chart-network",
+        "icon": "wrench",
         "pages": [
           "overview",
           {
@@ -99,6 +99,7 @@
       },
       {
         "tab": "AI Standard",
+        "icon": "microchip",
         "pages": [
           "the-meridian-standard"
         ]
@@ -114,8 +115,8 @@
     "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get started",
+      "href": "/opening"
     }
   },
   "contextual": {
@@ -133,7 +134,9 @@
   "footer": {
     "socials": {
       "x": "https://x.com/meridiancodex",
-      "youtube": "https://youtube.com/meridiancodex"
+      "youtube": "https://youtube.com/meridiancodex",
+      "github": "https://github.com/keplertau/Meridian-Codex",
+      "bluesky": "https://bsky.app/profile/meridiancodex.com"
     }
   },
   "description": "The Meridian Codex is a living framework for intellectual integrity and civilizational stability.",
@@ -148,13 +151,9 @@
     "default": "light",
     "strict": false
   },
-  "banner": {
-    "content": "The Codex is a living framework for stability and evolution.",
-    "dismissible": true
-  },
   "errors": {
     "404": {
-      "description": "We can't find this page."
+      "description": "You have drifted beyond the mapped range. The page you are looking for does not exist here, but the Codex remains. Return to the Meridian."
     }
   }
 }
