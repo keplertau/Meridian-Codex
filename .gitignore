@@ -15,6 +15,22 @@ logo/
 # Cowork session workspace
 _cowork/
 
+# AI agent instructions (internal tooling, not the Codex)
+AGENTS.md
+
+# CI/CD workflows (infrastructure, not the text)
+.github/
+
+# API reference scaffold (not Codex content)
+api-reference/
+
+# Mintlify reusable components (infrastructure)
+snippets/
+
+# Default Mintlify hero images (not Codex content)
+images/hero-dark.png
+images/hero-light.png
+
 # ============================================
 #  SYSTEM / EDITOR FILES
 # ============================================
