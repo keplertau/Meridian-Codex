@@ -37,6 +37,13 @@ Use Mintlify's built-in components for consistent formatting. See https://www.mi
 - Include introductory context before diving into steps or details
 - Add "Next steps" or related links where helpful
 
+## Writing style rules
+
+- Never use em dashes (—) or en dashes (–). Use commas, periods, colons, or restructure the sentence instead.
+- Never use "delve", "tapestry", "landscape", "multifaceted", "crucial", "utilize", "leverage" (as a verb), "robust", "streamline", "cutting-edge", or other stereotypical AI filler language.
+- Write in a direct, grounded, human tone. Clear over clever. Simple over ornate.
+- Formatting labels like "01 — Foundation" use a space-hyphen-hyphen-space pattern (" -- "), not em dashes.
+
 ## What to avoid
 
 - Don't edit `docs.json` without understanding the navigation structure

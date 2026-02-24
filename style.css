@@ -231,46 +231,8 @@
 }
 
 /* ============================================
-   FLOW HERO — landing section enhancement
+   GLASS CARD SPACING — for stacked cards
    ============================================ */
-.flow-hero {
-  position: relative;
-  padding: 40px 0 20px;
-}
-
-.flow-hero h1 {
-  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--mc-ink);
-  letter-spacing: -0.02em;
-  margin-bottom: 4px;
-}
-
-.flow-hero h1 span {
-  font-weight: 400;
-  color: var(--mc-text-secondary);
-}
-
-.flow-hero .subtitle {
-  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-  font-size: 1rem;
-  color: var(--mc-text-muted);
-  font-weight: 400;
-  max-width: 520px;
-  margin-top: 12px;
-  line-height: 1.7;
-}
-
-/* ============================================
-   FLOW CONNECTOR — SVG diagram styling
-   ============================================ */
-.flow-connector {
-  margin: 28px 0;
-}
-
-.flow-connector svg {
-  width: 100%;
-  max-width: 600px;
-  height: 90px;
+.glass-card + .glass-card {
+  margin-top: 16px;
 }
