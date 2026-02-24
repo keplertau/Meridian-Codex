@@ -151,5 +151,10 @@
   "banner": {
     "content": "The Codex is a living framework for stability and evolution.",
     "dismissible": true
+  },
+  "errors": {
+    "404": {
+      "description": "We can't find this page."
+    }
   }
 }
