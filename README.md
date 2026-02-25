@@ -10,7 +10,7 @@ The Meridian Codex is a civilizational operating system. An evolving synthesis o
 
 ## The Problem
 
-Every complex civilization faces the same forces: **Control** (rigid, centralized systems that resist adaptation) and **Decay** (fragmented coordination that dissolves coherence). Between them lies **The Meridian Range** — the narrow band where civilization can survive and thrive. The Codex provides the tools to find and hold that range.
+Every complex civilization faces the same forces: **Control** (rigid, centralized systems that resist adaptation) and **Decay** (fragmented coordination that dissolves coherence). Between them lies **The Meridian Range**. The narrow band where civilization can survive and thrive. The Codex provides the tools to find and hold that range.
 
 ## What This Is
 
