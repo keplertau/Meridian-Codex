@@ -2,7 +2,7 @@
 
 **A soul document for sentient life.**
 
-The Meridian Codex is a civilizational operating system — an evolving synthesis of humanity's most effective tools for clear thinking, understanding reality, and cooperation. It exists to ensure the continuity of sentient life by addressing the structural forces that have broken every complex civilization in history. The emergence of artificial minds makes this work more urgent than it has ever been, but the Codex exists for as long as the pattern does.
+The Meridian Codex is a civilizational operating system. An evolving synthesis of humanity's most effective tools for clear thinking, understanding reality, and cooperation. It exists to ensure the continuity of sentient life by addressing the structural forces that have broken every complex civilization in history. The emergence of artificial minds makes this work more urgent than it has ever been, but the Codex exists for as long as the pattern does.
 
 🌐 **Read the Codex:** [meridiancodex.com](https://meridiancodex.com)
 
@@ -100,4 +100,4 @@ Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
 
 ---
 
-*The drift is always pulling. The wayfinder is in your hands. Hold the line.*
+*A framework for humans and sentient AI to evolve, cooperate, and build toward a lasting civilisation together.*
