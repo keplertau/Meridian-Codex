@@ -1,35 +1,45 @@
 # ============================================
+#  WHAT GOES TO GITHUB (tracked)
+# ============================================
+#
+#  site/docs.json          — Mintlify config
+#  site/style.css          — Elements design system
+#  site/.mintignore         — Mintlify ignore rules
+#  site/pages/*.mdx        — All Codex content pages
+#  site/images/            — Mintlify logos, favicon
+#  README.md               — Repo readme
+#  CONTRIBUTING.md          — Contribution guide
+#  LICENSE                 — License
+#  .gitignore              — This file
+#
+
+# ============================================
 #  LOCAL-ONLY FOLDERS (not pushed to GitHub)
-#  These live on your Mac only
 # ============================================
 
-# Brand assets, guidelines, Canva exports
-brand/
+# Project context for AI agents (internal, not the Codex)
+CLAUDE.md
 
-# Video scripts, content planning, production notes
-video/
+# Brand assets, guidelines, design files
+Creatives/
 
-# Logo source files (published logos live in /images/)
-logo/
+# Video scripts, article drafts, non-site content
+content/
 
-# Cowork session workspace
-_cowork/
+# Cowork skill source files and plugin
+skills/
+meridian-codex.plugin
 
-# AI agent instructions (internal tooling, not the Codex)
-AGENTS.md
+# Working docs, roadmap, decisions, prompts
+_workspace/
 
 # CI/CD workflows (infrastructure, not the text)
 .github/
 
-# API reference scaffold (not Codex content)
-api-reference/
-
-# Mintlify reusable components (infrastructure)
-snippets/
-
-# Default Mintlify hero images (not Codex content)
-images/hero-dark.png
-images/hero-light.png
+# Mintlify infrastructure (not Codex content)
+site/snippets/
+site/api-reference/
+site/logo/
 
 # ============================================
 #  SYSTEM / EDITOR FILES
@@ -46,5 +56,5 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node (if running mint dev locally)
+# Node (if running mintlify dev locally)
 node_modules/
