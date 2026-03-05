@@ -18,45 +18,45 @@
             "group": "Overview",
             "icon": "circle-dot",
             "pages": [
-              "index"
+              "pages/index"
             ]
           },
           {
             "group": "Start Here",
             "icon": "compass",
             "pages": [
-              "opening",
-              "who-is-this-for",
-              "the-problem"
+              "pages/opening",
+              "pages/who-is-this-for",
+              "pages/the-problem"
             ]
           },
           {
             "group": "The Framework",
             "icon": "shapes",
             "pages": [
-              "the-proposition",
-              "the-foundation",
-              "the-knowledge",
-              "the-bond"
+              "pages/the-proposition",
+              "pages/the-foundation",
+              "pages/the-knowledge",
+              "pages/the-bond"
             ]
           },
           {
             "group": "The Application",
             "icon": "hands",
             "pages": [
-              "the-practice",
-              "the-toolkit"
+              "pages/the-practice",
+              "pages/the-toolkit"
             ]
           },
           {
             "group": "The Future",
             "icon": "eye",
             "pages": [
-              "the-vision",
-              "the-governance",
-              "the-closing",
-              "the-glossary",
-              "changelog"
+              "pages/the-vision",
+              "pages/the-governance",
+              "pages/the-closing",
+              "pages/the-glossary",
+              "pages/changelog"
             ]
           }
         ]
@@ -65,16 +65,16 @@
         "tab": "Toolkit",
         "icon": "wrench",
         "pages": [
-          "overview",
+          "pages/overview",
           {
             "group": "The Onramp",
             "pages": [
               {
                 "group": "Foundation",
                 "pages": [
-                  "scout-mindset",
-                  "noticing",
-                  "confirmation-bias"
+                  "pages/scout-mindset",
+                  "pages/noticing",
+                  "pages/confirmation-bias"
                 ]
               },
               {
@@ -101,7 +101,7 @@
         "tab": "AI Standard",
         "icon": "microchip",
         "pages": [
-          "the-meridian-standard"
+          "pages/the-meridian-standard"
         ]
       }
     ]
@@ -116,7 +116,7 @@
     "primary": {
       "type": "button",
       "label": "Get started",
-      "href": "/opening"
+      "href": "/pages/opening"
     }
   },
   "contextual": {
