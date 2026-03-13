@@ -1,0 +1,218 @@
+'use client';
+
+import { useTheme } from '@/lib/theme';
+import Link from 'next/link';
+import { BookOpen, ChevronRight, ChevronDown, Menu, X, ArrowRight, FolderTree } from 'lucide-react';
+import { useState } from 'react';
+import ApertureIcon from './ApertureIcon';
+import type { PageContent, NavTab, NavGroup } from '@/lib/content';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+
+// Custom MDX components that map Mintlify's custom elements
+const mdxComponents = {
+  // Map Mintlify's custom div classNames to styled elements
+  // The MDX content uses <div className="flow-label"> etc.
+  // These are handled by CSS in globals.css under .mdx-content
+};
+
+/** Convert a slug like "the-foundation" to "The Foundation" */
+function titleCase(slug: string): string {
+  return slug
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// ─── SidebarGroup — collapsible nav group matching dashboard TreeItem ───
+function SidebarGroup({
+  group,
+  basePath,
+  activeSlug,
+  onNavigate,
+}: {
+  group: NavGroup;
+  basePath: string;
+  activeSlug: string;
+  onNavigate: () => void;
+}) {
+  const { isDark } = useTheme();
+  const accent = isDark ? 'text-cyan' : 'text-meridian';
+  const [expanded, setExpanded] = useState(true);
+
+  return (
+    <div className="mb-1">
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-[12px] font-bold tracking-wider uppercase transition-all ${
+          isDark
+            ? 'text-text-bright hover:bg-white/5'
+            : 'text-ink hover:bg-white/40'
+        }`}
+      >
+        <ChevronDown className={`w-3.5 h-3.5 transition-transform shrink-0 ${expanded ? '' : '-rotate-90'} ${isDark ? 'text-white/30' : 'text-black/20'}`} />
+        <FolderTree className={`w-3.5 h-3.5 shrink-0 ${accent}`} />
+        {group.group}
+      </button>
+      {expanded && (
+        <div className="mt-0.5">
+          {group.pages.map((slug) => {
+            const isActive = activeSlug === slug;
+            return (
+              <Link
+                key={slug}
+                href={`${basePath}/${slug}`}
+                onClick={onNavigate}
+                className={`flex items-center gap-2.5 px-3 py-2 rounded-lg text-[13px] font-medium transition-all group ${
+                  isActive
+                    ? isDark
+                      ? 'bg-cyan/10 text-cyan font-bold'
+                      : 'bg-[#E8F8EE] text-meridian-dark font-bold'
+                    : isDark
+                    ? 'text-text-muted hover:text-cyan hover:bg-white/5'
+                    : 'text-text-subtle hover:text-meridian hover:bg-white/40'
+                }`}
+                style={{ paddingLeft: '28px' }}
+              >
+                <ArrowRight className={`w-3 h-3 shrink-0 ${
+                  isActive
+                    ? accent
+                    : isDark ? 'text-white/20 group-hover:text-cyan' : 'text-black/15 group-hover:text-meridian'
+                }`} />
+                {titleCase(slug)}
+              </Link>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+interface DocReaderProps {
+  page: PageContent;
+  navigation: NavTab[];
+  basePath?: string; // '/codex' or '/toolkit'
+}
+
+export default function DocReader({ page, navigation, basePath = '/codex' }: DocReaderProps) {
+  const { isDark } = useTheme();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Find which tab this page belongs to
+  const currentTab = navigation.find((tab) =>
+    tab.groups.some((group) => group.pages.includes(page.slug))
+  );
+
+  return (
+    <div className="max-w-[1700px] mx-auto flex items-start gap-8 pb-10 w-full relative">
+      {/* Mobile sidebar overlay */}
+      {sidebarOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-black/60 backdrop-blur-sm lg:hidden"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
+      {/* Left Sidebar: Navigation */}
+      <div
+        className={`fixed inset-y-0 left-0 z-40 w-72 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:block shrink-0 lg:sticky lg:top-2 ${
+          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div
+          className={`h-full lg:h-auto overflow-y-auto lg:overflow-visible p-4 lg:p-0 ${
+            isDark ? 'bg-dark-surface lg:bg-transparent' : 'bg-warm-paper lg:bg-transparent'
+          }`}
+        >
+          <button
+            onClick={() => setSidebarOpen(false)}
+            className={`lg:hidden absolute top-6 right-6 p-2 rounded-full ${
+              isDark ? 'bg-white/10 text-white' : 'bg-white/60 text-ink'
+            }`}
+          >
+            <X className="w-4 h-4" />
+          </button>
+
+          <div
+            className={`rounded-2xl p-5 border ${isDark ? 'glass-panel-dark' : 'glass-panel-light'}`}
+          >
+            <div className="flex items-center gap-2.5 mb-4">
+              <BookOpen className={`w-4 h-4 ${isDark ? 'text-cyan/80' : 'text-meridian'}`} />
+              <h3
+                className={`text-[10px] font-bold tracking-[0.2em] uppercase ${
+                  isDark ? 'text-text-bright' : 'text-ink'
+                }`}
+              >
+                {currentTab?.tab || 'Codex'} Index
+              </h3>
+            </div>
+
+            <div className="space-y-1">
+              {(currentTab || navigation[0]).groups.map((group) => (
+                <SidebarGroup key={group.group} group={group} basePath={basePath} activeSlug={page.slug} onNavigate={() => setSidebarOpen(false)} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Center: Main Content */}
+      <div
+        className={`flex-1 rounded-2xl p-6 md:p-8 lg:p-14 w-full max-w-full overflow-hidden ${
+          isDark ? 'glass-reading-dark' : 'glass-reading-light'
+        }`}
+      >
+        <div className="max-w-3xl mx-auto">
+          {/* Breadcrumbs */}
+          <div
+            className={`flex items-center gap-2.5 text-[10px] font-bold tracking-[0.2em] uppercase flex-wrap mb-8 ${
+              isDark ? 'text-cyan' : 'text-meridian'
+            }`}
+          >
+            <button
+              className="lg:hidden p-1.5 rounded bg-black/20 hover:bg-black/40 transition-colors"
+              onClick={() => setSidebarOpen(true)}
+            >
+              <Menu className="w-3.5 h-3.5" />
+            </button>
+            <Link href={basePath} className="hover:opacity-80">{basePath === '/toolkit' ? 'Toolkit' : 'Codex'}</Link>
+            <ChevronRight className="w-3.5 h-3.5" />
+            {currentTab && currentTab.tab !== 'Codex' && currentTab.tab !== 'Toolkit' && (
+              <>
+                <span>{currentTab.tab}</span>
+                <ChevronRight className="w-3.5 h-3.5" />
+              </>
+            )}
+            <span className={isDark ? 'text-text-muted' : 'text-text-muted'}>{page.title}</span>
+          </div>
+
+          {/* Page Title */}
+          <h1
+            className={`text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6 ${
+              isDark ? 'text-text-bright' : 'text-ink'
+            }`}
+          >
+            {page.title}
+          </h1>
+
+          {page.description && (
+            <p className={`text-lg font-medium leading-relaxed mb-10 ${isDark ? 'text-text-dark' : 'text-text-light'}`}>
+              {page.description}
+            </p>
+          )}
+
+          <hr className={`mb-10 border-t ${isDark ? 'border-white/10' : 'border-border-light'}`} />
+
+          {/* MDX Content */}
+          <div className={`mdx-content ${isDark ? 'text-text-dark' : 'text-text-light'}`}>
+            <MDXRemote source={page.content} components={mdxComponents} />
+          </div>
+
+          {/* Bottom decoration */}
+          <div className="mt-16 flex items-center justify-center pt-8 border-t border-dashed border-white/10">
+            <ApertureIcon className="w-10 h-10 text-text-muted" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
