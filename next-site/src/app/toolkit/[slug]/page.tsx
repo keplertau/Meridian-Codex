@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPageBySlug, getNavigation, getToolkitTools } from '@/lib/content';
+import { getPageBySlug, getNavigation, getToolkitTools, getPageTitles } from '@/lib/content';
 import DocReader from '@/components/DocReader';
 import DisciplineLanding from '@/components/DisciplineLanding';
 
@@ -81,6 +81,7 @@ export default async function ToolkitPage({ params }: Props) {
   if (!page) notFound();
 
   const nav = getNavigation();
+  const pageTitles = getPageTitles();
 
-  return <DocReader page={page} navigation={nav} basePath="/toolkit" />;
+  return <DocReader page={page} navigation={nav} basePath="/toolkit" pageTitles={pageTitles} />;
 }

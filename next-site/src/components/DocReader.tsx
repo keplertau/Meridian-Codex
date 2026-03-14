@@ -2,24 +2,47 @@
 
 import { useTheme } from '@/lib/theme';
 import Link from 'next/link';
-import { BookOpen, ChevronRight, ChevronDown, Menu, X, ArrowRight, FolderTree } from 'lucide-react';
-import { useState } from 'react';
+import { BookOpen, ChevronRight, ChevronDown, Menu, X, ArrowRight, FolderTree, List } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import ApertureIcon from './ApertureIcon';
 import type { PageContent, NavTab, NavGroup } from '@/lib/content';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 
-// Custom MDX components that map Mintlify's custom elements
+// Custom MDX components — add IDs to headings for TOC linking
 const mdxComponents = {
-  // Map Mintlify's custom div classNames to styled elements
-  // The MDX content uses <div className="flow-label"> etc.
-  // These are handled by CSS in globals.css under .mdx-content
+  h2: (props: React.ComponentPropsWithoutRef<'h2'>) => {
+    const text = typeof props.children === 'string' ? props.children : String(props.children);
+    const id = text.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
+    return <h2 id={id} {...props} />;
+  },
+  h3: (props: React.ComponentPropsWithoutRef<'h3'>) => {
+    const text = typeof props.children === 'string' ? props.children : String(props.children);
+    const id = text.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
+    return <h3 id={id} {...props} />;
+  },
 };
 
-/** Convert a slug like "the-foundation" to "The Foundation" */
+/** Fallback: convert a slug like "the-foundation" to "The Foundation" */
 function titleCase(slug: string): string {
   return slug
     .replace(/-/g, ' ')
     .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+/** Extract headings (h2, h3) from raw MDX content for table of contents */
+function extractHeadings(content: string): { id: string; text: string; level: number }[] {
+  const headings: { id: string; text: string; level: number }[] = [];
+  const regex = /^(#{2,3})\s+(.+)$/gm;
+  let match;
+  while ((match = regex.exec(content)) !== null) {
+    const text = match[2].replace(/[*_`]/g, '').trim();
+    const id = text
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-');
+    headings.push({ id, text, level: match[1].length });
+  }
+  return headings;
 }
 
 // ─── SidebarGroup — collapsible nav group matching dashboard TreeItem ───
@@ -28,11 +51,13 @@ function SidebarGroup({
   basePath,
   activeSlug,
   onNavigate,
+  pageTitles,
 }: {
   group: NavGroup;
   basePath: string;
   activeSlug: string;
   onNavigate: () => void;
+  pageTitles: Record<string, string>;
 }) {
   const { isDark } = useTheme();
   const accent = isDark ? 'text-cyan' : 'text-meridian';
@@ -77,7 +102,7 @@ function SidebarGroup({
                     ? accent
                     : isDark ? 'text-white/20 group-hover:text-cyan' : 'text-black/15 group-hover:text-meridian'
                 }`} />
-                {titleCase(slug)}
+                {pageTitles[slug] || titleCase(slug)}
               </Link>
             );
           })}
@@ -91,16 +116,41 @@ interface DocReaderProps {
   page: PageContent;
   navigation: NavTab[];
   basePath?: string; // '/codex' or '/toolkit'
+  pageTitles?: Record<string, string>;
 }
 
-export default function DocReader({ page, navigation, basePath = '/codex' }: DocReaderProps) {
+export default function DocReader({ page, navigation, basePath = '/codex', pageTitles = {} }: DocReaderProps) {
   const { isDark } = useTheme();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [activeHeading, setActiveHeading] = useState('');
 
   // Find which tab this page belongs to
   const currentTab = navigation.find((tab) =>
     tab.groups.some((group) => group.pages.includes(page.slug))
   );
+
+  // Extract headings from MDX content for TOC
+  const headings = extractHeadings(page.content);
+
+  // Track active heading via IntersectionObserver
+  useEffect(() => {
+    if (headings.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveHeading(entry.target.id);
+          }
+        }
+      },
+      { rootMargin: '-80px 0px -70% 0px', threshold: 0 }
+    );
+    for (const h of headings) {
+      const el = document.getElementById(h.id);
+      if (el) observer.observe(el);
+    }
+    return () => observer.disconnect();
+  }, [page.slug]);
 
   return (
     <div className="max-w-[1700px] mx-auto flex items-start gap-8 pb-10 w-full relative">
@@ -148,7 +198,7 @@ export default function DocReader({ page, navigation, basePath = '/codex' }: Doc
 
             <div className="space-y-1">
               {(currentTab || navigation[0]).groups.map((group) => (
-                <SidebarGroup key={group.group} group={group} basePath={basePath} activeSlug={page.slug} onNavigate={() => setSidebarOpen(false)} />
+                <SidebarGroup key={group.group} group={group} basePath={basePath} activeSlug={page.slug} onNavigate={() => setSidebarOpen(false)} pageTitles={pageTitles} />
               ))}
             </div>
           </div>
@@ -157,7 +207,7 @@ export default function DocReader({ page, navigation, basePath = '/codex' }: Doc
 
       {/* Center: Main Content */}
       <div
-        className={`flex-1 rounded-2xl p-6 md:p-8 lg:p-14 w-full max-w-full overflow-hidden ${
+        className={`flex-1 min-w-0 rounded-2xl p-6 md:p-8 lg:p-14 w-full max-w-full overflow-hidden ${
           isDark ? 'glass-reading-dark' : 'glass-reading-light'
         }`}
       >
@@ -213,6 +263,45 @@ export default function DocReader({ page, navigation, basePath = '/codex' }: Doc
           </div>
         </div>
       </div>
+
+      {/* Right Panel: Table of Contents (hidden below xl) */}
+      {headings.length > 0 && (
+        <div className="hidden xl:block w-56 shrink-0 sticky top-2">
+          <div className={`rounded-2xl p-5 border ${isDark ? 'glass-panel-dark' : 'glass-panel-light'}`}>
+            <div className="flex items-center gap-2.5 mb-4">
+              <List className={`w-4 h-4 ${isDark ? 'text-cyan/80' : 'text-meridian'}`} />
+              <h3
+                className={`text-[10px] font-bold tracking-[0.2em] uppercase ${
+                  isDark ? 'text-text-bright' : 'text-ink'
+                }`}
+              >
+                On This Page
+              </h3>
+            </div>
+            <nav className="space-y-0.5">
+              {headings.map((h) => (
+                <a
+                  key={h.id}
+                  href={`#${h.id}`}
+                  className={`block text-[13px] leading-snug py-1.5 transition-all ${
+                    h.level === 3 ? 'pl-4' : 'pl-0'
+                  } ${
+                    activeHeading === h.id
+                      ? isDark
+                        ? 'text-cyan font-bold'
+                        : 'text-meridian-dark font-bold'
+                      : isDark
+                      ? 'text-text-muted hover:text-cyan'
+                      : 'text-text-subtle hover:text-meridian'
+                  }`}
+                >
+                  {h.text}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

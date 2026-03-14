@@ -161,6 +161,23 @@ export function getExploreData(): ExploreSection[] {
   }));
 }
 
+/**
+ * Build a slug → title map from all pages in the navigation
+ */
+export function getPageTitles(): Record<string, string> {
+  const nav = getNavigation();
+  const titles: Record<string, string> = {};
+  for (const tab of nav) {
+    for (const group of tab.groups) {
+      for (const slug of group.pages) {
+        const page = getPageBySlug(slug);
+        if (page) titles[slug] = page.title;
+      }
+    }
+  }
+  return titles;
+}
+
 export function getNavigation(): NavTab[] {
   return [
     {

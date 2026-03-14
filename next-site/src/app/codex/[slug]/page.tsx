@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPageBySlug, getAllPageSlugs, getNavigation } from '@/lib/content';
+import { getPageBySlug, getAllPageSlugs, getNavigation, getPageTitles } from '@/lib/content';
 import DocReader from '@/components/DocReader';
 import EvolutionLog from '@/components/EvolutionLog';
 
@@ -43,6 +43,7 @@ export default async function CodexPage({ params }: Props) {
   if (!page) notFound();
 
   const nav = getNavigation();
+  const pageTitles = getPageTitles();
 
-  return <DocReader page={page} navigation={nav} />;
+  return <DocReader page={page} navigation={nav} pageTitles={pageTitles} />;
 }
