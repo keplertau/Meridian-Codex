@@ -88,7 +88,7 @@ You are free to share, adapt, and build upon this work for any purpose, provided
 
 ## Contributing
 
-Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to participate in the evolution of the Codex.
+The Codex evolves through careful integration, not open discussion. If you have a specific, substantive proposal (a clearer formulation, a stronger tool, a corrected error), see [CONTRIBUTING.md](CONTRIBUTING.md) for how to participate. General commentary, philosophical debate, and feature requests belong elsewhere.
 
 ---
 
