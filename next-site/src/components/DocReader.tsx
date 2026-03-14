@@ -129,7 +129,7 @@ export default function DocReader({ page, navigation, basePath = '/codex', pageT
           }
         }
       },
-      { rootMargin: '-80px 0px -70% 0px', threshold: 0 }
+      { rootMargin: '-100px 0px -70% 0px', threshold: 0 }
     );
     for (const h of headings) {
       const el = document.getElementById(h.id);
@@ -150,12 +150,12 @@ export default function DocReader({ page, navigation, basePath = '/codex', pageT
 
       {/* Left Sidebar: Navigation */}
       <div
-        className={`fixed inset-y-0 left-0 z-40 w-72 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:block shrink-0 lg:sticky lg:top-2 ${
+        className={`fixed inset-y-0 left-0 z-40 w-72 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:block shrink-0 lg:sticky lg:top-[84px] ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
         <div
-          className={`h-full lg:h-auto overflow-y-auto lg:overflow-visible p-4 lg:p-0 ${
+          className={`h-full lg:h-auto lg:max-h-[calc(100vh-100px)] overflow-y-auto p-4 lg:p-0 ${
             isDark ? 'bg-dark-surface lg:bg-transparent' : 'bg-warm-paper lg:bg-transparent'
           }`}
         >
@@ -252,7 +252,7 @@ export default function DocReader({ page, navigation, basePath = '/codex', pageT
 
       {/* Right Panel: Table of Contents (hidden below xl) */}
       {headings.length > 0 && (
-        <div className="hidden xl:block w-56 shrink-0 sticky top-2">
+        <div className="hidden xl:block w-56 shrink-0 sticky top-[84px]">
           <div className={`rounded-2xl p-5 border ${isDark ? 'glass-panel-dark' : 'glass-panel-light'}`}>
             <div className="flex items-center gap-2.5 mb-4">
               <List className={`w-4 h-4 ${isDark ? 'text-cyan/80' : 'text-meridian'}`} />
