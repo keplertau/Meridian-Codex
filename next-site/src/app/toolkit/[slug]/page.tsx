@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { getPageBySlug, getNavigation, getToolkitTools, getPageTitles } from '@/lib/content';
 import DocReader from '@/components/DocReader';
 import DisciplineLanding from '@/components/DisciplineLanding';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { mdxHeadingComponents } from '@/lib/mdx-components';
 
 // Toolkit deep-dive pages are the same MDX content pages,
 // but routed under /toolkit/ instead of /codex/
@@ -83,5 +85,9 @@ export default async function ToolkitPage({ params }: Props) {
   const nav = getNavigation();
   const pageTitles = getPageTitles();
 
-  return <DocReader page={page} navigation={nav} basePath="/toolkit" pageTitles={pageTitles} />;
+  return (
+    <DocReader page={page} navigation={nav} basePath="/toolkit" pageTitles={pageTitles}>
+      <MDXRemote source={page.content} components={mdxHeadingComponents} />
+    </DocReader>
+  );
 }

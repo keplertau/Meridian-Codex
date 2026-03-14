@@ -6,21 +6,6 @@ import { BookOpen, ChevronRight, ChevronDown, Menu, X, ArrowRight, FolderTree, L
 import { useState, useEffect } from 'react';
 import ApertureIcon from './ApertureIcon';
 import type { PageContent, NavTab, NavGroup } from '@/lib/content';
-import { MDXRemote } from 'next-mdx-remote/rsc';
-
-// Custom MDX components — add IDs to headings for TOC linking
-const mdxComponents = {
-  h2: (props: React.ComponentPropsWithoutRef<'h2'>) => {
-    const text = typeof props.children === 'string' ? props.children : String(props.children);
-    const id = text.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
-    return <h2 id={id} {...props} />;
-  },
-  h3: (props: React.ComponentPropsWithoutRef<'h3'>) => {
-    const text = typeof props.children === 'string' ? props.children : String(props.children);
-    const id = text.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
-    return <h3 id={id} {...props} />;
-  },
-};
 
 /** Fallback: convert a slug like "the-foundation" to "The Foundation" */
 function titleCase(slug: string): string {
@@ -117,9 +102,10 @@ interface DocReaderProps {
   navigation: NavTab[];
   basePath?: string; // '/codex' or '/toolkit'
   pageTitles?: Record<string, string>;
+  children: React.ReactNode; // Pre-rendered MDX content from server component
 }
 
-export default function DocReader({ page, navigation, basePath = '/codex', pageTitles = {} }: DocReaderProps) {
+export default function DocReader({ page, navigation, basePath = '/codex', pageTitles = {}, children }: DocReaderProps) {
   const { isDark } = useTheme();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeHeading, setActiveHeading] = useState('');
@@ -254,7 +240,7 @@ export default function DocReader({ page, navigation, basePath = '/codex', pageT
 
           {/* MDX Content */}
           <div className={`mdx-content ${isDark ? 'text-text-dark' : 'text-text-light'}`}>
-            <MDXRemote source={page.content} components={mdxComponents} />
+            {children}
           </div>
 
           {/* Bottom decoration */}

@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { getPageBySlug, getAllPageSlugs, getNavigation, getPageTitles } from '@/lib/content';
 import DocReader from '@/components/DocReader';
 import EvolutionLog from '@/components/EvolutionLog';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { mdxHeadingComponents } from '@/lib/mdx-components';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -45,5 +47,9 @@ export default async function CodexPage({ params }: Props) {
   const nav = getNavigation();
   const pageTitles = getPageTitles();
 
-  return <DocReader page={page} navigation={nav} pageTitles={pageTitles} />;
+  return (
+    <DocReader page={page} navigation={nav} pageTitles={pageTitles}>
+      <MDXRemote source={page.content} components={mdxHeadingComponents} />
+    </DocReader>
+  );
 }
