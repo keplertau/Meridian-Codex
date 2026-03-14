@@ -17,7 +17,7 @@ export default function BackgroundSystem() {
         className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
         style={{
           backgroundImage: isDark
-            ? "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2500')"
+            ? "url('/cosmic-dark.png')"
             : "url('/rolling-hills-light.jpg')",
         }}
       />

@@ -402,3 +402,177 @@ body {
   background: rgba(138, 138, 138, 0.15);
   border: 1px solid rgba(138, 138, 138, 0.2);
 }
+
+/* ─── Discipline navigation cards (the-toolkit.mdx) ─── */
+.mdx-content .discipline-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .mdx-content .discipline-nav {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mdx-content .discipline-card {
+  display: block;
+  padding: 20px;
+  border-radius: 14px;
+  text-decoration: none !important;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.mdx-content .discipline-card:hover {
+  transform: translateY(-2px);
+}
+
+.light .mdx-content .discipline-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--color-border-light);
+}
+
+.light .mdx-content .discipline-card:hover {
+  border-color: var(--color-meridian);
+}
+
+.dark .mdx-content .discipline-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dark .mdx-content .discipline-card:hover {
+  border-color: var(--color-cyan);
+}
+
+.mdx-content .discipline-card-icon {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.mdx-content .discipline-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.light .mdx-content .discipline-card-title { color: var(--color-ink); }
+.dark .mdx-content .discipline-card-title { color: var(--color-text-bright); }
+
+.mdx-content .discipline-card-desc {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.light .mdx-content .discipline-card-desc { color: var(--color-text-subtle); }
+.dark .mdx-content .discipline-card-desc { color: var(--color-text-muted); }
+
+.mdx-content .discipline-card-count {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.light .mdx-content .discipline-card-count { color: var(--color-meridian); }
+.dark .mdx-content .discipline-card-count { color: var(--color-cyan); }
+
+/* ─── Progression track (the-toolkit.mdx) ─── */
+.mdx-content .progression-track {
+  margin: 1.5rem 0;
+  padding-left: 0;
+}
+
+.mdx-content .progression-stage {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.mdx-content .progression-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+  min-width: 20px;
+}
+
+.mdx-content .progression-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.mdx-content .progression-dot.onramp { background: var(--color-meridian); }
+.dark .mdx-content .progression-dot.onramp { background: var(--color-cyan); }
+.mdx-content .progression-dot.expansion { background: #5BA8E0; }
+.mdx-content .progression-dot.full { background: var(--color-earth); }
+
+.mdx-content .progression-line {
+  width: 2px;
+  flex: 1;
+  min-height: 30px;
+  margin: 4px 0;
+}
+
+.light .mdx-content .progression-line { background: var(--color-border-light); }
+.dark .mdx-content .progression-line { background: rgba(255, 255, 255, 0.08); }
+
+.mdx-content .progression-content {
+  padding-bottom: 28px;
+  flex: 1;
+}
+
+.mdx-content .progression-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.light .mdx-content .progression-title { color: var(--color-ink); }
+.dark .mdx-content .progression-title { color: var(--color-text-bright); }
+
+.mdx-content .progression-subtitle {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.light .mdx-content .progression-subtitle { color: var(--color-text-subtle); }
+.dark .mdx-content .progression-subtitle { color: var(--color-text-muted); }
+
+.mdx-content .progression-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mdx-content .progression-tool-pill {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  letter-spacing: 0.02em;
+}
+
+.light .mdx-content .progression-tool-pill {
+  background: rgba(62, 207, 107, 0.08);
+  color: var(--color-text-light);
+  border: 1px solid rgba(62, 207, 107, 0.15);
+}
+
+.dark .mdx-content .progression-tool-pill {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
