@@ -10,17 +10,19 @@ Contributions are evaluated on merit, not on the identity or reputation of the c
 
 ## Ways to Contribute
 
-### Report Issues
+### Report Errors
 
-If you find errors, unclear formulations, broken links, or inconsistencies, open an issue. Be specific about what you found and where.
+If you find factual errors, broken links, or internal inconsistencies, open an issue. Be specific about what you found and where.
 
 ### Suggest Improvements
 
-If you believe a section could be clearer, a tool better explained, or a concept more precisely formulated, open an issue describing:
+If you believe a section could be clearer, a tool better explained, or a concept more precisely formulated, open an issue. Every suggestion must include:
 
 - **What** you think should change
 - **Why** the change serves the Codex's purpose
-- **How** you would formulate it (if you have a specific suggestion)
+- **How** you would formulate it (a specific proposed rewording, not just "this could be better")
+
+Issues that lack specificity or propose changes without justification will be closed.
 
 ### Propose New Tools or Concepts
 
@@ -72,10 +74,16 @@ Contributors are expected to practice what the Codex teaches: honest inquiry, go
 
 Disagreement is welcome. Bad faith is not.
 
+## What This Repository Is Not
+
+This repository is the source text of a living framework. It is not a discussion forum, a debate platform, or a place to argue the merits of the Codex's approach. GitHub Issues are for specific, actionable proposals. If you want to discuss the ideas in the Codex, do so on your own platform and link back per the license.
+
+GitHub Discussions are disabled on this repository by design.
+
 ## Questions
 
-If you're unsure whether a contribution would be welcome, open an issue to discuss it first. The goal is to make contributing straightforward, not to create barriers.
+If you're unsure whether a specific contribution would be welcome, open an issue describing the proposed change. Include enough detail for the caretakers to evaluate it.
 
 ---
 
-*The Codex teaches that tools must be evaluated and replaced when something more effective emerges. This applies to the Codex itself. Your contribution is part of that process.*
+*The Codex teaches that tools must be evaluated and replaced when something more effective emerges. This applies to the Codex itself. Substantive contributions are part of that process.*
