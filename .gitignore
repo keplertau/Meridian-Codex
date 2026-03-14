@@ -2,22 +2,24 @@
 #  WHAT GOES TO GITHUB (tracked)
 # ============================================
 #
-#  site/docs.json          — Mintlify config
-#  site/style.css          — Elements design system
-#  site/.mintignore         — Mintlify ignore rules
-#  site/pages/*.mdx        — All Codex content pages
-#  site/images/            — Mintlify logos, favicon
+#  codex/*.mdx             — The Meridian Codex (core framework)
+#  toolkit/*.mdx           — Toolkit deep dives
+#  ai-standard/*.mdx       — The Meridian AI Standard
 #  README.md               — Repo readme
 #  CONTRIBUTING.md          — Contribution guide
-#  LICENSE                 — License
+#  LICENSE                 — License (CC BY 4.0 + MIT)
 #  .gitignore              — This file
 #
 
 # ============================================
-#  LOCAL-ONLY FOLDERS (not pushed to GitHub)
+#  EVERYTHING BELOW IS LOCAL-ONLY
 # ============================================
 
-# Project context for AI agents (internal, not the Codex)
+# Website source (deployed separately, not part of the open-source content)
+next-site/
+site/
+
+# Project context for AI agents
 CLAUDE.md
 
 # Brand assets, guidelines, design files
@@ -33,17 +35,8 @@ meridian-codex.plugin
 # Working docs, roadmap, decisions, prompts
 _workspace/
 
-# CI/CD workflows (infrastructure, not the text)
+# CI/CD workflows
 .github/
-
-# Mintlify infrastructure (not Codex content)
-site/snippets/
-site/api-reference/
-site/logo/
-
-# ============================================
-#  SYSTEM / EDITOR FILES
-# ============================================
 
 # macOS
 .DS_Store
@@ -56,5 +49,5 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node (if running mintlify dev locally)
+# Node
 node_modules/
