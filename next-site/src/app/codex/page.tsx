@@ -150,7 +150,7 @@ function WidgetPanel({
 
   return (
     <div className={`rounded-2xl overflow-hidden flex flex-col ${panelStyle} ${className}`}>
-      <div className="p-5 pb-3 flex items-center justify-between shrink-0">
+      <div className={`p-5 pb-3 flex items-center justify-between shrink-0 border-b ${isDark ? 'border-white/10' : 'border-border-light'}`}>
         <div className="flex items-center gap-2">
           <Icon className={`w-4 h-4 ${accent}`} />
           <span className={`text-[11px] font-bold tracking-[0.2em] uppercase ${isDark ? 'text-text-bright' : 'text-ink'}`}>
@@ -159,7 +159,7 @@ function WidgetPanel({
         </div>
         {headerAction}
       </div>
-      <div className={`flex-1 ${noScroll ? '' : 'overflow-y-auto'} px-5 pb-4`}>
+      <div className={`flex-1 ${noScroll ? '' : 'overflow-y-auto'} px-5 pb-4 pt-3`}>
         {children}
       </div>
       {footerAction && (
@@ -323,16 +323,15 @@ export default function CodexDashboard() {
             <div className="flex items-center gap-2 mb-3">
               <BrainCircuit className="w-4 h-4 text-text-muted" />
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">
-                System Status
+                Command Centre
               </span>
             </div>
-            <h2 className={`text-2xl md:text-3xl font-extrabold mb-3 tracking-tight leading-tight ${isDark ? 'text-text-bright' : 'text-ink'}`}>
+            <h2 className={`text-2xl md:text-3xl font-extrabold mb-1 tracking-tight leading-tight ${isDark ? 'text-text-bright' : 'text-ink'}`}>
               The Meridian Codex
-              <br className="hidden md:block" />
-              <span className={`font-semibold text-xl md:text-2xl ${accent}`}>
-                The Soul Document for Humanity and AI
-              </span>
             </h2>
+            <p className={`font-semibold text-xl md:text-2xl mb-5 ${accent}`}>
+              The Soul Document for Humanity and AI
+            </p>
             <p className={`text-[13px] font-mono max-w-3xl leading-relaxed mb-8 ${isDark ? 'text-text-dark' : 'text-text-subtle'}`}>
               <span className={`px-1.5 py-0.5 rounded border mr-2 text-[11px] ${isDark ? 'bg-cyan/10 border-cyan/30 text-cyan' : 'bg-[#E8F8EE]/60 border-meridian/30 text-meridian-dark'}`}>
                 AUTO-BRIEF
@@ -368,7 +367,7 @@ export default function CodexDashboard() {
       {/* TOPOLOGY WIDGET — 4 cols, 2 rows — Animated Canvas Version */}
       <div className="col-span-12 lg:col-span-4 row-span-2 min-h-[320px]">
         <div className={`h-full rounded-2xl overflow-hidden ${panelStyle}`}>
-          <div className="p-5 pb-3 flex items-center justify-between">
+          <div className={`p-5 pb-3 flex items-center justify-between border-b ${isDark ? 'border-white/10' : 'border-border-light'}`}>
             <div className="flex items-center gap-2">
               <Share2 className={`w-4 h-4 ${accent}`} />
               <span className={`text-[10px] font-bold tracking-[0.2em] uppercase ${isDark ? 'text-text-bright' : 'text-ink'}`}>
@@ -624,7 +623,7 @@ export default function CodexDashboard() {
       {/* ═══ ROW 7: TOOLKIT WIDGET (full width) ═══ */}
       <div className="col-span-12">
         <div className={`rounded-2xl p-6 md:p-8 ${panelStyle}`}>
-          <div className="flex items-center justify-between mb-6">
+          <div className={`flex items-center justify-between mb-6 pb-3 border-b ${isDark ? 'border-white/10' : 'border-border-light'}`}>
             <div className="flex items-center gap-2">
               <Wrench className={`w-4 h-4 ${accent}`} />
               <span className={`text-[10px] font-bold tracking-[0.2em] uppercase ${isDark ? 'text-text-bright' : 'text-ink'}`}>

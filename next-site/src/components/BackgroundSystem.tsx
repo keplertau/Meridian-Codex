@@ -18,7 +18,7 @@ export default function BackgroundSystem() {
         style={{
           backgroundImage: isDark
             ? "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2500')"
-            : "url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2500')",
+            : "url('/rolling-hills-light.jpg')",
         }}
       />
 

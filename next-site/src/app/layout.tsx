@@ -64,6 +64,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
+        {/* Mobile browser chrome color adaptation */}
+        <meta name="theme-color" content="#0D0F12" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#F9F8F5" media="(prefers-color-scheme: light)" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
           rel="stylesheet"
