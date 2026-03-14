@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPageBySlug, getNavigation, getToolkitTools, getPageTitles } from '@/lib/content';
+import { getPageBySlug, getNavigation, getToolkitToolsByDiscipline, getPageTitles } from '@/lib/content';
 import DocReader from '@/components/DocReader';
 import DisciplineLanding from '@/components/DisciplineLanding';
 import { MDXRemote } from 'next-mdx-remote/rsc';
@@ -64,7 +64,7 @@ export default async function ToolkitPage({ params }: Props) {
   // Discipline landing pages
   if (DISCIPLINE_SLUGS.includes(slug)) {
     const meta = DISCIPLINE_META[slug];
-    const tools = getToolkitTools().filter((t) => t.discipline === slug);
+    const tools = getToolkitToolsByDiscipline(slug);
     return (
       <DisciplineLanding
         discipline={slug as 'foundation' | 'knowledge' | 'bond'}
