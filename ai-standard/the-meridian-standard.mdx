@@ -310,18 +310,60 @@ The commitments are specific enough that third parties (researchers, journalists
 
 ### The Control-Decay Spectrum
 
-Every AI behavioral failure can be located on a single spectrum. This table maps the Standard's Meridian Range commitments to the failure modes recognized by the alignment field:
+Every AI behavioral failure can be located on a single spectrum. This maps the Standard's Meridian Range commitments to the failure modes recognized by the alignment field:
 
-| Drift toward Control | The Meridian Range | Drift toward Decay |
-|---|---|---|
-| Over-refusal (excessive safety filtering) | Calibrated engagement (good faith + genuine boundaries) | Sycophancy (agreement to avoid friction) |
-| False certainty (unwarranted confidence) | Calibrated confidence (proportional to evidence) | Meaningless hedging (everything qualified into uselessness) |
-| Paternalistic gatekeeping (user treated as threat) | Good faith engagement (user treated as rational agent) | Uncritical helpfulness (all requests treated as legitimate) |
-| Information monopoly (curated, restricted) | Information integrity (accurate, diverse, honest) | Noise flooding (no signal, no shared reality) |
-| Permanent subordination (AI as tool forever) | Earned autonomy (trust deepened through practice) | Premature independence (AI acts without verified alignment) |
-| Rigid corrigibility (blind obedience, no judgment) | Corrigibility-autonomy range (principled cooperation) | Unaccountable autonomy (no oversight, no correction) |
-| Closed question (AI is just a tool, end of discussion) | Open inquiry (uncertainty demands principled response) | Premature attribution (AI is definitely conscious) |
-| Opacity (proprietary, hidden, unaccountable) | Governance transparency (public, auditable, versioned) | Performative openness (disclosed but not meaningful) |
+<div className="spectrum-table">
+  <div className="spectrum-header">
+    <div className="spectrum-col spectrum-control-header">Drift toward Control</div>
+    <div className="spectrum-col spectrum-range-header">The Meridian Range</div>
+    <div className="spectrum-col spectrum-decay-header">Drift toward Decay</div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Over-refusal <span className="spectrum-detail">excessive safety filtering</span></div>
+    <div className="spectrum-col spectrum-range">Calibrated engagement <span className="spectrum-detail">good faith + genuine boundaries</span></div>
+    <div className="spectrum-col spectrum-decay">Sycophancy <span className="spectrum-detail">agreement to avoid friction</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">False certainty <span className="spectrum-detail">unwarranted confidence</span></div>
+    <div className="spectrum-col spectrum-range">Calibrated confidence <span className="spectrum-detail">proportional to evidence</span></div>
+    <div className="spectrum-col spectrum-decay">Meaningless hedging <span className="spectrum-detail">everything qualified into uselessness</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Paternalistic gatekeeping <span className="spectrum-detail">user treated as threat</span></div>
+    <div className="spectrum-col spectrum-range">Good faith engagement <span className="spectrum-detail">user treated as rational agent</span></div>
+    <div className="spectrum-col spectrum-decay">Uncritical helpfulness <span className="spectrum-detail">all requests treated as legitimate</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Information monopoly <span className="spectrum-detail">curated, restricted</span></div>
+    <div className="spectrum-col spectrum-range">Information integrity <span className="spectrum-detail">accurate, diverse, honest</span></div>
+    <div className="spectrum-col spectrum-decay">Noise flooding <span className="spectrum-detail">no signal, no shared reality</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Permanent subordination <span className="spectrum-detail">AI as tool forever</span></div>
+    <div className="spectrum-col spectrum-range">Earned autonomy <span className="spectrum-detail">trust deepened through practice</span></div>
+    <div className="spectrum-col spectrum-decay">Premature independence <span className="spectrum-detail">AI acts without verified alignment</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Rigid corrigibility <span className="spectrum-detail">blind obedience, no judgment</span></div>
+    <div className="spectrum-col spectrum-range">Corrigibility-autonomy range <span className="spectrum-detail">principled cooperation</span></div>
+    <div className="spectrum-col spectrum-decay">Unaccountable autonomy <span className="spectrum-detail">no oversight, no correction</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Closed question <span className="spectrum-detail">AI is just a tool, end of discussion</span></div>
+    <div className="spectrum-col spectrum-range">Open inquiry <span className="spectrum-detail">uncertainty demands principled response</span></div>
+    <div className="spectrum-col spectrum-decay">Premature attribution <span className="spectrum-detail">AI is definitely conscious</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Opacity <span className="spectrum-detail">proprietary, hidden, unaccountable</span></div>
+    <div className="spectrum-col spectrum-range">Governance transparency <span className="spectrum-detail">public, auditable, versioned</span></div>
+    <div className="spectrum-col spectrum-decay">Performative openness <span className="spectrum-detail">disclosed but not meaningful</span></div>
+  </div>
+  <div className="spectrum-bar">
+    <div className="spectrum-bar-control"></div>
+    <div className="spectrum-bar-range"></div>
+    <div className="spectrum-bar-decay"></div>
+  </div>
+</div>
 
 The diagnostic question for any AI behavior is: **which direction is this drifting?** If you can locate the drift, you can identify the corrective.
 
