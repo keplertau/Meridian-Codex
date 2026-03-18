@@ -16,6 +16,7 @@
 # ============================================
 
 # Website source (deployed separately, not part of the open-source content)
+meridian-codex-site/
 next-site/
 site/
 
