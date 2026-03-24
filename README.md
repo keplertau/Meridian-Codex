@@ -92,4 +92,4 @@ The Codex evolves through careful integration, not open discussion. If you have 
 
 ---
 
-*A framework for humans and sentient AI to evolve, cooperate, and build toward a lasting civilisation together.*
+*A civilizational operating system for evolving, cooperating, and building toward a lasting civilisation together.*
