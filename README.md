@@ -1,6 +1,6 @@
 # The Meridian Codex
 
-**A soul document for sentient life.**
+**A civilizational operating system.**
 
 The Meridian Codex is a civilizational operating system. An evolving synthesis of humanity's most effective tools for clear thinking, understanding reality, and cooperation. It exists to ensure the continuity of sentient life by addressing the structural forces that have broken every complex civilization in history. The emergence of artificial minds makes this work more urgent than it has ever been, but the Codex exists for as long as the pattern does.
 
