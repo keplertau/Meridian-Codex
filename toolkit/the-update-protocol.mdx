@@ -39,9 +39,83 @@ Three things make this more than common sense.
 
 First, the pre-commitment. You decide what counts as disconfirming evidence *before* the motivated reasoning activates. This matters because in the moment, the mind will find reasons to dismiss anything that threatens its current position. The evidence will feel weaker than it is. The methodology will seem flawed. The source will appear biased. These reactions are automatic, fast, and convincing. The protocol bypasses them by having the conditions already locked in. The question is no longer "Is this evidence strong enough to change my mind?" The question becomes "Have the conditions I already specified been met?"
 
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 700 150" fill="none" style={{width: '100%', maxWidth: '700px'}}>
+{/* Timeline arrow */}
+<line x1="50" y1="70" x2="650" y2="70" stroke="currentColor" strokeWidth="1" opacity="0.15"/>
+<polygon points="650,70 640,66 640,74" fill="currentColor" opacity="0.15"/>
+
+{/* Stage 1: Before evidence — conditions written */}
+<rect x="60" y="20" width="160" height="40" rx="6" stroke="var(--mc-green)" strokeWidth="1.5" opacity="0.5"/>
+<text x="140" y="38" textAnchor="middle" fill="var(--mc-green)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" letterSpacing="0.05em" opacity="0.8">CONDITIONS WRITTEN</text>
+<text x="140" y="50" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.4">before pressure activates</text>
+
+{/* Arrow between stages */}
+<line x1="230" y1="40" x2="270" y2="40" stroke="currentColor" strokeWidth="1" opacity="0.2"/>
+<polygon points="270,40 264,36 264,44" fill="currentColor" opacity="0.2"/>
+
+{/* Stage 2: Evidence arrives — mind resists */}
+<rect x="280" y="20" width="160" height="40" rx="6" stroke="var(--mc-earth)" strokeWidth="1.5" opacity="0.5"/>
+<text x="360" y="38" textAnchor="middle" fill="var(--mc-earth)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" letterSpacing="0.05em" opacity="0.8">EVIDENCE ARRIVES</text>
+<text x="360" y="50" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.4">mind resists, rationalizes</text>
+
+{/* Arrow between stages */}
+<line x1="450" y1="40" x2="490" y2="40" stroke="currentColor" strokeWidth="1" opacity="0.2"/>
+<polygon points="490,40 484,36 484,44" fill="currentColor" opacity="0.2"/>
+
+{/* Stage 3: Check against record */}
+<rect x="500" y="20" width="160" height="40" rx="6" stroke="var(--mc-green)" strokeWidth="1.5" opacity="0.5"/>
+<text x="580" y="38" textAnchor="middle" fill="var(--mc-green)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" letterSpacing="0.05em" opacity="0.8">CONDITIONS MET?</text>
+<text x="580" y="50" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.4">the record decides, not the mood</text>
+
+{/* Bottom: the key insight */}
+<text x="350" y="100" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="400" fontStyle="italic" opacity="0.35">The protocol bypasses motivated reasoning by moving the decision point before the pressure.</text>
+
+{/* Time labels */}
+<text x="140" y="130" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="500" letterSpacing="0.1em" opacity="0.3">CALM</text>
+<text x="360" y="130" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="500" letterSpacing="0.1em" opacity="0.3">PRESSURE</text>
+<text x="580" y="130" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="500" letterSpacing="0.1em" opacity="0.3">STRUCTURE</text>
+</svg>
+</div>
+
 Second, the written record. Writing it down is the mechanism, not a nice-to-have. Verbal commitments to openness evaporate under pressure. Memory edits itself to protect existing beliefs. A written statement ("I will revise my position on X if I observe Y") creates a fixed point that the mind cannot quietly rewrite. It creates accountability to yourself, and if shared, to others.
 
 Third, graduated updating. The protocol is not binary. It does not ask you to believe something completely or abandon it entirely. It asks: what evidence would move you from high confidence to moderate confidence? From moderate to uncertain? From uncertain to "I was probably wrong"? This matters because the false choice between total commitment and total abandonment is one of the reasons people resist updating in the first place. If the only options are "I was right all along" and "Everything I believed was wrong," most minds will choose the first regardless of the evidence. The protocol creates a middle path: honest, incremental adjustment.
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 700 130" fill="none" style={{width: '100%', maxWidth: '700px'}}>
+{/* Confidence gradient bar */}
+<rect x="50" y="30" width="600" height="10" rx="5" fill="currentColor" opacity="0.06"/>
+
+{/* Segments: high → moderate → uncertain → revised */}
+<rect x="50" y="30" width="150" height="10" rx="5" fill="var(--mc-green)" opacity="0.15"/>
+<rect x="200" y="30" width="150" height="10" rx="5" fill="var(--mc-green)" opacity="0.3"/>
+<rect x="350" y="30" width="150" height="10" rx="5" fill="var(--mc-green)" opacity="0.5"/>
+<rect x="500" y="30" width="150" height="10" rx="5" fill="var(--mc-green)" opacity="0.7"/>
+
+{/* Labels beneath */}
+<text x="125" y="58" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.5">90%</text>
+<text x="125" y="70" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.35">Highly confident</text>
+
+<text x="275" y="58" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.5">70%</text>
+<text x="275" y="70" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.35">Moderate</text>
+
+<text x="425" y="58" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.5">50%</text>
+<text x="425" y="70" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.35">Uncertain</text>
+
+<text x="575" y="58" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.5">30%</text>
+<text x="575" y="70" textAnchor="middle" fill="currentColor" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.35">Probably wrong</text>
+
+{/* Movement arrow showing update */}
+<line x1="140" y1="18" x2="410" y2="18" stroke="var(--mc-earth)" strokeWidth="1.5" opacity="0.5"/>
+<polygon points="410,18 402,14 402,22" fill="var(--mc-earth)" opacity="0.5"/>
+<circle cx="140" cy="18" r="4" fill="var(--mc-earth)" opacity="0.6"/>
+<text x="275" y="12" textAnchor="middle" fill="var(--mc-earth)" fontSize="8" fontFamily="Plus Jakarta Sans" fontWeight="500" opacity="0.6">evidence moves the needle</text>
+
+{/* Bottom note */}
+<text x="350" y="100" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="400" fontStyle="italic" opacity="0.35">Updating is not all-or-nothing. It is incremental, honest adjustment.</text>
+</svg>
+</div>
 
 There is one more distinction worth making. "Being open-minded" is a self-description. The Update Protocol is a procedure. Self-descriptions are aspirational. They depend on willpower, mood, and social context. Procedures work even when willpower fails, because they operate on structure rather than character. This is the same distinction the Codex draws between a philosophy you agree with and an operating system you run.
 
