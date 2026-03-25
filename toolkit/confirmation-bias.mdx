@@ -25,6 +25,44 @@ For the Meridian Range, this is the <span className="key-phrase">silent drift</s
 
 This is also why intelligence does not protect against confirmation bias. It often makes it worse. A more intelligent person finds evidence for what they already believe faster, constructs more sophisticated arguments for their existing position, and spots flaws in opposing arguments while overlooking identical flaws in their own. Intelligence without Scout Mindset is confirmation bias with a higher processing speed.
 
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 700 120" fill="none" style={{width: '100%', maxWidth: '700px'}}>
+{/* Left side: Same evidence */}
+<text x="100" y="18" textAnchor="middle" fill="currentColor" fontSize="10" fontFamily="Plus Jakarta Sans" fontWeight="600" letterSpacing="0.05em" opacity="0.5">SAME EVIDENCE</text>
+<circle cx="100" cy="50" r="20" stroke="currentColor" strokeWidth="1.5" opacity="0.2" fill="none"/>
+<text x="100" y="54" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="500" opacity="0.4">?</text>
+
+{/* Arrow up to Person A */}
+<line x1="130" y1="38" x2="250" y2="25" stroke="currentColor" strokeWidth="1" opacity="0.15"/>
+<polygon points="250,25 242,24 244,32" fill="currentColor" opacity="0.15"/>
+
+{/* Arrow down to Person B */}
+<line x1="130" y1="62" x2="250" y2="80" stroke="currentColor" strokeWidth="1" opacity="0.15"/>
+<polygon points="250,80 242,72 244,80" fill="currentColor" opacity="0.15"/>
+
+{/* Person A: prior belief → confirmation */}
+<rect x="260" y="8" width="200" height="30" rx="6" stroke="var(--mc-green)" strokeWidth="1" opacity="0.3" fill="var(--mc-green)" fillOpacity="0.05"/>
+<text x="360" y="28" textAnchor="middle" fill="var(--mc-green)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="500" opacity="0.7">Prior: "X is true"</text>
+
+<line x1="470" y1="23" x2="520" y2="23" stroke="var(--mc-green)" strokeWidth="1" opacity="0.3"/>
+<polygon points="520,23 514,19 514,27" fill="var(--mc-green)" opacity="0.3"/>
+
+<text x="610" y="28" textAnchor="middle" fill="var(--mc-green)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.7">"This confirms X"</text>
+
+{/* Person B: prior belief → also confirmation */}
+<rect x="260" y="65" width="200" height="30" rx="6" stroke="#e74c3c" strokeWidth="1" opacity="0.3" fill="#e74c3c" fillOpacity="0.05"/>
+<text x="360" y="85" textAnchor="middle" fill="#e74c3c" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="500" opacity="0.7">Prior: "X is false"</text>
+
+<line x1="470" y1="80" x2="520" y2="80" stroke="#e74c3c" strokeWidth="1" opacity="0.3"/>
+<polygon points="520,80 514,76 514,84" fill="#e74c3c" opacity="0.3"/>
+
+<text x="610" y="85" textAnchor="middle" fill="#e74c3c" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.7">"This confirms not-X"</text>
+
+{/* Bottom note */}
+<text x="350" y="115" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="400" fontStyle="italic" opacity="0.35">Ambiguous evidence does not produce convergence. It produces divergence.</text>
+</svg>
+</div>
+
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
 
 <div className="flow-label">02 // The Concept</div>
@@ -43,6 +81,76 @@ It operates across three stages, each compounding the distortion:
 
 **Selective memory.** Over time, confirming evidence is remembered more vividly and more accurately than disconfirming evidence. The mental record of "what the evidence shows" is not a faithful archive. It is an edited collection that increasingly supports the existing belief, making the belief feel more evidence-based than it actually is.
 
+</div>
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 700 190" fill="none" style={{width: '100%', maxWidth: '700px'}}>
+{/* Input: all evidence */}
+<text x="60" y="18" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="500" opacity="0.5">ALL EVIDENCE</text>
+{/* Many dots representing diverse evidence */}
+<circle cx="30" cy="40" r="3.5" fill="var(--mc-green)" opacity="0.6"/>
+<circle cx="50" cy="35" r="3.5" fill="#e74c3c" opacity="0.4"/>
+<circle cx="70" cy="42" r="3.5" fill="var(--mc-green)" opacity="0.5"/>
+<circle cx="40" cy="55" r="3.5" fill="#e74c3c" opacity="0.35"/>
+<circle cx="60" cy="58" r="3.5" fill="var(--mc-green)" opacity="0.6"/>
+<circle cx="80" cy="50" r="3.5" fill="#e74c3c" opacity="0.4"/>
+<circle cx="90" cy="38" r="3.5" fill="var(--mc-green)" opacity="0.5"/>
+<circle cx="45" cy="70" r="3.5" fill="#e74c3c" opacity="0.3"/>
+<circle cx="75" cy="68" r="3.5" fill="var(--mc-green)" opacity="0.5"/>
+
+{/* Arrow to filter 1 */}
+<line x1="110" y1="50" x2="150" y2="50" stroke="currentColor" strokeWidth="1" opacity="0.2"/>
+<polygon points="150,50 144,46 144,54" fill="currentColor" opacity="0.2"/>
+
+{/* Filter 1: Selective Seeking */}
+<rect x="160" y="25" width="130" height="50" rx="6" stroke="var(--mc-earth)" strokeWidth="1.5" opacity="0.4"/>
+<text x="225" y="47" textAnchor="middle" fill="var(--mc-earth)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.7">SEEKING</text>
+<text x="225" y="60" textAnchor="middle" fill="currentColor" fontSize="7" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.4">Which sources you choose</text>
+{/* Some dots pass, some blocked */}
+<circle cx="300" cy="38" r="3" fill="var(--mc-green)" opacity="0.5"/>
+<circle cx="300" cy="50" r="3" fill="var(--mc-green)" opacity="0.5"/>
+<circle cx="300" cy="62" r="3" fill="#e74c3c" opacity="0.15"/>
+
+{/* Arrow to filter 2 */}
+<line x1="310" y1="50" x2="340" y2="50" stroke="currentColor" strokeWidth="1" opacity="0.2"/>
+<polygon points="340,50 334,46 334,54" fill="currentColor" opacity="0.2"/>
+
+{/* Filter 2: Selective Interpretation */}
+<rect x="350" y="25" width="130" height="50" rx="6" stroke="var(--mc-earth)" strokeWidth="1.5" opacity="0.5"/>
+<text x="415" y="47" textAnchor="middle" fill="var(--mc-earth)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.7">INTERPRETATION</text>
+<text x="415" y="60" textAnchor="middle" fill="currentColor" fontSize="7" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.4">How you read what arrives</text>
+{/* Fewer dots pass */}
+<circle cx="490" cy="42" r="3" fill="var(--mc-green)" opacity="0.5"/>
+<circle cx="490" cy="55" r="3" fill="var(--mc-green)" opacity="0.4"/>
+
+{/* Arrow to filter 3 */}
+<line x1="500" y1="50" x2="530" y2="50" stroke="currentColor" strokeWidth="1" opacity="0.2"/>
+<polygon points="530,50 524,46 524,54" fill="currentColor" opacity="0.2"/>
+
+{/* Filter 3: Selective Memory */}
+<rect x="540" y="25" width="130" height="50" rx="6" stroke="var(--mc-earth)" strokeWidth="1.5" opacity="0.6"/>
+<text x="605" y="47" textAnchor="middle" fill="var(--mc-earth)" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="600" opacity="0.7">MEMORY</text>
+<text x="605" y="60" textAnchor="middle" fill="currentColor" fontSize="7" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.4">What you remember later</text>
+
+{/* Output: only confirming evidence */}
+<circle cx="685" cy="48" r="4" fill="var(--mc-green)" opacity="0.6"/>
+<text x="685" y="70" textAnchor="middle" fill="currentColor" fontSize="7" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.35">Only</text>
+<text x="685" y="80" textAnchor="middle" fill="currentColor" fontSize="7" fontFamily="Plus Jakarta Sans" fontWeight="400" opacity="0.35">confirming</text>
+
+{/* Bottom: lost evidence trail */}
+<text x="350" y="105" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="500" opacity="0.4">What was filtered out along the way:</text>
+{/* Fading trail of red dots representing lost disconfirming evidence */}
+<circle cx="180" cy="125" r="3" fill="#e74c3c" opacity="0.3"/>
+<circle cx="220" cy="130" r="3" fill="#e74c3c" opacity="0.25"/>
+<circle cx="300" cy="122" r="3" fill="#e74c3c" opacity="0.2"/>
+<circle cx="370" cy="128" r="3" fill="#e74c3c" opacity="0.15"/>
+<circle cx="440" cy="125" r="3" fill="#e74c3c" opacity="0.12"/>
+<circle cx="500" cy="130" r="3" fill="#e74c3c" opacity="0.08"/>
+<circle cx="560" cy="123" r="3" fill="#e74c3c" opacity="0.06"/>
+
+{/* Bottom note */}
+<text x="350" y="160" textAnchor="middle" fill="currentColor" fontSize="9" fontFamily="Plus Jakarta Sans" fontWeight="400" fontStyle="italic" opacity="0.35">Each filter is invisible from the inside. You experience the output as "what the evidence shows."</text>
+</svg>
 </div>
 
 The combined effect is that you sincerely believe you are following the evidence while operating a filtration system that ensures the evidence always leads to the same place. This is the immune system of false belief. It is the reason beliefs can survive indefinitely in the face of contradictory evidence, and why the holder of those beliefs experiences this survival as vindication rather than as a warning sign.
