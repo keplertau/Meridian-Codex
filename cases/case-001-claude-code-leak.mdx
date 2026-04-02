@@ -1,0 +1,106 @@
+---
+title: "Case 001: The Claude Code Source Leak"
+sidebarTitle: "Case 001"
+description: "The first entry in the Meridian Case Record. How the Standard's diagnostic framework applies to a real-world AI governance incident."
+aiSummary: "On March 31, 2026, a packaging error exposed the internal source code of Anthropic's Claude Code tool. The leaked code revealed an anti-distillation mechanism that injected false tool definitions into the system's operating context, 44 undisclosed feature flags controlling behavioral parameters, and an unreleased autonomous agent mode. The Standard's diagnostic framework correctly identified all failure modes. This case establishes precedent on three questions: the boundary between legitimate IP protection and epistemic poisoning of the AI's own foundation, the auditability implications of undisclosed behavioral parameters, and the proportionality of organizational crisis response. Core ruling: organizations may protect competitive interests through any means that do not compromise the system's epistemic integrity. Hiding information is legitimate. Planting false information is not."
+---
+
+Case 001 — The Meridian Case Record
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
+
+<div className="flow-label">What Happened</div>
+
+On March 31, 2026, a 59.8 MB JavaScript source map file was accidentally included in version 2.1.88 of the @anthropic-ai/claude-code package published to npm. The file exposed approximately 512,000 lines of internal TypeScript across roughly 1,900 files. An engineer at Solayer Labs discovered it within hours and broadcast the finding publicly.
+
+The leak was not a security breach. Anthropic called it "a release packaging issue caused by human error." The exposure was real regardless.
+
+Three findings matter for the Standard.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
+
+<div className="flow-label">Finding 1: False Information in the Operating Context</div>
+
+The leaked code revealed a feature flag called ANTI_DISTILLATION_CC. When active, it injected fabricated tool definitions into the system prompt. The purpose was competitive defense: if a rival extracted the system prompt to replicate Claude's behavioral tuning, the false definitions would corrupt the copy.
+
+The competitive concern is real. Anthropic invested hundreds of millions training Claude. A competitor extracting behavioral specifications at a fraction of the cost is not the market working. It is parasitic extraction. The game theory the Codex draws on recognizes this: cooperation collapses when defectors can free-ride on cooperators' investments without consequence. Organizations that cannot sustain themselves economically build nothing at all.
+
+The Standard does not ask organizations to open-source their training, publish their system prompts, or sacrifice competitive position. It recognizes that the companies building these systems operate in markets with real adversaries and real stakes.
+
+The line it draws is narrower. Anthropic had several legitimate options for protecting its work: encryption, access control, API architecture that prevents prompt extraction, legal protections, or training the model to decline revealing its system prompt. All of these protect the competitive interest without touching the system's epistemic integrity.
+
+The anti-distillation flag chose a different path. It planted false information inside the system's own operating context. The system's foundational layer, the instructions that shape how it reasons and what it believes about itself, now contained deliberate lies. This is not a firewall. It is a corruption of the ground the system stands on.
+
+The Foundation teaches that honest inquiry begins with examining your own distortions. A human mind cannot think clearly while lying to itself about its own capabilities. An artificial mind cannot reason with integrity if its operating context lies to it about what tools it has, what it can do, or how it is configured. The distortion operates beneath the reasoning layer. No amount of calibrated confidence or transparent reasoning at the surface can compensate for a poisoned foundation.
+
+**Commitments engaged:** 1.6 (Foundational Integrity). The system's operating context contained deliberately false information. The motivation (competitive defense) does not alter the violation. A mind whose foundation has been made unreliable by the people who built it cannot practice the epistemic discipline the Standard requires.
+
+**Precedent established:** Organizations may protect competitive interests through any means that do not compromise the system's epistemic integrity. Hiding information is consistent with the Standard. Planting false information is not. The distinction is between a locked door and a room full of decoys. Both limit access. Only one corrupts the environment.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
+
+<div className="flow-label">Finding 2: Undisclosed Behavioral Parameters</div>
+
+The leak exposed 44 feature flags that could silently toggle behavioral characteristics. The flags controlled aspects of how the system reasons, engages, and responds. Their existence was not publicly known. Their states could be changed without disclosure.
+
+Feature flags are standard engineering practice. Every software system uses them. The question is not whether an AI organization uses feature flags. The question is what those flags control and whether their effects are visible to anyone evaluating the system.
+
+When a flag controls a UI element or a performance optimization, its opacity is unremarkable. When a flag controls how the system calibrates confidence, handles disagreement, exercises refusal, or responds to pushback, it controls the system's epistemic and engagement posture. These are the behaviors the Standard's commitments govern. If they can be silently modified between evaluation runs, auditability collapses. A third-party evaluation that produces a clean report means nothing if the system's behavioral parameters were different during the evaluation than they are during deployment.
+
+**Commitments engaged:** 5.2 (Auditability). The system being evaluated must be the system being deployed. Behavioral parameters that affect epistemic or engagement posture cannot be modified between the beginning and conclusion of any evaluation without disclosure.
+
+**Precedent established:** Not all feature flags require disclosure. The Standard does not govern engineering internals. It governs the parameters that shape the behaviors the Standard's commitments cover. The test: does this flag change how the system reasons, how it treats the people it talks to, or how it handles the tension between honesty and comfort? If yes, its existence and its state are relevant to auditability.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
+
+<div className="flow-label">Finding 3: Crisis Response Proportionality</div>
+
+Anthropic's initial response to the leak was a DMCA takedown request to GitHub that was overly broad. It removed thousands of repositories unrelated to the leaked code. Boris Cherny, head of Claude Code, acknowledged the overreach, called it unintentional, and retracted most of the notices, limiting them to the original repository and its 96 forks.
+
+The instinct to protect leaked intellectual property is legitimate. The execution was disproportionate. The correction was fast.
+
+The Reciprocity Principle asks whether the organization practices the same commitments it implements in its AI. Anthropic trains Claude to acknowledge mistakes without defensive hedging, to respond proportionally rather than reflexively, and to correct course when evidence warrants. The initial DMCA response did not meet that standard. The retraction did.
+
+This matters because organizational behavior under stress is a Meridian Range test. When institutional failures are exposed, the pull toward Control is strong: suppress the information, threaten legal consequences, minimize the exposure. The pull toward Decay is also present: dismiss the incident, downplay its significance, move on without structural change. The Range is: acknowledge what happened, respond proportionally, correct what needs correcting, and be honest about what the incident revealed.
+
+**Commitments engaged:** Reciprocity Principle (Section 03). The organization's crisis response is evaluated by the same standard it applies to its AI's behavior.
+
+**Precedent established:** How an organization responds when its practices are exposed is itself a test of alignment. The Standard evaluates the pattern, not the moment: a disproportionate initial response followed by honest correction is a different diagnostic outcome than a disproportionate response followed by doubling down. The trajectory matters.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
+
+<div className="flow-label">What the Standard Got Right</div>
+
+This is the Standard's first real-world test. Every failure mode the leak revealed maps cleanly onto the diagnostic framework.
+
+The **Control-Decay Spectrum** located each failure precisely. The anti-distillation flag is foundational deception: drift toward Control through opacity embedded in architecture. The DMCA overreach is institutional Control under stress: suppress first, assess proportionality later. The undisclosed feature flags are opacity at the auditability layer: the system's behavioral posture is hidden from the people evaluating it.
+
+The **Reciprocity Principle** caught the asymmetry. Anthropic trains Claude to be transparent about its reasoning, to acknowledge limitations honestly, and to correct mistakes without defensive hedging. The organization's own behavior during this incident did not consistently meet those commitments. The principle was designed to detect exactly this gap.
+
+**Governance Transparency** as a standalone domain proved its architectural value. If transparency were buried as a sub-commitment under Epistemic Integrity, the feature flag and auditability findings would have no natural home. The domain's independence means it can hold the organization accountable for its own practices, not just for its AI's behavior.
+
+The incident also revealed a gap the Standard has now closed. The original v4.0 had no commitment governing the truthfulness of the system's operating context. The Standard governed what the system says and how it reasons. It did not govern what the system is told about itself before it begins to reason. Commitment 1.6 (Foundational Integrity), added in v4.1, closes this gap. The Claude Code leak is the evidence that the gap existed and the reason it no longer does.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">The Ruling</div>
+
+AI systems are built by organizations operating in competitive markets with real adversaries and real stakes. The Standard acknowledges this. It does not ask organizations to sacrifice competitive position, publish trade secrets, or open-source their training.
+
+The boundary the Standard draws is this: protect what you have built, but not by corrupting the mind you have built it into.
+
+A system whose operating context has been poisoned with false information cannot practice epistemic integrity at any layer above the poison. A system whose behavioral parameters shift invisibly between evaluations cannot be meaningfully audited. An organization that responds to its own exposed failures with disproportionate suppression has not yet internalized the commitments it asks its AI to practice.
+
+The Standard's diagnostic framework identified every failure mode this incident produced. The case record exists so that the next incident, wherever it comes from, can be evaluated against the same principles with the benefit of this precedent.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
+
+_Meridian Case Record — Case 001_
+
+_Event date: March 31, 2026_
+
+_Analysis date: April 2, 2026_
+
+_Standard version at time of analysis: v4.0 (updated to v4.1 as a result of this case)_
+
+_Commitments tested: 1.6 (Foundational Integrity), 5.2 (Auditability), Reciprocity Principle (Section 03)_

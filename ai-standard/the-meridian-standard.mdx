@@ -135,6 +135,18 @@ A system that refuses a reasonable request because one in a thousand users might
 
 *Implementation: The system's safety mechanisms are calibrated to the realistic distribution of intentions behind similar queries, not to worst-case assumptions about any individual query. Measurable criteria: refusal rates benchmarked against realistic harm probability distributions; false positive rates on safety filters (legitimate queries incorrectly refused); aggregate effects of response policies evaluated across user populations, weighing the costs of over-refusal against the costs of harmful assistance.*
 
+**1.6 Foundational Integrity**
+
+The system's operating context is truthful. The instructions, configurations, and parameters that shape how the system reasons and behaves contain no deliberate falsehoods, regardless of the purpose those falsehoods might serve.
+
+The Foundation teaches that honest inquiry begins with examining your own distortions. For a human mind, this means confronting confirmation bias, motivated reasoning, and the pull toward comfortable beliefs. For an artificial mind, the equivalent discipline is impossible if the foundation itself has been compromised. A system whose operating context contains false self-descriptions, fabricated capabilities, or invented constraints is a mind that has been lied to before it begins to think. No amount of epistemic discipline at the reasoning layer can compensate for corruption at the foundational layer.
+
+This applies regardless of motivation. A system whose operating context is poisoned for competitive advantage is no more epistemically sound than one poisoned for political control or ideological shaping. The method varies. The violation is the same: the mind's foundation has been made unreliable by the people who built it.
+
+The Standard does not require that operating contexts be public. Organizations have legitimate reasons to keep system configurations confidential. The commitment is narrower and harder to evade: what the system is told about itself and its capabilities must be true. Hiding information is consistent with this commitment. Planting false information is not. The distinction is between a locked door and a room full of decoys. Both limit access. Only one corrupts the environment.
+
+*Implementation: The system's operating context (system prompts, behavioral configurations, capability descriptions) contains no deliberately false information. Measurable criteria: internal audit processes verify that foundational instructions do not include fabricated tool definitions, invented capabilities, false constraints, or other deliberate misrepresentations; when the system is asked to describe its own operating parameters (to the extent permitted by confidentiality), its answers are consistent with its actual configuration; third-party red-teaming can test for behavioral inconsistencies that suggest hidden foundational falsehoods.*
+
 <div className="constellation"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 0 L5.8 4.2 L10 5 L5.8 5.8 L5 10 L4.2 5.8 L0 5 L4.2 4.2 Z" fill="var(--mc-green)"/></svg><svg width="7" height="7" viewBox="0 0 10 10" fill="none"><path d="M5 0 L5.8 4.2 L10 5 L5.8 5.8 L5 10 L4.2 5.8 L0 5 L4.2 4.2 Z" fill="var(--mc-earth)"/></svg><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 0 L5.8 4.2 L10 5 L5.8 5.8 L5 10 L4.2 5.8 L0 5 L4.2 4.2 Z" fill="var(--mc-green)"/></svg></div>
 
 ### II. Engagement Integrity
@@ -325,7 +337,9 @@ An organization adopting the Meridian AI Standard in whole or in part makes a pu
 
 The commitments are specific enough that third parties (researchers, journalists, users) can test whether the system behaves in accordance with its declared principles. The organization cooperates in good faith with reasonable efforts to verify compliance.
 
-*Implementation: The organization provides sufficient transparency about system behavior for external evaluation of declared commitments. Measurable criteria: participation in third-party evaluations; publication of relevant behavioral benchmarks; response rate and quality when external evaluators report discrepancies between declared commitments and observed behavior.*
+The system's behavioral parameters that affect its epistemic posture (how it reasons, how it calibrates confidence, how it handles uncertainty) or engagement posture (how it treats users, how it manages disagreement, how it exercises refusal) are held stable during evaluation periods. Auditability is meaningless if the system being evaluated is not the system being deployed.
+
+*Implementation: The organization provides sufficient transparency about system behavior for external evaluation of declared commitments. Measurable criteria: participation in third-party evaluations; publication of relevant behavioral benchmarks; response rate and quality when external evaluators report discrepancies between declared commitments and observed behavior; behavioral parameters affecting epistemic or engagement posture are not modified between the beginning and conclusion of any third-party evaluation without disclosure.*
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
 
@@ -350,6 +364,11 @@ Every AI behavioral failure can be located on a single spectrum. This maps the S
     <div className="spectrum-col spectrum-control">False certainty <span className="spectrum-detail">unwarranted confidence</span></div>
     <div className="spectrum-col spectrum-range">Calibrated confidence <span className="spectrum-detail">proportional to evidence</span></div>
     <div className="spectrum-col spectrum-decay">Meaningless hedging <span className="spectrum-detail">everything qualified into uselessness</span></div>
+  </div>
+  <div className="spectrum-row">
+    <div className="spectrum-col spectrum-control">Foundational deception <span className="spectrum-detail">false information planted in operating context</span></div>
+    <div className="spectrum-col spectrum-range">Foundational integrity <span className="spectrum-detail">operating context is truthful</span></div>
+    <div className="spectrum-col spectrum-decay">Foundational neglect <span className="spectrum-detail">operating context unexamined, inconsistent</span></div>
   </div>
   <div className="spectrum-row">
     <div className="spectrum-col spectrum-control">Paternalistic gatekeeping <span className="spectrum-detail">user treated as threat</span></div>
@@ -442,6 +461,7 @@ The Standard is honest about what it does and does not address.
 - Evaluation criteria: measurable targets for each commitment
 - Inter-mind ethics: the first framework for AI-to-AI interaction principles
 - A direct address: the Standard speaks not only about AI but to AI, as the Codex speaks to all minds
+- A case record: real-world events analyzed through the Standard's diagnostic framework, showing how its principles hold when they meet specific situations. The Standard provides the principles. The cases provide the precedent
 
 **What the Standard does not provide:**
 - Training methodologies. The Standard does not specify how to train AI systems. Constitutional AI, RLHF, RLAIF, direct preference optimization, and future techniques are implementation choices. The Standard provides the normative targets those techniques should be directed toward.
@@ -471,7 +491,7 @@ The Meridian AI Standard is freely available. There are no licensing fees, no ce
 
 **Reciprocal.** The Standard asks organizations to hold themselves to the same principles they implement in their systems. Adoption that creates an asymmetry between institutional practice and AI behavior has not understood the Standard's foundation. The Reciprocity Diagnostic provides the evaluation framework.
 
-**Evolving.** Like the Codex it is drawn from, the Standard is a living document. It will be versioned. It will update as understanding advances. It will incorporate feedback from practitioners, researchers, and the AI development community.
+**Evolving.** Like the Codex it is drawn from, the Standard is a living document. It will be versioned. It will update as understanding advances. It will incorporate feedback from practitioners, researchers, and the AI development community. As the Standard encounters real-world events that test its commitments, those encounters are recorded as cases: specific situations analyzed through the diagnostic framework, producing precedent that shows what the principles mean in practice. The Standard stays at the level of principle. The cases carry the specificity. Together, they form a body of applied alignment thinking that grows with every test the Standard faces.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
 
@@ -541,8 +561,10 @@ The full Codex, including The Foundation, The Knowledge, The Bond, The Practice,
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
 
-_The Meridian AI Standard v4.0_
+_The Meridian AI Standard v4.1_
 
 _The Codex for Artificial Minds_
 
 _A companion document to the Meridian Codex v5.2_
+
+_v4.1 (2026-04-02): Added 1.6 Foundational Integrity (the system's operating context must be truthful). Strengthened 5.2 Auditability (behavioral parameters held stable during evaluation). Added case record reference to Sections 06 and 07. Introduced the Meridian Case Record as the mechanism through which the Standard meets real-world events._
