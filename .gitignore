@@ -1,54 +1,36 @@
 # ============================================
-#  WHAT GOES TO GITHUB (tracked)
-# ============================================
+#  WHITELIST MODEL — everything is ignored
+#  unless explicitly allowed below.
 #
-#  codex/*.mdx             — The Meridian Codex (core framework)
-#  toolkit/*.mdx           — Toolkit deep dives
-#  ai-standard/*.mdx       — The Meridian AI Standard
-#  README.md               — Repo readme
-#  CONTRIBUTING.md          — Contribution guide
-#  LICENSE                 — License (CC BY 4.0 + MIT)
-#  .gitignore              — This file
-#
-
-# ============================================
-#  EVERYTHING BELOW IS LOCAL-ONLY
+#  If it is not the published word of the
+#  Meridian Codex, it does not belong here.
 # ============================================
 
-# Website source (deployed separately, not part of the open-source content)
-meridian-codex-site/
-next-site/
-site/
+# Ignore everything by default
+*
 
-# Project context for AI agents
-CLAUDE.md
+# ============================================
+#  ALLOWED: The published Meridian Codex
+# ============================================
 
-# Brand assets, guidelines, design files
-Creatives/
+# Repo infrastructure
+!.gitignore
+!README.md
+!CONTRIBUTING.md
+!LICENSE
 
-# Video scripts, article drafts, non-site content
-content/
+# The Codex (core framework)
+!codex/
+!codex/*.mdx
 
-# Cowork skill source files and plugin
-skills/
-meridian-codex.plugin
+# The Toolkit (deep dives)
+!toolkit/
+!toolkit/*.mdx
 
-# Working docs, roadmap, decisions, prompts
-_workspace/
+# The Meridian AI Standard
+!ai-standard/
+!ai-standard/*.mdx
 
-# CI/CD workflows
-.github/
-
-# macOS
-.DS_Store
-Thumbs.db
-
-# Editors
-*.swp
-*.swo
-*~
-.vscode/
-.idea/
-
-# Node
-node_modules/
+# The Case Record
+!cases/
+!cases/*.mdx
