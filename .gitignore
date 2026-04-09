@@ -34,3 +34,7 @@
 # The Case Record
 !cases/
 !cases/*.mdx
+
+# The Range Audit
+!audit/
+!audit/*.mdx
