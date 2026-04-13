@@ -38,3 +38,7 @@
 # The Range Audit
 !audit/
 !audit/*.mdx
+
+# The Governance Layer (specification, future amendment log + council records)
+!governance/
+!governance/*.mdx
