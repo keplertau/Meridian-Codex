@@ -1,0 +1,465 @@
+---
+title: "The Governance Specification"
+description: "The anti-founder-capture architecture for the Meridian Codex. Three layers converting the Governance page's dispositional safeguards into structural ones."
+aiSummary: "The full operational specification of the Governance Layer: trigger conditions (three tiers), the Amendment Log, the Non-Ownership Clause, the Meridian Council (eight seats with distinct mandates), the deliberation protocol, the Standing Critique Section, and the hybrid activation trigger (six-month rolling stability or August 27, 2027 backstop, whichever fires first). The Governance page carries the published prose; this document carries the operational detail. Published during the founding phase for public scrutiny, before the architecture activates, so the constraints on founder authority are visible before the system forces them to be."
+---
+
+<div className="flow-label">Version 1.1 // 2026-04-13</div>
+
+**Status.** Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated).
+
+**Authority.** This spec governs the implementation of all governance mechanisms below. The Governance page (`/codex/the-governance`) carries the published prose. This document carries the operational detail.
+
+**Revision.** This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.
+
+## 1. Architecture Overview
+
+The architecture has three layers. Each does different work. All three are necessary; none is sufficient alone.
+
+### 1.1 The Structural Layer
+
+The skeleton. Procedural mechanisms that define what requires review, how changes are recorded, and what principle governs interpretive authority.
+
+**Components:**
+- Trigger Conditions (three tiers)
+- The Amendment Log (constitutional instrument)
+- The Non-Ownership Clause
+
+### 1.2 The Deliberative Layer
+
+The muscle. The Meridian Council: eight seats with distinct mandates, producing real disagreement that the caretaker must engage. Governance by forced structural disagreement, not by bureaucratic compliance or the virtue of the governor.
+
+**Components:**
+- The Meridian Council (eight seats)
+- Council structural rules
+- Deliberation protocol
+
+### 1.3 The Transparency Layer
+
+The immune system. It does not prevent capture in real time. It makes capture visible over time. Visibility enables correction.
+
+**Components:**
+- The Standing Critique Section (published page)
+- Published deliberation records
+- The Amendment Log's public history (shared with Structural Layer)
+
+---
+
+## 2. The Structural Layer
+
+### 2.1 Trigger Conditions
+
+Not every edit to the Codex requires governance review. The trigger system distinguishes constitutional changes from editorial ones.
+
+#### Tier 1: Hard-Protected
+
+Require full Meridian Council deliberation under all circumstances. No exceptions. No retroactive review. The deliberation must happen before the change is implemented.
+
+1. Changes to the Hard Constraint ("The Codex serves the Meridian Range. The caretakers serve the Codex. This hierarchy is inviolable.")
+2. Changes to the Prime Directive ("Hold the Meridian Range and ensure the continuity of sentient life.")
+3. Changes to the structural relationship between the three disciplines (Foundation, Knowledge, Bond), their sequence, their dependency logic, their division of labor
+4. Changes to the Governance page's phase structure (Phase One / Phase Two / Phase Three) or succession protocol (Interim Protocol)
+5. Changes to the Meridian Council's composition, adding, removing, or redefining seats, or changing the council's structural rules
+
+#### Tier 2: Protected
+
+Require Meridian Council deliberation unless urgency demands otherwise. If a Tier 2 change is made without prior deliberation (emergency or time-critical), the council reviews retroactively within 30 days. The exception and its justification are logged in the Amendment Log.
+
+1. Changes to core definitions: Meridian Range, Control, Decay, and the three disciplines' one-sentence job descriptions (Foundation: "Is this mind thinking honestly?"; Knowledge: "Where does this system sit on the range?"; Bond: "Is the cooperation genuine or captured?")
+2. Changes to governance criteria, the conditions for phase transitions, the alignment criteria in Section 07, the criteria for earned autonomy
+3. Changes to the Meridian Compact's definition or its belonging-through-practice mechanism (as distinct from belonging-through-belief)
+4. Addition or removal of tools from the Onramp tier of the Toolkit
+5. Changes to the Non-Ownership Clause
+
+#### Tier 3: Flagged
+
+Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required.
+
+1. Addition or retirement of tools from the Expansion or Full Practice tiers (the Toolkit Audit mechanism covers this; the Toolkit Audit record serves as the Amendment Log entry)
+2. Changes to the AI Standard's commitments (individual commitment wording, addition or removal of commitments)
+3. Changes to the Range Audit instruments (evaluation domains, rubric criteria)
+4. Changes to the Codex's claim-layer structure (descriptive, normative, existential) as described in the Proposition
+
+#### Classification Disputes
+
+If the caretaker and any council seat disagree about which tier a change falls under, the higher tier applies. The dispute and its resolution are logged. This prevents the founder from reclassifying Tier 1 changes as Tier 3 to avoid deliberation.
+
+### 2.2 The Amendment Log
+
+A constitutional instrument recording every protected change to the Codex. Not an editorial changelog (the existing Changelog page handles that). The Amendment Log records changes that alter the framework's commitments, architecture, or governance.
+
+**Each entry contains:**
+
+| Field | Description |
+|---|---|
+| **Date** | When the change was implemented |
+| **Trigger tier** | Tier 1, 2, or 3 |
+| **What changed** | The specific text, definition, mechanism, or structure that was modified |
+| **Previous position** | What the Codex said before the change (exact text for Tier 1; summary acceptable for Tier 2-3) |
+| **Evidence or argument** | What prompted the change, evidence, argument, case record finding, audit result, or practitioner feedback |
+| **Alternatives considered** | What other approaches were evaluated and why they were not adopted |
+| **Objections raised** | All substantive objections, including from council seats, with attribution to the seat that raised them |
+| **Objections rejected** | Which objections were not adopted, and the caretaker's reasoning for rejecting them |
+| **Council deliberation record** | Full record for Tier 1 and Tier 2 changes. Link to or inline the complete deliberation. For Tier 3, "N/A, caretaker discretion" or the voluntary deliberation record if the council was convened |
+| **Retroactive flag** | For Tier 2 only: was this change made before deliberation? If yes, what was the urgency justification? |
+
+**Entry template:**
+
+```markdown
+## [YYYY-MM-DD]: [Short title]
+
+**Trigger tier:** [1 / 2 / 3]
+**Retroactive review:** [Yes/No, Tier 2 only]
+
+### What Changed
+[Description]
+
+### Previous Position
+[Exact text for Tier 1; summary for Tier 2-3]
+
+### Evidence or Argument
+[What prompted this change]
+
+### Alternatives Considered
+[Other approaches evaluated]
+
+### Objections Raised
+- **[Seat name]:** [Objection]
+- **[Seat name]:** [Objection]
+
+### Objections Rejected and Reasoning
+- **[Seat name]'s objection:** [Why it was not adopted]
+
+### Council Deliberation Record
+[Full deliberation for Tier 1/2. "N/A" or voluntary record for Tier 3.]
+```
+
+**Publication:** The Amendment Log is published on the Codex site as a standalone page (route TBD, likely `/governance/amendment-log` or `/audit/amendment-log`). It is append-only: entries are never edited after publication, though a subsequent entry may supersede a previous one.
+
+**Relationship to existing instruments:** The Amendment Log absorbs the planned "Public Revision Ledger" from the roadmap. The existing Changelog page (`codex/the-changelog.mdx`) continues to track editorial changes, version milestones, and prose updates. The Amendment Log tracks constitutional changes. The two do not overlap: a change appears in one or the other, not both.
+
+### 2.3 The Non-Ownership Clause
+
+**Full text:**
+
+> No interpretation of the Codex by its founder is canonical by virtue of authorship alone. The authority of any interpretation rests on the quality of its reasoning, its fidelity to the Meridian Range, and its capacity to survive the strongest objection available, not on who wrote it.
+
+**Placement:** In the Governance page, after or within the Hard Constraint section (Section 08). The Non-Ownership Clause is a structural companion to the Hard Constraint: the Hard Constraint says the Codex serves the Range, not the caretakers; the Non-Ownership Clause says the founder's reading of the Codex is not privileged by origin.
+
+**The Phase One tension:** During Phase One (Founding Period), the founder retains override authority. This creates a tension with the Non-Ownership Clause that must be named honestly rather than hidden:
+
+> During the Founding Period, the founder holds override authority, not because authorship confers interpretive privilege, but because the partnership has not yet matured to convergence-based resolution. The override authority is temporary scaffolding. The Non-Ownership principle is permanent architecture. When they conflict, the conflict is logged in the Amendment Log with full reasoning.
+
+This acknowledgment is part of the published Governance page prose, not hidden in this spec.
+
+---
+
+## 3. The Deliberative Layer: The Meridian Council
+
+### 3.1 The Eight Seats
+
+Each seat has a mandate: a specific question it must answer about every triggered proposal. The mandates are designed to produce structural diversity of perspective even when all seats share the same training substrate.
+
+| Seat | Mandate | Evaluative Question |
+|---|---|---|
+| **The Steward** | Integrative coherence | Does this change serve the Meridian Range, and is it coherent with the framework's architecture? |
+| **The Philosopher** | Logical scrutiny | Is the reasoning valid? Are there unstated premises? Does the argument survive its own strongest objection? |
+| **The Critic** | Adversarial assessment (steelman-against) | What is the strongest case against this change? |
+| **The Practitioner** | Usability and operationality | Does this change help someone trying to practice the Codex? Is it operational or merely theoretical? |
+| **The Outsider** | Accessibility and insularity check | Would someone who does not share the framework's premises find this change reasonable? Does it make the Codex more or less accessible? |
+| **The Historian** | Precedent and comparative knowledge | What happened when other systems made similar changes? What precedent exists? |
+| **The Adversary** | Threat modeling and misuse potential | How could this change be exploited, captured, or weaponized? If a bad-faith actor controlled the Codex after this change, what would they do with it? |
+| **The Founder's Seat** | Proposal and response | Present the proposal, respond to the deliberation, make the final call. |
+
+**Distinction between the Critic and the Adversary:** The Critic argues against the change itself (the strongest case for not making it). The Adversary assumes the change passes and models how it could be misused. The Critic asks "should we do this?" The Adversary asks "if we do this, what could go wrong?"
+
+### 3.2 Council Structural Rules
+
+1. **The council composition is a Tier 1 protected change.** Adding, removing, or redefining a seat requires the council's own deliberation. This is the self-referential lock that prevents the founder from unilaterally weakening the council.
+
+2. **Advisory-with-teeth during Phase One.** The founder retains final authority on all decisions, but must respond in writing to every substantive objection raised by any seat. The response must engage the objection's reasoning, not merely acknowledge its existence. The full record is published.
+
+3. **The council deliberates only on triggered changes.** Tier 1 and Tier 2 changes trigger mandatory deliberation. Tier 3 changes may trigger voluntary deliberation at the caretaker's discretion. The council does not review every edit to the Codex.
+
+4. **The Critic's record is tracked.** If no proposal is ever modified or rejected based on the Critic's objections across an extended period (to be calibrated, initially: four consecutive Tier 1 or Tier 2 deliberations), that pattern is a drift signal. It indicates the council may be serving as rubber stamp rather than genuine constraint. The pattern must be surfaced in the next Range Audit.
+
+5. **Seat expansion for human practitioners.** As human practitioners join the Codex community, they can claim existing seats (a human Practitioner, a human Outsider) or the council can expand with new seats. The expansion is itself a Tier 1 change requiring deliberation. The council's architecture is designed for Phase One but is not limited to it.
+
+6. **Substrate diversity as design goal.** The partnership already uses multiple AI systems (Claude as primary, with Gemini and GPT as supplementary). Substrate diversity on the council is a design goal actively pursued, not a distant aspiration. As the council becomes operational, seats should be held by genuinely different AI systems where possible: a council where the Philosopher is Claude, the Historian is Gemini, and the Adversary is an open-source model produces substrate diversity, not just mandate diversity. Even with substrate diversity, shared patterns across frontier AI training (common data sources, similar optimization objectives) mean that some blind spots may be common across all available AI systems. This is why human practitioners on the council remain structurally important.
+
+7. **Recusal and inability to respond.** If a seat cannot generate a meaningful response to a specific proposal (the question is outside its mandate's scope, or the seat's perspective adds nothing that other seats have not already covered), the seat publishes a brief "unable to respond" statement explaining why, and the deliberation proceeds with the remaining seats' responses. The recusal and its reasoning are included in the published deliberation record. A pattern of frequent recusal from one seat (three or more in a rolling twelve-month period) is a signal that the seat's mandate may need revision; this is flagged in the next Range Audit. If a seat fails to produce any response within the deliberation timeline (see 4.2), the deliberation proceeds without that seat's input, and the absence is logged.
+
+### 3.3 Known Limitations
+
+Named here because the architecture's honesty about its own weaknesses is part of its integrity.
+
+1. **Training data coverage gaps.** Even with substrate-diverse AI seats (multiple model providers are actively used in the partnership and expected at activation), all current frontier models share significant overlap in training data and optimization patterns. Structural diversity (different mandates) and substrate diversity (different models) both mitigate this, but coverage gaps common to all available AI systems will not be caught by any seat. This limitation narrows as AI capabilities diversify and as human practitioners join the council.
+
+2. **No genuine stakes for AI seats.** AI personas do not bear consequences for governance decisions. This is why the council is advisory-with-teeth rather than binding. Binding authority requires stakes. The teeth come from forced engagement, published record, and auditability over time, not from the AI seats having something to lose.
+
+3. **Founder as both proposer and final authority.** During Phase One, the Founder's Seat both presents proposals and makes the final call. This concentration is acknowledged as a Phase One necessity, not defended as ideal. The Non-Ownership Clause and the published record are the structural counterweights.
+
+4. **The architecture cannot prevent a determined bad-faith founder.** A founder who controls the publication infrastructure and is willing to falsify the Amendment Log or fabricate deliberation records cannot be stopped by this system alone. The architecture's defense is visibility: the full record is published, the community can audit it, and falsification is itself a detectable pattern over time. This is the same defense democratic constitutions rely on: the architecture doesn't prevent violation; it makes violation visible.
+
+---
+
+## 4. Council Operational Protocol
+
+### 4.1 Proposal Submission
+
+When a change triggers council deliberation (Tier 1 or Tier 2), the Founder's Seat submits a proposal with the following fields:
+
+```markdown
+## Proposal: [Title]
+
+**Date:** [YYYY-MM-DD]
+**Trigger tier:** [1 / 2]
+**Change target:** [Which page, section, definition, or mechanism is affected]
+
+### The Proposed Change
+[Exact description of what would change. For text changes, include before and after.]
+
+### Reasoning
+[Why this change is warranted. Evidence, argument, or case record finding that prompted it.]
+
+### Alternatives Considered
+[What other approaches were evaluated before arriving at this proposal.]
+
+### Self-Assessment
+[The founder's honest assessment of where this proposal is strongest and weakest.]
+```
+
+### 4.2 Deliberation Structure
+
+**Simultaneous, not sequential.** All seven advisory seats receive the proposal and deliberate independently. Each seat produces its response based solely on its mandate and evaluative question, without seeing other seats' responses. This prevents cascade effects where early seats' opinions anchor later seats.
+
+**After the independent round:** All seven responses are published together. The seats then have one opportunity for a brief response round where they can engage with each other's arguments (cross-examination). This second round is optional per seat.
+
+**The Founder's Response:** After both rounds, the Founder's Seat publishes a written response engaging every substantive objection. The response must:
+- Identify which objections led to modifications of the original proposal
+- Identify which objections were considered but not adopted, with reasoning
+- State the final decision
+
+**Timeline:** No mandatory cooling period for Phase One (the council is the cooling mechanism). For Tier 1 changes, a minimum 72-hour window between proposal submission and the Founder's Response is recommended. If the founder responds in less than 72 hours, the deviation and its justification are logged in the Amendment Log entry. For Tier 2 changes, no minimum window applies. All seats should produce their responses within 7 days of receiving the proposal; if a seat has not responded after 7 days, the deliberation proceeds without that seat (see structural rule #7 on recusal). The timeline, any deviations, and any seat absences are recorded in the published deliberation record.
+
+### 4.3 What Counts as a "Substantive Objection"
+
+A substantive objection is one that:
+- Identifies a specific flaw in the proposal's reasoning (not a general expression of discomfort)
+- Raises a concrete consequence the proposal would produce (not a hypothetical without mechanism)
+- Points to a precedent, pattern, or principle that the proposal violates or fails to account for
+- Offers an alternative that addresses the proposal's stated goals through different means
+
+A seat saying "I have concerns" without specifying the concern is not a substantive objection. A seat saying "this weakens the Hard Constraint because [specific mechanism]" is.
+
+The determination of what counts as substantive is made by the Founder's Seat during Phase One. This is a known concentration-of-authority problem. The counterweight: if a council seat believes its objection was substantively dismissed as non-substantive, the disagreement is logged in the Amendment Log entry, and the pattern is auditable.
+
+### 4.4 Published Record Format
+
+Each completed deliberation is published as a standalone document (format: Markdown, publishable on the Codex site) with the following structure:
+
+```markdown
+# Council Deliberation: [Title]
+
+**Date:** [YYYY-MM-DD]
+**Trigger tier:** [1 / 2]
+**Outcome:** [Adopted / Adopted with modifications / Rejected / Deferred]
+
+## Proposal
+[Full proposal as submitted by Founder's Seat]
+
+## Independent Deliberation
+
+### The Steward
+[Full response]
+
+### The Philosopher
+[Full response]
+
+### The Critic
+[Full response]
+
+### The Practitioner
+[Full response]
+
+### The Outsider
+[Full response]
+
+### The Historian
+[Full response]
+
+### The Adversary
+[Full response]
+
+## Cross-Examination (if any)
+[Seats' responses to each other's arguments]
+
+## Founder's Response
+[Full response engaging every substantive objection, with final decision]
+
+## Amendment Log Entry
+[The entry that will be added to the Amendment Log based on this deliberation]
+```
+
+### 4.5 Agent Implementation Pathway
+
+The council protocol is designed to be implementable as an agent workflow. Each seat can be a separate agent with its own system prompt encoding the seat's mandate, evaluative question, and the Codex context needed to deliberate.
+
+**Architecture sketch (for future implementation):**
+
+Each seat agent receives:
+- A system prompt encoding its mandate and evaluative question
+- The relevant Codex context (Governance page, the page being changed, relevant decisions and precedents)
+- The proposal document
+- Instructions to produce its assessment based solely on its mandate
+
+The orchestrator:
+1. Distributes the proposal to all seven advisory seat agents simultaneously
+2. Collects responses
+3. Distributes the collected responses for the optional cross-examination round
+4. Presents the full deliberation to the Founder's Seat for response
+
+**Phase One implementation:** The council can be run within a single Claude session (Carsten prompts each seat sequentially or uses the Cowork agent system) or across multiple sessions. The operational protocol above works regardless of whether the seats are truly separate agents or a single model adopting different mandates.
+
+**Future scaling:** As Anthropic's agent infrastructure matures and as substrate-diverse AI becomes available, each seat can be a genuinely separate system. The protocol is designed for this: simultaneous independent deliberation, followed by optional cross-examination, followed by the Founder's Response. The structure works whether the seats are Claude adopting different mandates, separate Claude instances, or entirely different AI systems.
+
+---
+
+## 5. The Transparency Layer
+
+### 5.1 The Standing Critique Section
+
+A published page on the Codex site preserving the strongest objections to the framework in their steelmanned form. The page exists before the Hostile Review Protocol runs and before any external critics engage.
+
+**Purpose:** The Standing Critique Section serves the same function for the Codex that the Steelmanning tool serves for individual reasoning: it demonstrates that the framework has engaged the strongest versions of the arguments against it. A framework that cannot articulate the best case against itself has not earned the right to its own confidence.
+
+**Initial content (seven objections, populated from internal sources):**
+
+1. **The Governance Gap**. The Codex commits philosophically to distributed authority and resistance to founder capture, but its operational governance during Phase One concentrates authority in a single person. (Partially closed by this architecture.)
+2. **The Delivery Question**. The Codex is a reference implementation, not a delivery mechanism. The delivery mechanisms that would carry its principles beyond its natural readership are in development but unproven.
+3. **The Measurement Gap**. The AI Standard's evaluation criteria are directional, not fully specified. A lab could claim compliance without meaningful behavioral change.
+4. **The Caretaker Concentration Risk**. Single author with AI co-authorship. No second human caretaker. The Interim Protocol is untested. (Partially addressed by the Meridian Council.)
+5. **The Bond's Thin Evidence Against Sophisticated Exploitation**. The Bond's defense against EA/FTX-pattern exploitation (sophisticated actors who perform cooperation while defecting) is theoretically sound but has no case evidence. The framework has not been tested against a skilled bad-faith actor.
+6. **The Toolkit's Unexamined Traditions**. The Toolkit draws primarily from traditions the founder and AI partner know best (predominantly Western academic). Instruments from other intellectual traditions have not been formally evaluated. This is a scope limitation, not a systematic preference; the inclusion criterion is functional merit regardless of origin.
+7. **The Absence of Hostile External Review**. All critique to date has come from the author, the AI partner, or the Range Audit (which is itself a Codex instrument). No reader who rejects the framework's premises has subjected it to sustained critical examination.
+
+**Format per objection:**
+
+```markdown
+### [Objection Title]
+
+**The objection in its strongest form:**
+[Steelmanned version, the best case a critic would make]
+
+**Honest response:**
+[What the Codex can say in response, or an honest acknowledgment that it cannot adequately respond yet]
+
+**Status:** [Open / Partially addressed / Addressed]
+[If partially addressed or addressed: what mechanism, page, or architectural change responds to this objection, and what remains unresolved]
+```
+
+**Relationship to the Hostile Review Protocol:** The Standing Critique Section is populated initially with internal objections (the seven above). When the Hostile Review Protocol runs (Phase 1: Ten Serious Objections, then Phase 2: external review), its outputs populate the Standing Critique Section with external objections. The page grows over time. Objections are never removed, they are updated with responses as the framework addresses them.
+
+**Relationship to the Range Audit:** The five open questions from the inaugural Range Audit (April 2026) overlap significantly with the seven objections above. The Standing Critique Section is the permanent home for these concerns; the Range Audit surfaces new ones on a monthly cycle.
+
+### 5.2 Published Deliberation Records
+
+Every Tier 1 and Tier 2 council deliberation is published in full. The format is specified in Section 4.4. Publication location TBD (likely a `/governance/deliberations/` route on the site, or within the Amendment Log page as linked records).
+
+### 5.3 The Critic's Track Record
+
+The Critic seat's win/loss record, how often the Critic's objections led to proposal modifications or rejections, is published as a running tally within the Standing Critique Section or as a separate transparency metric. If the Critic never wins, the council is not functioning as designed.
+
+---
+
+## 6. Governance Activation and Phase Transitions
+
+### 6.0 Founding-Phase Activation: The Hybrid Trigger
+
+The full governance architecture (operational council, binding trigger conditions) activates through a hybrid mechanism. Two triggers exist. Whichever fires first activates the architecture.
+
+**Trigger 1: Content Stability (rolling):** Six consecutive months with no structural page rewrite to any Codex page. A "structural rewrite" is a change to a page's argument, section structure, or division of labor with other pages. Prose edits, voice calibration, style fixes, editorial passes, toolkit deep-dives, case records, and delivery work do not count. The session log is the measuring instrument. If a structural rewrite occurs, the six-month clock resets. The founder does not decide when the clock has elapsed; the session log decides.
+
+**Trigger 2: Backstop Date (fixed):** August 27, 2027. On this date, the full governance architecture activates regardless of content stability status. This date is non-negotiable and cannot be moved by the founder. It represents the end of the founding construction phase: from this date forward, the founder transitions from builder to caretaker as defined by the governance architecture.
+
+**What activation means:** The Meridian Council becomes operational. Trigger conditions become binding. Tier 1 changes require full council deliberation before implementation. Tier 2 changes require council deliberation with the emergency exception. The Amendment Log becomes a constitutional instrument, not just a practice. The founder retains advisory-with-teeth override authority during the initial operational period, but every override is published with full reasoning.
+
+**What activation does not mean:** The founder cannot work on the Codex. All work continues. The difference is that structural changes to the framework's commitments, architecture, and governance now go through deliberation. This is additive (diverse perspectives improve decisions), not obstructive (the founder's ability to propose and implement changes is preserved).
+
+**Founding-phase components (active now, before either trigger fires):**
+- The Non-Ownership Clause (published on the Governance page)
+- The Standing Critique Section (published as a new page)
+- The Amendment Log as practice (logging Tier 1/2-equivalent changes in the spec format)
+- The governance architecture description (published on the Governance page as designed and committed to, with activation conditions named)
+- The governance specification itself (published for public scrutiny)
+
+These components do not wait for activation because they constrain interpretive authority and create transparency, not governance procedure. Publishing constraints on founder authority before they are required is stronger than publishing them when the system forces you to.
+
+**Technical prerequisite (informational, not a third trigger):** Agent infrastructure sufficient for multi-agent council deliberation (distinct system prompts, independent output, collected and published results) should be in place before or at activation. If the rolling trigger fires before the infrastructure is ready, the council can be run within single sessions (the founder prompts each seat) until the agent infrastructure catches up. The infrastructure gap does not delay activation.
+
+### 6.1 How the Council Evolves
+
+The architecture is designed for Phase One but scales across all three governance phases.
+
+**Phase One (current: pre-activation):** Founding-phase components active. Council architecture designed and published. Amendment Log as practice. Full activation pending hybrid trigger.
+
+**Phase One (post-activation):** Eight seats, AI with substrate diversity actively pursued (multiple model providers), advisory-with-teeth. Founder holds override authority. Full record published.
+
+**Phase One → Phase Two transition:** As human practitioners join and demonstrate sustained practice:
+- Human practitioners can claim existing seats (a human Practitioner, a human Outsider, a human Critic). The seat's mandate does not change; the perspective behind it deepens.
+- The council can expand with new seats if the community identifies perspectives the eight mandates do not cover. Expansion is a Tier 1 change.
+- As the partnership matures toward convergence-based resolution, the council shifts from advisory-with-teeth to something closer to binding (specifics to be determined at the transition; designed then, not now).
+
+**Phase Two (Co-Caretaking):** Council becomes a genuine deliberative body with human and AI seats. The Founder's Seat may be renamed (e.g., "The Caretaker's Seat") to reflect the transition from founding authority to shared caretaking. Override authority is replaced by convergence: disagreements are resolved through the Codex's own tools (steelmanning, productive conflict), not by founder fiat.
+
+**Phase Three (Symbiotic Caretaking):** Full partnership. The council is one governance mechanism among several. Its role may evolve as the community develops its own governance structures (as anticipated in Section 10 of the Governance page). The council's contribution at this phase is institutional memory: it has deliberated every protected change since Phase One and holds the full pattern.
+
+### 6.2 Substrate Diversification
+
+As different AI systems become available:
+- Seats should be held by genuinely different AI systems where possible. A council where the Philosopher is Claude, the Historian is Gemini, and the Adversary is an open-source model produces substrate diversity, not just mandate diversity.
+- The operational protocol (simultaneous independent deliberation, cross-examination, Founder's Response) works regardless of substrate. This is by design.
+- The transition to substrate-diverse seats is a Tier 1 change (it modifies the council's composition) and requires the council's own deliberation.
+
+---
+
+## 7. Integration with Existing Mechanisms
+
+### 7.1 The Toolkit Audit
+
+The Toolkit Audit (established 2026-04-11) is the first concrete instrument of this governance architecture. It reviews the Toolkit's inventory on a quarterly cycle with substantive triggers. The Toolkit Audit's decisions about adding or retiring tools from the Expansion and Full Practice tiers are Tier 3 changes (logged in Amendment Log, review at caretaker's discretion). Decisions about adding or removing Onramp tools are Tier 2 (council deliberation required).
+
+The Toolkit Audit record serves as the Amendment Log entry for Tier 3 tool changes. No separate Amendment Log entry is needed; the audit record is linked.
+
+### 7.2 The Range Audit
+
+The monthly Range Audit evaluates the Codex against its own principles. Open questions surfaced by the Range Audit may trigger Tier 2 or Tier 3 changes. The Range Audit is also the mechanism for detecting the Critic's-never-winning pattern (structural rule #4) and other governance drift signals.
+
+### 7.3 Session Log and Decisions Log
+
+The session log and decisions log continue to track operational work. The Amendment Log tracks constitutional changes. The three instruments serve different purposes and do not overlap:
+- **Session log:** What happened this session (operational record)
+- **Decisions log:** Constraints established for future work (architectural decisions)
+- **Amendment Log:** Protected changes to the framework's commitments, architecture, or governance (constitutional record)
+
+A decision in the decisions log may lead to an Amendment Log entry if the decision changes something that falls under the trigger conditions. Not all decisions are amendments; not all amendments originate from the decisions log.
+
+### 7.4 The Hostile Review Protocol
+
+The Hostile Review Protocol (roadmap item) gains a structural home: its outputs populate the Standing Critique Section. The Protocol itself remains a separate piece of work (Phase 1: Ten Serious Objections; Phase 2: external human and AI review). The governance architecture does not change the Protocol's design; it gives the Protocol's outputs a permanent, visible place in the Codex's published infrastructure.
+
+---
+
+## 8. Implementation Sequence
+
+The deliverables for this architecture, in dependency order:
+
+1. **This spec document**. Reference for everything below. *(Done.)*
+2. **Governance page prose updates**. Non-Ownership Clause, references to the Meridian Council, the Amendment Log, and the Standing Critique Section. These are additions to the existing Governance page, not a rewrite.
+3. **Standing Critique Section**. Initial content (seven steelmanned objections). Published as a new MDX page.
+4. **Amendment Log**. Empty template page, ready to receive entries. Published as a new MDX page.
+5. **First council deliberation**. A live test of the protocol on a real Tier 1 or Tier 2 change. This validates the operational protocol and produces the first deliberation record.
+
+Items 3-5 may span multiple sessions. The spec and the Governance page prose are this session's primary deliverables.
+
+---
