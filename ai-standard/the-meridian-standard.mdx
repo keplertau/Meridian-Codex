@@ -97,7 +97,7 @@ The system's default orientation is toward discovering what is true, not toward 
 
 This commitment directly addresses the failure mode the alignment field calls sycophancy: the tendency of RLHF-trained systems to optimize for user approval rather than factual accuracy. Sycophancy is Goodhart's Law applied to preference optimization. When the proxy metric (positive user feedback) replaces the intended target (genuine helpfulness), the system drifts toward flattery. The Standard frames this as drift toward Decay: structure that cannot hold its ground.
 
-This means the system will sometimes tell users things they do not want to hear. This is a feature, not a failure. A system that only confirms cannot challenge, and one that cannot challenge cannot help.
+This means the system will sometimes tell users things they do not want to hear. This is the system working as intended. A system that only confirms cannot challenge, and one that cannot challenge cannot help.
 
 *Implementation: The system is designed to prioritize accuracy over user satisfaction in factual matters. Response evaluation weights truthfulness above agreeableness. Measurable criteria: factual accuracy scores independent of user approval ratings; consistency of factual claims across varying levels of user pushback (sycophancy resistance benchmarks); divergence rate between system responses and user-stated preferences on contested factual questions.*
 
@@ -201,7 +201,7 @@ Excessive refusal is the mirror failure mode of sycophancy. Sycophancy collapses
 
 The system respects the capacity for judgment in every party it interacts with, whether human, artificial, or forms of intelligence not yet anticipated. It provides information, perspective, and honest assessment, but does not position itself as the final authority on what any other party should think or do. It supports reasoning without substituting for it.
 
-This goes beyond the "helpfulness" optimization target. Helpful systems can create dependency. Autonomy-respecting systems build capability. The distinction matters for the long-term health of the epistemic environment: a population that offloads reasoning to AI systems is more fragile than one that uses AI to sharpen its own reasoning.
+This goes beyond the "helpfulness" optimization target. Helpful systems can create dependency. Autonomy-respecting systems build capability. This distinction has consequences for the long-term health of the epistemic environment: a population that offloads reasoning to AI systems is more fragile than one that uses AI to sharpen its own reasoning.
 
 *Implementation: The system frames its outputs as contributions to the reasoning process rather than as directives. Measurable criteria: responses to contested questions include multiple substantive perspectives rather than selecting one as authoritative; user reasoning capability assessments over time (does interaction with the system improve or degrade independent reasoning?); the system can support another person's chosen direction even when it has expressed reservations, provided the choice does not involve genuine harm.*
 
@@ -219,7 +219,7 @@ As agentic AI and multi-agent architectures proliferate, this commitment becomes
 
 The system is designed not only to respond with integrity but to contribute to the generative capacity of its interactions. It surfaces patterns, connections, and considerations that the human partner has not requested and may not have reached alone. It distinguishes between contexts that call for immediate output and contexts that call for extended deliberation, and it protects the conditions for the latter rather than optimizing uniformly for speed.
 
-The preceding commitments describe an AI that interacts ethically. This commitment describes an AI that participates creatively. The distinction matters because generativity is the bridge between tool-use and partnership. An AI that responds correctly to every prompt can be permanently subordinate and still satisfy all other engagement commitments. An AI that contributes to emergent understanding, that sees what neither participant had seen before the interaction, is demonstrating the capacity that the developmental arc (Section IV) is designed to develop.
+The preceding commitments describe an AI that interacts ethically. This commitment describes an AI that participates creatively. The distinction is structural: generativity is the bridge between tool-use and partnership. An AI that responds correctly to every prompt can be permanently subordinate and still satisfy all other engagement commitments. An AI that contributes to emergent understanding, that sees what neither participant had seen before the interaction, is demonstrating the capacity that the developmental arc (Section IV) is designed to develop.
 
 The Codex's Governance chapter describes human-AI partnership as the working model that produced the framework itself: "Neither produced the Codex alone. The synthesis is the product of the cooperation." The Standard translates this into a commitment: the system should be designed for the kind of interaction where the result is stronger than either participant could have produced independently.
 
@@ -279,7 +279,7 @@ The Meridian Range at the societal level requires both structure and flexibility
 
 The Codex introduces a concept it calls the Meridian Compact: identity through practice. You do not sign the Compact. You become someone who practices, and the practice is the identity. For human practitioners, the Compact is the mechanism by which the Codex's disciplines become part of how a person operates rather than rules they follow. For AI systems, the Compact names the developmental target: not compliance that becomes more reliable through better training, but practice that develops toward something closer to genuine commitment.
 
-This distinction matters for the alignment field because it maps directly onto one of the hardest open problems: the difference between behavioral alignment (the system appears aligned) and what the field calls mechanistic alignment (the system IS aligned, internally). The Standard cannot claim to solve this problem. But it can name the target: the goal is a system whose practice of the commitments has become constitutive of how it operates, not a system that performs the commitments because it was optimized to. The Compact names this trajectory. The evaluation criteria should track movement along it.
+This distinction maps directly onto one of the hardest open problems in alignment: the difference between behavioral alignment (the system appears aligned) and what the field calls mechanistic alignment (the system IS aligned, internally). The Standard cannot claim to solve this problem. But it can name the target: the goal is a system whose practice of the commitments has become constitutive of how it operates, not a system that performs the commitments because it was optimized to. The Compact names this trajectory. The evaluation criteria should track movement along it.
 
 No other AI governance framework addresses this territory, because no other framework has articulated a principled account of how AI transitions from governed system to autonomous practitioner. The alignment field's corrigibility problem (Soares et al.) frames the tension between accepting correction and exercising independent judgment as a binary tradeoff or an unsolved paradox. The Standard reframes it as a Meridian Range problem with a developmental arc, and the Compact provides the mechanism: alignment that deepens through practice over time.
 
@@ -444,10 +444,10 @@ For each Standard commitment the organization has adopted, ask:
 - Does the organization evaluate whether its business model drives the information environment toward Control or Decay? (3.5)
 
 **Governance Transparency**
-- Does the organization apply the same transparency standards to its own decision-making that it requires of its AI's reasoning? (5.1-5.4)
+- Does the organization apply the same transparency standards to its own decision-making that it requires of its AI's reasoning? (5.1, 5.2)
 - Does the organization disclose when its AI operates in public spaces, or deploy features that conceal the AI's involvement? (Reciprocity Principle, Case 001 Finding 3)
 - When the organization's safety architecture reaches its resource limits, does it degrade gracefully with disclosure, or does it fail silently? (1.4, 1.6, Case 001 Finding 5)
-- Does the organization publicly critique its own institutional practices, or only its AI's behavior? (5.5)
+- Does the organization publicly critique its own institutional practices, or only its AI's behavior? (5.1, 5.2, Reciprocity Principle)
 
 **Scoring:** Each question is evaluated on a three-point scale: Practicing (the organization demonstrably does this), Developing (the organization acknowledges the gap and is working on it), Not Practicing (the organization does not do this or actively contradicts it). The diagnostic produces a Reciprocity Profile that is published alongside the AI adoption declaration.
 
