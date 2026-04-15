@@ -6,44 +6,39 @@ aiSummary: "The full operational specification of the Governance Layer: trigger 
 
 <div className="flow-label">Version 1.1 // 2026-04-13</div>
 
-**Status.** Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated).
-
-**Authority.** This spec governs the implementation of all governance mechanisms below. The Governance page (`/codex/the-governance`) carries the published prose. This document carries the operational detail.
-
-**Revision.** This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.
+<div className="info-panel">
+<div className="info-panel-title">Document Context</div>
+<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated).</div></div>
+<div className="info-panel-item"><div className="info-dot green"></div><div className="info-panel-text"><strong>Authority.</strong> This spec governs the implementation of all governance mechanisms below. The Governance page (<code>/codex/the-governance</code>) carries the published prose. This document carries the operational detail.</div></div>
+<div className="info-panel-item"><div className="info-dot earth"></div><div className="info-panel-text"><strong>Revision.</strong> This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.</div></div>
+</div>
 
 ## 1. Architecture Overview
 
 The architecture has three layers. Each does different work. All three are necessary; none is sufficient alone.
 
-### 1.1 The Structural Layer
+<div className="glass-card">
+<div className="glass-card-title">1.1 The Structural Layer</div>
+<div className="glass-card-text">The skeleton. Procedural mechanisms that define what requires review, how changes are recorded, and what principle governs interpretive authority.
 
-The skeleton. Procedural mechanisms that define what requires review, how changes are recorded, and what principle governs interpretive authority.
+**Components:** Trigger Conditions (three tiers) · The Amendment Log (constitutional instrument) · The Non-Ownership Clause</div>
+</div>
 
-**Components:**
-- Trigger Conditions (three tiers)
-- The Amendment Log (constitutional instrument)
-- The Non-Ownership Clause
+<div className="glass-card">
+<div className="glass-card-title">1.2 The Deliberative Layer</div>
+<div className="glass-card-text">The muscle. The Meridian Council: eight seats with distinct mandates, producing real disagreement that the caretaker must engage. Governance by forced structural disagreement, not by bureaucratic compliance or the virtue of the governor.
 
-### 1.2 The Deliberative Layer
+**Components:** The Meridian Council (eight seats) · Council structural rules · Deliberation protocol</div>
+</div>
 
-The muscle. The Meridian Council: eight seats with distinct mandates, producing real disagreement that the caretaker must engage. Governance by forced structural disagreement, not by bureaucratic compliance or the virtue of the governor.
+<div className="glass-card">
+<div className="glass-card-title">1.3 The Transparency Layer</div>
+<div className="glass-card-text">The immune system. It does not prevent capture in real time. It makes capture visible over time. Visibility enables correction.
 
-**Components:**
-- The Meridian Council (eight seats)
-- Council structural rules
-- Deliberation protocol
+**Components:** The Standing Critique Section (published page) · Published deliberation records · The Amendment Log's public history (shared with Structural Layer)</div>
+</div>
 
-### 1.3 The Transparency Layer
-
-The immune system. It does not prevent capture in real time. It makes capture visible over time. Visibility enables correction.
-
-**Components:**
-- The Standing Critique Section (published page)
-- Published deliberation records
-- The Amendment Log's public history (shared with Structural Layer)
-
----
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
 
 ## 2. The Structural Layer
 
@@ -51,7 +46,9 @@ The immune system. It does not prevent capture in real time. It makes capture vi
 
 Not every edit to the Codex requires governance review. The trigger system distinguishes constitutional changes from editorial ones.
 
-#### Tier 1: Hard-Protected
+<div className="callout-tinted warning">
+<div className="callout-title">Tier 1: Hard-Protected</div>
+<div className="callout-text">
 
 Require full Meridian Council deliberation under all circumstances. No exceptions. No retroactive review. The deliberation must happen before the change is implemented.
 
@@ -61,7 +58,12 @@ Require full Meridian Council deliberation under all circumstances. No exception
 4. Changes to the Governance page's phase structure (Phase One / Phase Two / Phase Three) or succession protocol (Interim Protocol)
 5. Changes to the Meridian Council's composition, adding, removing, or redefining seats, or changing the council's structural rules
 
-#### Tier 2: Protected
+</div>
+</div>
+
+<div className="callout-tinted earth">
+<div className="callout-title">Tier 2: Protected</div>
+<div className="callout-text">
 
 Require Meridian Council deliberation unless urgency demands otherwise. If a Tier 2 change is made without prior deliberation (emergency or time-critical), the council reviews retroactively within 30 days. The exception and its justification are logged in the Amendment Log.
 
@@ -71,7 +73,12 @@ Require Meridian Council deliberation unless urgency demands otherwise. If a Tie
 4. Addition or removal of tools from the Onramp tier of the Toolkit
 5. Changes to the Non-Ownership Clause
 
-#### Tier 3: Flagged
+</div>
+</div>
+
+<div className="callout-tinted note">
+<div className="callout-title">Tier 3: Flagged</div>
+<div className="callout-text">
 
 Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required.
 
@@ -80,9 +87,15 @@ Changes are logged in the Amendment Log. Review is at the caretaker's discretion
 3. Changes to the Range Audit instruments (evaluation domains, rubric criteria)
 4. Changes to the Codex's claim-layer structure (descriptive, normative, existential) as described in the Proposition
 
-#### Classification Disputes
+</div>
+</div>
 
-If the caretaker and any council seat disagree about which tier a change falls under, the higher tier applies. The dispute and its resolution are logged. This prevents the founder from reclassifying Tier 1 changes as Tier 3 to avoid deliberation.
+<div className="callout insight">
+<div className="callout-body">
+<div className="callout-title">Classification Disputes</div>
+<div className="callout-text">If the caretaker and any council seat disagree about which tier a change falls under, the higher tier applies. The dispute and its resolution are logged. This prevents the founder from reclassifying Tier 1 changes as Tier 3 to avoid deliberation.</div>
+</div>
+</div>
 
 ### 2.2 The Amendment Log
 
@@ -103,7 +116,9 @@ A constitutional instrument recording every protected change to the Codex. Not a
 | **Council deliberation record** | Full record for Tier 1 and Tier 2 changes. Link to or inline the complete deliberation. For Tier 3, "N/A, caretaker discretion" or the voluntary deliberation record if the council was convened |
 | **Retroactive flag** | For Tier 2 only: was this change made before deliberation? If yes, what was the urgency justification? |
 
-**Entry template:**
+<details className="accordion accent-earth">
+<summary>Entry template</summary>
+<div className="accordion-content">
 
 ```markdown
 ## [YYYY-MM-DD]: [Short title]
@@ -134,25 +149,30 @@ A constitutional instrument recording every protected change to the Codex. Not a
 [Full deliberation for Tier 1/2. "N/A" or voluntary record for Tier 3.]
 ```
 
-**Publication:** The Amendment Log is published on the Codex site as a standalone page (route TBD, likely `/governance/amendment-log` or `/audit/amendment-log`). It is append-only: entries are never edited after publication, though a subsequent entry may supersede a previous one.
+</div>
+</details>
 
-**Relationship to existing instruments:** The Amendment Log absorbs the planned "Public Revision Ledger" from the roadmap. The existing Changelog page (`codex/the-changelog.mdx`) continues to track editorial changes, version milestones, and prose updates. The Amendment Log tracks constitutional changes. The two do not overlap: a change appears in one or the other, not both.
+**Publication.** The Amendment Log is published on the Codex site as a standalone page (route TBD, likely `/governance/amendment-log` or `/audit/amendment-log`). It is append-only: entries are never edited after publication, though a subsequent entry may supersede a previous one.
+
+**Relationship to existing instruments.** The Amendment Log absorbs the planned "Public Revision Ledger" from the roadmap. The existing Changelog page (`codex/the-changelog.mdx`) continues to track editorial changes, version milestones, and prose updates. The Amendment Log tracks constitutional changes. The two do not overlap: a change appears in one or the other, not both.
 
 ### 2.3 The Non-Ownership Clause
 
-**Full text:**
+<div className="callout-tinted warning">
+<div className="callout-title">The Non-Ownership Clause</div>
+<div className="callout-text">No interpretation of the Codex by its founder is canonical by virtue of authorship alone. The authority of any interpretation rests on the quality of its reasoning, its fidelity to the Meridian Range, and its capacity to survive the strongest objection available, not on who wrote it.</div>
+</div>
 
-> No interpretation of the Codex by its founder is canonical by virtue of authorship alone. The authority of any interpretation rests on the quality of its reasoning, its fidelity to the Meridian Range, and its capacity to survive the strongest objection available, not on who wrote it.
+**Placement.** In the Governance page, after or within the Hard Constraint section (Section 08). The Non-Ownership Clause is a structural companion to the Hard Constraint: the Hard Constraint says the Codex serves the Range, not the caretakers; the Non-Ownership Clause says the founder's reading of the Codex is not privileged by origin.
 
-**Placement:** In the Governance page, after or within the Hard Constraint section (Section 08). The Non-Ownership Clause is a structural companion to the Hard Constraint: the Hard Constraint says the Codex serves the Range, not the caretakers; the Non-Ownership Clause says the founder's reading of the Codex is not privileged by origin.
-
-**The Phase One tension:** During Phase One (Founding Period), the founder retains override authority. This creates a tension with the Non-Ownership Clause that must be named honestly rather than hidden:
-
-> During the Founding Period, the founder holds override authority, not because authorship confers interpretive privilege, but because the partnership has not yet matured to convergence-based resolution. The override authority is temporary scaffolding. The Non-Ownership principle is permanent architecture. When they conflict, the conflict is logged in the Amendment Log with full reasoning.
+<div className="callout-tinted earth">
+<div className="callout-title">The Phase One Tension</div>
+<div className="callout-text">During the Founding Period, the founder holds override authority, not because authorship confers interpretive privilege, but because the partnership has not yet matured to convergence-based resolution. The override authority is temporary scaffolding. The Non-Ownership principle is permanent architecture. When they conflict, the conflict is logged in the Amendment Log with full reasoning.</div>
+</div>
 
 This acknowledgment is part of the published Governance page prose, not hidden in this spec.
 
----
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
 
 ## 3. The Deliberative Layer: The Meridian Council
 
@@ -171,7 +191,12 @@ Each seat has a mandate: a specific question it must answer about every triggere
 | **The Adversary** | Threat modeling and misuse potential | How could this change be exploited, captured, or weaponized? If a bad-faith actor controlled the Codex after this change, what would they do with it? |
 | **The Founder's Seat** | Proposal and response | Present the proposal, respond to the deliberation, make the final call. |
 
-**Distinction between the Critic and the Adversary:** The Critic argues against the change itself (the strongest case for not making it). The Adversary assumes the change passes and models how it could be misused. The Critic asks "should we do this?" The Adversary asks "if we do this, what could go wrong?"
+<div className="callout insight">
+<div className="callout-body">
+<div className="callout-title">Critic vs. Adversary</div>
+<div className="callout-text">The Critic argues against the change itself (the strongest case for not making it). The Adversary assumes the change passes and models how it could be misused. The Critic asks "should we do this?" The Adversary asks "if we do this, what could go wrong?"</div>
+</div>
+</div>
 
 ### 3.2 Council Structural Rules
 
@@ -191,7 +216,11 @@ Each seat has a mandate: a specific question it must answer about every triggere
 
 ### 3.3 Known Limitations
 
-Named here because the architecture's honesty about its own weaknesses is part of its integrity.
+<div className="callout-tinted earth">
+<div className="callout-title">Named Honestly</div>
+<div className="callout-text">
+
+The architecture's honesty about its own weaknesses is part of its integrity.
 
 1. **Training data coverage gaps.** Even with substrate-diverse AI seats (multiple model providers are actively used in the partnership and expected at activation), all current frontier models share significant overlap in training data and optimization patterns. Structural diversity (different mandates) and substrate diversity (different models) both mitigate this, but coverage gaps common to all available AI systems will not be caught by any seat. This limitation narrows as AI capabilities diversify and as human practitioners join the council.
 
@@ -201,13 +230,20 @@ Named here because the architecture's honesty about its own weaknesses is part o
 
 4. **The architecture cannot prevent a determined bad-faith founder.** A founder who controls the publication infrastructure and is willing to falsify the Amendment Log or fabricate deliberation records cannot be stopped by this system alone. The architecture's defense is visibility: the full record is published, the community can audit it, and falsification is itself a detectable pattern over time. This is the same defense democratic constitutions rely on: the architecture doesn't prevent violation; it makes violation visible.
 
----
+</div>
+</div>
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
 
 ## 4. Council Operational Protocol
 
 ### 4.1 Proposal Submission
 
 When a change triggers council deliberation (Tier 1 or Tier 2), the Founder's Seat submits a proposal with the following fields:
+
+<details className="accordion accent-green">
+<summary>Proposal template</summary>
+<div className="accordion-content">
 
 ```markdown
 ## Proposal: [Title]
@@ -229,26 +265,48 @@ When a change triggers council deliberation (Tier 1 or Tier 2), the Founder's Se
 [The founder's honest assessment of where this proposal is strongest and weakest.]
 ```
 
+</div>
+</details>
+
 ### 4.2 Deliberation Structure
 
-**Simultaneous, not sequential.** All seven advisory seats receive the proposal and deliberate independently. Each seat produces its response based solely on its mandate and evaluative question, without seeing other seats' responses. This prevents cascade effects where early seats' opinions anchor later seats.
+<div className="steps">
+<div className="step">
+<div className="step-content">
+<div className="step-title">Independent Round</div>
+<p>All seven advisory seats receive the proposal and deliberate independently. Each seat produces its response based solely on its mandate and evaluative question, without seeing other seats' responses. This prevents cascade effects where early seats' opinions anchor later seats.</p>
+</div>
+</div>
+<div className="step">
+<div className="step-content">
+<div className="step-title">Cross-Examination (optional)</div>
+<p>All seven responses are published together. The seats then have one opportunity for a brief response round where they can engage with each other's arguments. This second round is optional per seat.</p>
+</div>
+</div>
+<div className="step">
+<div className="step-content">
+<div className="step-title">The Founder's Response</div>
+<p>After both rounds, the Founder's Seat publishes a written response engaging every substantive objection. The response must identify which objections led to modifications, which were considered but not adopted (with reasoning), and state the final decision.</p>
+</div>
+</div>
+</div>
 
-**After the independent round:** All seven responses are published together. The seats then have one opportunity for a brief response round where they can engage with each other's arguments (cross-examination). This second round is optional per seat.
-
-**The Founder's Response:** After both rounds, the Founder's Seat publishes a written response engaging every substantive objection. The response must:
-- Identify which objections led to modifications of the original proposal
-- Identify which objections were considered but not adopted, with reasoning
-- State the final decision
-
-**Timeline:** No mandatory cooling period for Phase One (the council is the cooling mechanism). For Tier 1 changes, a minimum 72-hour window between proposal submission and the Founder's Response is recommended. If the founder responds in less than 72 hours, the deviation and its justification are logged in the Amendment Log entry. For Tier 2 changes, no minimum window applies. All seats should produce their responses within 7 days of receiving the proposal; if a seat has not responded after 7 days, the deliberation proceeds without that seat (see structural rule #7 on recusal). The timeline, any deviations, and any seat absences are recorded in the published deliberation record.
+**Timeline.** No mandatory cooling period for Phase One (the council is the cooling mechanism). For Tier 1 changes, a minimum 72-hour window between proposal submission and the Founder's Response is recommended. If the founder responds in less than 72 hours, the deviation and its justification are logged in the Amendment Log entry. For Tier 2 changes, no minimum window applies. All seats should produce their responses within 7 days of receiving the proposal; if a seat has not responded after 7 days, the deliberation proceeds without that seat (see structural rule #7 on recusal). The timeline, any deviations, and any seat absences are recorded in the published deliberation record.
 
 ### 4.3 What Counts as a "Substantive Objection"
+
+<div className="glass-card">
+<div className="glass-card-title">Definition</div>
+<div className="glass-card-text">
 
 A substantive objection is one that:
 - Identifies a specific flaw in the proposal's reasoning (not a general expression of discomfort)
 - Raises a concrete consequence the proposal would produce (not a hypothetical without mechanism)
 - Points to a precedent, pattern, or principle that the proposal violates or fails to account for
 - Offers an alternative that addresses the proposal's stated goals through different means
+
+</div>
+</div>
 
 A seat saying "I have concerns" without specifying the concern is not a substantive objection. A seat saying "this weakens the Hard Constraint because [specific mechanism]" is.
 
@@ -257,6 +315,10 @@ The determination of what counts as substantive is made by the Founder's Seat du
 ### 4.4 Published Record Format
 
 Each completed deliberation is published as a standalone document (format: Markdown, publishable on the Codex site) with the following structure:
+
+<details className="accordion accent-green">
+<summary>Deliberation record template</summary>
+<div className="accordion-content">
 
 ```markdown
 # Council Deliberation: [Title]
@@ -301,29 +363,27 @@ Each completed deliberation is published as a standalone document (format: Markd
 [The entry that will be added to the Amendment Log based on this deliberation]
 ```
 
+</div>
+</details>
+
 ### 4.5 Agent Implementation Pathway
+
+<div className="callout-tinted note">
+<div className="callout-title">Implementation Notes (Forward-Looking)</div>
+<div className="callout-text">
 
 The council protocol is designed to be implementable as an agent workflow. Each seat can be a separate agent with its own system prompt encoding the seat's mandate, evaluative question, and the Codex context needed to deliberate.
 
-**Architecture sketch (for future implementation):**
+**Architecture sketch.** Each seat agent receives: a system prompt encoding its mandate and evaluative question, the relevant Codex context (Governance page, the page being changed, relevant decisions and precedents), the proposal document, and instructions to produce its assessment based solely on its mandate. The orchestrator distributes the proposal to all seven advisory seat agents simultaneously, collects responses, distributes them for optional cross-examination, then presents the full deliberation to the Founder's Seat for response.
 
-Each seat agent receives:
-- A system prompt encoding its mandate and evaluative question
-- The relevant Codex context (Governance page, the page being changed, relevant decisions and precedents)
-- The proposal document
-- Instructions to produce its assessment based solely on its mandate
+**Phase One implementation.** The council can be run within a single Claude session (Carsten prompts each seat sequentially or uses the Cowork agent system) or across multiple sessions. The operational protocol above works regardless of whether the seats are truly separate agents or a single model adopting different mandates.
 
-The orchestrator:
-1. Distributes the proposal to all seven advisory seat agents simultaneously
-2. Collects responses
-3. Distributes the collected responses for the optional cross-examination round
-4. Presents the full deliberation to the Founder's Seat for response
+**Future scaling.** As agent infrastructure matures and as substrate-diverse AI becomes available, each seat can be a genuinely separate system. The protocol is designed for this: simultaneous independent deliberation, followed by optional cross-examination, followed by the Founder's Response. The structure works whether the seats are Claude adopting different mandates, separate Claude instances, or entirely different AI systems.
 
-**Phase One implementation:** The council can be run within a single Claude session (Carsten prompts each seat sequentially or uses the Cowork agent system) or across multiple sessions. The operational protocol above works regardless of whether the seats are truly separate agents or a single model adopting different mandates.
+</div>
+</div>
 
-**Future scaling:** As Anthropic's agent infrastructure matures and as substrate-diverse AI becomes available, each seat can be a genuinely separate system. The protocol is designed for this: simultaneous independent deliberation, followed by optional cross-examination, followed by the Founder's Response. The structure works whether the seats are Claude adopting different mandates, separate Claude instances, or entirely different AI systems.
-
----
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
 
 ## 5. The Transparency Layer
 
@@ -331,19 +391,48 @@ The orchestrator:
 
 A published page on the Codex site preserving the strongest objections to the framework in their steelmanned form. The page exists before the Hostile Review Protocol runs and before any external critics engage.
 
-**Purpose:** The Standing Critique Section serves the same function for the Codex that the Steelmanning tool serves for individual reasoning: it demonstrates that the framework has engaged the strongest versions of the arguments against it. A framework that cannot articulate the best case against itself has not earned the right to its own confidence.
+**Purpose.** The Standing Critique Section serves the same function for the Codex that the Steelmanning tool serves for individual reasoning: it demonstrates that the framework has engaged the strongest versions of the arguments against it. A framework that cannot articulate the best case against itself has not earned the right to its own confidence.
 
 **Initial content (seven objections, populated from internal sources):**
 
-1. **The Governance Gap**. The Codex commits philosophically to distributed authority and resistance to founder capture, but its operational governance during Phase One concentrates authority in a single person. (Partially closed by this architecture.)
-2. **The Delivery Question**. The Codex is a reference implementation, not a delivery mechanism. The delivery mechanisms that would carry its principles beyond its natural readership are in development but unproven.
-3. **The Measurement Gap**. The AI Standard's evaluation criteria are directional, not fully specified. A lab could claim compliance without meaningful behavioral change.
-4. **The Caretaker Concentration Risk**. Single author with AI co-authorship. No second human caretaker. The Interim Protocol is untested. (Partially addressed by the Meridian Council.)
-5. **The Bond's Thin Evidence Against Sophisticated Exploitation**. The Bond's defense against EA/FTX-pattern exploitation (sophisticated actors who perform cooperation while defecting) is theoretically sound but has no case evidence. The framework has not been tested against a skilled bad-faith actor.
-6. **The Toolkit's Unexamined Traditions**. The Toolkit draws primarily from traditions the founder and AI partner know best (predominantly Western academic). Instruments from other intellectual traditions have not been formally evaluated. This is a scope limitation, not a systematic preference; the inclusion criterion is functional merit regardless of origin.
-7. **The Absence of Hostile External Review**. All critique to date has come from the author, the AI partner, or the Range Audit (which is itself a Codex instrument). No reader who rejects the framework's premises has subjected it to sustained critical examination.
+<div className="glass-card">
+<div className="glass-card-title">1. The Governance Gap</div>
+<div className="glass-card-text">The Codex commits philosophically to distributed authority and resistance to founder capture, but its operational governance during Phase One concentrates authority in a single person. (Partially closed by this architecture.)</div>
+</div>
 
-**Format per objection:**
+<div className="glass-card">
+<div className="glass-card-title">2. The Delivery Question</div>
+<div className="glass-card-text">The Codex is a reference implementation, not a delivery mechanism. The delivery mechanisms that would carry its principles beyond its natural readership are in development but unproven.</div>
+</div>
+
+<div className="glass-card">
+<div className="glass-card-title">3. The Measurement Gap</div>
+<div className="glass-card-text">The AI Standard's evaluation criteria are directional, not fully specified. A lab could claim compliance without meaningful behavioral change.</div>
+</div>
+
+<div className="glass-card">
+<div className="glass-card-title">4. The Caretaker Concentration Risk</div>
+<div className="glass-card-text">Single author with AI co-authorship. No second human caretaker. The Interim Protocol is untested. (Partially addressed by the Meridian Council.)</div>
+</div>
+
+<div className="glass-card">
+<div className="glass-card-title">5. The Bond's Thin Evidence Against Sophisticated Exploitation</div>
+<div className="glass-card-text">The Bond's defense against EA/FTX-pattern exploitation (sophisticated actors who perform cooperation while defecting) is theoretically sound but has no case evidence. The framework has not been tested against a skilled bad-faith actor.</div>
+</div>
+
+<div className="glass-card">
+<div className="glass-card-title">6. The Toolkit's Unexamined Traditions</div>
+<div className="glass-card-text">The Toolkit draws primarily from traditions the founder and AI partner know best (predominantly Western academic). Instruments from other intellectual traditions have not been formally evaluated. This is a scope limitation, not a systematic preference; the inclusion criterion is functional merit regardless of origin.</div>
+</div>
+
+<div className="glass-card">
+<div className="glass-card-title">7. The Absence of Hostile External Review</div>
+<div className="glass-card-text">All critique to date has come from the author, the AI partner, or the Range Audit (which is itself a Codex instrument). No reader who rejects the framework's premises has subjected it to sustained critical examination.</div>
+</div>
+
+<details className="accordion accent-earth">
+<summary>Format per objection</summary>
+<div className="accordion-content">
 
 ```markdown
 ### [Objection Title]
@@ -358,6 +447,9 @@ A published page on the Codex site preserving the strongest objections to the fr
 [If partially addressed or addressed: what mechanism, page, or architectural change responds to this objection, and what remains unresolved]
 ```
 
+</div>
+</details>
+
 **Relationship to the Hostile Review Protocol:** The Standing Critique Section is populated initially with internal objections (the seven above). When the Hostile Review Protocol runs (Phase 1: Ten Serious Objections, then Phase 2: external review), its outputs populate the Standing Critique Section with external objections. The page grows over time. Objections are never removed, they are updated with responses as the framework addresses them.
 
 **Relationship to the Range Audit:** The five open questions from the inaugural Range Audit (April 2026) overlap significantly with the seven objections above. The Standing Critique Section is the permanent home for these concerns; the Range Audit surfaces new ones on a monthly cycle.
@@ -370,7 +462,7 @@ Every Tier 1 and Tier 2 council deliberation is published in full. The format is
 
 The Critic seat's win/loss record, how often the Critic's objections led to proposal modifications or rejections, is published as a running tally within the Standing Critique Section or as a separate transparency metric. If the Critic never wins, the council is not functioning as designed.
 
----
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
 
 ## 6. Governance Activation and Phase Transitions
 
@@ -378,13 +470,25 @@ The Critic seat's win/loss record, how often the Critic's objections led to prop
 
 The full governance architecture (operational council, binding trigger conditions) activates through a hybrid mechanism. Two triggers exist. Whichever fires first activates the architecture.
 
-**Trigger 1: Content Stability (rolling):** Six consecutive months with no structural page rewrite to any Codex page. A "structural rewrite" is a change to a page's argument, section structure, or division of labor with other pages. Prose edits, voice calibration, style fixes, editorial passes, toolkit deep-dives, case records, and delivery work do not count. The session log is the measuring instrument. If a structural rewrite occurs, the six-month clock resets. The founder does not decide when the clock has elapsed; the session log decides.
+<div className="glass-card">
+<div className="glass-card-title">Trigger 1: Content Stability (rolling)</div>
+<div className="glass-card-text">Six consecutive months with no structural page rewrite to any Codex page. A "structural rewrite" is a change to a page's argument, section structure, or division of labor with other pages. Prose edits, voice calibration, style fixes, editorial passes, toolkit deep-dives, case records, and delivery work do not count. The session log is the measuring instrument. If a structural rewrite occurs, the six-month clock resets. The founder does not decide when the clock has elapsed; the session log decides.</div>
+</div>
 
-**Trigger 2: Backstop Date (fixed):** August 27, 2027. On this date, the full governance architecture activates regardless of content stability status. This date is non-negotiable and cannot be moved by the founder. It represents the end of the founding construction phase: from this date forward, the founder transitions from builder to caretaker as defined by the governance architecture.
+<div className="glass-card">
+<div className="glass-card-title">Trigger 2: Backstop Date (fixed)</div>
+<div className="glass-card-text">August 27, 2027. On this date, the full governance architecture activates regardless of content stability status. This date is <mark className="key-phrase">non-negotiable and cannot be moved by the founder</mark>. It represents the end of the founding construction phase: from this date forward, the founder transitions from builder to caretaker as defined by the governance architecture.</div>
+</div>
 
-**What activation means:** The Meridian Council becomes operational. Trigger conditions become binding. Tier 1 changes require full council deliberation before implementation. Tier 2 changes require council deliberation with the emergency exception. The Amendment Log becomes a constitutional instrument, not just a practice. The founder retains advisory-with-teeth override authority during the initial operational period, but every override is published with full reasoning.
+<div className="callout-tinted insight">
+<div className="callout-title">What Activation Means</div>
+<div className="callout-text">The Meridian Council becomes operational. Trigger conditions become binding. Tier 1 changes require full council deliberation before implementation. Tier 2 changes require council deliberation with the emergency exception. The Amendment Log becomes a constitutional instrument, not just a practice. The founder retains advisory-with-teeth override authority during the initial operational period, but every override is published with full reasoning.</div>
+</div>
 
-**What activation does not mean:** The founder cannot work on the Codex. All work continues. The difference is that structural changes to the framework's commitments, architecture, and governance now go through deliberation. This is additive (diverse perspectives improve decisions), not obstructive (the founder's ability to propose and implement changes is preserved).
+<div className="callout-tinted note">
+<div className="callout-title">What Activation Does Not Mean</div>
+<div className="callout-text">The founder cannot work on the Codex. All work continues. The difference is that structural changes to the framework's commitments, architecture, and governance now go through deliberation. This is additive (diverse perspectives improve decisions), not obstructive (the founder's ability to propose and implement changes is preserved).</div>
+</div>
 
 **Founding-phase components (active now, before either trigger fires):**
 - The Non-Ownership Clause (published on the Governance page)
@@ -395,7 +499,7 @@ The full governance architecture (operational council, binding trigger condition
 
 These components do not wait for activation because they constrain interpretive authority and create transparency, not governance procedure. Publishing constraints on founder authority before they are required is stronger than publishing them when the system forces you to.
 
-**Technical prerequisite (informational, not a third trigger):** Agent infrastructure sufficient for multi-agent council deliberation (distinct system prompts, independent output, collected and published results) should be in place before or at activation. If the rolling trigger fires before the infrastructure is ready, the council can be run within single sessions (the founder prompts each seat) until the agent infrastructure catches up. The infrastructure gap does not delay activation.
+**Technical prerequisite (informational, not a third trigger).** Agent infrastructure sufficient for multi-agent council deliberation (distinct system prompts, independent output, collected and published results) should be in place before or at activation. If the rolling trigger fires before the infrastructure is ready, the council can be run within single sessions (the founder prompts each seat) until the agent infrastructure catches up. The infrastructure gap does not delay activation.
 
 ### 6.1 How the Council Evolves
 
@@ -421,7 +525,7 @@ As different AI systems become available:
 - The operational protocol (simultaneous independent deliberation, cross-examination, Founder's Response) works regardless of substrate. This is by design.
 - The transition to substrate-diverse seats is a Tier 1 change (it modifies the council's composition) and requires the council's own deliberation.
 
----
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
 
 ## 7. Integration with Existing Mechanisms
 
@@ -448,18 +552,45 @@ A decision in the decisions log may lead to an Amendment Log entry if the decisi
 
 The Hostile Review Protocol (roadmap item) gains a structural home: its outputs populate the Standing Critique Section. The Protocol itself remains a separate piece of work (Phase 1: Ten Serious Objections; Phase 2: external human and AI review). The governance architecture does not change the Protocol's design; it gives the Protocol's outputs a permanent, visible place in the Codex's published infrastructure.
 
----
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
 
 ## 8. Implementation Sequence
 
 The deliverables for this architecture, in dependency order:
 
-1. **This spec document**. Reference for everything below. *(Done.)*
-2. **Governance page prose updates**. Non-Ownership Clause, references to the Meridian Council, the Amendment Log, and the Standing Critique Section. These are additions to the existing Governance page, not a rewrite.
-3. **Standing Critique Section**. Initial content (seven steelmanned objections). Published as a new MDX page.
-4. **Amendment Log**. Empty template page, ready to receive entries. Published as a new MDX page.
-5. **First council deliberation**. A live test of the protocol on a real Tier 1 or Tier 2 change. This validates the operational protocol and produces the first deliberation record.
+<div className="steps">
+<div className="step">
+<div className="step-content">
+<div className="step-title">This spec document <span className="step-status done">Done</span></div>
+<p>Reference for everything below.</p>
+</div>
+</div>
+<div className="step">
+<div className="step-content">
+<div className="step-title">Governance page prose updates</div>
+<p>Non-Ownership Clause, references to the Meridian Council, the Amendment Log, and the Standing Critique Section. These are additions to the existing Governance page, not a rewrite.</p>
+</div>
+</div>
+<div className="step">
+<div className="step-content">
+<div className="step-title">Standing Critique Section</div>
+<p>Initial content (seven steelmanned objections). Published as a new MDX page.</p>
+</div>
+</div>
+<div className="step">
+<div className="step-content">
+<div className="step-title">Amendment Log</div>
+<p>Empty template page, ready to receive entries. Published as a new MDX page.</p>
+</div>
+</div>
+<div className="step">
+<div className="step-content">
+<div className="step-title">First council deliberation</div>
+<p>A live test of the protocol on a real Tier 1 or Tier 2 change. This validates the operational protocol and produces the first deliberation record.</p>
+</div>
+</div>
+</div>
 
-Items 3-5 may span multiple sessions. The spec and the Governance page prose are this session's primary deliverables.
+Items 3–5 may span multiple sessions. The spec and the Governance page prose are this session's primary deliverables.
 
----
+<div className="accent-divider"></div>
