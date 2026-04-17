@@ -1,89 +1,27 @@
 # Contributing to the Meridian Codex
 
-Thank you for your interest in contributing to the Meridian Codex. The Codex is a living framework — it evolves through practice, feedback, and the honest integration of better tools and clearer thinking. Your contribution matters.
+The Codex is a living framework, and substantive contributions from anywhere in the world are part of how it will evolve. The impulse is welcome. The formal architecture to receive those contributions is still being built.
 
-## How the Codex Evolves
+## What GitHub Is (and Is Not)
 
-The Codex is maintained through a caretaking partnership. During the founding period, the Founding Caretaker holds final judgment on what changes serve the Meridian Range and what changes would compromise it. This is not gatekeeping — it is coherence maintenance. The same principle applies to the Codex that it teaches: enough structure to maintain integrity, enough openness to enable growth.
+This repository exists as a convenient way to read, copy, download, and adapt the Codex under CC BY 4.0. It is the **distribution surface** — not the operational one.
 
-Contributions are evaluated on merit, not on the identity or reputation of the contributor. If a tool works better than what currently exists, it belongs in the Codex. If a formulation is clearer, it should replace the current one. If an error is found, it should be corrected. This is the Codex practicing what it teaches.
+The operational home of the Codex is **[meridiancodex.com](https://meridiancodex.com)**. That is the single source of truth for what the framework is, how it evolves, how it is governed, and — in time — how it accepts contributions from anywhere in the world.
 
-## Ways to Contribute
+## The Contribution Architecture Is In Development
 
-### Report Errors
+The Codex is in its **founding period**. During this phase, structural changes are held by the Founding Caretaker while the framework's core architecture stabilizes. The formal contribution process — how proposals are submitted, evaluated, debated, and integrated beyond the founding period — is part of the governance layer still being built.
 
-If you find factual errors, broken links, or internal inconsistencies, open an issue. Be specific about what you found and where.
+When it lands, it will be published in the governance section of meridiancodex.com. Watch `meridiancodex.com/governance` for the announcement.
 
-### Suggest Improvements
+## Until Then
 
-If you believe a section could be clearer, a tool better explained, or a concept more precisely formulated, open an issue. Every suggestion must include:
+**For small, specific fixes** — typos, broken links, factual errors, internal inconsistencies — you can open a GitHub Issue. Keep it specific: what you found, where, and why it matters.
 
-- **What** you think should change
-- **Why** the change serves the Codex's purpose
-- **How** you would formulate it (a specific proposed rewording, not just "this could be better")
+**For sustained objection to the framework itself**, the **Standing Critique** is the appropriate destination. It lives at `meridiancodex.com/governance/standing-critique`. The Standing Critique publishes substantive objections alongside the Codex's honest responses. A developed argument that the framework is wrong about something belongs there, not in a GitHub Issue.
 
-Issues that lack specificity or propose changes without justification will be closed.
-
-### Propose New Tools or Concepts
-
-The Codex integrates tools from many disciplines. If you know of a tool, framework, or concept that meets the Codex's criteria for inclusion — that it is effective, well-supported by evidence, and serves the Meridian Range — propose it through an issue or pull request with:
-
-- A clear description of the tool or concept
-- Evidence of its effectiveness
-- How it relates to the existing framework (Foundation, Knowledge, or Bond)
-- Why the Codex is stronger with it included
-
-### Submit Pull Requests
-
-For direct text contributions:
-
-1. Fork the repository
-2. Create a branch for your changes
-3. Make your edits
-4. Submit a pull request with a clear description of what changed and why
-
-### Contribute to the Meridian AI Standard
-
-The Meridian AI Standard — the companion framework for AI development — benefits from feedback by researchers, developers, and practitioners working in AI alignment, safety, and governance. Contributions to the Standard follow the same process as contributions to the Codex.
-
-## Principles for Contributing
-
-These are not bureaucratic requirements. They are the Codex's own disciplines applied to its own development.
-
-**Honest inquiry.** Contributions should be motivated by genuine belief that they improve the framework, not by desire to promote a particular ideology, methodology, or personal brand.
-
-**Steelmanning.** If you disagree with something in the Codex, engage with the strongest version of its reasoning before proposing alternatives. Understand why it says what it says before suggesting it say something different.
-
-**Calibrated claims.** Match the strength of your claims to your evidence. "This section is unclear" is useful feedback. "This section is wrong" requires evidence. "This entire approach is misguided" requires substantial argumentation.
-
-**Good faith.** Assume the current formulations exist for reasons, even if those reasons aren't immediately obvious. Ask before assuming error.
-
-**Service to the range.** The question is not "does this reflect my preferences?" but "does this serve the Meridian Range?" Contributions that pull toward Control (rigid orthodoxy, unnecessary complexity, gatekeeping) or toward Decay (incoherence, dilution of core principles, loss of integration) will not be accepted regardless of their individual merit.
-
-## What Will Not Be Accepted
-
-- Changes that compromise the Codex's core principles or internal coherence
-- Additions that serve ideological commitment over epistemic integrity
-- Contributions that introduce unnecessary complexity without proportional value
-- Marketing language, promotional content, or self-serving references
-- Changes to the governance model without prior discussion and approval from the Founding Caretaker
-
-## Code of Conduct
-
-Contributors are expected to practice what the Codex teaches: honest inquiry, good faith engagement, steelmanning, and respect for the dignity of all participants. The Codex is built for all sentient life. Its development should reflect that commitment.
-
-Disagreement is welcome. Bad faith is not.
-
-## What This Repository Is Not
-
-This repository is the source text of a living framework. It is not a discussion forum, a debate platform, or a place to argue the merits of the Codex's approach. GitHub Issues are for specific, actionable proposals. If you want to discuss the ideas in the Codex, do so on your own platform and link back per the license.
-
-GitHub Discussions are disabled on this repository by design.
-
-## Questions
-
-If you're unsure whether a specific contribution would be welcome, open an issue describing the proposed change. Include enough detail for the caretakers to evaluate it.
+**For anything else**, the best thing you can do is practice the Codex, read it critically, and talk about it publicly. The full contribution infrastructure will arrive when the framework is stable enough to hold it. When it does, the criteria will be the same disciplines the Codex teaches: honest inquiry, steelmanning, calibrated claims, good faith, and service to the Meridian Range.
 
 ---
 
-*The Codex teaches that tools must be evaluated and replaced when something more effective emerges. This applies to the Codex itself. Substantive contributions are part of that process.*
+*The Codex is built for all sentient life. Its development should reflect that.*
