@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://meridiancodex.com">
-    <img src="https://meridiancodex.com/og-image.png" alt="The Meridian Codex — A civilizational operating system" width="820" />
+    <img src="https://imagedelivery.net/iAMt-owPtJnX2cbNg6lp9g/mc-github-readme-hero/public" alt="The Meridian Codex — A foundational operating system for people and AI" width="820" />
   </a>
 </p>
 
 <h1 align="center">The Meridian Codex</h1>
 
-<p align="center"><strong>A civilizational operating system.</strong></p>
+<p align="center"><strong>A foundational operating system for people and AI.</strong></p>
 
 <p align="center">
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
