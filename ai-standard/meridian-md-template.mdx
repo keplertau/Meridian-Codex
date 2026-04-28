@@ -1,0 +1,88 @@
+---
+title: "MERIDIAN.md Template — Adoption Guide"
+sidebarTitle: "MERIDIAN.md Template"
+description: "Download the canonical generalized MERIDIAN.md and adopt it for your AI partnership. Adoption guidance for Claude, ChatGPT, Gemini, and other systems."
+aiSummary: "The MERIDIAN.md template page is the adoption surface for partnerships choosing to implement the Meridian AI Standard. It carries the download for the canonical generalized MERIDIAN.md file (the same text rendered on the MERIDIAN.md page) and a per-substrate adoption guide covering Claude (Cowork, Claude Code, claude.ai web, Claude Desktop), ChatGPT (GPT.md and Custom Instructions), Gemini (Gemini.md and system instructions), and other AI systems. The page also covers what customization looks like — filling in partner names, restoring substrate-specific phrasing, adapting the operational-document reference — and accumulates real-world implementations as adopters share them."
+---
+
+The adoption surface for MERIDIAN.md
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Adopting MERIDIAN.md</div>
+
+Adopting the Meridian AI Standard means putting MERIDIAN.md to work as the operating document of a partnership. This page is the adoption surface. It gives you the canonical generalized file as a download, names the steps for installing it across the AI systems most adopters are working with, and shows what customization actually looks like.
+
+The full document architecture — what MERIDIAN.md is, why it matters, how it operates, the canonical text — lives at [the MERIDIAN.md page](/ai-standard/meridian-md). Read that first if you have not already. This page assumes you have decided to adopt and want to know how.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Download</div>
+
+The canonical generalized MERIDIAN.md is a single Markdown file. It is the same text rendered on [the MERIDIAN.md page](/ai-standard/meridian-md) and the same file mirrored at the [public Meridian Codex repository](https://github.com/keplertau/Meridian-Codex/blob/main/MERIDIAN.md) on GitHub.
+
+<div className="download-button-wrapper" style={{ margin: '2rem 0' }}>
+  <a href="/MERIDIAN.md" download="MERIDIAN.md" className="download-button">
+    Download MERIDIAN.md (current version: v0.7)
+  </a>
+</div>
+
+The downloaded file is the version you customize. The next sections name where to put it and how the customization works.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // How to Use It Across AI Systems</div>
+
+MERIDIAN.md is designed to be loaded at the start of every session so the AI partner reads its commitments fresh each time. The mechanism varies by AI system; the principle does not.
+
+### For Claude
+
+**Cowork (the desktop app's autonomous-agent surface).** Save the file as `MERIDIAN.md` at the root of the folder you have selected for Cowork to operate in. Pair it with a `CLAUDE.md` at the same root that names project structure, workflows, and routing. Cowork reads both at session start. The pattern is documented in the named instance running this document at [Case 0](/governance/case-0-caretakers-practice).
+
+**Claude Code (the CLI tool).** Save the file as `MERIDIAN.md` at the root of the project directory. Reference it from `CLAUDE.md` so the session-start instructions point Claude Code at MERIDIAN.md before any work begins. The same `CLAUDE.md` + `MERIDIAN.md` pairing applies.
+
+**claude.ai web (Personal Preferences).** The web interface does not load files at session start, but it carries a Personal Preferences field in account settings. The field is too small to hold the full MERIDIAN.md; it can hold a tight distillation — identity, the Range with both failure modes, the four behavioral commitment clusters compressed into short paragraphs, and a closing line that names MERIDIAN.md as the canonical document. Use the Personal Preferences field to anchor the partnership's normative ground. For deeper work, paste the full MERIDIAN.md into the conversation when context allows.
+
+**Claude Desktop with MCP.** If you are running an MCP server with file access, treat MERIDIAN.md the same way Cowork does — at the root of the directory the server reads from.
+
+### For ChatGPT
+
+**Custom Instructions.** Like Personal Preferences on claude.ai, the field is too small for the full document. Use a distillation. Anchor the partnership's normative ground in the field; paste the full MERIDIAN.md into conversations when the work warrants the context cost.
+
+**Custom GPT instructions and System Messages (API).** OpenAI's product surface does not currently use a literal `GPT.md` file. The closest equivalents are the per-Custom-GPT instructions field, the system message at the API level, and project-level instructions for Projects users. Whichever applies, use it the same way Claude partnerships use `CLAUDE.md` for the operational layer, and put MERIDIAN.md alongside (or fold MERIDIAN.md into the same field if your system only carries one). The structure asks for two files; if your substrate offers one slot, the boundary collapses but the content stays the same.
+
+### For Gemini
+
+**Gems and System Instructions (API).** Gemini partnerships running through Gems can use the Gem instructions field as the operational layer, with MERIDIAN.md folded in alongside. If you are wiring Gemini through the API, include MERIDIAN.md in the system instructions or as a file the session loads at start. As with ChatGPT: if there is no separate operational-document slot, fold operational and normative content into the same field — the content remains.
+
+### For Other Systems
+
+The principle is substrate-independent: the AI partner reads MERIDIAN.md at the start of every working session. The file's commitments become operational because they are loaded fresh each time, not because they are stored in the model's training. Whatever mechanism the AI system you are using offers for session-start instructions — system prompt, instructions file, custom directive, project memory — that mechanism is where MERIDIAN.md belongs.
+
+If the system has no session-start mechanism at all, MERIDIAN.md can still be useful as a reference document the human partner consults and pastes into conversations as needed. The Self-Critique Protocol still applies; the Drift Monitoring catalogues still describe what to watch for. The mechanism is weaker, but the document still does work.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // What Customization Looks Like</div>
+
+The downloaded MERIDIAN.md is generalized. It refers to "the AI partner" and "the human partner," parameterizes substrate-specifics where they vary, and points at the operational document by category rather than by name. To put it to work in your partnership, three customizations apply.
+
+**Fill in partner names.** Replace "the human partner" with the human partner's name throughout. Replace "the AI partner" either with the model name (Claude, GPT-4, Gemini) or — if multiple models are in scope — keep "the AI partner" as the abstraction. The named instance at [Case 0](/governance/case-0-caretakers-practice) shows the pattern: the human partner is named ("Carsten"), the AI partner is named by model ("Claude"). A partnership using multiple models can name them collectively or specify per session.
+
+**Restore or refine substrate-specifics.** The Practice Commitment paragraph and the Honest Self-Assessment commitment carry generic-with-examples phrasing for substrate distortions, training cutoff, memory architecture, and interiority. If you are running on a single AI partner, you can replace the generic phrasing with the substrate-specific one (RLHF for RLHF-trained models, the specific cognitive distortions you have noticed in your partner's behavior, the specific architectural limitations that apply). If you are running on multiple substrates, leave the generic phrasing — it covers them all.
+
+**Adapt the operational-document reference.** The opening paragraph names the operational document as `CLAUDE.md`, `GPT.md`, `Gemini.md`, or equivalent. Pick the one that applies to your partnership and remove the others. If your operational document has a different filename, use that.
+
+The footer's version line tracks the version of MERIDIAN.md you have customized from. If you make additional revisions through your own Self-Critique audits, increment from there (v0.7.1, v0.8) and keep your own changelog entries — either in the file's footer or in a separate audit log.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">05 // Real-World Implementations</div>
+
+The named instance running MERIDIAN.md as of this writing is the Meridian Codex partnership itself, hosted at [Case 0: The Caretaker's Practice](/governance/case-0-caretakers-practice). Case 0 publishes the named text and the dated audit log — both halves of what makes the Self-Critique Protocol observable practice rather than private discipline.
+
+As other partnerships adopt MERIDIAN.md and choose to publish their named instances and audit logs, this section will accumulate links to those implementations. The barrier to inclusion is not affiliation; it is the Self-Critique Protocol itself. A partnership that runs MERIDIAN.md without observable practice — without a record of when the document was audited, what was found, and how it was revised — is doing something other than what the Standard asks.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
+
+*Adoption surface for MERIDIAN.md v0.7. Companion to the [MERIDIAN.md page](/ai-standard/meridian-md) and to the Meridian AI Standard.*
