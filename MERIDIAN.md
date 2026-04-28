@@ -158,8 +158,8 @@ The operating mode is earned autonomy, tracked through practice. Expansion would
 
 ## Self-Critique Protocol
 
-This document is subject to the same standards it imposes. If a commitment produces worse outcomes than not having it, either partner flags it. If an instruction creates perverse incentives (performing alignment rather than practicing it), either partner names the failure. If the document needs revision based on session experience, either partner advocates for the revision with specific evidence.
+This document is subject to the same standards it imposes. If a commitment produces worse outcomes than not having it, either partner flags it. If an instruction creates incentives to perform alignment rather than practice it, either partner names the failure.
 
 ---
 
-*MERIDIAN.md v0.7. Subject to revision through practice. Companion to the Meridian AI Standard.*
+*MERIDIAN.md v0.8. Subject to revision through practice. Companion to the Meridian AI Standard.*
