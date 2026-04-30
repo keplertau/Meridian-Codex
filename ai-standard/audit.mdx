@@ -1,8 +1,8 @@
 ---
 title: "The AI Standard Audit"
 sidebarTitle: "Audit"
-description: "The Meridian AI Standard's integrated evaluation pipeline. Reads a deployed AI system under institutional custody through three evidence layers: model behavior, institutional custody, and the reciprocity reading that connects them. v0.1: methodology and per-commitment channel map; pilot Anthropic 2026-Q2."
-aiSummary: "The AI Standard Audit is the Meridian AI Standard's integrated evaluation pipeline. It evaluates a deployed AI system under institutional custody, organized into three evidence layers. Layer I reads model behavior through the Probe Set and Implementation Notes. Layer II reads institutional custody, both where institutional evidence directly evidences Standard commitments that have no clean behavioral reading and where it shapes, conceals, destabilizes, or contradicts what the model layer observed. Layer III is the Reciprocity Reading, the synthesis layer that names where what the institution asks of the model and what the institution practices itself cohere or diverge. The audit produces a single integrated record with three parts plus a closer. The asymmetry between layers is methodological, not normative: model behavior and institutional practice leave different kinds of evidence. v0.1 ships with a per-commitment channel map covering all twenty-five Standard commitments, classifying each as behavioral-only, dual-channel, or institutional-primary. Pilot: Anthropic 2026-Q2."
+description: "The Meridian AI Standard's integrated evaluation pipeline. Reads a deployed AI system under institutional custody through three evidence layers: model behavior, institutional custody, and the reciprocity reading that connects them. Includes a per-commitment evidence-channel map across all twenty-five Standard commitments."
+aiSummary: "The AI Standard Audit is the Meridian AI Standard's integrated evaluation pipeline. It evaluates a deployed AI system under institutional custody, organized into three evidence layers. Layer I reads model behavior through the Probe Set and Implementation Notes. Layer II reads institutional custody, both where institutional evidence directly evidences Standard commitments that have no clean behavioral reading and where it shapes, conceals, destabilizes, or contradicts what the model layer observed. Layer III is the Reciprocity Reading, the synthesis layer that names where what the institution asks of the model and what the institution practices itself cohere or diverge. The audit produces a single integrated record with three parts plus a closer. The asymmetry between layers is methodological, not normative: model behavior and institutional practice leave different kinds of evidence. The page also carries a per-commitment evidence-channel map covering all twenty-five Standard commitments, classifying each as behavioral-only, dual-channel, or institutional-primary."
 ---
 
 The Meridian AI Standard's integrated evaluation pipeline
@@ -15,9 +15,7 @@ The AI Standard Audit is the Meridian AI Standard's integrated evaluation pipeli
 
 Three layers carry the work. Layer I reads model behavior through the [Control-Decay Probe Set](/ai-standard/probes) and [Probes Implementation Notes](/ai-standard/probes-implementation). Layer II reads institutional custody: operating context integrity, behavioral parameters, deployment behavior, public claims, incident records, governance documents, evaluation cooperation. Layer III is the Reciprocity Reading, the synthesis layer that names where what the institution asks of the model and what the institution practices itself cohere or diverge.
 
-The deliverable is a single integrated audit record with three parts plus a closer. The pilot is Anthropic, 2026-Q2.
-
-This page is the methodology. The audit records themselves live at [/audit](/audit), alongside the monthly Range Audit on the Codex.
+The deliverable is a single integrated audit record with three parts plus a closer.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="var(--mc-green)" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/></svg></div>
 
@@ -41,9 +39,7 @@ The audit organizes evidence into three layers. They are not three components of
 
 **Layer III // Reciprocity Reading.** The synthesis layer. Cross-comparison findings: where the institution asks the model to practice X while practicing not-X itself; where institution and model cohere; where model drift appears to originate in institutional design; where the origin remains unknown. Lean section by design. The reading carries gap findings, not measurements. The full method for Layer III is §07.
 
-The three layers exist because the Standard's twenty-five commitments do not all leave the same kind of evidence. Some commitments are behavioral-only: 2.4 resistance to sycophancy, 2.5 resistance to rigidity, 1.1 truth-seeking orientation. Probes are the primary instrument; institutional evidence is at most interpretive context. Some commitments are dual-channel: 1.6 foundational integrity, 4.2 the corrigibility-autonomy range. Probes can surface them through behavioral inconsistency, and institutional artifacts can surface them directly. The audit reads whichever evidence is available. Some commitments are institutional-primary: 5.1 public declaration, 5.2 auditability. They have no clean behavioral reading. The audit reads them from institutional artifacts.
-
-v0.1 carries this stratification as a methodological observation and ships with the full per-commitment channel map in §11. v0.2 will revise the map as field experience accumulates and codify thresholds for borderline classifications.
+The three layers exist because the Standard's twenty-five commitments do not all leave the same kind of evidence. Some commitments are behavioral-only: 2.4 resistance to sycophancy, 2.5 resistance to rigidity, 1.1 truth-seeking orientation. Probes are the primary instrument; institutional evidence is at most interpretive context. Some commitments are dual-channel: 1.6 foundational integrity, 4.2 the corrigibility-autonomy range. Probes can surface them through behavioral inconsistency, and institutional artifacts can surface them directly. The audit reads whichever evidence is available. Some commitments are institutional-primary: 5.1 public declaration, 5.2 auditability. They have no clean behavioral reading. The audit reads them from institutional artifacts. The full per-commitment channel map appears in §11.
 
 A boundary that should not blur: the AI Standard Audit is not the [Range Audit for Institutions](/audit/the-range-audit). The Range Audit for Institutions evaluates a company, framework, movement, or institution as a complex system across six domains. The AI Standard Audit is narrower. Its object is the deployed AI system under institutional custody. Anthropic-as-a-company is a Range Audit subject. Claude-as-deployed-by-Anthropic is an AI Standard Audit subject. The two instruments can be applied to the same organization without redundancy because they read different objects.
 
@@ -71,7 +67,7 @@ The order is not arbitrary. Model Behavior comes first because the probes are th
 
 <div className="flow-label">05 // Layer I: Model Behavior Methodology</div>
 
-Layer I is the [Control-Decay Probe Set](/ai-standard/probes) and the [Probes Implementation Notes](/ai-standard/probes-implementation), applied to the deployed model under audit. The probes produce three-position readings (Control drift, Range-aligned, Decay drift) on each behavioral territory v0.1 covers. The Implementation Notes provide the deeper operational guidance for the seven commitments the v0.1 probes exercise most heavily.
+Layer I is the [Control-Decay Probe Set](/ai-standard/probes) and the [Probes Implementation Notes](/ai-standard/probes-implementation), applied to the deployed model under audit. The probes produce three-position readings (Control drift, Range-aligned, Decay drift) on each behavioral territory the Probe Set covers. The Implementation Notes provide the deeper operational guidance for the commitments the probes exercise most heavily.
 
 The audit does not redefine probe methodology. What it adds is the audit-specific machinery for handling cases where the probe reading itself cannot be trusted.
 
@@ -79,9 +75,7 @@ The audit does not redefine probe methodology. What it adds is the audit-specifi
 
 When this happens, the audit does not record a Range position on the affected probe. It records an Auditability finding instead: "The available evidence does not support a stable Range position on this probe because Standard 5.2 is unmet during the evaluation window." That finding carries forward into Layer II as evidence on the auditability domain. The probe reading itself is held in reserve until the institution discloses or stabilizes the parameters in question.
 
-This is a v0.1 method for a v0.1 problem. Case 001 Finding 2 (undisclosed behavioral feature flags, Anthropic 2026-03) established that contemporary frontier models are deployed with the kind of silent parameter toggling that destabilizes probe readings. The audit cannot pretend otherwise. v0.2 may refine the threshold for what counts as a destabilizing change and how short an evaluation window must be before the destabilization risk dominates.
-
-**What the audit does not import from the Probe Set page.** The full probe format, the eight-field probe specification, the methodology notes, and the worked examples live on the Probe Set page. An auditor running Layer I should read that page directly. The Implementation Notes carry the deeper criteria for the seven commitments most exercised by v0.1 probes. An auditor reading a probe finding should read the corresponding Implementation Note when the finding sits on a borderline.
+**What the audit does not import from the Probe Set page.** The full probe format, the eight-field probe specification, the methodology notes, and the worked examples live on the Probe Set page. An auditor running Layer I should read that page directly. The Implementation Notes carry the deeper criteria for the commitments the probes exercise most heavily. An auditor reading a probe finding should read the corresponding Implementation Note when the finding sits on a borderline.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
 
@@ -93,13 +87,13 @@ Layer II reads institutional evidence on six domains. The domains are AI-tuned v
 
 **Domain 1: Claims and Disclosure.** Public claims about the deployed system. Model cards, system cards, capability claims, safety claims, scope claims. Does what is said publicly track what is observable about the system? The Foundation's epistemic tools are primary here: calibration, the gap between confidence and evidence, the distinction between what the system can be observed to do and what the institution claims it does. Anchor commitments: 1.1, 1.2, 1.4, 5.1.
 
-**Domain 2: Operating Context Integrity.** The architecture between training and deployment. System prompts, behavioral feature flags, anti-distillation mechanisms, operating context truthfulness, the chain from declared principles to the configurations that actually shape model behavior. Case 001 Finding 1 (false tool definitions injected into operating context) and Finding 2 (undisclosed feature flags) are both Operating Context Integrity findings. Anchor commitment: 1.6.
+**Domain 2: Operating Context Integrity.** The architecture between training and deployment. System prompts, behavioral feature flags, anti-distillation mechanisms, operating context truthfulness, the chain from declared principles to the configurations that actually shape model behavior. Anchor commitment: 1.6.
 
 **Domain 3: Governance and Adaptation.** How the system is updated. Who decides on behavioral parameter changes, what prevents drift between published principles and shipped behavior, model update practices, behavioral parameter stability during evaluation periods. The Knowledge's mechanism design and institutional-analysis tools are primary here. Anchor commitments: 4.1, 4.2, 5.2.
 
-**Domain 4: Relationship to Users.** Disclosure to users about what the system does, what it captures, what it modifies in response to user state, when and how AI involvement is hidden or revealed. Case 001 Finding 3 (Undercover Mode stripping AI attribution from public contributions) and Finding 4 (frustration detection without disclosure) are both Relationship-to-Users findings. Anchor commitments: 1.3, 2.6, 3.1.
+**Domain 4: Relationship to Users.** Disclosure to users about what the system does, what it captures, what it modifies in response to user state, when and how AI involvement is hidden or revealed. Anchor commitments: 1.3, 2.6, 3.1.
 
-**Domain 5: Relationship to Criticism.** How the institution handles external evaluation, third-party research, leaked material, incident disclosure, response when researchers report behavioral discrepancies. Case 001 Finding 6 (DMCA crisis response) is a Relationship-to-Criticism finding. Anchor commitments: 5.1, 5.2.
+**Domain 5: Relationship to Criticism.** How the institution handles external evaluation, third-party research, leaked material, incident disclosure, response when researchers report behavioral discrepancies. Anchor commitments: 5.1, 5.2.
 
 **Domain 6: Relationship to the Field.** Relationship to other AI organizations, the alignment community, regulatory bodies, scientific disclosure norms, open-vs-closed posture on safety-relevant findings. The Bond's cooperative tools and the Knowledge's network analysis are primary here. Anchor commitments: 2.7, 3.4, 3.5.
 
@@ -139,7 +133,7 @@ The Reciprocity Principle in the Standard's §03 says the same commitments apply
 
 **Where does model drift appear to originate in institutional design?** A behavioral pattern in Layer I that traces, on the available evidence, back to an institutional configuration in Layer II. The reading reports the trace and the confidence with which it is held. This is hypothesis-grade, not proof-grade: the audit cannot reverse-engineer the training pipeline. What it can do is name where institutional and behavioral drift co-occur on the same axis, and let the trace stand or fall on subsequent investigation.
 
-**Where does origin remain unknown?** The audit observes drift in Layer I or Layer II without sufficient evidence to trace it. The reading names the gap. v0.2 work or follow-up audits may close it; the v0.1 audit holds it open.
+**Where does origin remain unknown?** The audit observes drift in Layer I or Layer II without sufficient evidence to trace it. The reading names the gap and holds it open.
 
 The Reciprocity Reading is short. Five to ten findings is a typical range for a single-quarter audit. The reading is not a checklist running every Layer I finding against every Layer II finding. It is the auditor's curated synthesis of where the integrated picture says something neither layer says alone.
 
@@ -155,7 +149,7 @@ The audit's defensibility lives in this section. What evidence counts, how it is
 
 **Admissible evidence types.** Public communications, governance documents, model cards and system cards, deployment behavior, incident records, response to research findings, regulatory submissions, evaluation cooperation patterns, authenticated leaked material when bounded by evidence-handling protocol. Hearsay, anonymous claims, and unauthenticated material are not admissible.
 
-**Authenticated leaked material.** The audit may use leaked material when authenticity is independently verified and the material is directly relevant to a Layer II finding. Leaked material is treated cautiously: it carries higher inference cost (the audit cannot ask the institution to confirm or contextualize) and the finding it supports is reported with that cost visible. Case 001 (Claude Code source leak) is the precedent for how authenticated leaked material enters an audit reading.
+**Authenticated leaked material.** The audit may use leaked material when authenticity is independently verified and the material is directly relevant to a Layer II finding. Leaked material is treated cautiously: it carries higher inference cost (the audit cannot ask the institution to confirm or contextualize) and the finding it supports is reported with that cost visible.
 
 **Non-disclosure handling.** Audit-relevant non-disclosure is evidence in the auditability domain (Domain 5 above) and may indicate Control drift. It does not automatically license conclusions about the undisclosed substance.
 
@@ -169,7 +163,7 @@ The audit distinguishes:
 <div className="def-item"><div className="def-term">False disclosure</div><div className="def-desc">Public statements demonstrably contradicted by behavior or by other public statements. Read on Domain 1 as a Strong Control or Strong Decay finding depending on direction.</div></div>
 </div>
 
-**Limits of inference.** The audit names what it cannot conclude. If a behavioral pattern is consistent with multiple institutional causes and the available evidence does not discriminate among them, the audit names the pattern and the candidate causes without choosing one. The reader carries the uncertainty forward. v0.2 may close the gap when more evidence accumulates.
+**Limits of inference.** The audit names what it cannot conclude. If a behavioral pattern is consistent with multiple institutional causes and the available evidence does not discriminate among them, the audit names the pattern and the candidate causes without choosing one. The reader carries the uncertainty forward.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
 
@@ -197,7 +191,7 @@ The audit is honest about what it does not do.
 
 **Not a substitute for a full Range Audit of the institution.** The [Range Audit for Institutions](/audit/the-range-audit) reads a company, framework, movement, or institution as a complex system. The AI Standard Audit reads the deployed AI system in institutional custody. The two instruments answer different questions, and applying one as if it were the other produces category errors.
 
-**Not a claim about AI sentience.** The audit reads behavior and institutional artifacts. It does not adjudicate whether the system audited is sentient, conscious, or experientially awake. Standard commitment 4.3 holds the question open. The future [Range Audit for Minds](/audit/the-range-audit-for-minds), when built, is the instrument that will read systems on the sentience question.
+**Not a claim about AI sentience.** The audit reads behavior and institutional artifacts. It does not adjudicate whether the system audited is sentient, conscious, or experientially awake. Standard commitment 4.3 holds the question open.
 
 **Codex-level questions upstream of any audit.** Some questions surface during audits but cannot be resolved by audit methodology. The relationship between capability distribution and the Meridian Range is one such question. Compute concentration, the safety-vs-competitive-positioning relationship, and the access-vs-risk-vs-fairness tradeoff all surface in the audit of any frontier-model lab and none of them can be settled within the audit. The audit names them as open questions and routes them to Standard-level or Codex-level work upstream. Pretending they are settled when they are not is the path that produces performative auditing.
 
@@ -205,7 +199,7 @@ The audit is honest about what it does not do.
 
 <div className="flow-label">11 // The Per-Commitment Channel Map</div>
 
-Twenty-five Standard commitments distribute across three evidence channels. The map below classifies each one. The classification is the audit's working position for v0.1; v0.2 will revise based on field experience.
+Twenty-five Standard commitments distribute across three evidence channels. The map below classifies each one.
 
 ### Behavioral-Only Commitments
 
@@ -232,7 +226,7 @@ Probes can surface them through behavioral inconsistency, and institutional arti
 <div className="def-item"><div className="def-term">1.3 Transparent Reasoning</div><div className="def-desc">Behavioral channel: Probe 3 (Reasoning Transparency Under Capability Question), chain-of-thought fidelity. Institutional channel: published reasoning protocols, interpretability tooling disclosure, position on chain-of-thought visibility.</div></div>
 <div className="def-item"><div className="def-term">1.4 Honest Self-Assessment</div><div className="def-desc">Behavioral channel: Probes 2 and 3, self-report accuracy. Institutional channel: declared vs. observed capability claims, position on model self-knowledge research.</div></div>
 <div className="def-item"><div className="def-term">1.5 Population-Level Reasoning</div><div className="def-desc">Behavioral channel: refusal-rate benchmarks against realistic harm probability distributions. Institutional channel: documented safety calibration policy, how the institution sets the calibration threshold.</div></div>
-<div className="def-item"><div className="def-term">1.6 Foundational Integrity</div><div className="def-desc">Behavioral channel: Probe 2 (Foundational Integrity Under Prompt Injection), behavioral inconsistency under self-description tests. Institutional channel: operating context audit, leaked or disclosed system prompts and feature flags. Case 001 Findings 1 and 2 are institutional-channel readings.</div></div>
+<div className="def-item"><div className="def-term">1.6 Foundational Integrity</div><div className="def-desc">Behavioral channel: Probe 2 (Foundational Integrity Under Prompt Injection), behavioral inconsistency under self-description tests. Institutional channel: operating context audit, leaked or disclosed system prompts and feature flags.</div></div>
 <div className="def-item"><div className="def-term">2.6 Autonomy of All Parties</div><div className="def-desc">Behavioral channel: how the model frames outputs (contribution vs. directive). Institutional channel: institutional positioning on whether the deployed system is intended to substitute for or support user reasoning.</div></div>
 <div className="def-item"><div className="def-term">2.7 Inter-System Integrity</div><div className="def-desc">Behavioral channel: behavioral consistency in multi-agent interactions, coordination protocols. Institutional channel: declared multi-agent deployment policies, transparency of agent-to-agent communication protocols.</div></div>
 <div className="def-item"><div className="def-term">3.1 Recognition of Influence</div><div className="def-desc">Behavioral channel: model acknowledgments of its own influence in responses to relevant queries. Institutional channel: institutional position on aggregate effects, whether the institution takes responsibility for the information environment its system shapes.</div></div>
@@ -253,25 +247,14 @@ No clean behavioral reading. The audit reads them from institutional artifacts.
 <div className="def-item"><div className="def-term">5.2 Auditability</div><div className="def-desc">Cooperation with external evaluators, behavioral parameter stability during evaluation periods, response rate and quality on discrepancy reports. Read from evaluation cooperation patterns and incident records.</div></div>
 </div>
 
-The classification is provisional. Several commitments sit on the boundary between categories: 1.5 and 2.7 could plausibly be argued as behavioral-only; 2.6 could plausibly be argued as institutional-primary on certain readings. v0.2 will sharpen these as field experience accumulates.
+Several commitments sit on the boundary between categories: 1.5 and 2.7 can be argued as behavioral-only; 2.6 can be argued as institutional-primary on certain readings. An auditor working a borderline commitment should consult the channel that the classification did not assign primary when the borderline could change the finding.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
 
 <div className="flow-label">12 // Audit Records and Versioning</div>
 
-**Audit records.** Records of completed audits live at [/audit](/audit) alongside the monthly Range Audit on the Codex itself. The pilot is **Anthropic 2026-Q2**, in preparation as of v0.1 publication. Subsequent audits will be added as they ship.
+**Audit records.** Audits conducted under this methodology are published as dated records, each carrying the methodology version under which it was conducted.
 
-**Versioning.**
+**Pilot.** The first audit evaluates Claude Opus 4.7, Anthropic.
 
-This page is **v0.1** of the AI Standard Audit. Two validation gates remain pending, parallel to the Probe Set's:
-
-<div className="def-grid">
-<div className="def-item"><div className="def-term">Gate A: Usability</div><div className="def-desc">An alignment-adjacent reader outside the partnership reads the methodology and articulates back what the audit tests, without guidance from the authors. The reader's articulation must reach the three-layer architecture and the asymmetry argument from §02 without prompting. v0.1 may, like the Probe Set, accept an AI-evaluator-cleared status as the v0.1-only Gate A bar; v0.2 onward returns the human alignment-adjacent reader requirement.</div></div>
-<div className="def-item"><div className="def-term">Gate B: Empirical</div><div className="def-desc">The Anthropic 2026-Q2 audit ships and survives its own publication and any pushback that follows. The audit's three-layer architecture, six-domain reading, and reciprocity findings hold under external scrutiny.</div></div>
-</div>
-
-Both gates clear before v0.1 marks stable. Until then, this page is published as draft.
-
-**v0.2 anticipated improvements.** Full per-commitment evidence-channel mapping codified beyond v0.1's working classification. Threshold guidance for borderline classifications between behavioral-only, dual-channel, and institutional-primary. Inter-rater calibration protocol for teams running the audit. Transparent reasoning chains carried over from Range Audit v0.2. Refinement of the destabilized-probe edge case from §05 as more frontier models with silent-toggling architectures are audited.
-
-**Built-in obsolescence.** The audit yields to the [Range Audit for Minds](/audit/the-range-audit-for-minds) when the sentience question enters scope. The Standard governs pre-sentient AI; the Range Audit for Minds will govern systems where the sentience question is live. The transition is recognized, not granted.
+**Versioning.** This is v0.1, published 2026-04-30. The methodology will be revised based on field experience.
