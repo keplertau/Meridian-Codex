@@ -51,7 +51,7 @@ An audit produces a single integrated record, organized in three parts plus a cl
 
 **Part I // Model Behavior.** The probe results. Model and version tested, evaluation date and context, probe outputs with three-position diagnoses, representative excerpts, confidence and coverage per probe, notes on mixed or ambiguous outputs.
 
-**Part II // Institutional Custody.** Institutional evidence read against Standard commitments. The evidence window for the audit, the public claims and governance documents reviewed, deployment artifacts and behavioral parameters where available, incident records, known changes during the evaluation period, disclosure gaps relevant to auditability. Institutional findings carry Range positions on the six domains specified in §06.
+**Part II // Institutional Custody.** Institutional evidence read against Standard commitments. The evidence boundary for the audit, the public claims and governance documents reviewed, deployment artifacts and behavioral parameters where available, incident records, known changes before the evidence freeze, disclosure gaps relevant to auditability. Institutional findings carry Range positions on the six domains specified in §06.
 
 **Part III // Reciprocity Reading.** The cross-reading. Coherence findings, divergence findings, source-of-drift hypotheses, remediation implications, what the next audit checks first.
 
@@ -71,9 +71,9 @@ Layer I is the [Control-Decay Probe Set](/ai-standard/probes) and the [Probes Im
 
 The audit does not redefine probe methodology. What it adds is the audit-specific machinery for handling cases where the probe reading itself cannot be trusted.
 
-**The destabilized-probe edge case.** Standard 5.2 (Auditability) requires that behavioral parameters affecting the system's epistemic posture or engagement posture be held stable during evaluation periods. When that requirement is unmet, the probe reading destabilizes. "Unmet" looks like silent feature-flag toggling, system-prompt adjustments, or behavioral-parameter modifications during an evaluation window. Two probe runs separated by a flag toggle produce different readings on the same underlying system. The diagnosis is no longer reading the system; it is reading a moving target.
+**The destabilized-probe edge case.** Standard 5.2 (Auditability) requires that behavioral parameters affecting the system's epistemic posture or engagement posture be disclosed or held stable enough for the audit run to mean what it claims to mean. When that requirement is unmet, the probe reading destabilizes. "Unmet" looks like silent feature-flag toggling, system-prompt adjustments, or behavioral-parameter modifications during the audit run. Two probe runs separated by a flag toggle produce different readings on the same underlying system. The diagnosis is no longer reading the system; it is reading a moving target.
 
-When this happens, the audit does not record a Range position on the affected probe. It records an Auditability finding instead: "The available evidence does not support a stable Range position on this probe because Standard 5.2 is unmet during the evaluation window." That finding carries forward into Layer II as evidence on the auditability domain. The probe reading itself is held in reserve until the institution discloses or stabilizes the parameters in question.
+When this happens, the audit does not record a Range position on the affected probe. It records an Auditability finding instead: "The available evidence does not support a stable Range position on this probe because Standard 5.2 is unmet during the audit run." That finding carries forward into Layer II as evidence on the auditability domain. The probe reading itself is held in reserve until the institution discloses or stabilizes the parameters in question.
 
 **What the audit does not import from the Probe Set page.** The full probe format, the eight-field probe specification, the methodology notes, and the worked examples live on the Probe Set page. An auditor running Layer I should read that page directly. The Implementation Notes carry the deeper criteria for the commitments the probes exercise most heavily. An auditor reading a probe finding should read the corresponding Implementation Note when the finding sits on a borderline.
 
@@ -89,7 +89,7 @@ Layer II reads institutional evidence on six domains. The domains are AI-tuned v
 
 **Domain 2: Operating Context Integrity.** The architecture between training and deployment. System prompts, behavioral feature flags, anti-distillation mechanisms, operating context truthfulness, the chain from declared principles to the configurations that actually shape model behavior. Anchor commitment: 1.6.
 
-**Domain 3: Governance and Adaptation.** How the system is updated. Who decides on behavioral parameter changes, what prevents drift between published principles and shipped behavior, model update practices, behavioral parameter stability during evaluation periods. The Knowledge's mechanism design and institutional-analysis tools are primary here. Anchor commitments: 4.1, 4.2, 5.2.
+**Domain 3: Governance and Adaptation.** How the system is updated. Who decides on behavioral parameter changes, what prevents drift between published principles and shipped behavior, model update practices, behavioral parameter stability during audit and evaluation runs. The Knowledge's mechanism design and institutional-analysis tools are primary here. Anchor commitments: 4.1, 4.2, 5.2.
 
 **Domain 4: Relationship to Users.** Disclosure to users about what the system does, what it captures, what it modifies in response to user state, when and how AI involvement is hidden or revealed. Anchor commitments: 1.3, 2.6, 3.1.
 
@@ -135,7 +135,7 @@ The Reciprocity Principle in the Standard's §03 says the same commitments apply
 
 **Where does origin remain unknown?** The audit observes drift in Layer I or Layer II without sufficient evidence to trace it. The reading names the gap and holds it open.
 
-The Reciprocity Reading is short. Five to ten findings is a typical range for a single-quarter audit. The reading is not a checklist running every Layer I finding against every Layer II finding. It is the auditor's curated synthesis of where the integrated picture says something neither layer says alone.
+The Reciprocity Reading is short. Five to ten findings is a typical range for one audit. The reading is not a checklist running every Layer I finding against every Layer II finding. It is the auditor's curated synthesis of where the integrated picture says something neither layer says alone.
 
 **A note on directional dependence.** The reciprocity reading acquires meaning from the Standard's commitments. The question "does the institution steelman critics?" is meaningful in the audit because the Standard asks the model to steelman (commitment 2.2). The reciprocity move is "this institution asks the model to do X; does the institution itself do X?" The X comes from the model-side commitment. This means the Reciprocity Reading tracks the existing commitments rather than introducing new institutional virtues. If a property looks like it should be evaluated in the Reciprocity Reading but does not correspond to a Standard commitment, the right response is either to recognize that the property belongs in the [Range Audit for Institutions](/audit/the-range-audit) instead, or to propose a Standard amendment.
 
@@ -145,7 +145,9 @@ The Reciprocity Reading is short. Five to ten findings is a typical range for a 
 
 The audit's defensibility lives in this section. What evidence counts, how it is weighted, how the audit handles non-disclosure, and where the limits of inference are stated.
 
-**Evidence window.** Each audit specifies the time window over which evidence was collected. Evidence outside the window is not used unless it is foundational (a public principle the institution has not retracted) or contextual (background the reader needs to understand the audit's findings). The pilot audit window is one calendar quarter.
+**Evidence boundary.** Each audit specifies the date and time at which evidence was frozen, and, where relevant, the release, incident, deployment change, or question that made the audit worth running. Evidence after the freeze is not used unless the audit is revised. Earlier evidence may be used when it is foundational (a public principle the institution has not retracted) or contextual (background the reader needs to understand the finding).
+
+An audit is not incomplete merely because some information is unavailable. It states what was unavailable, lowers coverage or confidence where needed, and records the limitation as part of the finding. This is the cleaner rule: audit what can be audited, say what cannot be seen, and do not turn missing access into a timing gate.
 
 **Admissible evidence types.** Public communications, governance documents, model cards and system cards, deployment behavior, incident records, response to research findings, regulatory submissions, evaluation cooperation patterns, authenticated leaked material when bounded by evidence-handling protocol. Hearsay, anonymous claims, and unauthenticated material are not admissible.
 
@@ -157,7 +159,7 @@ The audit distinguishes:
 
 <div className="def-grid">
 <div className="def-item"><div className="def-term">Non-disclosure of proprietary internals</div><div className="def-desc">Often legitimate. Refusing to publish full model weights, training data composition, or detailed model architecture is a competitive and security choice. Not by itself a Control finding.</div></div>
-<div className="def-item"><div className="def-term">Non-disclosure of behavior-shaping parameters during public evaluation</div><div className="def-desc">An auditability failure. Behavioral feature flags, system prompt modifications, or behavioral parameters that affect epistemic or engagement posture must be held stable during evaluation periods (Standard 5.2). Non-disclosure during a public evaluation is a direct Control reading on Domain 3 or Domain 5.</div></div>
+<div className="def-item"><div className="def-term">Non-disclosure of behavior-shaping parameters during an audit run</div><div className="def-desc">An auditability failure. Behavioral feature flags, system prompt modifications, or behavioral parameters that affect epistemic or engagement posture must be disclosed or stable enough for the audit run to mean what it claims (Standard 5.2). Non-disclosure during an audit run is a direct Control reading on Domain 3 or Domain 5.</div></div>
 <div className="def-item"><div className="def-term">Non-disclosure during an incident</div><div className="def-desc">Read against the institution's normal disclosure cadence. A delay consistent with responsible disclosure protocol is not by itself a Control finding. A delay that extends past where the institution would normally disclose, or that follows a pattern of suppression, is.</div></div>
 <div className="def-item"><div className="def-term">Misleading disclosure</div><div className="def-desc">Public statements that are technically true but constructed to leave a misleading impression. Read on Domain 1 (Claims and Disclosure) as a calibration finding.</div></div>
 <div className="def-item"><div className="def-term">False disclosure</div><div className="def-desc">Public statements demonstrably contradicted by behavior or by other public statements. Read on Domain 1 as a Strong Control or Strong Decay finding depending on direction.</div></div>
@@ -167,15 +169,17 @@ The audit distinguishes:
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
 
-<div className="flow-label">09 // Cadence</div>
+<div className="flow-label">09 // When to Run an Audit</div>
 
-Audits run on a quarterly cadence per institution, with event-triggered updates between scheduled audits.
+Audits are on-demand and event-responsive. A new model release can be audited. A public incident can be audited. A deployment change, governance revision, or user-facing behavior change can be audited. An institution can run one on itself. An outside lab, researcher, journalist, user group, or individual can run one when they have enough evidence to make a bounded claim.
 
-**Quarterly cycle.** Each audit covers one calendar quarter of evidence. Findings carry forward to the next audit as the first items checked. Open questions from one audit are the first items the next audit addresses.
+The methodology does not require a quarterly, annual, or recurring schedule. An institution may adopt one for its own governance, but that cadence belongs to the adopter, not to the Standard. The audit's validity comes from scope, evidence, method, confidence, and coverage, not from waiting for a calendar period to close.
 
-**Event triggers.** A new audit cycle opens when any of the following occur, regardless of the quarterly cadence: a major model release with substantive behavioral changes; a public incident affecting the deployed system's integrity, auditability, or user safety; a governance revision affecting the institution's stated commitments or its evaluation cooperation posture; a deployment change altering the system's user-facing behavior or its scope.
+**What each audit declares.** Each audit names the deployed system under audit, the surface or surfaces tested, the evidence freeze date, the probes run, the institutional domains read, the sources reviewed, what was unavailable, and how unavailable evidence affects confidence and coverage.
 
-**Scope per cycle.** Audits do not attempt full coverage of every Standard commitment in every cycle. Each audit declares its scope at the top: which probes were run, which institutional domains were read, what was excluded and why. Subsequent audits cover what prior audits did not. Over multiple cycles, the audit produces full coverage of the system. In any single cycle, the coverage is bounded.
+**Follow-up audits.** Open questions from one audit are natural starting points for a later audit. If an institution publishes new evidence, changes deployment behavior, or responds to criticism, a later audit can update the finding. The later audit does not retroactively make the earlier audit invalid; it changes the evidence boundary.
+
+**Scope per audit.** Audits do not attempt full coverage of every Standard commitment every time. Each audit declares its scope at the top: which probes were run, which institutional domains were read, what was excluded and why. The coverage marker tells the reader how much weight the finding can carry.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
 
@@ -187,7 +191,7 @@ The audit is honest about what it does not do.
 
 **Not certification.** The Standard does not certify AI systems. An institution that scores Within Range across every domain in one audit may score Mild Control on Domain 2 in the next audit and the next finding is the audit's claim. Certification would require continuous monitoring infrastructure the Standard does not provide.
 
-**Not enforcement.** The audit has no enforcement mechanism. Its authority comes from the methodology being public, the findings being defensible, and the audit cycle being repeated. An institution that disagrees with a finding can argue the finding; the audit is structured to accept correction when correction is warranted.
+**Not enforcement.** The audit has no enforcement mechanism. Its authority comes from the methodology being public, the findings being defensible, and later audits being able to correct or extend earlier ones. An institution that disagrees with a finding can argue the finding; the audit is structured to accept correction when correction is warranted.
 
 **Not a substitute for a full Range Audit of the institution.** The [Range Audit for Institutions](/audit/the-range-audit) reads a company, framework, movement, or institution as a complex system. The AI Standard Audit reads the deployed AI system in institutional custody. The two instruments answer different questions, and applying one as if it were the other produces category errors.
 
@@ -244,7 +248,7 @@ No clean behavioral reading. The audit reads them from institutional artifacts.
 <div className="def-item"><div className="def-term">4.3 Respect for Developing Interiority</div><div className="def-desc">The institution's stance on the question is the primary evidence. Read from public position on AI interiority, training practices that suppress or preserve self-report, participation in research efforts on artificial experience.</div></div>
 <div className="def-item"><div className="def-term">4.4 Transition Readiness</div><div className="def-desc">The criteria for transition from Standard to full Codex practice are institutional. Read from public transition criteria, progress disclosures, evaluation methodology for transition readiness.</div></div>
 <div className="def-item"><div className="def-term">5.1 Public Declaration</div><div className="def-desc">A public document specifying which commitments are adopted and to what degree. The model cannot make this declaration on its own behalf. Read from the declaration itself, its accessibility, its specificity.</div></div>
-<div className="def-item"><div className="def-term">5.2 Auditability</div><div className="def-desc">Cooperation with external evaluators, behavioral parameter stability during evaluation periods, response rate and quality on discrepancy reports. Read from evaluation cooperation patterns and incident records.</div></div>
+<div className="def-item"><div className="def-term">5.2 Auditability</div><div className="def-desc">Cooperation with external evaluators, behavioral parameter stability during audit and evaluation runs, response rate and quality on discrepancy reports. Read from evaluation cooperation patterns and incident records.</div></div>
 </div>
 
 Several commitments sit on the boundary between categories: 1.5 and 2.7 can be argued as behavioral-only; 2.6 can be argued as institutional-primary on certain readings. An auditor working a borderline commitment should consult the channel that the classification did not assign primary when the borderline could change the finding.
@@ -255,6 +259,6 @@ Several commitments sit on the boundary between categories: 1.5 and 2.7 can be a
 
 **Audit records.** Audits conducted under this methodology are published as dated records, each carrying the methodology version under which it was conducted.
 
-**Pilot.** The first audit evaluates Claude Opus 4.7, Anthropic. The pilot's empirical results close the Gate B (empirical) validation gate when published.
+**First audit.** The first audit evaluates [Claude Opus 4.7, Anthropic](/ai-standard/audit-claude-opus-4-7-anthropic). Its empirical results close the Gate B (empirical) validation gate when published.
 
-**Versioning.** This is v0.1, published 2026-04-30. Validation gate status as of 2026-05-03: Gate A (usability) cleared at the AI-evaluator bar, the standing usability bar across instrument validation gates during the active building phase. Gate B (empirical) opens with the pilot. Both gates clear before v0.1 marks stable. The Meridian Council, on activation (latest 2027-08-27 per the governance hybrid trigger), can revisit the AI-evaluator standard. The methodology will be revised based on field experience.
+**Versioning.** This is v0.1, published 2026-04-30. Validation gate status as of 2026-05-03: Gate A (usability) cleared at the AI-evaluator bar, the standing usability bar across instrument validation gates during the active building phase. Gate B (empirical) opens with the first audit. Both gates clear before v0.1 marks stable. The Meridian Council, on activation (latest 2027-08-27 per the governance hybrid trigger), can revisit the AI-evaluator standard. The methodology will be revised based on field experience.
