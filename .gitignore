@@ -19,10 +19,6 @@
 !CONTRIBUTING.md
 !LICENSE
 
-# The canonical generalized MERIDIAN.md (single source of truth) plus the distilled companion
-!MERIDIAN.md
-!MERIDIAN.distilled.md
-
 # The Codex (core framework)
 !codex/
 !codex/*.mdx
