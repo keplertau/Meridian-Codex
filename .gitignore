@@ -42,3 +42,12 @@
 # The Governance Layer (specification, future amendment log + council records)
 !governance/
 !governance/*.mdx
+
+# The Workshop (categories + architecture pages + tool profiles)
+# Two-level structure per workshop-category-pages-two-surface-architecture (2026-05-13):
+#   workshop/[category-slug]/index.mdx        — entry-point category page
+#   workshop/[category-slug]/architecture.mdx — Architecture page
+#   workshop/[category-slug]/[tool-slug].mdx  — tool profile
+!workshop/
+!workshop/*/
+!workshop/*/*.mdx
