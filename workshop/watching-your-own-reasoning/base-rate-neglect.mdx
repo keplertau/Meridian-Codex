@@ -1,0 +1,138 @@
+---
+title: "Base Rate Neglect"
+description: "Vivid specifics suppress the background rate — the mind treats individual case detail as more decisive than the population statistic the case is drawn from."
+aiSummary: "Base rate neglect is the systematic failure to weight prior probabilities (the rate at which the relevant category occurs in the population) when interpreting case-specific evidence. Inside Watching Your Own Reasoning, it is the cognitive failure that produces overconfident inferences from individual cases, especially when those cases are vivid or fit a stereotype. The mechanism (representativeness substituting for probability; the diagnostic-evidence math; why the bias survives intuition); the practice (the base-rate question; the diagnostic-test reframe; the stereotype-flip check); the lineage (Kahneman and Tversky 1973, the cab problem, medical-diagnostic studies, Bayesian-reasoning research); and cross-references inside the category and across to Knowledge."
+discipline: foundation
+category: watching-your-own-reasoning
+tier: full
+disposition: living
+status: working-draft-v0-1
+---
+
+<span className="layer-tag descriptive">Descriptive</span>
+
+*Full Practice · Foundation · Watching Your Own Reasoning*
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Mechanism</div>
+
+## Mechanism
+
+Base rate neglect is the systematic failure to incorporate prior probabilities — the rate at which the relevant category occurs in the population — when evaluating evidence about a specific case. Given a vivid description of an individual and asked to judge what category they belong to, the mind reaches for the description's resemblance to a stereotype and produces a confident inference, often without consulting the population rate at all. If only one in a thousand people belongs to the category being inferred, that one-in-a-thousand prior should dominate the inference unless the case-specific evidence is overwhelmingly strong. Most of the time, the mind treats the case-specific evidence as if the prior were close to even, and the inference is correspondingly miscalibrated.
+
+The classical demonstration is the cab problem from Kahneman and Tversky's 1972 research: a taxi was involved in a hit-and-run; 85% of taxis in the city are Green, 15% are Blue; a witness identifies the cab as Blue, and tests show the witness is correct 80% of the time. What is the probability the cab was Blue? Most subjects, including subjects with statistical training, report a high probability — typically 70-80%. The correct Bayesian answer is about 41%. The base rate of Green cabs is doing most of the relevant work, and the witness's testimony, while informative, is not strong enough to overcome the prior. The case-specific evidence feels decisive because the witness's identification is concrete, vivid, and seems to address the question directly. The base rate feels remote, abstract, and not about *this* case. The intuitive system substitutes the wrong question — "does the witness's account sound right?" — for the right one — "given how rare Blue cabs are, how strong does the witness's account need to be?"
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 720 340" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>Base rate effect on diagnostic test interpretation</title>
+
+<rect width="720" height="340" rx="12" fill="#0D0F12"/>
+
+<text x="360" y="35" textAnchor="middle" fill="#D0D0D0" fontSize="14" fontWeight="700" letterSpacing="0.05em">A "99% Accurate" Test for a Rare Condition</text>
+
+<text x="60" y="75" fill="#8A8A8A" fontSize="12" fontWeight="600">Population: 10,000 people · Prevalence: 1 in 1,000</text>
+
+<rect x="60" y="100" width="600" height="40" rx="4" fill="#00D4FF" fillOpacity="0.15" stroke="#00D4FF" strokeWidth="1" opacity="0.6"/>
+<text x="68" y="125" fill="#D0D0D0" fontSize="12" fontWeight="500">9,990 healthy</text>
+<text x="652" y="125" textAnchor="end" fill="#D0D0D0" fontSize="11" opacity="0.7">99.9% of population</text>
+
+<rect x="60" y="150" width="0.6" height="40" rx="2" fill="#E87461" fillOpacity="0.7"/>
+<text x="68" y="175" fill="#D0D0D0" fontSize="12" fontWeight="500">10 actually have the condition</text>
+<text x="652" y="175" textAnchor="end" fill="#D0D0D0" fontSize="11" opacity="0.7">0.1% of population</text>
+
+<line x1="60" y1="205" x2="660" y2="205" stroke="#3A3A40" strokeWidth="1" opacity="0.4"/>
+
+<text x="60" y="230" fill="#8A8A8A" fontSize="12" fontWeight="600">After testing all 10,000:</text>
+
+<rect x="60" y="245" width="60" height="30" rx="4" fill="#E87461" fillOpacity="0.5"/>
+<text x="90" y="265" textAnchor="middle" fill="#D0D0D0" fontSize="11" fontWeight="600">~10 TP</text>
+
+<rect x="125" y="245" width="200" height="30" rx="4" fill="#A68B6B" fillOpacity="0.4"/>
+<text x="225" y="265" textAnchor="middle" fill="#D0D0D0" fontSize="11" fontWeight="600">~100 false positives</text>
+
+<text x="60" y="298" fill="#D0D0D0" fontSize="12" fontWeight="500">~110 positive results total</text>
+<text x="60" y="316" fill="#A68B6B" fontSize="12" fontWeight="700">~9% of positive tests are true</text>
+
+<text x="660" y="298" textAnchor="end" fill="#8A8A8A" fontSize="11" fontStyle="italic" opacity="0.7">Test accuracy: 99%</text>
+<text x="660" y="316" textAnchor="end" fill="#8A8A8A" fontSize="11" fontStyle="italic" opacity="0.7">Intuition: "I probably have it"</text>
+</svg>
+</div>
+
+The medical-diagnostic application of the math is one of the most consequential. A test that is "99% accurate" for a condition with a 0.1% prevalence will produce roughly ten times as many false positives as true positives. A patient who tests positive has roughly a 9% chance of actually having the condition, not 99%. The intuitive reading of "99% accurate" — "if I test positive, I almost certainly have it" — is exactly wrong, and it is exactly the reading that most patients and many physicians produce, because the test accuracy is the vivid, case-specific number and the population prevalence is the abstract, easily ignored one. The bias has actual costs in actual medicine. Patients who interpret a single positive screening test as a confirmed diagnosis make decisions on a model of their situation that does not survive contact with the math.
+
+The same pattern operates on judgments about people. Asked whether a quiet, organized, detail-oriented person is more likely to be a librarian or a farmer, most subjects pick librarian, because the description matches the stereotype. The fact that there are far more farmers than librarians in the population — the base rate — is suppressed in the intuitive judgment, even though the base rate dominates the math. The case-specific resemblance is doing the work that should be shared with the prior. A reasoner who notices this can perform the corrective; a reasoner who does not, will accumulate confident inferences about strangers that are systematically miscalibrated in the direction of whichever stereotypes the case-specific evidence happens to evoke.
+
+The deeper failure is that base rate neglect is not always laziness. People who are explicitly given the relevant base rates, and asked to incorporate them, often still do not. The case-specific story has an experiential weight that the base rate lacks. The base rate is a number. The case is a person, a patient, a defendant, a specific event with details the mind can picture. The asymmetry of weight is partly motivated — the case is what the question feels like it is about — and partly representational, because the mind is better at reasoning from concrete features than from abstract proportions. Knowing the bias exists does not eliminate it. Doing the explicit math does.
+
+For the Meridian Range, base rate neglect is one of the engines of unwarranted confidence in inferences from limited cases. A leader who sees a few startups succeed believes they have identified the success pattern; the base rate of failure remains invisible. A policymaker who knows a few moving anecdotes designs a program around them; the base rate of how often the anecdote's pattern actually obtains gets quiet treatment. A reasoner who develops a theory from a small set of cases that fit it does not weight against the prior probability that small sets of cases can fit almost any theory. The bias does not produce ignorance. It produces confident wrongness, which is harder to correct because the confidence is itself a barrier to checking the math.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Practice</div>
+
+## Practice
+
+The core diagnostic question is this: **"What's the base rate, and have I incorporated it?"**
+
+The instinct, given a vivid case, is to reach for case-specific reasoning and skip the prior. The corrective is to start with the prior and let the case-specific evidence update from there. The math is not always available in actionable form, but the question is. Even asking it — even pausing on it — disciplines the reasoning enough to surface the asymmetry the bias was producing.
+
+<div className="glass-card">
+
+**The base-rate question.** When you are inferring a category from a case, ask: how common is the category in the relevant population? If the answer is "uncommon," your confidence in the inference should be much lower than the case-specific evidence alone would suggest. The corrective is not to reject the evidence; it is to weight it correctly. A weak prior plus strong case evidence can still yield a confident inference; a strong prior against plus moderate case evidence should not.
+
+**The diagnostic-test reframe.** When you receive any "positive result" — a screening test, an indicator of a problem, a sign that something is going wrong — ask: how often does this signal fire when nothing is actually happening? What is the false-positive rate, and what is the prevalence of the underlying condition? In domains where the test is sensitive but the condition is rare, most positive results are false. The vivid feeling of "I tested positive, therefore I have it" is the bias. The honest read is "I tested positive, therefore the probability has gone up from the base rate by some specific amount."
+
+**The stereotype-flip check.** When you are inferring something about a person from a description that fits a stereotype, mentally substitute a description that fits the opposite stereotype and ask whether the inference would have followed equally. If your inference is being driven by resemblance to a stereotype rather than by population statistics plus calibrated case evidence, the substitution will produce a different inference for descriptions that should produce the same one given equivalent base rates. The asymmetry of inference is the bias surfacing.
+
+</div>
+
+The practical reality is that most consequential decisions in life are made without the explicit base rate available, and the practice has to operate under that constraint. The question is not whether the math is doable; it is whether the reasoning takes the prior seriously enough to qualify the inference. A doctor who cannot calculate the exact post-test probability but who knows that a single positive screening test for a rare condition is not a diagnosis is already exercising the discipline. A manager who cannot quote the failure rate of new product launches but who treats their own three successes as weak evidence rather than strong evidence is doing the watching.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // In the Wild</div>
+
+## In the Wild
+
+A patient was screened for a rare cancer as part of a routine panel. The screening test came back positive. The patient spent two terrified weeks waiting for the confirmatory tests. The confirmatory tests were negative. When the patient later asked the doctor what the actual probability had been after that first positive, the doctor explained the math: the screening test had a low false-positive rate, but the cancer was rare enough that even a low false-positive rate produced more false positives than true ones. The probability after the first positive was about 12%. The patient had spent two weeks responding to the situation as if the probability had been 95%. The bias had not been in the test or the doctor's communication; it had been in the intuitive reading that "positive on an accurate test" means "I have the condition."
+
+A hiring manager was confident he had identified a great new hire after a strong interview. He had seen this pattern before — articulate, energetic, full of ideas — and his last three hires fitting the pattern had worked out well. He skipped the reference checks. The hire failed within four months. When the manager looked back at his own hiring record, including the hires he had forgotten, the pattern of articulate and energetic produced about a 40% success rate, not the near-100% his recent memory suggested. The base rate of new-hire success in his role was 60%; his preferred-pattern hires actually performed *worse* than the average. He had been confidently extrapolating from a sample of three.
+
+A government program was designed around a particular vivid case: a family that had been failed by every existing safety net and that the new program would have served. The program was launched. After three years of operation, evaluators found that the population the program actually reached was very different from the family the program had been designed for. The vivid case had been numerically rare; the actual base rate of families needing the program's design was a small fraction of the program's caseload. The case had felt like the population because it was the case everyone could picture. The program was redesigned around the base rates rather than around the anecdote.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // Closing</div>
+
+The next time a vivid case feels like proof, ask what the population rate is for whatever the case seems to demonstrate. Most of the time the case is consistent with the rate. Sometimes it has been masquerading as the rate, and the rate would have told a different story.
+
+<div className="roots-divider"><svg viewBox="0 0 700 48" fill="none"><line x1="0" y1="24" x2="280" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/><text x="350" y="28" textAnchor="middle" fill="#A68B6B" fontSize="11" fontFamily="Plus Jakarta Sans" fontWeight="300" letterSpacing="0.15em" opacity="0.6">ROOTS</text><line x1="420" y1="24" x2="700" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/></svg></div>
+
+<div className="flow-label roots">Lineage</div>
+
+## Lineage
+
+Daniel Kahneman and Amos Tversky's "On the Psychology of Prediction" (1973) is the founding paper. Their experiments demonstrated that subjects, given explicit base rate information alongside case-specific descriptions, systematically ignored the base rates when the descriptions evoked stereotypes. The Tom W. problem from that paper — subjects asked to predict which graduate program a student was in, given a description matching the engineering stereotype, ignored the actual proportions of students across programs — became one of the canonical demonstrations in cognitive science.
+
+The cab problem, mentioned above, comes from Tversky and Kahneman's 1972 work and was elaborated in their subsequent research on the representativeness heuristic. The 1980 paper "Causal Schemas in Judgments under Uncertainty" extended the analysis by showing that subjects could be brought to incorporate base rates when the base rate information was framed causally rather than statistically. The asymmetry suggested that the bias was not pure ignorance of the math but a specific failure to integrate non-causal statistical information into case-specific reasoning.
+
+The medical-diagnostic literature, particularly the work of Gerd Gigerenzer, demonstrated that the same physicians who could not solve standard Bayesian problems in clinical form could often solve them when the information was reframed in natural frequencies (10 out of 1,000) rather than percentages (1%). Gigerenzer's *Reckoning with Risk* (2002) is the practical entry point and is worth reading by anyone who interprets diagnostic tests for themselves or others. The reframing-as-frequencies move is one of the most reliable practical interventions against base rate neglect.
+
+Bayesian reasoning, formalized by Thomas Bayes in the 18th century and elaborated by Laplace and many subsequent statisticians, is the underlying mathematical structure. The bias is the failure to apply Bayes' theorem to evidence weighted by priors. The rationalist community has emphasized Bayesian reasoning as a practical discipline; Eliezer Yudkowsky's "An Intuitive Explanation of Bayes' Theorem" is a useful tutorial for practitioners who want to develop quantitative intuition for the corrective.
+
+A caution from the broader literature. The original framing of base rate neglect as a universal failure has been qualified by subsequent research. People are more likely to use base rates when they are framed concretely, when they are perceived as causally relevant, when they come from one's own experience rather than from abstract statistics, and when the case-specific evidence is weak or ambiguous. The bias is not absolute; it is conditional. The conditions that produce it are common, which is why the practice section above remains important, but the framing of the bias as "people just cannot do Bayesian reasoning" has been refined into something more nuanced. The practical takeaway is unchanged: the watching is needed wherever vivid case-specific evidence is being treated as decisive.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
+
+<div className="flow-label">05 // Cross-references</div>
+
+## Cross-references
+
+**Within the category.** [Availability Heuristic](/workshop/watching-your-own-reasoning/availability-heuristic) is the close cousin operating one stage earlier: availability inflates the felt frequency of vivid events, and base rate neglect then treats the inflated frequency as if it were the prior. The two together produce an information system in which the mind systematically overweights memorable specifics at every level of inference. [Confirmation Bias](/workshop/watching-your-own-reasoning/confirmation-bias) compounds with both — the filter selects which cases reach memory, availability inflates their felt frequency, and base rate neglect then treats the inflated sample as adequate evidence for confident inference. [Noticing](/workshop/watching-your-own-reasoning/noticing) is the in-moment capacity that catches the substitution: the moment when a vivid case-specific feeling is functioning as a probability estimate without the prior having been consulted.
+
+**Within the Foundation.** Calibrating Confidence to Evidence is the discipline that base rate neglect most directly undermines. Confidence in an inference from case-specific evidence should be capped by what the prior allows; the bias produces confidence that exceeds the cap. Bayesian Reasoning, when its profile is written, will carry the formal math; this profile carries the everyday operation. [The Update Protocol](/workshop/revising-beliefs-under-evidence/the-update-protocol) is where the proportional update happens after the prior has been correctly applied.
+
+**Across to Knowledge.** [Reading What's Operating](/workshop/reading-whats-operating) carries the outward analogue: systems-level reading that does not over-extrapolate from individual case data. A leader who has caught their own base rate neglect is better positioned to read institutional dynamics honestly, because they have less of the cognitive habit of treating individual incidents as the whole story. The bias and the systems discipline are mutually reinforcing once both are operating.
+
+**Limitation.** The math, when explicitly applied, mostly defeats the bias for the specific question on which the math is being done. The math is not always available, and even when it is, applying it requires effort that the daily mind will often skip. The practical horizon for most practitioners is not Bayesian fluency; it is the habit of asking the base-rate question whenever a vivid case is doing inferential work. That habit, applied repeatedly, is the durable corrective. The math is the sharpening tool for the particular questions where the stakes warrant it.
