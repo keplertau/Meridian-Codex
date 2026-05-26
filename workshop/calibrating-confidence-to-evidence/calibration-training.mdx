@@ -1,0 +1,142 @@
+---
+title: "Calibration Training"
+description: "The practice of testing stated confidence against outcomes until your odds begin to match your actual accuracy."
+aiSummary: "Calibration Training is the Expansion tool inside Calibrating Confidence to Evidence. It turns confidence into a measurable relation between forecast and outcome: make probabilistic judgments, record them before the result is known, score them afterward, and adjust. The mechanism: untrained confidence is a feeling of clarity, while calibrated confidence is a track record. The practice: state odds, bin outcomes, run the feedback loop, and separate accuracy from calibration. Lineage includes weather forecast verification, Glenn Brier's 1950 scoring rule, Lichtenstein/Fischhoff/Phillips on calibration, Tetlock and the Good Judgment Project, and contemporary forecasting practice."
+discipline: foundation
+category: calibrating-confidence-to-evidence
+tier: expansion
+disposition: living
+status: working-draft-v0-1
+---
+
+<span className="layer-tag normative">Normative</span>
+
+*Expansion - Foundation - Calibrating Confidence to Evidence*
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Mechanism</div>
+
+## Mechanism
+
+Calibration Training is the practice of testing confidence against reality. You make a claim with odds attached, record the claim before the outcome is known, check the outcome later, and compare your stated confidence with your actual hit rate. If your 70% predictions come true about seven times out of ten, that part of your confidence is calibrated. If they come true four times out of ten, your confidence is too high. If they come true nine times out of ten, your confidence is too low.
+
+That sounds almost too plain to need a tool. It needs a tool because untrained confidence does not feel like a number. It feels like clarity. A judgment feels obvious, and the feeling of obviousness gets mistaken for evidence that the judgment is likely to be true. The person says "I'm sure" when the situation only warrants "I lean this way," and they can do this for years without noticing because individual outcomes are easy to explain away. Calibration Training accumulates the outcomes until the pattern becomes hard to avoid.
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 720 360" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>Calibration curve: stated confidence compared with actual accuracy</title>
+
+<rect width="720" height="360" rx="12" fill="#0D0F12"/>
+
+<text x="360" y="34" textAnchor="middle" fill="#D0D0D0" fontSize="14" fontWeight="700" letterSpacing="0.05em">Stated Confidence vs Actual Accuracy</text>
+
+<line x1="105" y1="285" x2="625" y2="285" stroke="#3A3A40" strokeWidth="1.5"/>
+<line x1="105" y1="285" x2="105" y2="75" stroke="#3A3A40" strokeWidth="1.5"/>
+
+<line x1="105" y1="285" x2="625" y2="75" stroke="#8A8A8A" strokeWidth="1.5" strokeDasharray="6 5" opacity="0.55"/>
+<text x="612" y="63" textAnchor="end" fill="#8A8A8A" fontSize="10" fontStyle="italic">perfect calibration</text>
+
+<path d="M 175 250 C 260 230, 335 206, 415 178 C 500 148, 560 125, 600 104" stroke="#00D4FF" strokeWidth="3" fill="none"/>
+<circle cx="175" cy="250" r="5" fill="#00D4FF"/>
+<circle cx="300" cy="220" r="5" fill="#00D4FF"/>
+<circle cx="425" cy="176" r="5" fill="#00D4FF"/>
+<circle cx="550" cy="128" r="5" fill="#00D4FF"/>
+
+<path d="M 175 270 C 255 258, 345 242, 425 218 C 500 194, 555 165, 600 138" stroke="#E87461" strokeWidth="2.5" fill="none" opacity="0.85"/>
+<circle cx="300" cy="248" r="5" fill="#E87461"/>
+<circle cx="425" cy="218" r="5" fill="#E87461"/>
+<circle cx="550" cy="166" r="5" fill="#E87461"/>
+
+<text x="360" y="320" textAnchor="middle" fill="#8A8A8A" fontSize="11">Stated confidence</text>
+<text x="54" y="180" textAnchor="middle" fill="#8A8A8A" fontSize="11" transform="rotate(-90 54 180)">Actual accuracy</text>
+
+<text x="492" y="151" fill="#00D4FF" fontSize="11" fontWeight="600">calibrated</text>
+<text x="490" y="205" fill="#E87461" fontSize="11" fontWeight="600">overconfident</text>
+<text x="360" y="342" textAnchor="middle" fill="#8A8A8A" fontSize="11" fontStyle="italic">A track record tells you what the feeling of certainty could not.</text>
+</svg>
+</div>
+
+The mechanism has three parts.
+
+First, explicit odds. "Probably" and "very likely" are too elastic. They let you feel precise while remaining uncheckable. "70%" is not magical, but it creates a claim that can be compared with outcomes.
+
+Second, scoring. Calibration is about the relationship between confidence and frequency. If you make one 80% forecast and it fails, you have not learned much. If you make one hundred 80% forecasts and only fifty-five occur, you have learned a lot. The score can be formal, as in Brier scoring, or simple, as in sorted bins. The important move is that confidence becomes auditable.
+
+Third, feedback. Calibration improves when the loop closes. You cannot train the skill only by thinking about probability. You train it by making judgments, letting reality answer, and feeling the difference between how certain you were and how often you were right.
+
+Inside the Foundation, Calibration Training stops "calibrated confidence" from remaining a moral aspiration. It puts the self-image in contact with a record. The feeling of being accurate is not evidence of accuracy.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Practice</div>
+
+## Practice
+
+The diagnostic question is: **"When I say I am confident, what is my hit rate for claims like this?"**
+
+Most people cannot answer. That is not a character flaw. It is the absence of a feedback system.
+
+<div className="glass-card">
+
+**State the odds before reality answers.** Make small forecasts in a domain you actually care about: "70% chance this project ships by Friday," "60% chance the client accepts the proposal," "80% chance this source holds up after checking." Record the claim, the date, the odds, and the resolution condition. If the outcome could be argued either way later, the forecast was not specific enough.
+
+**Bin the outcomes.** After enough forecasts, group them by confidence: 50-60%, 60-70%, 70-80%, and so on. Then ask how often each bin came true. The pattern is the part you cannot talk your way around. Your 80% bin may be behaving like 60%. Your 55% bin may be behaving like 80%. It shows where your internal scale is stretched or compressed.
+
+**Separate accuracy from calibration.** You can be wrong often and still be calibrated if your odds say you are unsure. You can be right often and still be badly calibrated if you put 95% on things that are true only 70% of the time. Accuracy asks whether the forecast came true. Calibration asks whether the confidence matched the frequency. You need both, but they are not the same.
+
+</div>
+
+There is a clean way to start: make ten forecasts this week, each with a confidence level between 50% and 95%, and write down exactly how each resolves. Ten will not calibrate you. Ten will show you what it feels like to make confidence answerable.
+
+The practice works best when the questions are close enough to your life that you care, and concrete enough that reality can answer. Grand civilizational forecasts may be intellectually interesting, but they resolve too slowly for training. Start with decisions, projects, claims, timelines, and judgments that will be checked within days or weeks.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // In the Wild</div>
+
+## In the Wild
+
+A product lead believed she was good at estimating delivery dates. Her team believed something else. For two months, she wrote down her delivery forecasts with confidence levels: "80% by Thursday," "60% before the client demo," "90% no blocker from legal." At the end, her 80-90% forecasts had resolved successfully about half the time. The useful discovery was not that she was bad at timelines. It was more specific: she treated "nothing unusual happens" as if it were the base case, in a system where unusual things happened every week. The training gave the team a shared object to correct rather than a personality dispute about optimism.
+
+A political analyst made public forecasts for several elections and scored them afterward. He was accurate in the obvious races and badly overconfident in the close ones. His 55% calls were fine. His 70% calls were often just 55% calls wearing a better suit. Once he saw the bin, the correction was visible: his language of "lean" was calibrated; his language of "likely" was inflated by narrative coherence. The story feeling clean made the probability feel higher than it was.
+
+A doctor explaining a screening result told a patient, "The test is positive, but I am not 90% confident you have the condition. Given the base rate and this test's false-positive rate, this is closer to 10-15% until the confirmatory test." That sentence is calibration in public. It does not withhold concern. It prevents confidence from outrunning the evidence at the exact moment fear wants certainty.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // Closing</div>
+
+The next time you feel sure, do not only ask whether you have reasons. Ask what your confidence level is, write it down, and let reality check the number. A month of that will teach you more about your certainty than another month of admiring your own judgment.
+
+<div className="roots-divider"><svg viewBox="0 0 700 48" fill="none"><line x1="0" y1="24" x2="280" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/><text x="350" y="28" textAnchor="middle" fill="#A68B6B" fontSize="11" fontFamily="Plus Jakarta Sans" fontWeight="300" letterSpacing="0.15em" opacity="0.6">ROOTS</text><line x1="420" y1="24" x2="700" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/></svg></div>
+
+<div className="flow-label roots">Lineage</div>
+
+## Lineage
+
+The Codex did not invent Calibration Training. It inherits a forecasting and judgment tradition built around a simple question: do stated probabilities match observed frequencies?
+
+Weather forecasting is the classic practical domain. A weather forecaster who says "70% chance of rain" on many days should see rain on about 70% of those days. This is why weather forecasts became one of the cleanest public examples of calibration: the forecasts are probabilistic, the outcomes resolve, and the feedback loop repeats constantly.
+
+Glenn Brier's 1950 paper introduced the Brier score, a proper scoring rule for probabilistic forecasts. A scoring rule rewards honest probability estimates when it is designed correctly: you do best, over time, by stating your actual belief rather than gaming the number. Brier scoring became foundational in forecast verification because it evaluates both whether forecasts were right and how confidently they were stated.
+
+Sarah Lichtenstein, Baruch Fischhoff, and Lawrence Phillips synthesized the early calibration literature in "Calibration of Probabilities: The State of the Art to 1980," published in *Judgment under Uncertainty* in 1982. Their work helped establish overconfidence as a systematic feature of human judgment, especially on general-knowledge questions where people gave high confidence to answers that were wrong more often than the confidence warranted.
+
+Philip Tetlock's work, especially *Expert Political Judgment* and the Good Judgment Project with Barbara Mellers and colleagues, made calibration visible at scale in geopolitical forecasting. Superforecasters were not simply people with more information. They updated more often, used base rates more carefully, broke questions into parts, and tracked confidence against outcomes. Tetlock's work is the main modern evidence that calibration can be trained rather than merely admired.
+
+Contemporary forecasting communities, prediction markets, and forecasting tournaments continue this lineage. Their practical contribution is cultural as much as technical: they normalize putting odds on beliefs, resolving claims publicly, and treating wrong but well-calibrated forecasts as better practice than confident guesses that happen to get lucky.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
+
+<div className="flow-label">05 // Cross-references</div>
+
+## Cross-references
+
+**Within the category.** [Bayesian Reasoning](/workshop/calibrating-confidence-to-evidence/bayesian-reasoning) supplies the inference structure: prior, evidence, posterior. Calibration Training supplies the feedback discipline: did the confidence you stated actually match what happened? The Bayesian frame tells you how confidence should move. Calibration Training tells you whether your own use of confidence is trustworthy.
+
+**Within the Foundation.** [Dunning-Kruger Effect](/workshop/watching-your-own-reasoning/dunning-kruger-effect) shows why self-assessment without feedback is exposed. Calibration Training is one of its corrective practices. [Base Rate Neglect](/workshop/watching-your-own-reasoning/base-rate-neglect) supplies a common source of miscalibration: case evidence feels more diagnostic than it is. [The Update Protocol](/workshop/revising-beliefs-under-evidence/the-update-protocol) uses calibrated confidence as the scale on which revisions happen.
+
+**Across to the Bond.** Public calibration builds trust when it is practiced cleanly. A collaborator who states confidence, checks outcomes, and lowers confidence after misses becomes easier to trust than one who is always certain and only sometimes right. The Bond still has to calibrate trust to behavior, but calibrated confidence gives behavior others can evaluate.
+
+**Limitation.** Calibration Training works best where outcomes resolve clearly and often. It is weaker for moral judgments, aesthetic judgments, deep strategic questions, and long-horizon claims where feedback is delayed or ambiguous. Even there, the habit of stating confidence carefully helps, but the scoring discipline should not pretend to be stronger than the feedback loop allows.
