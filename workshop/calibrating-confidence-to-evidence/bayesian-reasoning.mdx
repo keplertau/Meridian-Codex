@@ -1,0 +1,138 @@
+---
+title: "Bayesian Reasoning"
+description: "The discipline of starting with prior evidence, weighing new evidence by how diagnostic it is, and updating confidence proportionally."
+aiSummary: "Bayesian Reasoning is the Expansion tool inside Calibrating Confidence to Evidence. It gives the mathematical shape of proportional belief under uncertainty: prior, likelihood, posterior. Its Foundation function is not to turn ordinary reasoning into constant calculation, but to train the discipline of asking what was already likely, how much the new evidence discriminates between hypotheses, and how far confidence should move. Practice: name the prior, ask the diagnostic question, update proportionally. Lineage includes Thomas Bayes' 1763 essay, Laplace, Bayesian statistics, Bayes factors, cognitive psychology on base rates, Gigerenzer's natural frequencies, and rationalist practice."
+discipline: foundation
+category: calibrating-confidence-to-evidence
+tier: expansion
+disposition: living
+status: working-draft-v0-1
+---
+
+<span className="layer-tag normative">Normative</span>
+
+*Expansion - Foundation - Calibrating Confidence to Evidence*
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Mechanism</div>
+
+## Mechanism
+
+Bayesian Reasoning is the discipline of updating belief by the weight of evidence. The formal structure is simple to state and difficult to practice: start with a prior probability, ask how likely the evidence would be under each competing hypothesis, and update to a posterior probability.
+
+The prior is what the evidence already supported before the new information arrived. The likelihood is how expected the new information would be if a given hypothesis were true. The posterior is the revised probability after the new evidence has been considered.
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 720 340" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>Bayesian update: prior, evidence, likelihood, posterior</title>
+
+<rect width="720" height="340" rx="12" fill="#0D0F12"/>
+
+<rect x="70" y="90" width="135" height="70" rx="10" fill="#00D4FF" fillOpacity="0.10" stroke="#00D4FF" strokeWidth="1.6"/>
+<text x="137" y="121" textAnchor="middle" fill="#00D4FF" fontSize="13" fontWeight="700">Prior</text>
+<text x="137" y="143" textAnchor="middle" fill="#D0D0D0" fontSize="11">what was already</text>
+<text x="137" y="160" textAnchor="middle" fill="#D0D0D0" fontSize="11">likely?</text>
+
+<line x1="205" y1="125" x2="275" y2="125" stroke="#3A3A40" strokeWidth="2"/>
+<polygon points="278,125 268,119 268,131" fill="#3A3A40"/>
+
+<rect x="285" y="90" width="150" height="70" rx="10" fill="#A68B6B" fillOpacity="0.10" stroke="#A68B6B" strokeWidth="1.6"/>
+<text x="360" y="121" textAnchor="middle" fill="#A68B6B" fontSize="13" fontWeight="700">Evidence</text>
+<text x="360" y="143" textAnchor="middle" fill="#D0D0D0" fontSize="11">how diagnostic</text>
+<text x="360" y="160" textAnchor="middle" fill="#D0D0D0" fontSize="11">is this?</text>
+
+<line x1="435" y1="125" x2="505" y2="125" stroke="#3A3A40" strokeWidth="2"/>
+<polygon points="508,125 498,119 498,131" fill="#3A3A40"/>
+
+<rect x="515" y="90" width="135" height="70" rx="10" fill="#00D4FF" fillOpacity="0.14" stroke="#00D4FF" strokeWidth="1.8"/>
+<text x="582" y="121" textAnchor="middle" fill="#00D4FF" fontSize="13" fontWeight="700">Posterior</text>
+<text x="582" y="143" textAnchor="middle" fill="#D0D0D0" fontSize="11">what is now</text>
+<text x="582" y="160" textAnchor="middle" fill="#D0D0D0" fontSize="11">warranted?</text>
+
+<text x="360" y="230" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="600">posterior = prior updated by diagnostic evidence</text>
+<text x="360" y="258" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">New evidence does not replace the prior. It moves it by the evidence's weight.</text>
+</svg>
+</div>
+
+The practical force is in the middle step. Most bad informal reasoning treats evidence as either supportive or not supportive. Bayesian reasoning asks a sharper question: how much more likely is this evidence if the claim is true than if the claim is false?
+
+That question changes everything. A vivid anecdote may be compatible with your theory and still not be strong evidence for it, because the same anecdote would also be common if the theory were false. A positive test result may sound decisive and still leave the condition unlikely, because false positives outnumber true positives when the condition is rare. A new incident may feel like proof of a trend and still only modestly update the prior, because one incident is weak evidence against a large population rate.
+
+Inside the Foundation, Bayesian Reasoning matters because it disciplines confidence. You will want to update by salience: dramatic evidence produces dramatic movement; emotionally satisfying evidence produces confident movement; socially costly evidence produces little movement. Bayesian reasoning asks confidence to move by diagnostic strength instead. Not by drama. Not by convenience. Not by what the evidence lets you say in an argument. By weight.
+
+This does not mean every claim needs a spreadsheet. Most daily reasoning does not have clean numbers. The value of Bayesian Reasoning in practice is often qualitative: start with the base rate, ask how diagnostic the new evidence is, and update by proportion rather than impulse.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Practice</div>
+
+## Practice
+
+The diagnostic question is: **"How much more likely would I be to see this evidence if the claim were true than if it were false?"**
+
+That question is the hinge. If the evidence would be common in both worlds, it should not move confidence much. If it would be common in one world and rare in the other, it should move confidence more.
+
+<div className="glass-card">
+
+**Name the prior.** Before reacting to the new evidence, ask what was already likely. What is the base rate? How often does this kind of thing happen? How often do claims like this turn out true? The prior is not prejudice. It is the evidence already accumulated before the new item arrived. If you skip it, the new evidence quietly gets treated as if it arrived in an empty world.
+
+**Ask the diagnostic question.** Do not ask only whether the evidence fits the claim. Ask whether the evidence discriminates between the claim and its alternatives. A symptom that appears in ten different conditions is weak evidence for any one of them. A behavior common among both honest and dishonest actors is weak evidence of dishonesty. Evidence that fits your view and rival views equally does not discriminate much.
+
+**Update proportionally.** Move confidence by the weight of the evidence. Weak evidence should move you a little. Strong evidence should move you more. Repeated weak evidence may accumulate. One dramatic but weakly diagnostic event should not rewrite the whole view. The discipline is not "never update strongly." It is "make the movement answer to the evidence's actual force."
+
+</div>
+
+When numbers are available, use them. Natural frequencies often make the reasoning clearer than percentages: out of 1,000 people, how many have the condition, how many test positive, and how many positive tests are true positives? When numbers are not available, the qualitative structure still helps. You can ask what the prior is, whether the evidence is diagnostic, and how far confidence should move.
+
+The danger is using Bayesian language as decoration. Calling something a prior does not make it disciplined. A prior can be lazy, biased, or imported from group assumptions. The practice requires asking what evidence supports the prior too. The whole chain stays answerable to reality.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // In the Wild</div>
+
+## In the Wild
+
+A founder heard that a competitor had just landed a major enterprise customer. The first interpretation was obvious: the competitor's product was better than expected, and the market was moving away. Bayesian reasoning slowed the conclusion. What was the prior? Enterprise deals are noisy, often relationship-driven, and one deal is weak evidence of product superiority. How diagnostic was the evidence? Moderately diagnostic of sales traction, weakly diagnostic of product quality, almost useless as evidence of category dominance. The posterior changed, but it did not panic. The founder increased competitive watch and did not rewrite the roadmap around one anecdote.
+
+A patient received a positive result on a screening test. The test was accurate in ordinary language, but the condition was rare. The Bayesian question changed the conversation: out of 10,000 people screened, how many would have the condition, and how many healthy people would still test positive? The positive result increased the probability. It did not make the diagnosis likely enough to treat as confirmed. The next move was confirmatory testing, not despair.
+
+A manager received two complaints about a team lead. The vivid interpretation was that the team lead had become a serious problem. The prior mattered: the team lead had a long record of reliable work, and the team had recently gone through a stressful reorganization. The complaints were evidence, not noise. But their diagnostic strength was unclear because the same complaints might appear under several hypotheses: poor leadership, organizational stress, role confusion, or a conflict between specific people. The Bayesian move was to widen inquiry before hardening the conclusion.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // Closing</div>
+
+The next time a piece of evidence feels decisive, ask the Bayesian question before your confidence moves: would this evidence be rare if my claim were false? If not, let it inform you without letting it carry more weight than it has.
+
+<div className="roots-divider"><svg viewBox="0 0 700 48" fill="none"><line x1="0" y1="24" x2="280" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/><text x="350" y="28" textAnchor="middle" fill="#A68B6B" fontSize="11" fontFamily="Plus Jakarta Sans" fontWeight="300" letterSpacing="0.15em" opacity="0.6">ROOTS</text><line x1="420" y1="24" x2="700" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/></svg></div>
+
+<div className="flow-label roots">Lineage</div>
+
+## Lineage
+
+The Codex did not invent Bayesian Reasoning. It inherits one of the central mathematical traditions for reasoning under uncertainty.
+
+Thomas Bayes' "An Essay towards solving a Problem in the Doctrine of Chances" was published posthumously in 1763. Bayes supplied the theorem that made inverse probability tractable: reasoning from observed evidence back toward the probability of a hypothesis. Pierre-Simon Laplace generalized and applied the method across astronomy, population statistics, and probability theory, turning Bayesian reasoning into a major scientific instrument rather than a single theorem.
+
+Modern Bayesian statistics developed the framework into a full statistical approach: prior distributions, likelihood functions, posterior distributions, credible intervals, model comparison, and Bayes factors. The technical field is large and often contested, especially in its contrast with frequentist statistics. This page does not require you to enter that technical debate. It draws out the practical discipline: prior evidence matters, new evidence has likelihood under different hypotheses, and belief should update proportionally.
+
+Cognitive psychology gives the reason the discipline matters for ordinary judgment. Base rate neglect, representativeness, availability, and motivated reasoning all distort Bayesian structure. People treat vivid case evidence as if no prior exists, confuse how well evidence fits a story with how diagnostic the evidence is, and update more strongly on information that satisfies identity or emotion. The formal theorem names the correction; psychology explains why the correction is needed.
+
+Gerd Gigerenzer and others showed that many Bayesian problems become easier when translated into natural frequencies rather than abstract percentages. Instead of "1% prevalence and 99% sensitivity," say "out of 1,000 people, 10 have the condition, and about 990 do not." Natural frequencies make the hidden denominator visible. For practical use, this is one of the most important teaching moves in the lineage.
+
+The rationalist community translated Bayesian reasoning into a personal epistemic discipline: not only a mathematical method, but a habit of asking how evidence should move belief. That translation has limits. Bayesian language can become a badge for overconfident cleverness if the priors are lazy and the numbers are ornamental. Used cleanly, it gives the Foundation a specific discipline: confidence answers to evidence rather than to the feeling of having an explanation.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
+
+<div className="flow-label">05 // Cross-references</div>
+
+## Cross-references
+
+**Within the category.** [Calibration Training](/workshop/calibrating-confidence-to-evidence/calibration-training) checks whether your stated Bayesian discipline shows up in outcomes. Bayesian Reasoning tells you what confidence should do. Calibration Training asks whether your confidence, as actually stated, has been tracking reality.
+
+**Within the Foundation.** [Base Rate Neglect](/workshop/watching-your-own-reasoning/base-rate-neglect) is Bayesian failure in everyday form: the prior disappears under vivid case evidence. [Availability Heuristic](/workshop/watching-your-own-reasoning/availability-heuristic) corrupts the prior by making memorable events feel common. [Confirmation Bias](/workshop/watching-your-own-reasoning/confirmation-bias) corrupts the evidence stream before Bayesian reasoning begins. [The Update Protocol](/workshop/revising-beliefs-under-evidence/the-update-protocol) carries the dynamic side: once evidence has the right weight, belief has to move.
+
+**Across to Knowledge.** Bayesian Reasoning helps prevent model overreaction when reading systems. A single institutional failure, one dramatic case, or one elegant mechanism should not overwrite the base rate of how such systems usually behave. Knowledge needs models; Bayesian discipline keeps the model from being rebuilt around the last vivid thing.
+
+**Limitation.** Bayesian Reasoning is only as good as the priors, hypotheses, and evidence model being used. Bad priors produce bad posteriors. Hidden alternatives make the update too narrow. Ornamental numbers create false precision. The practical discipline is to use the structure to make reasoning more honest, not to make guesses look mathematical.
