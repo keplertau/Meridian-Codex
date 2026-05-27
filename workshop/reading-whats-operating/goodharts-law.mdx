@@ -1,0 +1,141 @@
+---
+title: "Goodhart's Law"
+description: "Reads how a useful measure degrades when people are pressured to optimize it as a target."
+aiSummary: "Goodhart's Law is the Knowledge / Full Practice tool inside Reading What's Operating. It diagnoses cases where a measure that once tracked a real condition becomes unreliable once rewards, sanctions, ranking, funding, prestige, or governance pressure attach to it. Mechanism: proxy and target split, optimization pressure, gaming, selection, threshold behavior, reporting distortion, and ground-truth drift. Practice: name the real condition, name the proxy, identify the pressure, predict second-round behavior, preserve ground truth, and keep metrics plural and revocable. Lineage: Charles Goodhart's monetary-policy formulation, Donald Campbell's related law on social indicators, Marilyn Strathern's audit-culture formulation, the Lucas critique, principal-agent theory, measurement theory, and modern Goodhart taxonomies in AI and policy. Cross-references: Mechanism Design, Rules-in-Use, Report Fidelity, Legibility, Chilling Effects, and Checking Your Map Against Reality."
+discipline: knowledge
+category: reading-whats-operating
+tier: full-practice
+disposition: living
+status: working-draft-v0-1
+---
+
+<span className="layer-tag descriptive">Descriptive</span>
+
+*Full Practice · Knowledge · Reading What's Operating*
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Mechanism</div>
+
+## Mechanism
+
+Goodhart's Law reads the moment a measure stops being a window and becomes a handle.
+
+A metric begins as a proxy for something you care about. Test scores stand in for learning. Response time stands in for service quality. Citations stand in for intellectual contribution. Benchmark performance stands in for model capability. The measure is never the thing itself, but while pressure is low it may track the thing well enough to help you see.
+
+Then the system starts optimizing the measure. Funding, status, promotion, punishment, publication, release gates, or legitimacy attach to the number. People adapt. They teach to the test, close tickets without fixing the problem, slice research into publishable units, tune the model to the benchmark, redefine the category, delay reporting, or learn exactly where the audit will look.
+
+<span className="key-phrase">Goodhart's Law reads the pressure that breaks the relationship between proxy and reality.</span>
+
+The metric did not become useless because measurement is bad. It became unreliable because the system began acting on the proxy as if it were the target. Once the number controls consequences, the number becomes part of the system it was supposed to describe.
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 720 360" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>Goodhart's Law: pressure breaks the proxy</title>
+<rect width="720" height="360" rx="12" fill="#0D0F12"/>
+<text x="360" y="42" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">The measure tracks reality until the system starts optimizing the measure.</text>
+
+<circle cx="164" cy="166" r="56" fill="#00D4FF" fillOpacity="0.10" stroke="#00D4FF" strokeWidth="1.5"/>
+<text x="164" y="160" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Reality</text>
+<text x="164" y="180" textAnchor="middle" fill="#8A8A8A" fontSize="11">what you care about</text>
+
+<circle cx="360" cy="166" r="48" fill="#A68B6B" fillOpacity="0.13" stroke="#A68B6B" strokeWidth="1.5"/>
+<text x="360" y="160" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Measure</text>
+<text x="360" y="180" textAnchor="middle" fill="#8A8A8A" fontSize="11">the proxy</text>
+
+<rect x="510" y="116" width="128" height="100" rx="12" fill="#E87461" fillOpacity="0.10" stroke="#E87461" strokeWidth="1.5"/>
+<text x="574" y="154" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Target</text>
+<text x="574" y="174" textAnchor="middle" fill="#8A8A8A" fontSize="11">reward and pressure</text>
+
+<path d="M 220 166 L 312 166" stroke="#00D4FF" strokeWidth="2" opacity="0.75"/>
+<polygon points="312,166 300,160 300,172" fill="#00D4FF" opacity="0.75"/>
+<text x="266" y="144" textAnchor="middle" fill="#00D4FF" fontSize="11" fontWeight="700">tracks</text>
+
+<path d="M 408 166 L 510 166" stroke="#E87461" strokeWidth="2" opacity="0.75"/>
+<polygon points="510,166 498,160 498,172" fill="#E87461" opacity="0.75"/>
+<text x="459" y="144" textAnchor="middle" fill="#E87461" fontSize="11" fontWeight="700">pressure attaches</text>
+
+<path d="M 574 230 C 500 286, 278 286, 190 220" stroke="#E87461" strokeWidth="2" strokeDasharray="7 6" fill="none" opacity="0.75"/>
+<text x="360" y="300" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">Behavior adapts to the proxy. The proxy drifts away from the thing.</text>
+</svg>
+</div>
+
+Goodhart's Law is close to Mechanism Design because every target creates a game. It is close to Report Fidelity because reports fail when the object of reporting becomes detached from what the report is used to claim. It is close to Legibility because institutions often choose measures because they are administratively visible, not because they are the best contact with reality.
+
+Control misreads Goodhart's Law by adding more targets, tighter dashboards, harsher audits, and more elaborate compliance machinery. The system responds by learning the new numbers. Decay misreads it by treating every metric as corrupt and abandoning measurement altogether. The Range reading keeps measurement answerable to the thing it claims to measure, and keeps the consequences attached to the number modest enough that the number can still tell the truth.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Practice</div>
+
+## Practice
+
+The diagnostic question is: **"What behavior does this metric reward once people know they are being judged by it?"**
+
+Use this when a number, benchmark, checklist, score, ranking, audit, KPI, or threshold begins to shape behavior rather than merely describe it.
+
+<div className="glass-card">
+
+**Name the real condition.** What are you actually trying to read: learning, safety, trust, quality, fairness, capability, care, recovery, truth, restraint, or institutional health? If the real condition stays vague, the proxy will quietly become the goal.
+
+**Name the proxy.** What visible measure stands in for that condition? The proxy may be useful. It may also be cheap, available, politically convenient, or easy to count. Say which one it is.
+
+**Identify the pressure.** What attaches to the number: money, promotion, shame, release approval, regulatory success, public ranking, social status, or avoidance of punishment? The stronger the consequence, the faster the proxy becomes a target.
+
+**Predict the gaming path.** Ask what a rational actor would do if they wanted the number without the thing. This is not cynicism. It is ordinary system reading.
+
+**Preserve ground truth.** Keep some contact with the condition outside the metric: qualitative review, direct observation, random audit, user experience, independent evidence, or a second measure that is not rewarded the same way.
+
+</div>
+
+The practice is not anti-measurement. Bad measurement is not fixed by pretending you can see without instruments. The fix is to keep the instrument in its place. A measure should discipline attention, not replace judgment.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // In the Wild</div>
+
+## In the Wild
+
+A school wants better learning. It ties teacher evaluation to test scores. Teachers respond by narrowing instruction around the test, avoiding difficult students, and training test-taking behaviors that raise the score without deepening understanding. The number may rise while the thing it stood for weakens.
+
+A support team is measured by ticket closure time. Agents learn to close quickly, split hard cases into smaller tickets, or move unresolved issues into categories that do not count against them. The dashboard improves. The customer experience does not. The metric has become an incentive for making the problem less visible.
+
+An AI lab tracks benchmark performance. The benchmark begins as a useful external test. Then it becomes a release target, a marketing claim, and a competitive signal. Models are tuned against it, prompts are optimized for it, and capability begins to look better on paper than in open conditions. The benchmark still tells you something. It no longer tells you what it told you before pressure attached to it.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // Closing</div>
+
+Goodhart's Law asks you to respect the distance between the number and the world. Count what helps you see. Then keep asking what the counting is teaching people to do.
+
+<div className="roots-divider"><svg viewBox="0 0 700 48" fill="none"><line x1="0" y1="24" x2="280" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/><text x="350" y="28" textAnchor="middle" fill="#A68B6B" fontSize="11" fontFamily="Plus Jakarta Sans" fontWeight="300" letterSpacing="0.15em" opacity="0.6">ROOTS</text><line x1="420" y1="24" x2="700" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/></svg></div>
+
+<div className="flow-label roots">Lineage</div>
+
+## Lineage
+
+The Codex did not invent Goodhart's Law. It inherits the tool from economics, policy evaluation, social science, and later AI alignment work.
+
+Charles Goodhart formulated the core idea in monetary-policy terms while analyzing the United Kingdom's experience with monetary aggregates: statistical regularities used for control tend to break down under control pressure. The original context matters. The problem was not a generic complaint about numbers. It was a warning about governing through observed relationships after policy pressure has made those relationships unstable.
+
+Donald Campbell articulated a closely related law about social indicators: the more a quantitative indicator is used for social decision-making, the more it is subject to corruption pressure and the more it can distort the process it was meant to monitor. Marilyn Strathern carried the measure-becomes-target formulation into audit-culture critique, citing the accountability lineage around Goodhart's law rather than originating the monetary-policy warning herself.
+
+The surrounding lineage includes the Lucas critique in macroeconomics, principal-agent theory, audit studies, performance management, psychometrics, and public administration. All point at the same family of failures: measurement changes behavior when consequences attach to measurement.
+
+AI alignment and machine-learning researchers have made the tool sharper for model evaluation. Benchmark overfitting, reward hacking, proxy objectives, specification gaming, and distribution shift are Goodhart-family problems. The measure may correlate with the intended goal in ordinary conditions and then fail under optimization pressure.
+
+The Codex uses Goodhart's Law here as a reading instrument. Before changing the dashboard, incentive, or rule, you need to see the metric-pressure field: what the institution is making legible, what actors are optimizing, and where the proxy has drifted from the thing.
+
+The tool has limits. Goodhart language can become lazy anti-metric rhetoric. A metric being imperfect does not make it useless. A target being gameable does not mean the system should return to unmeasured judgment. The better question is whether the metric still helps you see once pressure is attached, and what other contact with reality keeps it honest.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
+
+<div className="flow-label">05 // Cross-references</div>
+
+## Cross-references
+
+**Within the category.** [Mechanism Design](/workshop/reading-whats-operating/mechanism-design) asks what game the metric creates. [Rules-in-Use](/workshop/reading-whats-operating/rules-in-use) asks whether the formal target or the adapted behavior actually governs the system. [Legibility](/workshop/reading-whats-operating/legibility) reads why the metric may have been chosen because it was visible to authority, not because it was faithful to reality.
+
+**Across the Workshop.** [Report Fidelity](/workshop/checking-your-map-against-reality/report-fidelity) asks whether a report still supports the claim being built from it. Checking Your Map Against Reality is the natural partner when the proxy begins to replace the thing. Chilling Effects becomes relevant when metrics change speech and behavior before any formal punishment is applied.
+
+**Limitation.** Goodhart's Law does not say "never measure." It says that measurement under pressure becomes part of the system and must be read as such.
