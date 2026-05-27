@@ -1,0 +1,140 @@
+---
+title: "Mechanism Design"
+description: "Reads incentive structures by asking what rules, information, and constraints make a desired behavior rational or stable."
+aiSummary: "Mechanism Design is the Knowledge / Full Practice tool inside Reading What's Operating. It diagnoses systems as games by asking what rules, messages, incentives, information, participation constraints, and outcomes make behavior rational for participants with private interests and private information. Mechanism: reverse game theory, incentive compatibility, information revelation, participation constraints, implementation, and institutional design under strategic behavior. Practice: name the desired outcome, define participants and private information, inspect incentives, test strategic responses, check participation and legitimacy, and distinguish design from manipulation. Lineage: Leonid Hurwicz's mechanism-design theory, incentive compatibility, the revelation principle, Eric Maskin's implementation theory, Roger Myerson's auction and Bayesian mechanism-design work, Vickrey-Clarke-Groves mechanisms, and public-goods theory. Cross-references: Rules-in-Use, Prisoner's Dilemma, Tragedy of the Commons, Inadequate Equilibria, Leverage Points, and Acting on What You See."
+discipline: knowledge
+category: reading-whats-operating
+tier: full-practice
+disposition: living
+status: working-draft-v0-1
+---
+
+<span className="layer-tag descriptive">Descriptive</span>
+
+*Full Practice · Knowledge · Reading What's Operating*
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Mechanism</div>
+
+## Mechanism
+
+Game theory usually starts with a game and asks what players will do. Mechanism Design starts with a desired outcome and asks what game would make that outcome possible.
+
+If you want people to reveal what they know, what rule makes truth-telling safe or beneficial? If you want a shared project funded, what contribution rule prevents everyone from understating their benefit and hoping others pay? If you want safe behavior, what incentives make safety the rational move rather than the noble sacrifice? If you want objections raised early, what process protects the objector before the failure becomes visible?
+
+<span className="key-phrase">Mechanism Design reads the game your rules are asking people to play.</span>
+
+The tool is often described as reverse game theory. That is useful, as long as it does not become too clever. The plain reading is this: people respond to rules, rewards, information, options, sanctions, and expectations. If the system rewards concealment, you should expect concealment. If it punishes truth, you should expect silence. If it asks for cooperation while making defection safer, you should expect defection. Mechanism Design asks what rules would make the desired behavior stable for participants who have their own interests and information.
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 720 360" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>Mechanism Design: desired outcome back to rules and incentives</title>
+<rect width="720" height="360" rx="12" fill="#0D0F12"/>
+<text x="360" y="42" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">Start with the outcome. Read the game backward.</text>
+
+<rect x="74" y="120" width="158" height="70" rx="10" fill="#00D4FF" fillOpacity="0.08" stroke="#00D4FF" strokeWidth="1.4"/>
+<text x="153" y="149" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Desired outcome</text>
+<text x="153" y="169" textAnchor="middle" fill="#8A8A8A" fontSize="11">what should happen</text>
+
+<rect x="281" y="120" width="158" height="70" rx="10" fill="#A68B6B" fillOpacity="0.12" stroke="#A68B6B" strokeWidth="1.4"/>
+<text x="360" y="149" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Mechanism</text>
+<text x="360" y="169" textAnchor="middle" fill="#8A8A8A" fontSize="11">rules, messages, incentives</text>
+
+<rect x="488" y="120" width="158" height="70" rx="10" fill="#00D4FF" fillOpacity="0.08" stroke="#00D4FF" strokeWidth="1.4"/>
+<text x="567" y="149" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Participant behavior</text>
+<text x="567" y="169" textAnchor="middle" fill="#8A8A8A" fontSize="11">what becomes rational</text>
+
+<path d="M 488 212 C 420 258, 300 258, 232 212" stroke="#00D4FF" strokeWidth="2" fill="none" opacity="0.75"/>
+<polygon points="232,212 246,209 240,222" fill="#00D4FF" opacity="0.75"/>
+<text x="360" y="276" textAnchor="middle" fill="#00D4FF" fontSize="11" fontWeight="700">read strategic response before redesign</text>
+
+<path d="M 232 155 L 281 155" stroke="#3A3A40" strokeWidth="2"/>
+<polygon points="281,155 271,150 271,160" fill="#3A3A40"/>
+<path d="M 439 155 L 488 155" stroke="#3A3A40" strokeWidth="2"/>
+<polygon points="488,155 478,150 478,160" fill="#3A3A40"/>
+<text x="360" y="322" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">A mechanism is not a wish. It is the game that turns a wish into incentives.</text>
+</svg>
+</div>
+
+Two ideas carry much of the field. The first is incentive compatibility: a mechanism is designed so that the behavior the system needs, often truthful revelation of private information, is also in the participant's interest. The second is implementation: can the mechanism make the desired outcome appear as an equilibrium, not merely as an instruction?
+
+Inside Reading What's Operating, Mechanism Design has to be handled carefully. Inside this category, the first job is not building; it is reading. What messages do participants send? What information do they hide? What does the rule reward? What outcome does it assign? What equilibrium does it produce? When the work becomes an intervention decision, it begins to cross into Acting on What You See. The reading has to happen first.
+
+Control misreads Mechanism Design by treating people as incentive surfaces to be engineered around. It can become technocratic, manipulative, and hostile to local knowledge. Decay misreads it by refusing design discipline: trust the values, publish the norm, hope people comply. The Range reading designs with legitimacy, participation, information, and rules-in-use in view. A mechanism that gets the right behavior by corrupting trust may win the game and damage the world the game exists inside.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Practice</div>
+
+## Practice
+
+The diagnostic question is: **"What behavior does this mechanism make rational?"**
+
+Use this when a rule, process, market, policy, audit, meeting format, safety threshold, or governance structure is supposed to produce a specific outcome and you need to test whether its incentives actually point there.
+
+<div className="glass-card">
+
+**Name the desired outcome.** Do not start with the rule. Start with what the rule is supposed to produce: truthful reporting, early dissent, public-goods funding, safe deployment, fair allocation, careful review, repair after error, or restraint under competition.
+
+**Define the participants and private information.** Who knows what? Who wants what? Who can misrepresent, hide, delay, exaggerate, free-ride, or exit? Mechanism Design becomes useful where private incentives and private information matter.
+
+**Inspect the incentive path.** For each participant, ask what they gain by following the desired behavior and what they gain by gaming the mechanism. If gaming is easier, safer, or more rewarded, the mechanism is teaching the wrong lesson.
+
+**Test strategic response.** Ask how the rule changes once participants adapt to it. A metric invites metric optimization. A disclosure rule invites selective disclosure. A reward invites reward-hacking. A sanction invites concealment. The second-round behavior is part of the mechanism.
+
+**Check participation and legitimacy.** A mechanism can be elegant and still fail because people refuse to enter it, do not trust it, or experience it as imposed manipulation. The rule has to survive contact with the people it governs.
+
+</div>
+
+The common failure is designing for the actor you wish you had instead of the actor the system actually contains. Good people still respond to incentives. Trusted people still have private information. Cooperative people still avoid avoidable cost. Design is not cynicism. It is respect for pressure.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // In the Wild</div>
+
+## In the Wild
+
+A company wanted earlier risk reporting. The old mechanism punished teams whose risks became visible. Leadership said "raise issues early," but budget, reputation, and executive attention all moved against the team that surfaced the problem. A better mechanism protected early reporters, made late discovery more costly than early reporting, and separated risk visibility from blame. The desired behavior, truth early enough to matter, became safer than concealment.
+
+A city wanted residents to conserve water. Moral appeals produced a short effect and then faded. The mechanism changed when usage became visible quickly, neighbors could compare consumption against a fair baseline, and high use triggered escalating prices during scarcity. The point was not to shame people. It was to make the resource cost legible at the moment behavior could still change.
+
+An AI evaluation process said a model would not ship if it failed a safety threshold. The mechanism only worked if failure had force. If failed runs could be reframed, ignored, or buried in summary language, the mechanism rewarded passing-looking reports rather than safety. To make the threshold operative, the process needed pre-committed criteria, durable records, independent review, and authority to delay release when the evidence demanded it.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // Closing</div>
+
+Before you ask people to behave differently, read the game you have given them. If the mechanism rewards the behavior you condemn, the speech condemning it is decoration. The reading is not finished until you can name that contradiction.
+
+<div className="roots-divider"><svg viewBox="0 0 700 48" fill="none"><line x1="0" y1="24" x2="280" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/><text x="350" y="28" textAnchor="middle" fill="#A68B6B" fontSize="11" fontFamily="Plus Jakarta Sans" fontWeight="300" letterSpacing="0.15em" opacity="0.6">ROOTS</text><line x1="420" y1="24" x2="700" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/></svg></div>
+
+<div className="flow-label roots">Lineage</div>
+
+## Lineage
+
+The Codex did not invent Mechanism Design. It inherits the tool from economics and game theory, especially the work of Leonid Hurwicz, Eric Maskin, and Roger Myerson.
+
+Hurwicz gave the field its basic shape. A mechanism is a communication system in which participants send messages, and a rule assigns outcomes based on those messages. Once you see an institution this way, markets, auctions, voting procedures, public-goods rules, and internal governance processes can be compared as games with different information flows and outcome rules.
+
+Hurwicz also introduced incentive compatibility, the key idea that the mechanism should make the desired report or behavior align with the participant's own interest. If a public-goods mechanism requires people to reveal how much they value the project, but each person benefits from understating their value to pay less, the mechanism has a problem. If the mechanism makes truthful revelation the best strategy, it has solved a real part of the design.
+
+The revelation principle simplified the field by showing that, under important conditions, mechanism designers can study direct mechanisms where participants report private information truthfully, then translate the result back into more realistic institutions. Myerson developed this machinery deeply, especially in Bayesian mechanism design and auction theory. Maskin's implementation theory asked when a mechanism can make desired outcomes appear across equilibria rather than only in a favorable one.
+
+The field has many practical descendants: auction design, public-goods funding, regulation, matching markets, voting procedures, taxation, market design, platform rules, and organizational governance. The formal theory can become mathematically demanding quickly, but the Workshop version uses the central discipline: read the rules as a game, then ask what behavior becomes rational under those rules.
+
+The Codex's translation is placement with a warning. Mechanism Design is a powerful Knowledge tool, but it sits near the border with action. Reading the mechanism belongs here. Building or revising the mechanism begins to belong to Acting on What You See and to governance practice. The distinction matters because otherwise the tool can become a shortcut from diagnosis to intervention.
+
+The tool has limits. Mechanism Design can drift into Control when it treats legitimacy, trust, local knowledge, and human dignity as externalities. It can also overfit: a mechanism that performs well in a model may fail when people adapt, resist, misunderstand, or experience the rule as unfair. A sound mechanism reading includes rules-in-use, not only rules-on-paper.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
+
+<div className="flow-label">05 // Cross-references</div>
+
+## Cross-references
+
+**Within the category.** [Rules-in-Use](/workshop/reading-whats-operating/rules-in-use) reads the actual game already operating. Mechanism Design asks what game would produce the desired outcome. [Prisoner's Dilemma](/workshop/reading-whats-operating/prisoners-dilemma) and [Tragedy of the Commons](/workshop/reading-whats-operating/tragedy-of-the-commons) show incentive failures that often need mechanism repair. [Inadequate Equilibria](/workshop/reading-whats-operating/inadequate-equilibria) reads when the system remains bad because no actor can fix it alone.
+
+**Across the Workshop.** [Leverage Points](/workshop/reading-whats-operating/leverage-points) asks where a system is sensitive; Mechanism Design often shows why rules, information flows, or incentives are the points that matter. Acting on What You See is the natural next category when the question becomes whether and how to intervene.
+
+**Limitation.** Mechanism Design is not manipulation with better math. If the mechanism produces compliance by breaking trust, hiding the real game, or denying affected people legitimate voice, it may solve the local incentive problem while creating a larger failure.

@@ -1,0 +1,142 @@
+---
+title: "Tragedy of the Commons"
+description: "Reads shared-resource failure when individual extraction is rewarded and the cost is spread across everyone who depends on the resource."
+aiSummary: "Tragedy of the Commons is the Knowledge / Full Practice tool inside Reading What's Operating. It diagnoses shared-resource failure where each user gains from extraction while the cost of depletion is distributed across the group and the future. Mechanism: common-pool resource, subtractability, difficult exclusion, private benefit, shared cost, delayed depletion, and absent or failed governance. Practice: name the resource system and resource units, identify users and extraction incentives, test exclusion and subtractability, inspect rules-in-use, check time horizon, and look for governance rather than inevitability. Lineage: Garrett Hardin's 1968 Science essay as the popular source, William Forster Lloyd's earlier pasture example, Elinor Ostrom's empirical correction through Governing the Commons and common-pool resource governance, and later institutional-analysis work. Cross-references: Prisoner's Dilemma, Moloch, Rules-in-Use, Mechanism Design, Entropy, Polycentric Governance, and Bond stewardship tools."
+discipline: knowledge
+category: reading-whats-operating
+tier: full-practice
+disposition: living
+status: working-draft-v0-1
+---
+
+<span className="layer-tag descriptive">Descriptive</span>
+
+*Full Practice · Knowledge · Reading What's Operating*
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Mechanism</div>
+
+## Mechanism
+
+A commons fails when each user can take a private benefit while the cost of that taking is spread across everyone who depends on the shared resource.
+
+The old pasture example is clean. Each herder gains from adding one more animal. The cost of overgrazing is shared by all herders, and often by the land itself across time. As long as each herder captures the extra benefit and only pays a fraction of the depletion cost, the private calculation points toward more extraction. If every herder follows that calculation, the pasture degrades.
+
+<span className="key-phrase">Tragedy of the Commons reads the gap between private extraction and shared maintenance.</span>
+
+The resource does not have to be grassland. It can be a fishery, groundwater basin, atmosphere, public trust, road capacity, team attention, open-source maintainer energy, democratic legitimacy, or an information environment. The resource has two properties that matter. It is hard to exclude people from using it, and one person's use can reduce what remains available for others. Economists call this a common-pool resource.
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 720 360" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>Tragedy of the Commons: private extraction and shared depletion</title>
+<rect width="720" height="360" rx="12" fill="#0D0F12"/>
+<text x="360" y="42" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">Private benefit accumulates. Shared resource depletes.</text>
+
+<ellipse cx="360" cy="180" rx="168" ry="86" fill="#00D4FF" fillOpacity="0.07" stroke="#00D4FF" strokeWidth="1.5"/>
+<text x="360" y="176" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">Shared resource</text>
+<text x="360" y="198" textAnchor="middle" fill="#8A8A8A" fontSize="11">pasture, fishery, trust, attention, atmosphere</text>
+
+<circle cx="130" cy="108" r="28" fill="#A68B6B" fillOpacity="0.18" stroke="#A68B6B" strokeWidth="1.3"/>
+<text x="130" y="113" textAnchor="middle" fill="#D0D0D0" fontSize="11" fontWeight="700">user</text>
+<circle cx="590" cy="108" r="28" fill="#A68B6B" fillOpacity="0.18" stroke="#A68B6B" strokeWidth="1.3"/>
+<text x="590" y="113" textAnchor="middle" fill="#D0D0D0" fontSize="11" fontWeight="700">user</text>
+<circle cx="130" cy="262" r="28" fill="#A68B6B" fillOpacity="0.18" stroke="#A68B6B" strokeWidth="1.3"/>
+<text x="130" y="267" textAnchor="middle" fill="#D0D0D0" fontSize="11" fontWeight="700">user</text>
+<circle cx="590" cy="262" r="28" fill="#A68B6B" fillOpacity="0.18" stroke="#A68B6B" strokeWidth="1.3"/>
+<text x="590" y="267" textAnchor="middle" fill="#D0D0D0" fontSize="11" fontWeight="700">user</text>
+
+<path d="M 160 122 C 218 146, 250 158, 302 170" stroke="#E87461" strokeWidth="2" fill="none" opacity="0.75"/>
+<path d="M 560 122 C 502 146, 470 158, 418 170" stroke="#E87461" strokeWidth="2" fill="none" opacity="0.75"/>
+<path d="M 160 248 C 218 224, 250 210, 302 194" stroke="#E87461" strokeWidth="2" fill="none" opacity="0.75"/>
+<path d="M 560 248 C 502 224, 470 210, 418 194" stroke="#E87461" strokeWidth="2" fill="none" opacity="0.75"/>
+<polygon points="302,170 288,165 291,179" fill="#E87461" opacity="0.75"/>
+<polygon points="418,170 432,165 429,179" fill="#E87461" opacity="0.75"/>
+<polygon points="302,194 289,202 288,187" fill="#E87461" opacity="0.75"/>
+<polygon points="418,194 431,202 432,187" fill="#E87461" opacity="0.75"/>
+
+<text x="360" y="310" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">Each actor gets the gain. Everyone inherits the depletion.</text>
+</svg>
+</div>
+
+The tragedy is not that people are selfish in some crude moral sense. The tragedy is that the resource structure gives each user a reason to take while making maintenance, restraint, monitoring, and repair harder to organize. It turns shared dependence into private temptation.
+
+The important correction is that tragedy is not inevitable. Hardin's famous framing made the failure vivid, but Elinor Ostrom's work showed that many communities govern common-pool resources successfully without simple privatization or central command. Boundaries, local rules, monitoring, graduated sanctions, conflict resolution, participation in rule-making, and nested governance can turn a fragile commons into a maintained one. If the lesson becomes only "commons fail," it is the wrong lesson. The stronger lesson is: commons fail when governance does not match the resource, the users, the incentives, and the time horizon.
+
+Control misreads the commons by reaching immediately for coercion: centralize, privatize, police, simplify, impose. Sometimes strong rules are necessary, but Control skips local knowledge and legitimacy. Decay misreads the commons by romanticizing shared use without maintaining constraints: everyone agrees to steward the resource, no one monitors, and extraction wins quietly. The Range reading asks what the resource is, who uses it, what rules actually govern use, how maintenance is paid for, and whether the governance can hold across time.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Practice</div>
+
+## Practice
+
+The diagnostic question is: **"Who captures the benefit of using the shared resource, and who pays the cost of depletion?"**
+
+Use this when a shared resource keeps degrading even though nearly everyone says they value it. The degradation may be the result of extraction incentives, weak governance, delayed consequences, or missing maintenance.
+
+<div className="glass-card">
+
+**Name the resource system and the resource units.** In a fishery, the system is the fishery and the units are fish taken. In a team, the system may be shared attention and the units are interruptions, meetings, urgency claims, or requests. If you cannot distinguish the system from what people take from it, the reading stays blurry.
+
+**Identify users and extraction incentives.** Who can draw from the resource? What does each user gain by taking more? What cost do they personally pay? What cost do they impose on others or on the future?
+
+**Test exclusion and subtractability.** Is it hard to keep users out? Does one person's use reduce what remains? The tragedy pattern is strongest when exclusion is difficult and use is subtractive.
+
+**Read the rules-in-use.** What rules actually govern access, extraction, monitoring, sanction, repair, and conflict? Do not stop at formal stewardship language. Ask what happens when someone overuses the resource and the overuse benefits them.
+
+**Check the time horizon.** Commons often fail because the benefit is immediate and the depletion is delayed. Ask when the cost appears, who will be around to feel it, and whether the governance sees that far.
+
+</div>
+
+The practice should make you more careful, not more fatalistic. A commons is not a synonym for doomed resource. It is a resource with governance demands. If those demands are ignored, extraction wins. If they are met, shared use can become durable without defaulting to privatization or distant central control.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // In the Wild</div>
+
+## In the Wild
+
+A product team treated focus as a shared resource. Everyone valued deep work. Everyone also had urgent requests. Each person gained by interrupting others when their own problem felt pressing; the cost of interruption spread across the team in context-switching, slower delivery, and thinner thinking. The commons was attention. The extraction unit was the interruption. The fix was not a vague respect-for-focus norm. The team needed rules-in-use: office hours, escalation standards, shared quiet blocks, and consequences for false urgency.
+
+A fishing community watched catches decline. Each boat gained from taking more before others did. The fishery absorbed the cost until it could not. If no one trusted the count, no one trusted restraint. If no one monitored, restraint looked naive. If sanctions were arbitrary, rules lost legitimacy. The commons reading does not stop at overfishing. It asks what governance would make restraint credible enough to survive.
+
+An open-source project depended on a few maintainers. Users filed issues, requested features, demanded support, and built businesses on the software. Each request felt small from the user's side. The accumulated demand consumed maintainer energy. The shared resource was not code, exactly. It was the attention, judgment, and patience of the people keeping the code alive. Without contribution norms, funding, triage rules, and limits, a successful commons can exhaust the people maintaining it.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // Closing</div>
+
+When a shared resource degrades, ask what each person is rewarded for taking and what no one is assigned to maintain. Then ask the harder question: what rules would let people keep using the resource without pretending restraint maintains itself?
+
+<div className="roots-divider"><svg viewBox="0 0 700 48" fill="none"><line x1="0" y1="24" x2="280" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/><text x="350" y="28" textAnchor="middle" fill="#A68B6B" fontSize="11" fontFamily="Plus Jakarta Sans" fontWeight="300" letterSpacing="0.15em" opacity="0.6">ROOTS</text><line x1="420" y1="24" x2="700" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/></svg></div>
+
+<div className="flow-label roots">Lineage</div>
+
+## Lineage
+
+The Codex did not invent Tragedy of the Commons. It inherits the name from Garrett Hardin's 1968 essay in *Science*, while correcting the tool through Elinor Ostrom's commons-governance work.
+
+Hardin's essay made the pasture mechanism famous: each herder gains from adding animals while the cost of overgrazing is shared. The essay's power came from making a collective-action problem easy to see. But Hardin's original treatment also carried strong claims about population control and "mutual coercion" that the Codex does not inherit. The useful tool is the resource-governance mechanism, not the whole policy posture of the essay.
+
+The older pasture example traces back to William Forster Lloyd in the nineteenth century. Hardin popularized the modern phrase, but the underlying problem of shared use, private gain, and shared depletion is older than the term.
+
+Ostrom is the necessary correction. *Governing the Commons* showed that common-pool resources do not inevitably fail and do not always require either privatization or centralized state control. Communities can and do build durable institutions for managing shared resources. Her design principles include clear boundaries, locally fitted rules, participation by affected users, monitoring, graduated sanctions, conflict-resolution mechanisms, recognized rights to self-organize, and nested governance for larger systems.
+
+The institutional-analysis lineage matters because the weak version of this tool becomes a slogan: commons fail, therefore privatize or command. Ostrom's work makes the reading more exact. A commons has a governance problem. The outcome depends on boundaries, monitoring, trust, sanction, local knowledge, conflict resolution, and legitimacy.
+
+The Codex's translation is placement. Tragedy of the Commons belongs in Reading What's Operating because it reads a specific resource dynamic before it becomes a governance prescription. Rules-in-Use reads what rules actually govern the resource. Mechanism Design may help redesign incentives. Polycentric Governance may become necessary when the resource crosses scales. Bond stewardship tools help people bear the cost of maintaining what they share. This tool names the resource failure those later tools may have to answer.
+
+The tool has limits. Not every shared failure is a commons problem. Some resources are not subtractive. Some are excludable. Some degradation comes from bad information, unequal power, fraud, coercion, or imposed scarcity. And some commons are already well governed. Do not ask only whether something is shared. Ask whether the resource structure creates private extraction and shared depletion under the rules actually in use.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
+
+<div className="flow-label">05 // Cross-references</div>
+
+## Cross-references
+
+**Within the category.** [Prisoner's Dilemma](/workshop/reading-whats-operating/prisoners-dilemma) reads the strategic temptation to defect; Tragedy of the Commons reads one resource form of that temptation. [Moloch](/workshop/reading-whats-operating/moloch) reads the broader competitive race that can drive commons depletion. [Rules-in-Use](/workshop/reading-whats-operating/rules-in-use) asks what access, extraction, monitoring, and sanction rules actually operate. [Entropy](/workshop/reading-whats-operating/entropy) keeps the maintenance cost visible: maintenance is permanent, and unpaid maintenance becomes decay.
+
+**Across the Workshop.** Mechanism Design becomes relevant when incentives need redesign. Bond's Stewardship Across Time and Belonging Through Practice become relevant when the shared resource depends on identity, obligation, inheritance, and repeated cooperation rather than contract alone.
+
+**Limitation.** The tragedy is not "people share things, so things fail." The tragedy appears when a shared resource has extraction incentives and insufficient governance. If governance is working, the commons is not a tragedy. It is a maintained inheritance.
