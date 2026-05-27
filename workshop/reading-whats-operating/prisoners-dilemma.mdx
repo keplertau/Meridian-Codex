@@ -1,0 +1,134 @@
+---
+title: "Prisoner's Dilemma"
+description: "Reads situations where individually rational defection produces a worse shared outcome than cooperation would have produced."
+aiSummary: "Prisoner's Dilemma is the Knowledge / Onramp tool inside Reading What's Operating. It diagnoses situations where each actor has an individual incentive to defect, even though mutual cooperation would leave both better off than mutual defection. Mechanism: the difference between private incentive and shared outcome; one-shot and repeated forms; how shadow of the future, reputation, monitoring, and payoff reshaping alter the game. Practice: map the payoff, identify the unilateral-defection temptation, test the shadow of the future, and look for cooperation-enabling conditions. Lineage: Flood and Dresher at RAND, Tucker's prisoner's story, Axelrod's iterated tournaments, Axelrod and Hamilton's evolutionary-cooperation work. Cross-references: Feedback Loops, Network Effects, Rules-in-Use, Entropy, and Bond cooperation practices."
+discipline: knowledge
+category: reading-whats-operating
+tier: onramp
+disposition: living
+status: working-draft-v0-1
+---
+
+<span className="layer-tag descriptive">Descriptive</span>
+
+*Onramp · Knowledge · Reading What's Operating*
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">01 // Mechanism</div>
+
+## Mechanism
+
+Some failures do not happen because people are stupid, selfish, or blind to the good outcome. They happen because the situation rewards each person for making the move that destroys the shared outcome.
+
+That is the Prisoner's Dilemma. Two actors can cooperate or defect. Mutual cooperation is better for both than mutual defection. But for each actor considered alone, defection looks safer: if the other cooperates, defecting gives the defector the best private result; if the other defects, defecting protects against being the only one who paid the cost. The individually rational move becomes collectively damaging.
+
+<span className="key-phrase">The tool reads the gap between private incentive and shared outcome.</span>
+
+The prison story is only a teaching wrapper. The real structure appears anywhere cooperation would create a better shared result but each participant has reason to protect themselves by defecting: two companies cutting safety corners because the other might; two departments hoarding information because sharing first feels exposed; two countries arming because unilateral restraint looks dangerous.
+
+<div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
+<svg viewBox="0 0 720 340" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>Prisoner's Dilemma payoff structure: private incentive diverging from shared outcome</title>
+<rect width="720" height="340" rx="12" fill="#0D0F12"/>
+<text x="360" y="42" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">Each actor chooses alone. The outcome is shared.</text>
+<line x1="200" y1="92" x2="640" y2="92" stroke="#3A3A40" strokeWidth="1.5"/>
+<line x1="200" y1="166" x2="640" y2="166" stroke="#3A3A40" strokeWidth="1.5"/>
+<line x1="200" y1="240" x2="640" y2="240" stroke="#3A3A40" strokeWidth="1.5"/>
+<line x1="200" y1="92" x2="200" y2="240" stroke="#3A3A40" strokeWidth="1.5"/>
+<line x1="420" y1="92" x2="420" y2="240" stroke="#3A3A40" strokeWidth="1.5"/>
+<line x1="640" y1="92" x2="640" y2="240" stroke="#3A3A40" strokeWidth="1.5"/>
+<text x="310" y="82" textAnchor="middle" fill="#00D4FF" fontSize="12" fontWeight="700">Other cooperates</text>
+<text x="530" y="82" textAnchor="middle" fill="#A68B6B" fontSize="12" fontWeight="700">Other defects</text>
+<text x="110" y="135" textAnchor="middle" fill="#00D4FF" fontSize="12" fontWeight="700">You cooperate</text>
+<text x="110" y="210" textAnchor="middle" fill="#A68B6B" fontSize="12" fontWeight="700">You defect</text>
+<rect x="220" y="110" width="180" height="38" rx="8" fill="#00D4FF" fillOpacity="0.16" stroke="#00D4FF" strokeWidth="1.2"/>
+<text x="310" y="134" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="600">Good for both</text>
+<rect x="440" y="110" width="180" height="38" rx="8" fill="#E87461" fillOpacity="0.10" stroke="#E87461" strokeWidth="1.2"/>
+<text x="530" y="134" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="600">You get exploited</text>
+<rect x="220" y="184" width="180" height="38" rx="8" fill="#A68B6B" fillOpacity="0.14" stroke="#A68B6B" strokeWidth="1.2"/>
+<text x="310" y="208" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="600">You exploit</text>
+<rect x="440" y="184" width="180" height="38" rx="8" fill="#8A8A8A" fillOpacity="0.08" stroke="#8A8A8A" strokeWidth="1.2"/>
+<text x="530" y="208" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="600">Bad for both</text>
+<path d="M 310 252 C 346 284, 474 284, 530 252" stroke="#00D4FF" strokeWidth="1.7" strokeDasharray="6 5" opacity="0.55"/>
+<text x="420" y="302" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">The shared optimum is not the private temptation.</text>
+</svg>
+</div>
+
+Inside Reading What's Operating, the question is not "why won't they just cooperate?" That is the complaint people make when they have not read the situation. The question is: what does this situation reward each actor for doing alone? If the private reward points away from the shared good, moral exhortation will not be enough. You have to change the conditions under which cooperation is chosen.
+
+The iterated version changes the reading. If the actors meet again, if reputation carries forward, if defection can be answered, if repair is possible, if communication and monitoring make behavior visible, the game no longer has the same shape. The shadow of the future can make cooperation rational where a single encounter makes it fragile.
+
+Control reads the Prisoner's Dilemma by forcing cooperation from above: surveillance, punishment, rigid command, coercive alignment. Decay reads it by wishing trust into existence while leaving the incentives untouched. The Range form makes cooperation possible without pretending the temptation to defect has disappeared: repeated interaction, visible behavior, proportionate response, and rules that make mutual cooperation more stable than mutual suspicion.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">02 // Practice</div>
+
+## Practice
+
+The diagnostic question is: **"What does each actor gain by defecting, and what would make cooperation safer than defection?"**
+
+Use this when a group keeps producing outcomes that almost everyone says they do not want. The repeated bad outcome is often not evidence that people secretly prefer the bad outcome. It may be evidence that the situation pays them for protecting themselves.
+
+<div className="glass-card">
+
+**Map the payoff.** Name the shared good, the cooperative move, the defecting move, and the private reward for defecting. Do this from each actor's side. If you can only explain why the other side is selfish, you have not mapped the game yet.
+
+**Find the unilateral-defection temptation.** Ask what each actor fears would happen if they cooperated while the other defected. The fear may be material, reputational, emotional, or strategic. It does not have to be noble to be operative.
+
+**Check the shadow of the future.** Will these actors meet again? Will behavior be remembered? Can reputation travel? Can one round's defection alter the next round's terms? Single-shot situations invite short-term protection; repeated situations can reward restraint.
+
+**Look for cooperation-enabling conditions.** Communication, monitoring, credible commitments, graduated response, repair paths, and changed payoffs can make cooperation less naive. The point is not to demand trust. The point is to build conditions where trust has evidence to stand on.
+
+</div>
+
+The common failure is moralizing the dilemma. You tell each actor to be less selfish, then act surprised when the same pattern repeats. That may be satisfying, but it usually leaves the game intact. If the structure rewards defection, the work is to alter the structure, not to scold people for reading it correctly.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="#3A3A40" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="#00D4FF" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="#3A3A40" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="#3A3A40" opacity="0.5"/></svg></div>
+
+<div className="flow-label">03 // In the Wild</div>
+
+## In the Wild
+
+A team said it valued transparency, but every department kept bad news private until the last possible moment. The private incentive was obvious once someone mapped it. The department that surfaced a risk early absorbed blame, delay, and extra work; the department that waited could hope the problem resolved before anyone noticed. Everyone wanted the organization to know the truth earlier. Nobody wanted to be first. The fix was not another speech about transparency. The fix was a rule that early risk reports protected budget and status rather than threatening both.
+
+Two companies in the same market could have maintained higher safety standards if both held the line. Each feared the other would cut cost first, take market share, and leave the responsible firm punished for cooperating. The mutual-defection result was worse: thinner margins, lower safety, public distrust. The dilemma did not mean cooperation was impossible. It meant the industry needed credible monitoring, visible commitments, and consequences for defectors strong enough to make restraint viable.
+
+A partnership kept avoiding hard conversations. Each person believed that if they named the issue first, they would carry the emotional cost while the other stayed protected. So both waited. The surface looked like peace. The operative game was mutual defection by silence. Cooperation began when one person made the first move and the other responded without punishment. After that, the game changed. The next honest sentence had evidence from the previous one.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
+
+<div className="flow-label">04 // Closing</div>
+
+The next time a system produces a bad shared outcome that no one claims to want, do not start by asking who is to blame. Ask what the game pays each actor to do. Then ask what would make the cooperative move less exposed.
+
+<div className="roots-divider"><svg viewBox="0 0 700 48" fill="none"><line x1="0" y1="24" x2="280" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/><text x="350" y="28" textAnchor="middle" fill="#A68B6B" fontSize="11" fontFamily="Plus Jakarta Sans" fontWeight="300" letterSpacing="0.15em" opacity="0.6">ROOTS</text><line x1="420" y1="24" x2="700" y2="24" stroke="#A68B6B" strokeWidth="1" opacity="0.4"/></svg></div>
+
+<div className="flow-label roots">Lineage</div>
+
+## Lineage
+
+The Codex did not invent the Prisoner's Dilemma. It inherits the tool from game theory and places it inside the Knowledge as a reading instrument for cooperation traps.
+
+Merrill Flood and Melvin Dresher developed the underlying game at RAND around 1950 in work on non-cooperative games. Albert W. Tucker supplied the prisoner's story that made the structure teachable: two suspects questioned separately, each choosing whether to stay silent or betray the other. The story survived because it gives the abstract payoff structure a human shape.
+
+Game theory then generalized the dilemma far beyond the story. The standard form is simple: mutual cooperation beats mutual defection for both parties, but defection dominates for each party when considered alone. That structure became one of the central models for studying collective action, arms races, public goods, market competition, and trust under uncertainty.
+
+Robert Axelrod's work on the iterated Prisoner's Dilemma gave the tool its strongest cooperation lesson. In his computer tournaments, strategies competed across repeated rounds. Tit for Tat, a strategy that began cooperatively and then copied the other player's previous move, performed strongly because it was nice, retaliatory, forgiving, and clear. Axelrod and W. D. Hamilton's 1981 work connected this to evolutionary cooperation: repeated interaction can make cooperation stable even among self-interested actors when the future has enough weight.
+
+The Codex's translation is placement. The Prisoner's Dilemma belongs in Reading What's Operating because it reads one specific thing: whether the situation's incentive structure is turning cooperation into exposure and defection into protection. The Bond teaches how to cooperate. This tool reads when the game has made cooperation fragile before the relationship has a chance to prove itself.
+
+The tool has limits. Not every conflict is a Prisoner's Dilemma. Some disputes are value conflicts, power conflicts, information problems, coordination games, or plain disagreement about reality. Treating every failure to cooperate as Prisoner's Dilemma thinking can make the reader cynical and mechanically suspicious. The useful move is narrower: when cooperation would be better for all sides, but each actor has reason to defect alone, read the game before judging the people inside it.
+
+<div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
+
+<div className="flow-label">05 // Cross-references</div>
+
+## Cross-references
+
+**Within the category.** [Feedback Loops](/workshop/reading-whats-operating/feedback-loops) reads how defection can become self-reinforcing: one protective move produces the next. [Network Effects](/workshop/reading-whats-operating/network-effects) reads how the spread of a cooperative or defecting norm changes payoffs as more actors join it. [Rules-in-Use](/workshop/reading-whats-operating/rules-in-use) asks what rule actually governs behavior under pressure; Prisoner's Dilemma asks what the payoff structure makes each actor want to do alone. [Entropy](/workshop/reading-whats-operating/entropy) explains why cooperative arrangements degrade if the conditions that maintain them stop being paid for.
+
+**Across the Workshop.** The Prisoner's Dilemma is one of the Knowledge-side tools underneath Bond practice. Good Faith as Default, calibrated trust, repair, and productive conflict all become naive if the situation rewards unilateral defection and nothing in the system answers it. The Bond still matters, but it needs a game that cooperation can survive inside.
+
+**Limitation.** Prisoner's Dilemma thinking can become a story that excuses defection. "The game made me do it" is often just responsibility avoidance with a payoff matrix attached. The tool reads incentives so they can be changed, not so the actor can disappear into them.
