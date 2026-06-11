@@ -23,18 +23,6 @@
 !codex/
 !codex/*.mdx
 
-# The Toolkit (deep dives)
-!toolkit/
-!toolkit/*.mdx
-
-# The Meridian AI Standard
-!ai-standard/
-!ai-standard/*.mdx
-
-# The Case Record
-!cases/
-!cases/*.mdx
-
 # The Range Audit
 !audit/
 !audit/*.mdx
