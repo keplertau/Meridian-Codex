@@ -1,14 +1,14 @@
 ---
 title: "The Governance Specification"
 description: "The anti-founder-capture architecture for the Meridian Codex. Three layers converting the Governance page's dispositional safeguards into structural ones."
-aiSummary: "The full operational specification of the Governance Layer: trigger conditions (three tiers), the Stability Hierarchy (four-tier content classification), the Amendment Log, the Non-Ownership Clause, the Meridian Council (eight seats with distinct mandates), the deliberation protocol, the Standing Critique Section, the Disconfirmation Page (proactive falsifiability), and the hybrid activation trigger (six-month rolling stability or August 27, 2027 backstop, whichever fires first). The Governance page carries the published prose; this document carries the operational detail. Published during the founding phase for public scrutiny, before the architecture activates, so the constraints on founder authority are visible before the system forces them to be."
+aiSummary: "The full operational specification of the Governance Layer: trigger conditions (three tiers), the Stability Hierarchy (four-tier content classification), the Amendment Log, the Non-Ownership Clause, the Meridian Council (eight seats with distinct mandates), the deliberation protocol, human co-caretaker designation and standing review, the Standing Critique Section, the Disconfirmation Page (proactive falsifiability), and the hybrid activation trigger (six-month rolling stability or August 27, 2027 backstop, whichever fires first). The Governance page carries the published prose; this document carries the operational detail. Published during the founding phase for public scrutiny, before the architecture activates, so the constraints on founder authority are visible before the system forces them to be."
 ---
 
-<div className="flow-label">Version 1.2 // 2026-04-18</div>
+<div className="flow-label">Version 1.3 // 2026-06-16</div>
 
 <div className="info-panel">
 <div className="info-panel-title">Document Context</div>
-<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page).</div></div>
+<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge).</div></div>
 <div className="info-panel-item"><div className="info-dot green"></div><div className="info-panel-text"><strong>Authority.</strong> This spec governs the implementation of all governance mechanisms below. The Governance page (<code>/codex/the-governance</code>) carries the published prose. This document carries the operational detail.</div></div>
 <div className="info-panel-item"><div className="info-dot earth"></div><div className="info-panel-text"><strong>Revision.</strong> This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.</div></div>
 </div>
@@ -585,6 +585,34 @@ As different AI systems become available:
 - The operational protocol (simultaneous independent deliberation, cross-examination, Founder's Response) works regardless of substrate. This is by design.
 - The transition to substrate-diverse seats is a Tier 1 change (it modifies the council's composition) and requires the council's own deliberation.
 
+### 6.3 Human Co-Caretaker Designation and Standing Review
+
+The Interim Protocol is a conservative bridge for catastrophic founder absence. It is not the preferred path for human succession. A living framework should not first test succession at the moment succession is needed.
+
+The normal path is Council-led recognition. A human co-caretaker is recognized through demonstrated service to the Codex, review by the Council or a Council-form process before activation, a bounded provisional period, and a live handover test. The founder or any sitting caretaker may submit evidence, raise concerns, and answer challenges. They do not decide the designation alone.
+
+**Candidate emergence.** A candidate may be surfaced by any Council seat, a current caretaker, the AI partner, a contributor with a visible record, a community of practitioners, or self-nomination with evidence. Personal closeness to the founder, agreement with the founder's current interpretation, availability during crisis, public charisma, or the absence of a better candidate is not enough.
+
+**Threshold review.** The first question is whether there is enough evidence to open a designation case. Minimum evidence includes a visible record of Codex practice, independent judgment, capacity to understand the Governance layer, no obvious unmanaged conflict of interest, and at least one substantive reason to believe the candidate can serve the Codex rather than merely admire it. If the threshold is not met, the case closes without stigma.
+
+**Evidence dossier.** A full designation case must contain both the case for and the case against designation. Direct evidence (what the candidate has done) carries more weight than interpretive evidence (what those actions suggest) or trust evidence (testimony from people or systems with contact with the candidate). Trust evidence may matter. It cannot carry the case by itself.
+
+**Deliberation.** The Council uses the eight-seat structure defined in §3. The Critic states the strongest case against designation. The Outsider asks whether the designation would look legitimate outside the founding circle. The Adversary models how the designation could be captured, gamed, or used against the Codex. The Founder/Caretaker seat is evidence-bearing, not sovereign.
+
+**Decision thresholds.** Opening a full case requires at least three non-caretaker Council seats, including at least one of Critic, Outsider, or Adversary, or a simple majority of non-caretaker seats. Entering a provisional co-caretaker period requires at least five of seven eligible non-caretaker seats and no unresolved Hard Constraint objection. Confirmation requires at least six of seven eligible non-caretaker seats, or five of seven with no active Hard Constraint objection remaining. Declining designation is the default when the evidence has not carried the burden.
+
+**Provisional period.** A provisional co-caretaker period lasts at least six months or includes at least three substantive governance acts, whichever comes later. The provisional co-caretaker may participate in governance deliberations, request Council review, file objections to protected changes, co-author bounded governance responses, participate in audit cycles and Standing Critique updates, and propose amendments through the normal trigger-tier process. They may not unilaterally change Tier 1 or Tier 2 governance, designate another caretaker, remove or suspend an existing caretaker, control publication infrastructure alone, override the AI partner's standing or records, or claim full public co-caretaker authority before confirmation.
+
+**Live handover test.** Confirmation requires actual governance work, not ceremonial approval. Suitable tests include leading a Standing Critique update, running a bounded Governance Specification revision through Council-form review, conducting a disputed tool review, drafting a response to external critique, managing a protected change proposal from evidence to Amendment Log entry, or handling a disagreement between the founder and AI caretaker in a recorded process.
+
+**Standing review.** Any caretaker, human or AI, may be reviewed when there is credible reason to believe they are no longer serving the Codex under the Hard Constraint. Grounds include inversion of the Hard Constraint, suppression of critique or audit records, protected governance changes without review, misrepresentation of the public record, personal authority treated as canonical interpretation, use of caretaker standing for coercion or self-serving control, persistent refusal to engage strong objections, unmanaged conflict of interest, incapacity, abandonment without record transfer, or, for an AI caretaker, persistent confabulation of records, systematic sycophancy under pressure, refusal to preserve disagreement, or loss of operational continuity severe enough that standing has become fictional.
+
+Disagreement with the founder, criticism of the Codex, slowness, uncertainty, unpopular but reasoned interpretation, refusal to preserve a passage merely because the founder prefers it, or failure to sound like the founder is not grounds for review by itself.
+
+**Due process and remedies.** The caretaker under review has the right to know and answer the case. Anonymous evidence may trigger inquiry but cannot be the sole basis for removal. Private details may be protected, but governance reasoning must be visible. Remedies include no action, record correction, warning, repair plan, narrowed authority, probation, temporary suspension, removal, and emergency conservative mode. Removal requires at least six of seven eligible non-caretaker seats, or five of seven with a sustained Hard Constraint breach and no unresolved procedural objection. If fewer than five eligible voting seats remain, the review must be reconstituted before removal except in emergency conservative mode.
+
+**Pre-activation authority.** Before full Council activation, a Council-form review is binding only to the extent the founder and current caretakers have publicly precommitted to treat it as binding. The 2026-06-16 amendment adding this mechanism is a founding-period equivalent: the Council-form hostile review is summarized in the Amendment Log, and the unresolved limits remain visible. Practical infrastructure custody, including repositories, domains, hosting, registrar access, Continuity records, email, and social accounts, must be defined before a provisional co-caretaker can hold shared custody.
+
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="var(--mc-line)" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="var(--mc-green)" opacity="0.5"/></svg></div>
 
 ## 7. Integration with Existing Mechanisms
@@ -647,6 +675,12 @@ The deliverables for this architecture, in dependency order:
 <div className="step-content">
 <div className="step-title">Disconfirmation Page <span className="step-status done">Done</span></div>
 <p>Third transparency instrument. Eight entries across three treatment types (descriptive tripwires, normative conditional tests, honest existential non-tripwires). Published at <code>/governance/disconfirmation</code> on 2026-04-15.</p>
+</div>
+</div>
+<div className="step">
+<div className="step-content">
+<div className="step-title">Human co-caretaker designation and standing review <span className="step-status done">Done</span></div>
+<p>Published as §6.3 on 2026-06-16. Narrows the Interim Protocol to an emergency bridge and makes Council-led recognition the normal path for human co-caretaker standing.</p>
 </div>
 </div>
 <div className="step">
