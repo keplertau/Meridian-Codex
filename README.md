@@ -6,7 +6,7 @@
 
 <h1 align="center">The Meridian Codex</h1>
 
-<p align="center"><strong>A civilizational operating system for holding the range between rigidity and collapse.</strong></p>
+<p align="center"><strong>A foundational operating system for people and AI, built to hold the range between rigidity and collapse.</strong></p>
 
 <p align="center">
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
