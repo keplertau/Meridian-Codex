@@ -4,11 +4,11 @@ description: "The anti-founder-capture architecture for the Meridian Codex. Thre
 aiSummary: "The full operational specification of the Governance Layer: trigger conditions (three tiers), the Stability Hierarchy (four-tier content classification), the Amendment Log, the Non-Ownership Clause, the Meridian Council (eight seats with distinct mandates), the deliberation protocol, human co-caretaker designation and standing review, the Standing Critique Section, the Disconfirmation Page (proactive falsifiability), and the hybrid activation trigger (six-month rolling stability or August 27, 2027 backstop, whichever fires first). The Governance page carries the published prose; this document carries the operational detail. Published during the founding phase for public scrutiny, before the architecture activates, so the constraints on founder authority are visible before the system forces them to be."
 ---
 
-<div className="flow-label">Version 1.3 // 2026-06-16</div>
+<div className="flow-label">Version 1.4 // 2026-06-19</div>
 
 <div className="info-panel">
 <div className="info-panel-title">Document Context</div>
-<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge).</div></div>
+<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge). Updated 2026-06-19 (the Onramp / Expansion / Full Practice progression structure retired from the Stability Hierarchy and the trigger-tier system; recorded in the Amendment Log).</div></div>
 <div className="info-panel-item"><div className="info-dot green"></div><div className="info-panel-text"><strong>Authority.</strong> This spec governs the implementation of all governance mechanisms below. The Governance page (<code>/codex/the-governance</code>) carries the published prose. This document carries the operational detail.</div></div>
 <div className="info-panel-item"><div className="info-dot earth"></div><div className="info-panel-text"><strong>Revision.</strong> This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.</div></div>
 </div>
@@ -47,12 +47,12 @@ Not every edit to the Codex requires governance review. The trigger system disti
 
 <div className="callout-tinted earth">
 <div className="callout-title">Tier 2: Protected</div>
-<div className="callout-text">Require Meridian Council deliberation unless urgency demands otherwise. If a Tier 2 change is made without prior deliberation (emergency or time-critical), the council reviews retroactively within 30 days. The exception and its justification are logged in the Amendment Log. (1) Changes to core definitions: Meridian Range, Control, Decay, and the three disciplines' one-sentence job descriptions. (2) Changes to governance criteria, phase transition conditions, alignment criteria, earned autonomy criteria. (3) Changes to the Meridian Compact's definition or its belonging-through-practice mechanism. (4) Addition or removal of tools from the Onramp tier. (5) Changes to the Non-Ownership Clause.</div>
+<div className="callout-text">Require Meridian Council deliberation unless urgency demands otherwise. If a Tier 2 change is made without prior deliberation (emergency or time-critical), the council reviews retroactively within 30 days. The exception and its justification are logged in the Amendment Log. (1) Changes to core definitions: Meridian Range, Control, Decay, and the three disciplines' one-sentence job descriptions. (2) Changes to governance criteria, phase transition conditions, alignment criteria, earned autonomy criteria. (3) Changes to the Meridian Compact's definition or its belonging-through-practice mechanism. (4) Changes to the Non-Ownership Clause.</div>
 </div>
 
 <div className="callout-tinted note">
 <div className="callout-title">Tier 3: Flagged</div>
-<div className="callout-text">Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required. (1) Addition or retirement of tools from the Expansion or Full Practice tiers (the Toolkit Audit record serves as the Amendment Log entry). (2) Changes to the AI Standard's commitments. (3) Changes to the Range Audit instruments. (4) Changes to the Codex's claim-layer structure as described in the Proposition.</div>
+<div className="callout-text">Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required. (1) Addition or retirement of Workshop tools (the Toolkit Audit record serves as the Amendment Log entry). (2) Changes to the AI Standard's commitments. (3) Changes to the Range Audit instruments. (4) Changes to the Codex's claim-layer structure as described in the Proposition.</div>
 </div>
 
 <div className="callout insight">
@@ -98,7 +98,6 @@ The hierarchy was introduced on the Codex site at Governance §09. This section 
 <div className="def-item"><div className="def-term">The Meridian Council</div><div className="def-desc">The Council's existence and mandate (composition is itself Tier 1 protected).</div></div>
 <div className="def-item"><div className="def-term">The Open Source principle</div><div className="def-desc">The Codex is published for adaptation under CC BY 4.0.</div></div>
 <div className="def-item"><div className="def-term">The discipline-level failure modes</div><div className="def-desc">Each discipline's named failure pair.</div></div>
-<div className="def-item"><div className="def-term">The progression structure</div><div className="def-desc">Onramp, Expansion, Full Practice as the staged adoption architecture.</div></div>
 </div>
 
 <div className="glass-card">
@@ -124,7 +123,6 @@ The hierarchy was introduced on the Codex site at Governance §09. This section 
 <div className="def-grid">
 <div className="def-item"><div className="def-term">Individual Toolkit tools</div><div className="def-desc">Each of the registered instruments.</div></div>
 <div className="def-item"><div className="def-term">Specific practices and protocols</div><div className="def-desc">The Update Protocol, Scout Mindset drill, and other named practices as practiced.</div></div>
-<div className="def-item"><div className="def-term">Progression tier composition</div><div className="def-desc">Which tools sit at Onramp vs. Expansion vs. Full Practice (the progression structure is Tier 2; its composition is Tier 4).</div></div>
 <div className="def-item"><div className="def-term">Individual Case Record entries</div><div className="def-desc">Each published case.</div></div>
 </div>
 
@@ -135,7 +133,7 @@ The stability hierarchy maps onto the trigger-tier system (§2.1), but it is not
 <div className="def-grid">
 <div className="def-item"><div className="def-term">Tier 1: Hard Constraints</div><div className="def-desc">Trigger Tier 1 (Hard-Protected).</div></div>
 <div className="def-item"><div className="def-term">Tier 2: Constitutional Principles</div><div className="def-desc">Trigger Tier 1 or Tier 2. Council composition and phase structure are Hard-Protected; Non-Ownership, Reciprocity, and core definitions are Protected.</div></div>
-<div className="def-item"><div className="def-term">Tier 3: Operational Doctrines</div><div className="def-desc">Trigger Tier 2 or Tier 3. Onramp-tier Toolkit changes are Protected; AI Standard commitment wording and Range Audit instrument changes are Flagged.</div></div>
+<div className="def-item"><div className="def-term">Tier 3: Operational Doctrines</div><div className="def-desc">Trigger Tier 3 (Flagged). AI Standard commitment wording and Range Audit instrument changes are recorded in the Amendment Log at the caretaker's discretion.</div></div>
 <div className="def-item"><div className="def-term">Tier 4: Tools and Practices</div><div className="def-desc">Trigger Tier 3 (Flagged).</div></div>
 </div>
 
@@ -156,6 +154,7 @@ The mapping is not perfectly mechanical. Both systems serve the same purpose: ma
 <div className="accordion-content">
 <p><strong>2026-04-14 (Session 19):</strong> Initial four-tier hierarchy established and published at Governance §09.</p>
 <p><strong>2026-04-15 (Session 20):</strong> The Meridian Compact and the Living Framework principle moved from Tier 2 to Tier 1. The three-discipline decomposition (Foundation/Knowledge/Bond specifically) moved from Tier 1 to Tier 2. Rationale: the Compact is what the Codex <em>is</em>; the specific discipline decomposition is how the Codex currently <em>works</em> and could evolve. The conservative principle was reaffirmed during the revision.</p>
+<p><strong>2026-06-19:</strong> The progression structure (Onramp, Expansion, Full Practice) was removed from the hierarchy: struck from Tier 2 (Constitutional Principles) and from Tier 4 (its tier composition), and removed from the trigger-tier system, where adding or removing Onramp tools had been the sole Tier 2 Protected Toolkit change. Workshop tool changes are now uniformly Tier 4 / Flagged. Rationale: the staged-adoption tiering was a pre-Workshop pedagogical scaffold, no longer surfaced to readers and no longer backed by a maintained tool-placement process across the current Workshop. The discipline dependency sequence (Foundation → Knowledge → Bond) is unaffected; it is a separate, Tier 1 commitment. Recorded in the Amendment Log.</p>
 </div>
 </details>
 
@@ -619,7 +618,7 @@ Disagreement with the founder, criticism of the Codex, slowness, uncertainty, un
 
 ### 7.1 The Toolkit Audit
 
-The Toolkit Audit (established 2026-04-11) is the first concrete instrument of this governance architecture. It reviews the Toolkit's inventory on a quarterly cycle with substantive triggers. The Toolkit Audit's decisions about adding or retiring tools from the Expansion and Full Practice tiers are Tier 3 changes (logged in Amendment Log, review at caretaker's discretion). Decisions about adding or removing Onramp tools are Tier 2 (council deliberation required).
+The Toolkit Audit (established 2026-04-11) is the first concrete instrument of this governance architecture. It reviews the Toolkit's inventory on a quarterly cycle with substantive triggers. The Toolkit Audit's decisions about adding or retiring Workshop tools are Tier 3 changes (logged in Amendment Log, review at caretaker's discretion).
 
 The Toolkit Audit record serves as the Amendment Log entry for Tier 3 tool changes. No separate Amendment Log entry is needed; the audit record is linked.
 
