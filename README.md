@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://meridiancodex.com">
-    <img src="https://imagedelivery.net/iAMt-owPtJnX2cbNg6lp9g/mc-github-readme-hero/public" alt="The Meridian Codex" width="820" />
+    <img src="https://meridiancodex.com/og-image.png" alt="The Meridian Codex" width="820" />
   </a>
 </p>
 
@@ -12,7 +12,6 @@
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
   <a href="https://meridiancodex.com/codex"><img alt="Codex" src="https://img.shields.io/badge/Codex-v6.0-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/workshop"><img alt="Workshop" src="https://img.shields.io/badge/Workshop-current-22c55e?style=flat-square"></a>
-  <a href="https://meridianstandard.ai"><img alt="AI Standard" src="https://img.shields.io/badge/AI%20Standard-peer%20repo-22c55e?style=flat-square"></a>
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="Content License: CC BY 4.0" src="https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey?style=flat-square"></a>
   <a href="https://opensource.org/licenses/MIT"><img alt="Code License: MIT" src="https://img.shields.io/badge/Code-MIT-lightgrey?style=flat-square"></a>
 </p>
@@ -54,26 +53,6 @@ The Workshop is the Codex's current practice surface. It replaced the older flat
 
 The Workshop organizes practice by the work a person or group is trying to do: watching one's own reasoning, revising beliefs under evidence, reading what is operating, calibrating trust to behavior, repairing after rupture, and the other recurring situations where the Meridian Range has to be held in practice.
 
-## Relationship To The AI Standard
-
-The [Meridian AI Standard](https://meridianstandard.ai) is a peer public project with its own repository at [keplertau/Meridian-AI-Standard](https://github.com/keplertau/Meridian-AI-Standard). It applies the Codex's framework to AI systems under development and to the institutions building them. The Codex carries the broader framework and practice layer; the AI Standard carries the constitutional document, implementation surfaces, Range Locator method, and Case Record for AI.
-
-```mermaid
-flowchart TD
-    Codex["Meridian Codex<br/>broader framework and practice layer"]
-    Chapters["Codex chapters<br/>the argument"]
-    Workshop["Workshop<br/>practical instruments"]
-    Audit["Range Audit<br/>institutional evaluation"]
-    Governance["Governance<br/>caretaking, critique, revision"]
-    Standard["Meridian AI Standard<br/>peer project at meridianstandard.ai"]
-
-    Codex --> Chapters
-    Codex --> Workshop
-    Codex --> Audit
-    Codex --> Governance
-    Codex -. "translated for AI development" .-> Standard
-```
-
 ## Repository Structure
 
 This repository holds the open-source text of the Codex. The website code for meridiancodex.com is maintained separately.
@@ -93,6 +72,10 @@ Retired public surfaces are removed from the active repository rather than kept 
 This public repo contains only material intended to be public: the Codex chapters, Workshop profiles, audit instruments and records, governance documents, and the small set of repository information files that help readers understand how to use the work.
 
 Operational files, writing rules, brand assets, site code, private drafts, workflow notes, and project-memory records do not belong in this repository. The `.gitignore` uses a whitelist model so private working material is ignored by default.
+
+## Related Project
+
+The [Meridian AI Standard](https://meridianstandard.ai) lives in its own repository at [keplertau/Meridian-AI-Standard](https://github.com/keplertau/Meridian-AI-Standard). It translates parts of the Codex into an AI-development standard: constitutional commitments, implementation artifacts, Range Locator readings, and cases. It is a peer project, not the front door of this repository; this repo remains the public source text of the Codex itself.
 
 ## Versioning
 
