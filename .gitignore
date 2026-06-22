@@ -18,6 +18,7 @@
 !README.md
 !CONTRIBUTING.md
 !LICENSE
+!PRIVACY.md
 
 # The Codex (core framework)
 !codex/
@@ -27,7 +28,7 @@
 !audit/
 !audit/*.mdx
 
-# The Governance Layer (specification, future amendment log + council records)
+# The Governance Layer (specification, critique, amendment log, case records, disconfirmation, changelog)
 !governance/
 !governance/*.mdx
 

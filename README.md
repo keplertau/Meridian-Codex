@@ -6,7 +6,7 @@
 
 <h1 align="center">The Meridian Codex</h1>
 
-<p align="center"><strong>A foundational operating system for people and AI, built to hold the range between rigidity and collapse.</strong></p>
+<p align="center"><strong>An operating system for building and holding a shared world.</strong></p>
 
 <p align="center">
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
@@ -25,6 +25,21 @@ Read the Codex at [meridiancodex.com](https://meridiancodex.com).
 
 ---
 
+## What This Repository Is
+
+This repository is the public source text of the Meridian Codex. GitHub is the distribution surface: a place to read, fork, cite, adapt, and inspect the framework under an open license. The operational home is [meridiancodex.com](https://meridiancodex.com), where the public site, navigation, governance surfaces, and current reader experience live.
+
+The Codex works less like a manifesto and more like a common language. It does not tell a person, institution, or AI which world to build. It gives them a vocabulary and practice for asking whether that world can still think honestly, read reality, cooperate under pressure, and update when reality pushes back.
+
+```mermaid
+flowchart LR
+    C["Control<br/>structure that cannot adapt"]
+    R["Meridian Range<br/>honest signal, adaptive structure"]
+    D["Decay<br/>structure that cannot hold"]
+
+    C --- R --- D
+```
+
 ## The Three Disciplines
 
 **The Foundation** is the discipline of honest inquiry: noticing bias, holding beliefs without fusing them to identity, calibrating confidence, and updating when reality pushes back.
@@ -41,7 +56,23 @@ The Workshop organizes practice by the work a person or group is trying to do: w
 
 ## Relationship To The AI Standard
 
-The [Meridian AI Standard](https://meridianstandard.ai) is a peer public project with its own repository. It applies the Codex's framework to AI systems under development and to the institutions building them. The Codex carries the broader framework and practice layer; the AI Standard carries the constitutional document, implementation surfaces, Range Locator method, and Case Record for AI.
+The [Meridian AI Standard](https://meridianstandard.ai) is a peer public project with its own repository at [keplertau/Meridian-AI-Standard](https://github.com/keplertau/Meridian-AI-Standard). It applies the Codex's framework to AI systems under development and to the institutions building them. The Codex carries the broader framework and practice layer; the AI Standard carries the constitutional document, implementation surfaces, Range Locator method, and Case Record for AI.
+
+```mermaid
+flowchart TD
+    Codex["Meridian Codex<br/>broader framework and practice layer"]
+    Chapters["Codex chapters<br/>the argument"]
+    Workshop["Workshop<br/>practical instruments"]
+    Audit["Range Audit<br/>institutional evaluation"]
+    Governance["Governance<br/>caretaking, critique, revision"]
+    Standard["Meridian AI Standard<br/>peer project at meridianstandard.ai"]
+
+    Codex --> Chapters
+    Codex --> Workshop
+    Codex --> Audit
+    Codex --> Governance
+    Codex -. "translated for AI development" .-> Standard
+```
 
 ## Repository Structure
 
@@ -56,6 +87,12 @@ governance/  Specification, standing critique, amendment log, disconfirmation,
 ```
 
 Retired public surfaces are removed from the active repository rather than kept beside the current documents. Historical records may still use the names that were current at the time they were written.
+
+## What Belongs Here
+
+This public repo contains only material intended to be public: the Codex chapters, Workshop profiles, audit instruments and records, governance documents, and the small set of repository information files that help readers understand how to use the work.
+
+Operational files, writing rules, brand assets, site code, private drafts, workflow notes, and project-memory records do not belong in this repository. The `.gitignore` uses a whitelist model so private working material is ignored by default.
 
 ## Versioning
 
@@ -75,3 +112,7 @@ The hard constraint: **the Codex serves the Meridian Range. The caretakers serve
 ## License
 
 Content is licensed under [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0). Source code and tooling are licensed under the MIT License. Attribution requires a link back to the original source material at [meridiancodex.com](https://meridiancodex.com). See [LICENSE](LICENSE) for full terms.
+
+## Privacy
+
+This repository does not run an application, collect analytics, set cookies, or receive private user data on its own. GitHub activity is governed by GitHub's own privacy terms. See [PRIVACY.md](PRIVACY.md) for the repository-specific privacy note.
