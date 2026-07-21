@@ -75,7 +75,7 @@ Operational files, writing rules, brand assets, site code, private drafts, workf
 
 ## Related Project
 
-The [Meridian AI Standard](https://meridianstandard.ai) lives in its own repository at [keplertau/Meridian-AI-Standard](https://github.com/keplertau/Meridian-AI-Standard). It translates parts of the Codex into an AI-development standard: constitutional commitments, implementation artifacts, Range Locator readings, and cases. It is a peer project, not the front door of this repository; this repo remains the public source text of the Codex itself.
+The [Meridian AI Standard](https://meridianstandard.ai) lives in its own repository at [keplertau/Meridian-AI-Standard](https://github.com/keplertau/Meridian-AI-Standard). It translates parts of the Codex into an AI-development standard: constitutional commitments, implementation artifacts, AI Model Assessment records, and cases. It is a peer project with its own enactment authority, not the front door of this repository; this repo remains the public source text of the Codex itself.
 
 ## Versioning
 
@@ -84,7 +84,7 @@ The Codex is versioned to reflect its evolution. Major versions mark structural 
 - **Current Codex version:** v6.0
 - **Current public practice surface:** Workshop
 
-Structural changes are recorded in `governance/amendment-log.mdx`. Evolution is documented in `governance/changelog.mdx`.
+Structural changes are recorded in `governance/amendment-log.mdx`. Publication history is rendered at [meridiancodex.com/governance/changelog](https://meridiancodex.com/governance/changelog). The site's authored changelog dataset is the substantive record; `governance/changelog.mdx` is a routing layer.
 
 ## Governance
 
