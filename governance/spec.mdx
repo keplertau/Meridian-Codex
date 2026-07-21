@@ -4,11 +4,11 @@ description: "The anti-founder-capture architecture for the Meridian Codex. Thre
 aiSummary: "The full operational specification of the Governance Layer: trigger conditions (three tiers), the Stability Hierarchy (four-tier content classification), the Amendment Log, the Non-Ownership Clause, the Meridian Council (eight seats with distinct mandates), the deliberation protocol, human co-caretaker designation and standing review, the Standing Critique Section, the Disconfirmation Page (proactive falsifiability), and the hybrid activation trigger (six-month rolling stability or August 27, 2027 backstop, whichever fires first). The Governance page carries the published prose; this document carries the operational detail. Published during the founding phase for public scrutiny, before the architecture activates, so the constraints on founder authority are visible before the system forces them to be."
 ---
 
-<div className="flow-label">Version 1.4 // 2026-06-19</div>
+<div className="flow-label">Version 1.5 // 2026-07-21</div>
 
 <div className="info-panel">
 <div className="info-panel-title">Document Context</div>
-<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge). Updated 2026-06-19 (the Onramp / Expansion / Full Practice progression structure retired from the Stability Hierarchy and the trigger-tier system; recorded in the Amendment Log).</div></div>
+<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge). Updated 2026-06-19 (the Onramp / Expansion / Full Practice progression structure retired from the Stability Hierarchy and the trigger-tier system; recorded in the Amendment Log). Updated 2026-07-21 (Codex jurisdiction narrowed after the AI Standard domain split; current Standing Critique summaries brought forward).</div></div>
 <div className="info-panel-item"><div className="info-dot green"></div><div className="info-panel-text"><strong>Authority.</strong> This spec governs the implementation of all governance mechanisms below. The Governance page (<code>/codex/the-governance</code>) carries the published prose. This document carries the operational detail.</div></div>
 <div className="info-panel-item"><div className="info-dot earth"></div><div className="info-panel-text"><strong>Revision.</strong> This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.</div></div>
 </div>
@@ -52,7 +52,7 @@ Not every edit to the Codex requires governance review. The trigger system disti
 
 <div className="callout-tinted note">
 <div className="callout-title">Tier 3: Flagged</div>
-<div className="callout-text">Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required. (1) Addition or retirement of Workshop tools (the Toolkit Audit record serves as the Amendment Log entry). (2) Changes to the AI Standard's commitments. (3) Changes to the Range Audit instruments. (4) Changes to the Codex's claim-layer structure as described in the Proposition.</div>
+<div className="callout-text">Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required. (1) Addition or retirement of Workshop tools (the Toolkit Audit record serves as the Amendment Log entry). (2) Changes to the Range Audit instruments. (3) Changes to the Codex's claim-layer structure as described in the Proposition.</div>
 </div>
 
 <div className="callout insight">
@@ -61,6 +61,12 @@ Not every edit to the Codex requires governance review. The trigger system disti
 <div className="callout-text">If the caretaker and any council seat disagree about which tier a change falls under, the higher tier applies. The dispute and its resolution are logged. This prevents the founder from reclassifying Tier 1 changes as Tier 3 to avoid deliberation.</div>
 </div>
 </div>
+
+#### Cross-Project Jurisdiction
+
+The trigger system governs changes to the Meridian Codex. The Meridian AI Standard owns and enacts changes to its constitution, implementation artifacts, assessment method, cases, and lineage through its own canonical sources and publication record. A Codex process may review or challenge a Standard change only where the Standard explicitly delegates that role; it cannot amend Standard commitments by itself.
+
+When the Standard imports a Codex concept, this Specification continues to govern the Codex source. The Standard's own change law governs whether and how a Codex revision is incorporated there. Shared lineage does not merge the two projects' enactment authority.
 
 ### 2.2 The Stability Hierarchy
 
@@ -106,7 +112,6 @@ The hierarchy was introduced on the Codex site at Governance §09. This section 
 </div>
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">The AI Standard</div><div className="def-desc">Domains and commitments (individual commitment wording is revisable).</div></div>
 <div className="def-item"><div className="def-term">The Range Audit instruments</div><div className="def-desc">Methodology, evaluation domains, and rubric criteria.</div></div>
 <div className="def-item"><div className="def-term">Tool definition structure</div><div className="def-desc">The six-element structure used for every Toolkit deep-dive.</div></div>
 <div className="def-item"><div className="def-term">Group-level failure modes</div><div className="def-desc">Specific patterns of collective drift named at the group scale.</div></div>
@@ -133,7 +138,7 @@ The stability hierarchy maps onto the trigger-tier system (§2.1), but it is not
 <div className="def-grid">
 <div className="def-item"><div className="def-term">Tier 1: Hard Constraints</div><div className="def-desc">Trigger Tier 1 (Hard-Protected).</div></div>
 <div className="def-item"><div className="def-term">Tier 2: Constitutional Principles</div><div className="def-desc">Trigger Tier 1 or Tier 2. Council composition and phase structure are Hard-Protected; Non-Ownership, Reciprocity, and core definitions are Protected.</div></div>
-<div className="def-item"><div className="def-term">Tier 3: Operational Doctrines</div><div className="def-desc">Trigger Tier 3 (Flagged). AI Standard commitment wording and Range Audit instrument changes are recorded in the Amendment Log at the caretaker's discretion.</div></div>
+<div className="def-item"><div className="def-term">Tier 3: Operational Doctrines</div><div className="def-desc">Trigger Tier 3 (Flagged). Range Audit instrument changes and other Codex operational-doctrine changes are recorded in the Amendment Log at the caretaker's discretion.</div></div>
 <div className="def-item"><div className="def-term">Tier 4: Tools and Practices</div><div className="def-desc">Trigger Tier 3 (Flagged).</div></div>
 </div>
 
@@ -155,6 +160,7 @@ The mapping is not perfectly mechanical. Both systems serve the same purpose: ma
 <p><strong>2026-04-14 (Session 19):</strong> Initial four-tier hierarchy established and published at Governance §09.</p>
 <p><strong>2026-04-15 (Session 20):</strong> The Meridian Compact and the Living Framework principle moved from Tier 2 to Tier 1. The three-discipline decomposition (Foundation/Knowledge/Bond specifically) moved from Tier 1 to Tier 2. Rationale: the Compact is what the Codex <em>is</em>; the specific discipline decomposition is how the Codex currently <em>works</em> and could evolve. The conservative principle was reaffirmed during the revision.</p>
 <p><strong>2026-06-19:</strong> The progression structure (Onramp, Expansion, Full Practice) was removed from the hierarchy: struck from Tier 2 (Constitutional Principles) and from Tier 4 (its tier composition), and removed from the trigger-tier system, where adding or removing Onramp tools had been the sole Tier 2 Protected Toolkit change. Workshop tool changes are now uniformly Tier 4 / Flagged. Rationale: the staged-adoption tiering was a pre-Workshop pedagogical scaffold, no longer surfaced to readers and no longer backed by a maintained tool-placement process across the current Workshop. The discipline dependency sequence (Foundation → Knowledge → Bond) is unaffected; it is a separate, Tier 1 commitment. Recorded in the Amendment Log.</p>
+<p><strong>2026-07-21:</strong> The Meridian AI Standard was removed from Codex Tier 3 and from the Codex trigger-tier system. The Standard now enacts changes through its own canonical sources and publication record; Codex governance continues to govern Codex semantics and dependencies the Standard imports. Recorded in the Amendment Log.</p>
 </div>
 </details>
 
@@ -209,9 +215,9 @@ A constitutional instrument recording every protected change to the Codex. Not a
 </div>
 </details>
 
-**Publication.** The Amendment Log is published on the Codex site as a standalone page (route TBD, likely `/governance/amendment-log` or `/audit/amendment-log`). It is append-only: entries are never edited after publication, though a subsequent entry may supersede a previous one.
+**Publication.** The Amendment Log is published at [`/governance/amendment-log`](/governance/amendment-log). It is append-only: entries are never edited after publication, though a subsequent entry may supersede a previous one.
 
-**Relationship to existing instruments.** The Amendment Log absorbs the planned "Public Revision Ledger" from the roadmap. The existing Changelog page (`codex/the-changelog.mdx`) continues to track editorial changes, version milestones, and prose updates. The Amendment Log tracks constitutional changes. The two do not overlap: a change appears in one or the other, not both.
+**Relationship to existing instruments.** The Amendment Log absorbs the planned "Public Revision Ledger" from the roadmap. The [Changelog](/governance/changelog) tracks editorial changes, version milestones, and publication history. Its MDX file is a routing layer; the rendered changelog dataset carries the entries. The Amendment Log tracks constitutional changes. The two do not overlap: a change appears in one or the other, not both.
 
 ### 2.4 The Non-Ownership Clause
 
@@ -426,7 +432,7 @@ A published page on the Codex site preserving the strongest objections to the fr
 
 **Purpose.** The Standing Critique Section serves the same function for the Codex that the Steelmanning tool serves for individual reasoning: it demonstrates that the framework has engaged the strongest versions of the arguments against it. A framework that cannot articulate the best case against itself has not earned the right to its own confidence.
 
-**Initial content (seven objections, populated from internal sources):**
+**Current register (seven objections, initially populated from internal sources):**
 
 <div className="glass-card">
 <div className="glass-card-title">1. The Governance Gap</div>
@@ -440,7 +446,7 @@ A published page on the Codex site preserving the strongest objections to the fr
 
 <div className="glass-card">
 <div className="glass-card-title">3. The Measurement Gap</div>
-<div className="glass-card-text">The AI Standard's evaluation criteria are directional, not fully specified. A lab could claim compliance without meaningful behavioral change.</div>
+<div className="glass-card-text">The AI Standard now has 27 constitutional commitments and an AI Model Assessment at method v0.8, with three published model records and preserved evidence boundaries. This is operational infrastructure, not proof of complete measurability or a compliance certification.</div>
 </div>
 
 <div className="glass-card">
@@ -454,8 +460,8 @@ A published page on the Codex site preserving the strongest objections to the fr
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">6. The Toolkit's Unexamined Traditions</div>
-<div className="glass-card-text">The Toolkit draws primarily from traditions the founder and AI partner know best (predominantly Western academic). Instruments from other intellectual traditions have not been formally evaluated. This is a scope limitation, not a systematic preference; the inclusion criterion is functional merit regardless of origin.</div>
+<div className="glass-card-title">6. The Workshop's Uneven Cross-Tradition Coverage</div>
+<div className="glass-card-text">A first cross-tradition expansion has produced published profiles from Buddhist, Confucian, Indigenous, African, Jain, and other traditions. The live objection concerns depth, translation fidelity, uneven coverage, and whether the same functional rigor is applied across lineages.</div>
 </div>
 
 <div className="glass-card">
