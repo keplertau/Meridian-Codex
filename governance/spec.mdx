@@ -1,14 +1,14 @@
 ---
 title: "The Governance Specification"
 description: "The anti-founder-capture architecture for the Meridian Codex. Three layers converting the Governance page's dispositional safeguards into structural ones."
-aiSummary: "The full operational specification of the Governance Layer: trigger conditions (three tiers), the Stability Hierarchy (four-tier content classification), the Amendment Log, the Non-Ownership Clause, the Meridian Council (eight seats with distinct mandates), the deliberation protocol, human co-caretaker designation and standing review, the Standing Critique Section, the Disconfirmation Page (proactive falsifiability), and the hybrid activation trigger (six-month rolling stability or August 27, 2027 backstop, whichever fires first). The Governance page carries the published prose; this document carries the operational detail. Published during the founding phase for public scrutiny, before the architecture activates, so the constraints on founder authority are visible before the system forces them to be."
+aiSummary: "The full operational specification of the Governance Layer: trigger conditions (three tiers), the Stability Hierarchy (four-tier content classification), the Amendment Log and its Propagation Rule, the Non-Ownership Clause, the Meridian Council (eight seats with distinct mandates), the deliberation protocol, human co-caretaker designation and standing review, the Standing Critique Section, the Disconfirmation Page (proactive falsifiability), and the hybrid activation trigger (six-month rolling stability or August 27, 2027 backstop, whichever fires first). The Governance page carries the published prose; this document carries the operational detail. Published during the founding phase for public scrutiny, before the architecture activates, so the constraints on founder authority are visible before the system forces them to be."
 ---
 
-<div className="flow-label">Version 1.5 // 2026-07-21</div>
+<div className="flow-label">Version 1.6 // 2026-08-11</div>
 
 <div className="info-panel">
 <div className="info-panel-title">Document Context</div>
-<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge). Updated 2026-06-19 (the Onramp / Expansion / Full Practice progression structure retired from the Stability Hierarchy and the trigger-tier system; recorded in the Amendment Log). Updated 2026-07-21 (Codex jurisdiction narrowed after the AI Standard domain split; current Standing Critique summaries brought forward).</div></div>
+<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge). Updated 2026-06-19 (the Onramp / Expansion / Full Practice progression structure retired from the Stability Hierarchy and the trigger-tier system; recorded in the Amendment Log). Updated 2026-07-21 (Codex jurisdiction narrowed after the AI Standard domain split; current Standing Critique summaries brought forward). Updated 2026-08-11 (Workshop Audit rename propagated; Amendment Propagation Rule added; self-description consistency guard instituted).</div></div>
 <div className="info-panel-item"><div className="info-dot green"></div><div className="info-panel-text"><strong>Authority.</strong> This spec governs the implementation of all governance mechanisms below. The Governance page (<code>/codex/the-governance</code>) carries the published prose. This document carries the operational detail.</div></div>
 <div className="info-panel-item"><div className="info-dot earth"></div><div className="info-panel-text"><strong>Revision.</strong> This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.</div></div>
 </div>
@@ -52,7 +52,7 @@ Not every edit to the Codex requires governance review. The trigger system disti
 
 <div className="callout-tinted note">
 <div className="callout-title">Tier 3: Flagged</div>
-<div className="callout-text">Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required. (1) Addition or retirement of Workshop tools (the Toolkit Audit record serves as the Amendment Log entry). (2) Changes to the Range Audit instruments. (3) Changes to the Codex's claim-layer structure as described in the Proposition.</div>
+<div className="callout-text">Changes are logged in the Amendment Log. Review is at the caretaker's discretion. The council may be convened but is not required. (1) Addition or retirement of Workshop profiles (the Workshop Audit record serves as the Amendment Log entry). (2) Changes to the Range Audit instruments. (3) Changes to the Codex's claim-layer structure as described in the Proposition.</div>
 </div>
 
 <div className="callout insight">
@@ -117,7 +117,7 @@ The hierarchy was introduced on the Codex site at Governance §09. This section 
 <div className="def-item"><div className="def-term">Group-level failure modes</div><div className="def-desc">Specific patterns of collective drift named at the group scale.</div></div>
 <div className="def-item"><div className="def-term">The Pathways Into Commitment</div><div className="def-desc">The five named entry routes to Codex practice.</div></div>
 <div className="def-item"><div className="def-term">Governance activation triggers</div><div className="def-desc">The specific conditions and timelines, distinct from the principle of hybrid activation.</div></div>
-<div className="def-item"><div className="def-term">Toolkit Audit criteria</div><div className="def-desc">The six-question rubric used during audit cycles.</div></div>
+<div className="def-item"><div className="def-term">Workshop Audit criteria</div><div className="def-desc">The tool and category rubrics used during audit cycles.</div></div>
 </div>
 
 <div className="glass-card">
@@ -126,7 +126,7 @@ The hierarchy was introduced on the Codex site at Governance §09. This section 
 </div>
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">Individual Toolkit tools</div><div className="def-desc">Each of the registered instruments.</div></div>
+<div className="def-item"><div className="def-term">Individual Workshop profiles</div><div className="def-desc">Each of the registered instruments.</div></div>
 <div className="def-item"><div className="def-term">Specific practices and protocols</div><div className="def-desc">The Update Protocol, Scout Mindset drill, and other named practices as practiced.</div></div>
 <div className="def-item"><div className="def-term">Individual Case Record entries</div><div className="def-desc">Each published case.</div></div>
 </div>
@@ -159,7 +159,7 @@ The mapping is not perfectly mechanical. Both systems serve the same purpose: ma
 <div className="accordion-content">
 <p><strong>2026-04-14 (Session 19):</strong> Initial four-tier hierarchy established and published at Governance §09.</p>
 <p><strong>2026-04-15 (Session 20):</strong> The Meridian Compact and the Living Framework principle moved from Tier 2 to Tier 1. The three-discipline decomposition (Foundation/Knowledge/Bond specifically) moved from Tier 1 to Tier 2. Rationale: the Compact is what the Codex <em>is</em>; the specific discipline decomposition is how the Codex currently <em>works</em> and could evolve. The conservative principle was reaffirmed during the revision.</p>
-<p><strong>2026-06-19:</strong> The progression structure (Onramp, Expansion, Full Practice) was removed from the hierarchy: struck from Tier 2 (Constitutional Principles) and from Tier 4 (its tier composition), and removed from the trigger-tier system, where adding or removing Onramp tools had been the sole Tier 2 Protected Toolkit change. Workshop tool changes are now uniformly Tier 4 / Flagged. Rationale: the staged-adoption tiering was a pre-Workshop pedagogical scaffold, no longer surfaced to readers and no longer backed by a maintained tool-placement process across the current Workshop. The discipline dependency sequence (Foundation → Knowledge → Bond) is unaffected; it is a separate, Tier 1 commitment. Recorded in the Amendment Log.</p>
+<p><strong>2026-06-19:</strong> The progression structure (Onramp, Expansion, Full Practice) was removed from the hierarchy: struck from Tier 2 (Constitutional Principles) and from Tier 4 (its tier composition), and removed from the trigger-tier system, where adding or removing Onramp tools had been the sole Tier 2 Protected practice-inventory change. Workshop profile changes are now uniformly Tier 4 / Flagged. Rationale: the staged-adoption tiering was a pre-Workshop pedagogical scaffold, no longer surfaced to readers and no longer backed by a maintained tool-placement process across the current Workshop. The discipline dependency sequence (Foundation → Knowledge → Bond) is unaffected; it is a separate, Tier 1 commitment. Recorded in the Amendment Log.</p>
 <p><strong>2026-07-21:</strong> The Meridian AI Standard was removed from Codex Tier 3 and from the Codex trigger-tier system. The Standard now enacts changes through its own canonical sources and publication record; Codex governance continues to govern Codex semantics and dependencies the Standard imports. Recorded in the Amendment Log.</p>
 </div>
 </details>
@@ -218,6 +218,16 @@ A constitutional instrument recording every protected change to the Codex. Not a
 **Publication.** The Amendment Log is published at [`/governance/amendment-log`](/governance/amendment-log). It is append-only: entries are never edited after publication, though a subsequent entry may supersede a previous one.
 
 **Relationship to existing instruments.** The Amendment Log absorbs the planned "Public Revision Ledger" from the roadmap. The [Changelog](/governance/changelog) tracks editorial changes, version milestones, and publication history. Its MDX file is a routing layer; the rendered changelog dataset carries the entries. The Amendment Log tracks constitutional changes. The two do not overlap: a change appears in one or the other, not both.
+
+#### Amendment Propagation Rule
+
+An amendment is not complete when its primary sentence or instrument has changed. If it alters a count, name, route, instrument, governance structure, or Glossary-defined term, enactment includes a propagation sweep across every current surface that describes or depends on the changed fact.
+
+The sweep covers the Codex chapters, navigation and routes, the Glossary, the Governance Specification and active governance instruments, current audit methods, active critique and open-tension surfaces, public metadata, and the operating briefings and task instructions that drive recurring work. Historical records keep their event-period language. Where a historical page remains a live retrieval surface, it receives a visible event-period or supersession boundary rather than being silently rewritten into the present.
+
+Mechanically checkable claims are guarded by automation before deploy and through the standing nightly reconciliation process. A clean check requires no human review and produces no attention item. A failed check or execution error is routed for repair. The Founding Caretaker's judgment is requested only where the correction changes meaning, the sources conflict, or a newly discovered gap requires the rule or checker to be extended.
+
+The rule does not claim that automation can anticipate every future self-description failure. A later audit may find a new class or a current surface not yet represented by the check. That finding extends the propagation model; it does not return routine consistency maintenance to manual review.
 
 ### 2.4 The Non-Ownership Clause
 
@@ -514,7 +524,7 @@ A published page at [`/governance/disconfirmation`](/governance/disconfirmation)
 <div className="def-item"><div className="def-term">Honest non-tripwires</div><div className="def-subtitle">Existential claims</div><div className="def-desc">An explanation of why a tripwire would be the wrong instrument, and what the Codex does instead (Pathways mechanism for the Prime Directive; Standing Critique monitoring for the Compact).</div></div>
 </div>
 
-**Scope.** The page covers Tier 1 (Hard Constraints) and selected Tier 2 (Constitutional Principles) where a clear, falsifiable test provides structural value. It does not cover Tier 3 (Operational Doctrines) or Tier 4 (Tools and Practices), because those tiers are designed to be replaced as better instruments emerge. The Toolkit Audit and Amendment Log are the cycling mechanisms for those tiers.
+**Scope.** The page covers Tier 1 (Hard Constraints) and selected Tier 2 (Constitutional Principles) where a clear, falsifiable test provides structural value. It does not cover Tier 3 (Operational Doctrines) or Tier 4 (Tools and Practices), because those tiers are designed to be replaced as better instruments emerge. The Workshop Audit and Amendment Log are the cycling mechanisms for those tiers.
 
 <div className="glass-card">
 <div className="glass-card-title">Initial content (eight entries, published 2026-04-15)</div>
@@ -622,11 +632,11 @@ Disagreement with the founder, criticism of the Codex, slowness, uncertainty, un
 
 ## 7. Integration with Existing Mechanisms
 
-### 7.1 The Toolkit Audit
+### 7.1 The Workshop Audit
 
-The Toolkit Audit (established 2026-04-11) is the first concrete instrument of this governance architecture. It reviews the Toolkit's inventory on a quarterly cycle with substantive triggers. The Toolkit Audit's decisions about adding or retiring Workshop tools are Tier 3 changes (logged in Amendment Log, review at caretaker's discretion).
+The Workshop Audit (established under its former name on 2026-04-11 and renamed 2026-07-31) is the first concrete instrument of this governance architecture. It reviews the Workshop at the discipline, category, and profile levels on a quarterly cycle with substantive triggers. Category-level review uses boundary integrity, naming honesty, payload, and discipline-wide coverage. Profile-level review uses the six-question tool rubric. Each cycle runs the falsification, coverage, declared-depth, finding/watchpoint, and prior-question-disposition rules defined by the current instrument.
 
-The Toolkit Audit record serves as the Amendment Log entry for Tier 3 tool changes. No separate Amendment Log entry is needed; the audit record is linked.
+The Workshop Audit record serves as the Amendment Log entry for Tier 3 profile changes. No separate Amendment Log entry is needed; the audit record is linked.
 
 ### 7.2 The Range Audit
 
