@@ -62,7 +62,7 @@ codex/       Core Codex chapters
 workshop/    Workshop categories, architecture pages, and tool profiles
 audit/       Range Audit method and published Codex audit records
 governance/  Specification, standing critique, amendment log, disconfirmation,
-             changelog, and Case 0 caretaking record
+             changelog, and the Caretaker's Practice record
 ```
 
 Retired public surfaces are removed from the active repository rather than kept beside the current documents. Historical records may still use the names that were current at the time they were written.
