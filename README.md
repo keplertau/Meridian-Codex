@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
   <a href="https://meridiancodex.com/codex"><img alt="Codex" src="https://img.shields.io/badge/Codex-v6.0-22c55e?style=flat-square"></a>
-  <a href="https://meridiancodex.com/workshop"><img alt="Workshop" src="https://img.shields.io/badge/Workshop-current-22c55e?style=flat-square"></a>
+  <a href="https://meridiancodex.com/inheritance"><img alt="Inheritance" src="https://img.shields.io/badge/Inheritance-current-22c55e?style=flat-square"></a>
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="Content License: CC BY 4.0" src="https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey?style=flat-square"></a>
   <a href="https://opensource.org/licenses/MIT"><img alt="Code License: MIT" src="https://img.shields.io/badge/Code-MIT-lightgrey?style=flat-square"></a>
 </p>
@@ -43,15 +43,15 @@ flowchart LR
 
 **The Foundation** is the discipline of honest inquiry: noticing bias, holding beliefs without fusing them to identity, calibrating confidence, and updating when reality pushes back.
 
-**The Knowledge** is the discipline of reading reality: seeing the incentives, feedback loops, information dynamics, and system pressures that push people and institutions toward Control or Decay.
+**Reality** is the discipline of reading reality: seeing the incentives, feedback loops, information dynamics, and system pressures that push people and institutions toward Control or Decay.
 
 **The Bond** is the discipline of cooperation: building trust, sustaining productive disagreement, repairing rupture, and defending cooperation against both naive fusion and cynical withdrawal.
 
-## The Workshop
+## The Inheritance
 
-The Workshop is the Codex's current practice surface. It replaced the older flat Toolkit structure with a category-based map of practical instruments across the three disciplines.
+The Inheritance is the Codex's current practice surface. It replaced the older flat Toolkit structure with a category-based map of practical instruments across the three disciplines.
 
-The Workshop organizes practice by the work a person or group is trying to do: watching one's own reasoning, revising beliefs under evidence, reading what is operating, calibrating trust to behavior, repairing after rupture, and the other recurring situations where the Meridian Range has to be held in practice.
+The Inheritance organizes practice by the work a person or group is trying to do: watching one's own reasoning, revising beliefs under evidence, reading what is operating, calibrating trust to behavior, repairing after rupture, and the other recurring situations where the Meridian Range has to be held in practice.
 
 ## Repository Structure
 
@@ -59,7 +59,7 @@ This repository holds the open-source text of the Codex. The website code for me
 
 ```text
 codex/       Core Codex chapters
-workshop/    Workshop categories, architecture pages, and tool profiles
+workshop/    Inheritance categories, architecture pages, and tool profiles
 audit/       Range Audit method and published Codex audit records
 governance/  Specification, standing critique, amendment log, disconfirmation,
              changelog, and the Caretaker's Practice record
@@ -69,7 +69,7 @@ Retired public surfaces are removed from the active repository rather than kept 
 
 ## What Belongs Here
 
-This public repo contains only material intended to be public: the Codex chapters, Workshop profiles, audit instruments and records, governance documents, and the small set of repository information files that help readers understand how to use the work.
+This public repo contains only material intended to be public: the Codex chapters, Inheritance profiles, audit instruments and records, governance documents, and the small set of repository information files that help readers understand how to use the work.
 
 Operational files, writing rules, brand assets, site code, private drafts, workflow notes, and project-memory records do not belong in this repository. The `.gitignore` uses a whitelist model so private working material is ignored by default.
 
@@ -82,7 +82,7 @@ The [Meridian AI Standard](https://meridianstandard.ai) lives in its own reposit
 The Codex is versioned to reflect its evolution. Major versions mark structural or conceptual advances. Minor versions are refinements, additions, and corrections.
 
 - **Current Codex version:** v6.0
-- **Current public practice surface:** Workshop
+- **Current public practice surface:** Inheritance
 
 Structural changes are recorded in `governance/amendment-log.mdx`. Publication history is rendered at [meridiancodex.com/governance/changelog](https://meridiancodex.com/governance/changelog). The site's authored changelog dataset is the substantive record; `governance/changelog.mdx` is a routing layer.
 
