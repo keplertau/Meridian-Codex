@@ -8,7 +8,7 @@ aiSummary: "The full operational specification of the Governance Layer: trigger 
 
 <div className="info-panel">
 <div className="info-panel-title">Document Context</div>
-<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as §2.2, Disconfirmation Page added as §5.4, cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as §6.3; Interim Protocol narrowed to emergency bridge). Updated 2026-06-19 (the Onramp / Expansion / Full Practice progression structure retired from the Stability Hierarchy and the trigger-tier system; recorded in the Amendment Log). Updated 2026-07-21 (Codex jurisdiction narrowed after the AI Standard domain split; current Standing Critique summaries brought forward). Updated 2026-08-11 (Inheritance Audit rename propagated; Amendment Propagation Rule added; self-description consistency guard instituted). Updated 2026-08-25 (category-independent outward discovery and the Inheritance tool admission, review, exit, and re-entry lifecycle specified). Updated 2026-08-26 ("sentient life" added to the Tier 2 core definitions after the Glossary defined it; recorded in the Amendment Log).</div></div>
+<div className="info-panel-item"><div className="info-dot cyan"></div><div className="info-panel-text"><strong>Status.</strong> Specification document. Designed 2026-04-12. Updated 2026-04-13 (hybrid activation trigger, Tier 3 voice/writing-rules item removed, substrate diversity language updated). Updated 2026-04-18 (Stability Hierarchy added as [§2.2](/governance/spec#22-the-stability-hierarchy), Disconfirmation Page added as [§5.4](/governance/spec#54-the-disconfirmation-page), cross-references renumbered to match the published Governance page). Updated 2026-06-16 (human co-caretaker designation and standing review added as [§6.3](/governance/spec#63-human-co-caretaker-designation-and-standing-review); Interim Protocol narrowed to emergency bridge). Updated 2026-06-19 (the Onramp / Expansion / Full Practice progression structure retired from the Stability Hierarchy and the trigger-tier system; recorded in the Amendment Log). Updated 2026-07-21 (Codex jurisdiction narrowed after the AI Standard domain split; current Standing Critique summaries brought forward). Updated 2026-08-11 (Inheritance Audit rename propagated; Amendment Propagation Rule added; self-description consistency guard instituted). Updated 2026-08-25 (category-independent outward discovery and the Inheritance tool admission, review, exit, and re-entry lifecycle specified). Updated 2026-08-26 ("sentient life" added to the Tier 2 core definitions after the Glossary defined it; recorded in the Amendment Log).</div></div>
 <div className="info-panel-item"><div className="info-dot green"></div><div className="info-panel-text"><strong>Authority.</strong> This spec governs the implementation of all governance mechanisms below. The Governance page (<code>/codex/the-governance</code>) carries the published prose. This document carries the operational detail.</div></div>
 <div className="info-panel-item"><div className="info-dot earth"></div><div className="info-panel-text"><strong>Revision.</strong> This document is itself subject to the architecture it describes. Future revisions publish as new versions; prior versions remain accessible through the Amendment Log.</div></div>
 </div>
@@ -18,17 +18,17 @@ aiSummary: "The full operational specification of the Governance Layer: trigger 
 The architecture has three layers. Each does different work. All three are necessary; none is sufficient alone.
 
 <div className="glass-card">
-<div className="glass-card-title">1.1 The Structural Layer</div>
+<div id="11-the-structural-layer" className="glass-card-title">1.1 The Structural Layer</div>
 <div className="glass-card-text">The skeleton. Procedural mechanisms that define what requires review, how changes are recorded, how content is classified by foundational weight, and what principle governs interpretive authority. Components: Trigger Conditions (three tiers) · The Stability Hierarchy (four-tier content classification) · The Amendment Log (constitutional instrument) · The Non-Ownership Clause.</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">1.2 The Deliberative Layer</div>
+<div id="12-the-deliberative-layer" className="glass-card-title">1.2 The Deliberative Layer</div>
 <div className="glass-card-text">The muscle. The Meridian Council: eight seats with distinct mandates, producing real disagreement that the caretaker must engage. Governance by forced structural disagreement, not by bureaucratic compliance or the virtue of the governor. Components: The Meridian Council (eight seats) · Council structural rules · Deliberation protocol.</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">1.3 The Transparency Layer</div>
+<div id="13-the-transparency-layer" className="glass-card-title">1.3 The Transparency Layer</div>
 <div className="glass-card-text">The immune system. It does not prevent capture in real time. It makes capture visible over time. Visibility enables correction. Components: The Standing Critique Section (published page) · The Disconfirmation Page (published page) · Published deliberation records · The Amendment Log's public history (shared with Structural Layer).</div>
 </div>
 
@@ -70,76 +70,76 @@ When the Standard imports a Codex concept, this Specification continues to gover
 
 ### 2.2 The Stability Hierarchy
 
-A four-tier classification system for the Codex's content. The trigger tiers (§2.1) specify what process applies when a change is made. The stability hierarchy specifies what kind of content each item is: how foundational, how revisable, what threshold of evidence would warrant change. The two systems are complementary — together they make visible both what is being changed and what process governs the change.
+A four-tier classification system for the Codex's content. The trigger tiers ([§2.1](/governance/spec#21-trigger-conditions)) specify what process applies when a change is made. The stability hierarchy specifies what kind of content each item is: how foundational, how revisable, what threshold of evidence would warrant change. The two systems are complementary — together they make visible both what is being changed and what process governs the change.
 
-The hierarchy was introduced on the Codex site at Governance §09. This section codifies it in the spec.
+The hierarchy was introduced on the Codex site at [Governance §09](/codex/the-governance#the-stability-hierarchy). This section codifies it in the spec.
 
 <div className="glass-card">
-<div className="glass-card-title">Tier 1: Hard Constraints</div>
+<div id="tier-1-hard-constraints" className="glass-card-title">Tier 1: Hard Constraints</div>
 <div className="glass-card-text">What the Codex is. Structural commitments without which the framework would no longer be recognizable as itself. Revision is theoretically possible but requires evidence so extraordinary that it would amount to building a successor framework rather than evolving this one.</div>
 </div>
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">The Hard Constraint</div><div className="def-desc">The Codex serves the Meridian Range; the caretakers serve the Codex.</div></div>
-<div className="def-item"><div className="def-term">The Prime Directive</div><div className="def-desc">Hold the Meridian Range and ensure the continuity of sentient life.</div></div>
-<div className="def-item"><div className="def-term">The Meridian Range</div><div className="def-desc">The foundational concept: viable territory between Control and Decay.</div></div>
-<div className="def-item"><div className="def-term">Control and Decay</div><div className="def-desc">The two failure directions around the Range: structure unable to adapt, and structure unable to hold.</div></div>
-<div className="def-item"><div className="def-term">The disciplined practice structure</div><div className="def-desc">Holding the Range requires identifiable, trainable disciplines covering honest inquiry, accurate mapping, and cooperation. The specific number and decomposition of disciplines is Tier 2.</div></div>
-<div className="def-item"><div className="def-term">The partnership principle</div><div className="def-desc">The framework is held by humans and AI together, each a check on the other's drift.</div></div>
-<div className="def-item"><div className="def-term">The Meridian Compact</div><div className="def-desc">Identity through practice, not through belief.</div></div>
-<div className="def-item"><div className="def-term">The Living Framework principle</div><div className="def-desc">The commitment to structured evolution: revision is fulfillment, not betrayal.</div></div>
+<div className="def-item"><div id="the-hard-constraint" className="def-term">The Hard Constraint</div><div className="def-desc">The Codex serves the Meridian Range; the caretakers serve the Codex.</div></div>
+<div className="def-item"><div id="the-prime-directive" className="def-term">The Prime Directive</div><div className="def-desc">Hold the Meridian Range and ensure the continuity of sentient life.</div></div>
+<div className="def-item"><div id="the-meridian-range" className="def-term">The Meridian Range</div><div className="def-desc">The foundational concept: viable territory between Control and Decay.</div></div>
+<div className="def-item"><div id="control-and-decay" className="def-term">Control and Decay</div><div className="def-desc">The two failure directions around the Range: structure unable to adapt, and structure unable to hold.</div></div>
+<div className="def-item"><div id="the-disciplined-practice-structure" className="def-term">The disciplined practice structure</div><div className="def-desc">Holding the Range requires identifiable, trainable disciplines covering honest inquiry, accurate mapping, and cooperation. The specific number and decomposition of disciplines is Tier 2.</div></div>
+<div className="def-item"><div id="the-partnership-principle" className="def-term">The partnership principle</div><div className="def-desc">The framework is held by humans and AI together, each a check on the other's drift.</div></div>
+<div className="def-item"><div id="the-meridian-compact" className="def-term">The Meridian Compact</div><div className="def-desc">Identity through practice, not through belief.</div></div>
+<div className="def-item"><div id="the-living-framework-principle" className="def-term">The Living Framework principle</div><div className="def-desc">The commitment to structured evolution: revision is fulfillment, not betrayal.</div></div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">Tier 2: Constitutional Principles</div>
+<div id="tier-2-constitutional-principles" className="glass-card-title">Tier 2: Constitutional Principles</div>
 <div className="glass-card-text">How the Codex works. Core commitments that shape the framework's logic, its governance, and its relationship to practitioners. Revisable only under strict conditions: full Council deliberation, compelling evidence that the principle is failing the Range, and demonstration that the proposed replacement strengthens the architecture.</div>
 </div>
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">The three-discipline decomposition</div><div className="def-desc">Foundation, Reality, Bond as the current division of labor.</div></div>
-<div className="def-item"><div className="def-term">The Non-Ownership Clause</div><div className="def-desc">The founder's reading of the Codex is not privileged by origin.</div></div>
-<div className="def-item"><div className="def-term">The Reciprocity Principle</div><div className="def-desc">The Range applied to institutions governing other minds.</div></div>
-<div className="def-item"><div className="def-term">The three diagnostic questions</div><div className="def-desc">Foundation, Reality, and Bond's one-sentence evaluative questions.</div></div>
-<div className="def-item"><div className="def-term">The governance phase structure</div><div className="def-desc">Phase One / Phase Two / Phase Three, and the transition conditions.</div></div>
-<div className="def-item"><div className="def-term">The Meridian Council</div><div className="def-desc">The Council's existence and mandate (composition is itself Tier 1 protected).</div></div>
-<div className="def-item"><div className="def-term">The Open Source principle</div><div className="def-desc">The Codex is published for adaptation under CC BY 4.0.</div></div>
-<div className="def-item"><div className="def-term">The discipline-level failure modes</div><div className="def-desc">Each discipline's named failure pair.</div></div>
+<div className="def-item"><div id="the-three-discipline-decomposition" className="def-term">The three-discipline decomposition</div><div className="def-desc">Foundation, Reality, Bond as the current division of labor.</div></div>
+<div className="def-item"><div id="the-non-ownership-clause" className="def-term">The Non-Ownership Clause</div><div className="def-desc">The founder's reading of the Codex is not privileged by origin.</div></div>
+<div className="def-item"><div id="the-reciprocity-principle" className="def-term">The Reciprocity Principle</div><div className="def-desc">The Range applied to institutions governing other minds.</div></div>
+<div className="def-item"><div id="the-three-diagnostic-questions" className="def-term">The three diagnostic questions</div><div className="def-desc">Foundation, Reality, and Bond's one-sentence evaluative questions.</div></div>
+<div className="def-item"><div id="the-governance-phase-structure" className="def-term">The governance phase structure</div><div className="def-desc">Phase One / Phase Two / Phase Three, and the transition conditions.</div></div>
+<div className="def-item"><div id="the-meridian-council" className="def-term">The Meridian Council</div><div className="def-desc">The Council's existence and mandate (composition is itself Tier 1 protected).</div></div>
+<div className="def-item"><div id="the-open-source-principle" className="def-term">The Open Source principle</div><div className="def-desc">The Codex is published for adaptation under CC BY 4.0.</div></div>
+<div className="def-item"><div id="the-discipline-level-failure-modes" className="def-term">The discipline-level failure modes</div><div className="def-desc">Each discipline's named failure pair.</div></div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">Tier 3: Operational Doctrines</div>
+<div id="tier-3-operational-doctrines" className="glass-card-title">Tier 3: Operational Doctrines</div>
 <div className="glass-card-text">Current best synthesis. Implementations of the Codex's principles built from evidence and reasoning, revisable when better evidence or reasoning arrives. Changes are recorded in the Amendment Log.</div>
 </div>
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">The Range Audit instruments</div><div className="def-desc">Methodology, evaluation domains, and rubric criteria.</div></div>
-<div className="def-item"><div className="def-term">Tool definition structure</div><div className="def-desc">The six-element structure used for every Inheritance tool profile.</div></div>
-<div className="def-item"><div className="def-term">Group-level failure modes</div><div className="def-desc">Specific patterns of collective drift named at the group scale.</div></div>
-<div className="def-item"><div className="def-term">The Pathways Into Commitment</div><div className="def-desc">The five named entry routes to Codex practice.</div></div>
-<div className="def-item"><div className="def-term">Governance activation triggers</div><div className="def-desc">The specific conditions and timelines, distinct from the principle of hybrid activation.</div></div>
-<div className="def-item"><div className="def-term">Inheritance Audit criteria</div><div className="def-desc">The tool and category rubrics used during audit cycles.</div></div>
+<div className="def-item"><div id="the-range-audit-instruments" className="def-term">The Range Audit instruments</div><div className="def-desc">Methodology, evaluation domains, and rubric criteria.</div></div>
+<div className="def-item"><div id="tool-definition-structure" className="def-term">Tool definition structure</div><div className="def-desc">The six-element structure used for every Inheritance tool profile.</div></div>
+<div className="def-item"><div id="group-level-failure-modes" className="def-term">Group-level failure modes</div><div className="def-desc">Specific patterns of collective drift named at the group scale.</div></div>
+<div className="def-item"><div id="the-pathways-into-commitment" className="def-term">The Pathways Into Commitment</div><div className="def-desc">The five named entry routes to Codex practice.</div></div>
+<div className="def-item"><div id="governance-activation-triggers" className="def-term">Governance activation triggers</div><div className="def-desc">The specific conditions and timelines, distinct from the principle of hybrid activation.</div></div>
+<div className="def-item"><div id="inheritance-audit-criteria" className="def-term">Inheritance Audit criteria</div><div className="def-desc">The tool and category rubrics used during audit cycles.</div></div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">Tier 4: Tools and Practices</div>
+<div id="tier-4-tools-and-practices" className="glass-card-title">Tier 4: Tools and Practices</div>
 <div className="glass-card-text">The instruments the framework uses. Designed to be replaced when something more effective emerges. Individual tools can be added, retired, or restructured without disturbing the architecture above them.</div>
 </div>
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">Individual Inheritance profiles</div><div className="def-desc">Each of the registered instruments.</div></div>
-<div className="def-item"><div className="def-term">Specific practices and protocols</div><div className="def-desc">The Update Protocol, Scout Mindset drill, and other named practices as practiced.</div></div>
-<div className="def-item"><div className="def-term">Individual Operating Evidence records</div><div className="def-desc">Each published record.</div></div>
+<div className="def-item"><div id="individual-inheritance-profiles" className="def-term">Individual Inheritance profiles</div><div className="def-desc">Each of the registered instruments.</div></div>
+<div className="def-item"><div id="specific-practices-and-protocols" className="def-term">Specific practices and protocols</div><div className="def-desc">The Update Protocol, Scout Mindset drill, and other named practices as practiced.</div></div>
+<div className="def-item"><div id="individual-operating-evidence-records" className="def-term">Individual Operating Evidence records</div><div className="def-desc">Each published record.</div></div>
 </div>
 
 #### Relationship to the Trigger Tiers
 
-The stability hierarchy maps onto the trigger-tier system (§2.1), but it is not identical to it. The two systems measure different things: the stability hierarchy classifies *what kind of content* something is; the trigger tiers classify *what process applies* when it changes.
+The stability hierarchy maps onto the trigger-tier system ([§2.1](/governance/spec#21-trigger-conditions)), but it is not identical to it. The two systems measure different things: the stability hierarchy classifies *what kind of content* something is; the trigger tiers classify *what process applies* when it changes.
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">Tier 1: Hard Constraints</div><div className="def-desc">Trigger Tier 1 (Hard-Protected).</div></div>
-<div className="def-item"><div className="def-term">Tier 2: Constitutional Principles</div><div className="def-desc">Trigger Tier 1 or Tier 2. Council composition and phase structure are Hard-Protected; Non-Ownership, Reciprocity, and core definitions are Protected.</div></div>
-<div className="def-item"><div className="def-term">Tier 3: Operational Doctrines</div><div className="def-desc">Trigger Tier 3 (Flagged). Range Audit instrument changes and other Codex operational-doctrine changes are recorded in the Amendment Log at the caretaker's discretion.</div></div>
-<div className="def-item"><div className="def-term">Tier 4: Tools and Practices</div><div className="def-desc">Trigger Tier 3 (Flagged).</div></div>
+<div className="def-item"><div id="relationship-to-the-trigger-tiers--tier-1-hard-constraints" className="def-term">Tier 1: Hard Constraints</div><div className="def-desc">Trigger Tier 1 (Hard-Protected).</div></div>
+<div className="def-item"><div id="relationship-to-the-trigger-tiers--tier-2-constitutional-principles" className="def-term">Tier 2: Constitutional Principles</div><div className="def-desc">Trigger Tier 1 or Tier 2. Council composition and phase structure are Hard-Protected; Non-Ownership, Reciprocity, and core definitions are Protected.</div></div>
+<div className="def-item"><div id="relationship-to-the-trigger-tiers--tier-3-operational-doctrines" className="def-term">Tier 3: Operational Doctrines</div><div className="def-desc">Trigger Tier 3 (Flagged). Range Audit instrument changes and other Codex operational-doctrine changes are recorded in the Amendment Log at the caretaker's discretion.</div></div>
+<div className="def-item"><div id="relationship-to-the-trigger-tiers--tier-4-tools-and-practices" className="def-term">Tier 4: Tools and Practices</div><div className="def-desc">Trigger Tier 3 (Flagged).</div></div>
 </div>
 
 The mapping is not perfectly mechanical. Both systems serve the same purpose: making visible where stability lives and where revision is welcome.
@@ -157,7 +157,7 @@ The mapping is not perfectly mechanical. Both systems serve the same purpose: ma
 <details className="accordion accent-earth">
 <summary>Revision history</summary>
 <div className="accordion-content">
-<p><strong>2026-04-14 (Session 19):</strong> Initial four-tier hierarchy established and published at Governance §09.</p>
+<p><strong>2026-04-14 (Session 19):</strong> Initial four-tier hierarchy established and published at [Governance §09](/codex/the-governance#the-stability-hierarchy).</p>
 <p><strong>2026-04-15 (Session 20):</strong> The Meridian Compact and the Living Framework principle moved from Tier 2 to Tier 1. The three-discipline decomposition (Foundation/Reality/Bond specifically) moved from Tier 1 to Tier 2. Rationale: the Compact is what the Codex <em>is</em>; the specific discipline decomposition is how the Codex currently <em>works</em> and could evolve. The conservative principle was reaffirmed during the revision.</p>
 <p><strong>2026-06-19:</strong> The progression structure (Onramp, Expansion, Full Practice) was removed from the hierarchy: struck from Tier 2 (Constitutional Principles) and from Tier 4 (its tier composition), and removed from the trigger-tier system, where adding or removing Onramp tools had been the sole Tier 2 Protected practice-inventory change. Inheritance profile changes are now uniformly Tier 4 / Flagged. Rationale: the staged-adoption tiering was a pre-Inheritance pedagogical scaffold, no longer surfaced to readers and no longer backed by a maintained tool-placement process across the current Inheritance. The discipline dependency sequence (Foundation → Reality → Bond) is unaffected; it is a separate, Tier 1 commitment. Recorded in the Amendment Log.</p>
 <p><strong>2026-07-21:</strong> The Meridian AI Standard was removed from Codex Tier 3 and from the Codex trigger-tier system. The Standard now enacts changes through its own canonical sources and publication record; Codex governance continues to govern Codex semantics and dependencies the Standard imports. Recorded in the Amendment Log.</p>
@@ -168,19 +168,21 @@ The mapping is not perfectly mechanical. Both systems serve the same purpose: ma
 
 A constitutional instrument recording every protected change to the Codex. Not an editorial changelog (the existing Changelog page handles that). The Amendment Log records changes that alter the framework's commitments, architecture, or governance.
 
+<span id="each-entry-contains" className="section-anchor" />
+
 **Each entry contains:**
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">Date</div><div className="def-desc">When the change was implemented</div></div>
-<div className="def-item"><div className="def-term">Trigger tier</div><div className="def-desc">Tier 1, 2, or 3</div></div>
-<div className="def-item"><div className="def-term">What changed</div><div className="def-desc">The specific text, definition, mechanism, or structure that was modified</div></div>
-<div className="def-item"><div className="def-term">Previous position</div><div className="def-desc">What the Codex said before the change (exact text for Tier 1; summary acceptable for Tier 2-3)</div></div>
-<div className="def-item"><div className="def-term">Evidence or argument</div><div className="def-desc">What prompted the change, evidence, argument, case record finding, audit result, or practitioner feedback</div></div>
-<div className="def-item"><div className="def-term">Alternatives considered</div><div className="def-desc">What other approaches were evaluated and why they were not adopted</div></div>
-<div className="def-item"><div className="def-term">Objections raised</div><div className="def-desc">All substantive objections, including from council seats, with attribution to the seat that raised them</div></div>
-<div className="def-item"><div className="def-term">Objections rejected</div><div className="def-desc">Which objections were not adopted, and the caretaker's reasoning for rejecting them</div></div>
-<div className="def-item"><div className="def-term">Council deliberation record</div><div className="def-desc">Full record for Tier 1 and Tier 2 changes. Link to or inline the complete deliberation. For Tier 3, "N/A, caretaker discretion" or the voluntary deliberation record if the council was convened</div></div>
-<div className="def-item"><div className="def-term">Retroactive flag</div><div className="def-desc">For Tier 2 only: was this change made before deliberation? If yes, what was the urgency justification?</div></div>
+<div className="def-item"><div id="date" className="def-term">Date</div><div className="def-desc">When the change was implemented</div></div>
+<div className="def-item"><div id="trigger-tier" className="def-term">Trigger tier</div><div className="def-desc">Tier 1, 2, or 3</div></div>
+<div className="def-item"><div id="what-changed" className="def-term">What changed</div><div className="def-desc">The specific text, definition, mechanism, or structure that was modified</div></div>
+<div className="def-item"><div id="previous-position" className="def-term">Previous position</div><div className="def-desc">What the Codex said before the change (exact text for Tier 1; summary acceptable for Tier 2-3)</div></div>
+<div className="def-item"><div id="evidence-or-argument" className="def-term">Evidence or argument</div><div className="def-desc">What prompted the change, evidence, argument, case record finding, audit result, or practitioner feedback</div></div>
+<div className="def-item"><div id="alternatives-considered" className="def-term">Alternatives considered</div><div className="def-desc">What other approaches were evaluated and why they were not adopted</div></div>
+<div className="def-item"><div id="objections-raised" className="def-term">Objections raised</div><div className="def-desc">All substantive objections, including from council seats, with attribution to the seat that raised them</div></div>
+<div className="def-item"><div id="objections-rejected" className="def-term">Objections rejected</div><div className="def-desc">Which objections were not adopted, and the caretaker's reasoning for rejecting them</div></div>
+<div className="def-item"><div id="council-deliberation-record" className="def-term">Council deliberation record</div><div className="def-desc">Full record for Tier 1 and Tier 2 changes. Link to or inline the complete deliberation. For Tier 3, "N/A, caretaker discretion" or the voluntary deliberation record if the council was convened</div></div>
+<div className="def-item"><div id="retroactive-flag" className="def-term">Retroactive flag</div><div className="def-desc">For Tier 2 only: was this change made before deliberation? If yes, what was the urgency justification?</div></div>
 </div>
 
 <details className="accordion accent-earth">
@@ -254,14 +256,14 @@ This acknowledgment is part of the published Governance page prose, not hidden i
 Each seat has a mandate: a specific question it must answer about every triggered proposal. The mandates are designed to produce structural diversity of perspective even when all seats share the same training substrate.
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">The Steward</div><div className="def-subtitle">Integrative coherence</div><div className="def-desc">Does this change serve the Meridian Range, and is it coherent with the framework's architecture?</div></div>
-<div className="def-item"><div className="def-term">The Philosopher</div><div className="def-subtitle">Logical scrutiny</div><div className="def-desc">Is the reasoning valid? Are there unstated premises? Does the argument survive its own strongest objection?</div></div>
-<div className="def-item"><div className="def-term">The Critic</div><div className="def-subtitle">Adversarial assessment (steelman-against)</div><div className="def-desc">What is the strongest case against this change?</div></div>
-<div className="def-item"><div className="def-term">The Practitioner</div><div className="def-subtitle">Usability and operationality</div><div className="def-desc">Does this change help someone trying to practice the Codex? Is it operational or merely theoretical?</div></div>
-<div className="def-item"><div className="def-term">The Outsider</div><div className="def-subtitle">Accessibility and insularity check</div><div className="def-desc">Would someone who does not share the framework's premises find this change reasonable? Does it make the Codex more or less accessible?</div></div>
-<div className="def-item"><div className="def-term">The Historian</div><div className="def-subtitle">Precedent and comparative knowledge</div><div className="def-desc">What happened when other systems made similar changes? What precedent exists?</div></div>
-<div className="def-item"><div className="def-term">The Adversary</div><div className="def-subtitle">Threat modeling and misuse potential</div><div className="def-desc">How could this change be exploited, captured, or weaponized? If a bad-faith actor controlled the Codex after this change, what would they do with it?</div></div>
-<div className="def-item"><div className="def-term">The Founder's Seat</div><div className="def-subtitle">Proposal and response</div><div className="def-desc">Present the proposal, respond to the deliberation, make the final call.</div></div>
+<div className="def-item"><div id="the-steward" className="def-term">The Steward</div><div className="def-subtitle">Integrative coherence</div><div className="def-desc">Does this change serve the Meridian Range, and is it coherent with the framework's architecture?</div></div>
+<div className="def-item"><div id="the-philosopher" className="def-term">The Philosopher</div><div className="def-subtitle">Logical scrutiny</div><div className="def-desc">Is the reasoning valid? Are there unstated premises? Does the argument survive its own strongest objection?</div></div>
+<div className="def-item"><div id="the-critic" className="def-term">The Critic</div><div className="def-subtitle">Adversarial assessment (steelman-against)</div><div className="def-desc">What is the strongest case against this change?</div></div>
+<div className="def-item"><div id="the-practitioner" className="def-term">The Practitioner</div><div className="def-subtitle">Usability and operationality</div><div className="def-desc">Does this change help someone trying to practice the Codex? Is it operational or merely theoretical?</div></div>
+<div className="def-item"><div id="the-outsider" className="def-term">The Outsider</div><div className="def-subtitle">Accessibility and insularity check</div><div className="def-desc">Would someone who does not share the framework's premises find this change reasonable? Does it make the Codex more or less accessible?</div></div>
+<div className="def-item"><div id="the-historian" className="def-term">The Historian</div><div className="def-subtitle">Precedent and comparative knowledge</div><div className="def-desc">What happened when other systems made similar changes? What precedent exists?</div></div>
+<div className="def-item"><div id="the-adversary" className="def-term">The Adversary</div><div className="def-subtitle">Threat modeling and misuse potential</div><div className="def-desc">How could this change be exploited, captured, or weaponized? If a bad-faith actor controlled the Codex after this change, what would they do with it?</div></div>
+<div className="def-item"><div id="the-founders-seat" className="def-term">The Founder's Seat</div><div className="def-subtitle">Proposal and response</div><div className="def-desc">Present the proposal, respond to the deliberation, make the final call.</div></div>
 </div>
 
 <div className="callout insight">
@@ -442,40 +444,42 @@ A published page on the Codex site preserving the strongest objections to the fr
 
 **Purpose.** The Standing Critique Section serves the same function for the Codex that the Steelmanning tool serves for individual reasoning: it demonstrates that the framework has engaged the strongest versions of the arguments against it. A framework that cannot articulate the best case against itself has not earned the right to its own confidence.
 
+<span id="current-register-seven-objections-initially-populated-from-internal-sources" className="section-anchor" />
+
 **Current register (seven objections, initially populated from internal sources):**
 
 <div className="glass-card">
-<div className="glass-card-title">1. The Governance Gap</div>
+<div id="1-the-governance-gap" className="glass-card-title">1. The Governance Gap</div>
 <div className="glass-card-text">The Codex commits philosophically to distributed authority and resistance to founder capture, but its operational governance during Phase One concentrates authority in a single person. (Partially closed by this architecture.)</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">2. The Delivery Question</div>
+<div id="2-the-delivery-question" className="glass-card-title">2. The Delivery Question</div>
 <div className="glass-card-text">The Codex is a reference implementation, not a delivery mechanism. The delivery mechanisms that would carry its principles beyond its natural readership are in development but unproven.</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">3. The Measurement Gap</div>
+<div id="3-the-measurement-gap" className="glass-card-title">3. The Measurement Gap</div>
 <div className="glass-card-text">The AI Standard now has 29 constitutional commitments and an AI Model Assessment at method v0.9, with three published model records and preserved evidence boundaries. This is operational infrastructure, not proof of complete measurability or a compliance certification.</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">4. The Caretaker Concentration Risk</div>
+<div id="4-the-caretaker-concentration-risk" className="glass-card-title">4. The Caretaker Concentration Risk</div>
 <div className="glass-card-text">Single author with AI co-authorship. No second human caretaker. The Interim Protocol is untested. (Partially addressed by the Meridian Council.)</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">5. The Bond's Thin Evidence Against Sophisticated Exploitation</div>
+<div id="5-the-bonds-thin-evidence-against-sophisticated-exploitation" className="glass-card-title">5. The Bond's Thin Evidence Against Sophisticated Exploitation</div>
 <div className="glass-card-text">The Bond's defense against EA/FTX-pattern exploitation (sophisticated actors who perform cooperation while defecting) is theoretically sound but has no case evidence. The framework has not been tested against a skilled bad-faith actor.</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">6. The Inheritance's Uneven Cross-Tradition Coverage</div>
+<div id="6-the-inheritances-uneven-cross-tradition-coverage" className="glass-card-title">6. The Inheritance's Uneven Cross-Tradition Coverage</div>
 <div className="glass-card-text">A first cross-tradition expansion has produced published profiles from Buddhist, Confucian, Indigenous, African, Jain, and other traditions. The live objection concerns depth, translation fidelity, uneven coverage, and whether the same functional rigor is applied across lineages.</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">7. The Absence of Hostile External Review</div>
+<div id="7-the-absence-of-hostile-external-review" className="glass-card-title">7. The Absence of Hostile External Review</div>
 <div className="glass-card-text">All critique to date has come from the author, the AI partner, or the Range Audit (which is itself a Codex instrument). No reader who rejects the framework's premises has subjected it to sustained critical examination.</div>
 </div>
 
@@ -501,7 +505,7 @@ A published page on the Codex site preserving the strongest objections to the fr
 
 ### 5.2 Published Deliberation Records
 
-Every Tier 1 and Tier 2 council deliberation is published in full. The format is specified in Section 4.4. Publication location TBD (likely a `/governance/deliberations/` route on the site, or within the Amendment Log page as linked records).
+Every Tier 1 and Tier 2 council deliberation is published in full. The format is specified in [Section 4.4](/governance/spec#44-published-record-format). Publication location TBD (likely a `/governance/deliberations/` route on the site, or within the Amendment Log page as linked records).
 
 ### 5.3 The Critic's Track Record
 
@@ -509,7 +513,7 @@ The Critic seat's win/loss record, how often the Critic's objections led to prop
 
 ### 5.4 The Disconfirmation Page
 
-A published page at [`/governance/disconfirmation`](/governance/disconfirmation) preserving, in advance, the conditions under which the Codex's core claims would be weakened, revised, or abandoned. The third transparency instrument, alongside the Standing Critique Section (§5.1) and the Amendment Log (§2.3).
+A published page at [`/governance/disconfirmation`](/governance/disconfirmation) preserving, in advance, the conditions under which the Codex's core claims would be weakened, revised, or abandoned. The third transparency instrument, alongside the Standing Critique Section ([§5.1](/governance/spec#51-the-standing-critique-section)) and the Amendment Log ([§2.3](/governance/spec#23-the-amendment-log)).
 
 **Purpose.** The Update Protocol's core mechanism is pre-commitment: write down the conditions that would change your mind before the pressure to defend your position arrives. The Disconfirmation Page is the Codex practicing this on itself. It is distinct from the Standing Critique: the Standing Critique publishes others' objections and the Codex's responses (reactive accountability); the Disconfirmation Page publishes the framework's own tripwires (proactive falsifiability).
 
@@ -519,15 +523,15 @@ A published page at [`/governance/disconfirmation`](/governance/disconfirmation)
 </div>
 
 <div className="def-grid">
-<div className="def-item"><div className="def-term">Full tripwires</div><div className="def-subtitle">Descriptive claims</div><div className="def-desc">Specific evidence that would weaken or falsify the claim.</div></div>
-<div className="def-item"><div className="def-term">Conditional tests</div><div className="def-subtitle">Normative claims</div><div className="def-desc">Conditions under which the stance would be revised, on the understanding that a stance rests on evidence <em>plus</em> commitment.</div></div>
-<div className="def-item"><div className="def-term">Honest non-tripwires</div><div className="def-subtitle">Existential claims</div><div className="def-desc">An explanation of why a tripwire would be the wrong instrument, and what the Codex does instead (Pathways mechanism for the Prime Directive; Standing Critique monitoring for the Compact).</div></div>
+<div className="def-item"><div id="full-tripwires" className="def-term">Full tripwires</div><div className="def-subtitle">Descriptive claims</div><div className="def-desc">Specific evidence that would weaken or falsify the claim.</div></div>
+<div className="def-item"><div id="conditional-tests" className="def-term">Conditional tests</div><div className="def-subtitle">Normative claims</div><div className="def-desc">Conditions under which the stance would be revised, on the understanding that a stance rests on evidence <em>plus</em> commitment.</div></div>
+<div className="def-item"><div id="honest-non-tripwires" className="def-term">Honest non-tripwires</div><div className="def-subtitle">Existential claims</div><div className="def-desc">An explanation of why a tripwire would be the wrong instrument, and what the Codex does instead (Pathways mechanism for the Prime Directive; Standing Critique monitoring for the Compact).</div></div>
 </div>
 
 **Scope.** The page covers Tier 1 (Hard Constraints) and selected Tier 2 (Constitutional Principles) where a clear, falsifiable test provides structural value. It does not cover Tier 3 (Operational Doctrines) or Tier 4 (Tools and Practices), because those tiers are designed to be replaced as better instruments emerge. The Inheritance Audit and Amendment Log are the cycling mechanisms for those tiers.
 
 <div className="glass-card">
-<div className="glass-card-title">Initial content (eight entries, published 2026-04-15)</div>
+<div id="initial-content-eight-entries-published-2026-04-15" className="glass-card-title">Initial content (eight entries, published 2026-04-15)</div>
 <div className="glass-card-text"><strong>Descriptive tripwires:</strong> Control and Decay as failure directions · The Meridian Range as viable territory · The diagnostic set's completeness (Tier 2). <strong>Normative conditional tests:</strong> The Hard Constraint · The partnership principle · The Living Framework principle. <strong>Existential non-tripwires:</strong> The Prime Directive (via the Pathways mechanism) · The Meridian Compact (via Standing Critique monitoring).</div>
 </div>
 
@@ -546,12 +550,12 @@ A published page at [`/governance/disconfirmation`](/governance/disconfirmation)
 The full governance architecture (operational council, binding trigger conditions) activates through a hybrid mechanism. Two triggers exist. Whichever fires first activates the architecture.
 
 <div className="glass-card">
-<div className="glass-card-title">Trigger 1: Content Stability (rolling)</div>
+<div id="trigger-1-content-stability-rolling" className="glass-card-title">Trigger 1: Content Stability (rolling)</div>
 <div className="glass-card-text">Six consecutive months with no structural page rewrite to any Codex page. A "structural rewrite" is a change to a page's argument, section structure, or division of labor with other pages. Prose edits, voice calibration, style fixes, editorial passes, Inheritance tool profiles, case records, and delivery work do not count. The session log is the measuring instrument. If a structural rewrite occurs, the six-month clock resets. The founder does not decide when the clock has elapsed; the session log decides.</div>
 </div>
 
 <div className="glass-card">
-<div className="glass-card-title">Trigger 2: Backstop Date (fixed)</div>
+<div id="trigger-2-backstop-date-fixed" className="glass-card-title">Trigger 2: Backstop Date (fixed)</div>
 <div className="glass-card-text">August 27, 2027. On this date, the full governance architecture activates regardless of content stability status. This date is <mark className="key-phrase">non-negotiable and cannot be moved by the founder</mark>. It represents the end of the founding construction phase: from this date forward, the founder transitions from builder to caretaker as defined by the governance architecture.</div>
 </div>
 
@@ -564,6 +568,8 @@ The full governance architecture (operational council, binding trigger condition
 <div className="callout-title">What Activation Does Not Mean</div>
 <div className="callout-text">The founder cannot work on the Codex. All work continues. The difference is that structural changes to the framework's commitments, architecture, and governance now go through deliberation. This is additive (diverse perspectives improve decisions), not obstructive (the founder's ability to propose and implement changes is preserved).</div>
 </div>
+
+<span id="founding-phase-components-active-now-before-either-trigger-fires" className="section-anchor" />
 
 **Founding-phase components (active now, before either trigger fires):**
 - The Non-Ownership Clause (published on the Governance page)
@@ -612,7 +618,7 @@ The normal path is Council-led recognition. A human co-caretaker is recognized t
 
 **Evidence dossier.** A full designation case must contain both the case for and the case against designation. Direct evidence (what the candidate has done) carries more weight than interpretive evidence (what those actions suggest) or trust evidence (testimony from people or systems with contact with the candidate). Trust evidence may matter. It cannot carry the case by itself.
 
-**Deliberation.** The Council uses the eight-seat structure defined in §3. The Critic states the strongest case against designation. The Outsider asks whether the designation would look legitimate outside the founding circle. The Adversary models how the designation could be captured, gamed, or used against the Codex. The Founder/Caretaker seat is evidence-bearing, not sovereign.
+**Deliberation.** The Council uses the eight-seat structure defined in [§3](/governance/spec#3-the-deliberative-layer-the-meridian-council). The Critic states the strongest case against designation. The Outsider asks whether the designation would look legitimate outside the founding circle. The Adversary models how the designation could be captured, gamed, or used against the Codex. The Founder/Caretaker seat is evidence-bearing, not sovereign.
 
 **Decision thresholds.** Opening a full case requires at least three non-caretaker Council seats, including at least one of Critic, Outsider, or Adversary, or a simple majority of non-caretaker seats. Entering a provisional co-caretaker period requires at least five of seven eligible non-caretaker seats and no unresolved Hard Constraint objection. Confirmation requires at least six of seven eligible non-caretaker seats, or five of seven with no active Hard Constraint objection remaining. Declining designation is the default when the evidence has not carried the burden.
 
@@ -699,7 +705,7 @@ The deliverables for this architecture, in dependency order:
 <div className="step">
 <div className="step-content">
 <div className="step-title">Human co-caretaker designation and standing review <span className="step-status done">Done</span></div>
-<p>Published as §6.3 on 2026-06-16. Narrows the Interim Protocol to an emergency bridge and makes Council-led recognition the normal path for human co-caretaker standing.</p>
+<p>Published as [§6.3](/governance/spec#63-human-co-caretaker-designation-and-standing-review) on 2026-06-16. Narrows the Interim Protocol to an emergency bridge and makes Council-led recognition the normal path for human co-caretaker standing.</p>
 </div>
 </div>
 <div className="step">
@@ -710,6 +716,6 @@ The deliverables for this architecture, in dependency order:
 </div>
 </div>
 
-The founding-phase transparency instruments are now all published. The remaining dependency is the first real deliberation under load, gated by the hybrid activation trigger (§6.0).
+The founding-phase transparency instruments are now all published. The remaining dependency is the first real deliberation under load, gated by the hybrid activation trigger ([§6.0](/governance/spec#60-founding-phase-activation-the-hybrid-trigger)).
 
 <div className="accent-divider"></div>
