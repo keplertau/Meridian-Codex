@@ -1,7 +1,7 @@
 ---
 title: "The Problem"
 description: "The structural failure modes that make civilizations fail, minds drift, and what happens when no one is paying attention."
-aiSummary: "Complex societies drift toward two failure modes: Control (structure unable to adapt) and Decay (structure unable to hold). The tradeoff underneath them has been found independently across fields, from cybernetics to resilience ecology, with bias-variance as the compact one-dial teaching analogy: too rigid to learn, or too loose to hold signal. The narrow space between them is the Meridian Range: enough structure to preserve function, enough flexibility and variety to adapt. Understanding that tradeoff is the first step toward resisting drift."
+aiSummary: "Complex societies drift toward two failure modes: Control (structure unable to adapt) and Decay (structure unable to hold). The tradeoff underneath them has been found independently across fields, from cybernetics to resilience ecology, with bias-variance as the compact teaching analogy for the two failures: too rigid to learn, or too loose to hold signal. Between them is the Meridian Range: enough structure to preserve function, enough flexibility and variety to adapt, and a width that is not fixed, because it is how much difference a system's people can hold. Understanding that tradeoff is the first step toward resisting drift."
 ---
 
 <div id="the-pattern" className="flow-label">01 // The Pattern</div>
@@ -27,40 +27,53 @@ Every system that adapts — a mind, an institution, a civilization — faces a 
 
 These are not moral opposites. They are the two ways structure fails around the same viability problem, and the tradeoff underneath them is not the Codex's discovery. It has been found independently, again and again, by fields that do not read each other. Cybernetics found it in W. Ross Ashby's law of requisite variety: a system stays viable only as long as its capacity to vary matches the variety of its environment, and failure is mismatch in either direction. Ecology found it in C. S. Holling's resilience work: systems caught in rigidity traps that cannot release what they hold, or poverty traps that cannot consolidate what they gain. James March found it in organizations, as the tension between exploiting what you know and exploring what you do not. Statisticians know it as the bias–variance tradeoff, where a model too rigid cannot fit reality, a model too loose cannot hold its structure against noise, and both failures move on a single dial. And engineering met it in Carlson and Doyle's robust-yet-fragile systems, where hardening against the shocks you know creates fragility to the shocks you do not. Different vocabularies, different scales, one structural finding: adaptive systems fail when structure cannot keep its function while adapting to changed conditions. Control and Decay are the Codex's names for the two failure directions, chosen because the same names work for a person, an organization, and a civilization.
 
-Bias–variance is the most compact teaching version of the pattern. In statistical learning, a model with too little capacity underfits: it is too rigid to register the structure in the data. A model with too much capacity overfits: it bends itself around noise and loses the pattern. The error is not on one side only. The same dial that protects against one failure can create the other. The Meridian Range names the equivalent problem for adaptive systems: enough structure to preserve what has been learned, enough flexibility to keep learning when reality changes.
+Bias–variance is the most compact teaching version of the two failures. In statistical learning, a model with too little capacity underfits: it is too rigid to register the structure in the data. A model with too much capacity overfits: it bends itself around noise and loses the pattern. The error is not on one side only, and guarding against one failure alone walks you into the other. Control and Decay are the same two failures in a living system: too rigid to learn, too loose to hold.
 
 <div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
-<svg viewBox="0 0 720 260" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
-<title>Bias-variance as a one-dial teaching analogy for Control, the Meridian Range, and Decay</title>
-<rect width="720" height="260" rx="12" fill="#0D0F12"/>
-<text x="360" y="38" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">One dial, two ways to fail.</text>
-<line x1="92" y1="128" x2="628" y2="128" stroke="#3A3A40" strokeWidth="2"/>
-<polygon points="628,128 614,121 614,135" fill="#3A3A40"/>
-<text x="360" y="157" textAnchor="middle" fill="#8A8A8A" fontSize="12">Model capacity / flexibility</text>
+<svg viewBox="0 0 720 300" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
+<title>The Meridian Range between the pull of Control and the pull of Decay: its edges close together where few practice the three disciplines and far apart where many do</title>
+<defs>
+<linearGradient id="range-pull-left" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stopColor="#E87461" stopOpacity="0.85"/><stop offset="100%" stopColor="#E87461" stopOpacity="0.06"/></linearGradient>
+<linearGradient id="range-pull-right" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stopColor="#E87461" stopOpacity="0.06"/><stop offset="100%" stopColor="#E87461" stopOpacity="0.85"/></linearGradient>
+</defs>
+<rect width="720" height="300" rx="12" fill="#0D0F12"/>
+<text x="360" y="36" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">Two pulls, and how far apart the edges are.</text>
 
-<circle cx="160" cy="128" r="9" fill="#E87461" opacity="0.8"/>
-<text x="160" y="84" textAnchor="middle" fill="#E87461" fontSize="13" fontWeight="700">Control</text>
-<text x="160" y="104" textAnchor="middle" fill="#D0D0D0" fontSize="12">Underfit</text>
-<text x="160" y="190" textAnchor="middle" fill="#8A8A8A" fontSize="11">too rigid</text>
-<text x="160" y="207" textAnchor="middle" fill="#8A8A8A" fontSize="11">to learn</text>
+<text x="92" y="78" textAnchor="start" fill="#E87461" fontSize="12" fontWeight="700">Control</text>
+<text x="360" y="78" textAnchor="middle" fill="#00D4FF" fontSize="12" fontWeight="700">Range</text>
+<text x="628" y="78" textAnchor="end" fill="#E87461" fontSize="12" fontWeight="700">Decay</text>
+<rect x="92" y="90" width="252" height="16" rx="3" fill="url(#range-pull-left)"/>
+<rect x="376" y="90" width="252" height="16" rx="3" fill="url(#range-pull-right)"/>
+<rect x="344" y="88" width="32" height="20" rx="4" fill="#00D4FF" opacity="0.92"/>
+<polygon points="92,90 104,98 92,106" fill="#E87461" opacity="0.9"/>
+<polygon points="628,90 616,98 628,106" fill="#E87461" opacity="0.9"/>
+<text x="360" y="132" textAnchor="middle" fill="#8A8A8A" fontSize="11">Few practice the three disciplines. Little agreement holds without being enforced; little difference holds without fragmenting.</text>
 
-<circle cx="360" cy="128" r="11" fill="#00D4FF" opacity="0.9"/>
-<text x="360" y="80" textAnchor="middle" fill="#00D4FF" fontSize="14" fontWeight="700">Meridian Range</text>
-<text x="360" y="104" textAnchor="middle" fill="#D0D0D0" fontSize="12">Fit</text>
-<text x="360" y="190" textAnchor="middle" fill="#8A8A8A" fontSize="11">holds signal</text>
-<text x="360" y="207" textAnchor="middle" fill="#8A8A8A" fontSize="11">without freezing</text>
+<text x="92" y="178" textAnchor="start" fill="#E87461" fontSize="12" fontWeight="700">Control</text>
+<text x="360" y="178" textAnchor="middle" fill="#00D4FF" fontSize="12" fontWeight="700">Range</text>
+<text x="628" y="178" textAnchor="end" fill="#E87461" fontSize="12" fontWeight="700">Decay</text>
+<rect x="92" y="190" width="118" height="16" rx="3" fill="url(#range-pull-left)"/>
+<rect x="510" y="190" width="118" height="16" rx="3" fill="url(#range-pull-right)"/>
+<rect x="210" y="188" width="300" height="20" rx="4" fill="#00D4FF" opacity="0.92"/>
+<polygon points="92,190 104,198 92,206" fill="#E87461" opacity="0.9"/>
+<polygon points="628,190 616,198 628,206" fill="#E87461" opacity="0.9"/>
+<text x="360" y="232" textAnchor="middle" fill="#8A8A8A" fontSize="11">Many practice them. Agreement earned by looking, and room for what people make of their lives.</text>
 
-<circle cx="560" cy="128" r="9" fill="#E87461" opacity="0.8"/>
-<text x="560" y="84" textAnchor="middle" fill="#E87461" fontSize="13" fontWeight="700">Decay</text>
-<text x="560" y="104" textAnchor="middle" fill="#D0D0D0" fontSize="12">Overfit</text>
-<text x="560" y="190" textAnchor="middle" fill="#8A8A8A" fontSize="11">too reactive</text>
-<text x="560" y="207" textAnchor="middle" fill="#8A8A8A" fontSize="11">to hold</text>
+<text x="360" y="274" textAnchor="middle" fill="#D0D0D0" fontSize="11">The Range grows as more people learn the three disciplines.</text>
 </svg>
 </div>
 
 This is the claim the Codex needs, and no more: viable systems must hold enough structure to preserve function while retaining enough flexibility and variety to adapt. Control is structure unable to adapt. Decay is structure unable to hold. The Meridian Range is the viable territory where structure, variety, tension, and continuity can be held together.
 
 Rome shows the danger from both sides. The Republic's institutions lost the capacity to resolve pressure without concentrating power, and the Empire's order then hardened around forms it could no longer adapt. That is not a universal cycle. It is one large system failing in both directions, and the problem underneath is the one that recurs: rigidity that prevents learning, or dissolution that prevents coordination.
+
+That is how a system fails. How a system holds is a second question, and W. Ross Ashby's law of requisite variety answers it as well. The law says that a system can only stay itself in a changing world if it can respond to as many different things as the world presents it with. There are only two ways to meet that demand. A system can shut out the things it cannot handle, or it can become able to handle more of them. Every system does some of the first: nobody attends to everything, and no institution can act on every complaint it receives. Control is the first way taken too far. A government, a company, a movement, a family shuts out more and more of what it cannot handle, one story, no questions, dissent read as sabotage, and it survives that way until the world brings more than it can shut out, and then it breaks. Decay is the failure to do either: the differences come in and nothing sorts them, so there is no shared ground left to stand on. The Range is the second way. A system inside it can handle more of what the world brings, and here the Codex makes its own claim about where that ability comes from. It comes from people: from how many of the people in the system can tell what is true from what they would like to be true, can read how the world around them works, and can work with someone who sees it differently. Those are the three disciplines the Opening named, the Foundation, Reality, and the Bond, practiced together, and the Codex's name for them practiced together is a common language: the same tests for what is true, the same way of reading how the world works, the same terms for working with someone who disagrees.
+
+Because the ability lives in people, it can grow, and so the Range has no fixed size. It has two edges, one toward each failure, and the three disciplines, honest inquiry, reading the world, and cooperation, move both. The edge toward Control is the point where agreement stops being honest. People can agree on a great deal without any harm to their Range, that a bridge will bear a load, that a disease spreads a certain way, that a rule serves them, as long as the agreement was reached by looking and testing and can still be revised when the evidence moves. The harm begins when the agreement is kept by other means: when a claim may no longer be questioned, when doubting it costs you your standing, when believing it has become part of who you are. The edge toward Decay is the point where difference stops being shared. People can differ about a great deal without any harm to their Range, about what to do with their lives, about what to build, about what a good society owes its members, as long as they argue about it in the common language, with the same tests for what is true and the same willingness to be shown wrong. The harm begins when the difference goes all the way down: when each person keeps their own facts, when there is no test both sides accept, when nothing can be built because nothing is trusted. Between those two edges is the Range, and how far apart they are is what the Codex means when it speaks of the Range being wide or narrow.
+
+Two civilizations can face the same world and have Ranges of very different sizes. In one, few people speak the common language: few can tell what is true from what they wish were true, read the world as it is, or work with someone who sees it differently. It can hold little agreement without enforcing it, because its members cannot tell an earned agreement from an imposed one, and it can hold little difference without falling apart, because its members have no shared way of settling anything. In the other, many people speak the language. It agrees firmly about how the world is, because its people found out by the same means and arrived at the same place, and it lets people make very different things of their lives, because they can want different things and still settle their differences in the same language.
+
+The Range is held by the people, but not by each of them equally. What a person says moves the edges in proportion to their perceived authority and how many people hear it. Spoken in the common language, with reasons given, evidence named, and the speaker willing to be shown wrong, it moves the edges outward for everyone who hears it. Spoken against that language, it moves them inward, and the further the voice reaches, the further they move. A neighbor who insists across the fence that a claim may not be questioned narrows the Range for one household. A head of state who says it narrows the Range for a nation, because the shared ground that agreement stands on, and the shared tests that difference is argued in, are set by the voices that reach furthest. A person with millions of followers who treats every disagreement as an attack, or an artificial intelligence that answers tens of millions of people a day and tells each of them what they wanted to hear, moves the edges for all of those people at once, and neither holds any office. The same reach that multiplies the effect also shrinks the correction: the more people hear a voice, the fewer will tell it that it is wrong, and the harder it becomes for that voice to find out. That is the mechanism behind a consequence [Who Is This For, A Note to Those Who Hold Power](/codex/who-is-this-for#a-note-to-those-who-hold-power) has already drawn: those who hold disproportionate influence bear disproportionate responsibility for the Range.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><path d="M 0 14 Q 175 2, 350 14 Q 525 26, 700 14" stroke="var(--mc-line)" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="4" fill="var(--mc-green)" opacity="0.6"/><circle cx="175" cy="8" r="2.5" fill="var(--mc-line)" opacity="0.5"/><circle cx="525" cy="20" r="2.5" fill="var(--mc-line)" opacity="0.5"/></svg></div>
 
