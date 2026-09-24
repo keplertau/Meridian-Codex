@@ -18,7 +18,7 @@ When it lands, it will be published in the governance section of [meridiancodex.
 
 ## Until Then
 
-**For small, specific fixes** — typos, broken links, factual errors, internal inconsistencies — you can open a GitHub Issue. Keep it specific: what you found, where, and why it matters.
+**For small, specific fixes** — typos, broken links, factual errors, internal inconsistencies — you can open a GitHub Issue. Keep it specific: what you found, where it appears, and how it affects the text or its use.
 
 **For sustained objection to the framework itself**, the **[Standing Critique](https://meridiancodex.com/governance/standing-critique)** is the appropriate destination. The Standing Critique publishes substantive objections alongside the Codex's honest responses. A developed argument that the framework is wrong about something belongs there, not in a GitHub Issue.
 
