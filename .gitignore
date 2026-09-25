@@ -20,6 +20,9 @@
 !LICENSE
 !PRIVACY.md
 
+# Signed front matter, separate from the core Codex chapters
+!foreword.mdx
+
 # The Codex (core framework)
 !codex/
 !codex/*.mdx
