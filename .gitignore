@@ -43,3 +43,11 @@
 !workshop/
 !workshop/*/
 !workshop/*/*.mdx
+
+# The Compact: the Meridian Compact set out in full, with its landing and history pages
+# (Carsten's permission, 2026-10-14):
+#   compact/COMPACT.md  — the text people download, take up and adapt
+#   compact/*.mdx       — the section's landing page and history page
+!compact/
+!compact/*.mdx
+!compact/COMPACT.md
