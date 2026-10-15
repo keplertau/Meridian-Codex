@@ -1,7 +1,7 @@
 ---
 title: "Calibration Training"
-description: "The practice of testing stated confidence against outcomes until your odds begin to match your actual accuracy."
-aiSummary: "Calibration Training is the tool inside Calibrating Confidence to Evidence. It turns confidence into a measurable relation between forecast and outcome: make probabilistic judgments, record them before the result is known, score them afterward, and adjust. The mechanism: untrained confidence is a feeling of clarity, while calibrated confidence is a track record. The practice: state odds, bin outcomes, run the feedback loop, and separate accuracy from calibration. Lineage includes weather forecast verification, Glenn Brier's 1950 scoring rule, Lichtenstein/Fischhoff/Phillips on calibration, Tetlock and the Good Judgment Project, and contemporary forecasting practice."
+description: "The practice of testing stated probabilities against comparable resolved outcomes and adjusting them where a persistent mismatch appears."
+aiSummary: "Calibration Training is the tool inside Calibrating Confidence to Evidence. It turns confidence into a measurable relation between forecast and outcome: make probabilistic judgments, record them before the result is known, score them afterward, and adjust. The mechanism: untrained confidence often feels like clarity, while a record of resolved forecasts shows whether stated confidence matches outcomes. The practice: state odds, bin outcomes, run the feedback loop, and separate accuracy from calibration. Lineage includes weather forecast verification, Glenn Brier's 1950 scoring rule, Lichtenstein/Fischhoff/Phillips on calibration, Tetlock and the Good Judgment Project, and contemporary forecasting practice."
 discipline: foundation
 category: calibrating-confidence-to-evidence
 disposition: living
@@ -60,9 +60,9 @@ The mechanism has three parts.
 
 First, explicit odds. "Probably" and "very likely" are too elastic. They let you feel precise while remaining uncheckable. "70%" is not magical, but it creates a claim that can be compared with outcomes.
 
-Second, scoring. Calibration is about the relationship between confidence and frequency. If you make one 80% forecast and it fails, you have not learned much. If you make one hundred 80% forecasts and only fifty-five occur, you have learned a lot. The score can be formal, as in Brier scoring, or simple, as in sorted bins. The important move is that confidence becomes auditable.
+Second, scoring. Calibration is about the relationship between confidence and frequency. If you make one 80% forecast and it fails, you have not learned much. If you make one hundred 80% forecasts on separate questions and only fifty-five occur, you have learned a lot. Sorted bins show calibration directly: for each confidence range, compare the probability you stated with how often the events occurred. A formal score such as the Brier score measures overall forecast quality, which includes calibration but also how sharply your forecasts separated the events that happened from those that did not. The important move is that confidence becomes auditable.
 
-Third, feedback. Calibration improves when the loop closes. You cannot train the skill only by thinking about probability. You train it by making judgments, letting reality answer, and feeling the difference between how certain you were and how often you were right.
+Third, feedback. Clear feedback can improve calibration when it changes subsequent forecasts; check whether improvement actually occurs. You cannot train the skill only by thinking about probability. You train it by making judgments, letting reality answer, and feeling the difference between how certain you were and how often you were right.
 
 Inside the Foundation, Calibration Training stops "calibrated confidence" from remaining a moral aspiration. It puts the self-image in contact with a record. The feeling of being accurate is not evidence of accuracy.
 
@@ -80,9 +80,9 @@ Most people cannot answer. That is not a character flaw. It is the absence of a 
 
 **State the odds before reality answers.** Make small forecasts in a domain you actually care about: "70% chance this project ships by Friday," "60% chance the client accepts the proposal," "80% chance this source holds up after checking." Record the claim, the date, the odds, and the resolution condition. If the outcome could be argued either way later, the forecast was not specific enough.
 
-**Bin the outcomes.** After enough forecasts, group them by confidence: 50-60%, 60-70%, 70-80%, and so on. Then ask how often each bin came true. The pattern is the part you cannot talk your way around. Your 80% bin may be behaving like 60%. Your 55% bin may be behaving like 80%. It shows where your internal scale is stretched or compressed.
+**Bin the outcomes.** After enough forecasts resolve, group them by confidence: 50-60%, 60-70%, 70-80%, and so on. For each bin, note how many forecasts it holds, the average probability you gave them, and how often they came true. A bin with five forecasts in it can mislead you, and so can a bin full of forecasts that all hinged on the same event. A bin with fifty forecasts on separate questions is much harder to talk your way around. Your 80% bin may be behaving like 60%. Your 55% bin may be behaving like 80%. The pattern shows where your internal scale is stretched or compressed.
 
-**Separate accuracy from calibration.** You can be wrong often and still be calibrated if your odds say you are unsure. You can be right often and still be badly calibrated if you put 95% on things that are true only 70% of the time. Accuracy asks whether the forecast came true. Calibration asks whether the confidence matched the frequency. You need both, but they are not the same.
+**Separate accuracy from calibration.** You can be wrong often and still be calibrated if your odds say you are unsure. You can be right often and still be badly calibrated if you put 95% on things that are true only 70% of the time. For a probability forecast, accuracy asks how much probability you put on what actually happened. Calibration asks whether your confidence matched the frequency. You need both, and calibration alone is not enough. A forecaster who says "30% chance of rain" every day, in a place where it rains on about 30% of days, is perfectly calibrated and never tells the rainy days from the dry ones.
 
 </div>
 
@@ -100,7 +100,7 @@ A product lead believed she was good at estimating delivery dates. Her team beli
 
 A political analyst made public forecasts for several elections and scored them afterward. He was accurate in the obvious races and badly overconfident in the close ones. His 55% calls were fine. His 70% calls were often just 55% calls wearing a better suit. Once he saw the bin, the correction was visible: his language of "lean" was calibrated; his language of "likely" was inflated by narrative coherence. The story feeling clean made the probability feel higher than it was.
 
-A doctor explaining a screening result told a patient, "The test is positive, but I am not 90% confident you have the condition. Given the base rate and this test's false-positive rate, this is closer to 10-15% until the confirmatory test." That sentence is calibration in public. It does not withhold concern. It prevents confidence from outrunning the evidence at the exact moment fear wants certainty.
+A doctor explaining a screening result told a patient, "The test is positive, but that does not make it 90% likely that you have the condition. About one person in a hundred in your group has it. The test catches most of them, and it also flags about one in twelve people who do not. Put together, the chance is closer to one in ten until the confirmatory test." For years she had written down estimates like this before the confirmatory results came back, and her one-in-ten calls had come true about one time in ten. Her record was what let her say a number like that with confidence. Her answer does not withhold concern. It keeps confidence from outrunning the evidence at the exact moment fear wants certainty.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
 
@@ -110,7 +110,7 @@ The next time you feel sure, do not only ask whether you have reasons. Ask what 
 
 <div className="glass-card">
 
-**Why this tool is in the Inheritance.** Calibration Training is here because confidence needs a feedback loop, not only a standard. Bayesian Reasoning says how evidence should move belief: prior, diagnostic weight, posterior. Calibration Training asks whether your stated confidence has earned trust across resolved outcomes. It belongs in this category because the Foundation needs a practice that turns "I am 80% sure" into something reality can score. Without that track record, confidence stays a feeling of clarity with no audit trail.
+**Why this tool is in the Inheritance.** Calibration Training is here because confidence needs a feedback loop, not only a standard. Bayesian Reasoning says how evidence should move belief: prior, diagnostic weight, posterior. Calibration Training asks whether your stated confidence has earned trust across resolved outcomes. It belongs in this category because the Foundation needs a practice that turns "I am 80% sure" into something reality can score. Without that track record, your confidence may still rest on good reasons, but nothing has checked it against what actually happened.
 
 </div>
 
@@ -128,7 +128,7 @@ Glenn Brier's 1950 paper introduced the Brier score, a proper scoring rule for p
 
 Sarah Lichtenstein, Baruch Fischhoff, and Lawrence Phillips synthesized the early calibration literature in "Calibration of Probabilities: The State of the Art to 1980," published in *Judgment under Uncertainty* in 1982. Their work helped establish overconfidence as a systematic feature of human judgment, especially on general-knowledge questions where people gave high confidence to answers that were wrong more often than the confidence warranted.
 
-Philip Tetlock's work, especially *Expert Political Judgment* and the Good Judgment Project with Barbara Mellers and colleagues, made calibration visible at scale in geopolitical forecasting. Superforecasters were not simply people with more information. They updated more often, used base rates more carefully, broke questions into parts, and tracked confidence against outcomes. Tetlock's work is the main modern evidence that calibration can be trained rather than merely admired.
+Philip Tetlock's work, especially *Expert Political Judgment* and the Good Judgment Project with Barbara Mellers and colleagues, made calibration visible at scale in geopolitical forecasting. Superforecasters were not simply people with more information. They updated more often, used base rates more carefully, broke questions into parts, and tracked confidence against outcomes. The Good Judgment Project's geopolitical forecasting tournaments supply modern evidence that calibration can be trained rather than merely admired.
 
 Contemporary forecasting communities, prediction markets, and forecasting tournaments continue this lineage. Their practical contribution is cultural as much as technical: they normalize putting odds on beliefs, resolving claims publicly, and treating wrong but well-calibrated forecasts as better practice than confident guesses that happen to get lucky.
 
@@ -138,10 +138,10 @@ Contemporary forecasting communities, prediction markets, and forecasting tourna
 
 ## Cross-references
 
-**Within the category.** [Bayesian Reasoning](/inheritance/calibrating-confidence-to-evidence/bayesian-reasoning) supplies the inference structure: prior, evidence, posterior. Calibration Training supplies the feedback discipline: did the confidence you stated actually match what happened? The Bayesian frame tells you how confidence should move. Calibration Training tells you whether your own use of confidence is trustworthy.
+**Within the category.** [Bayesian Reasoning](/inheritance/calibrating-confidence-to-evidence/bayesian-reasoning) supplies the inference structure: prior, evidence, posterior. Calibration Training supplies the feedback discipline: did the confidence you stated actually match what happened? The Bayesian frame tells you how confidence should move. Calibration Training checks how your stated probabilities have matched outcomes in the question sets you recorded.
 
 **Within the Foundation.** [Dunning-Kruger Effect](/inheritance/watching-your-own-reasoning/dunning-kruger-effect) shows why self-assessment without feedback is exposed. Calibration Training is one of its corrective practices. [Base Rate Neglect](/inheritance/watching-your-own-reasoning/base-rate-neglect) supplies a common source of miscalibration: case evidence feels more diagnostic than it is. [The Update Protocol](/inheritance/revising-beliefs-under-evidence/the-update-protocol) uses calibrated confidence as the scale on which revisions happen.
 
-**Across to the Bond.** Public calibration builds trust when it is practiced cleanly. A collaborator who states confidence, checks outcomes, and lowers confidence after misses becomes easier to trust than one who is always certain and only sometimes right. The Bond still has to calibrate trust to behavior, but calibrated confidence gives behavior others can evaluate.
+**Across to the Bond.** A cleanly kept public forecasting record can build trust in judgments of the kind it records. A collaborator who states confidence, checks outcomes, and lowers confidence after misses becomes easier to trust than one who is always certain and only sometimes right. The Bond still has to calibrate trust to behavior, but calibrated confidence gives behavior others can evaluate.
 
 **Limitation.** Calibration Training works best where outcomes resolve clearly and often. It is weaker for moral judgments, aesthetic judgments, deep strategic questions, and long-horizon claims where feedback is delayed or ambiguous. Even there, the habit of stating confidence carefully helps, but the scoring discipline should not pretend to be stronger than the feedback loop allows.

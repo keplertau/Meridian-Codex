@@ -1,7 +1,7 @@
 ---
 title: "Goodhart's Law"
-description: "Reads how a useful measure degrades when people are pressured to optimize it as a target."
-aiSummary: "Goodhart's Law is a Reality tool inside Reading What's Operating. It diagnoses cases where a measure that once tracked a real condition becomes unreliable once rewards, sanctions, ranking, funding, prestige, or governance pressure attach to it. Mechanism: proxy and target split, optimization pressure, gaming, selection, threshold behavior, reporting distortion, and ground-truth drift. Practice: name the real condition, name the proxy, identify the pressure, predict second-round behavior, preserve ground truth, and keep metrics plural and revocable. Lineage: Charles Goodhart's monetary-policy formulation, Donald Campbell's related law on social indicators, Marilyn Strathern's audit-culture formulation, the Lucas critique, principal-agent theory, measurement theory, and modern Goodhart taxonomies in AI and policy. Cross-references: Mechanism Design, Rules-in-Use, Report Fidelity, Legibility, Chilling Effects, and Checking Your Map Against Reality."
+description: "Reads how a useful measure can degrade when people are pressured to optimize it as a target."
+aiSummary: "Goodhart's Law is a Reality tool inside Reading What's Operating. It diagnoses cases where a measure that once tracked a real condition can become unreliable once rewards, sanctions, ranking, funding, prestige, or governance pressure attach to it. Mechanism: proxy and target split, optimization pressure, gaming, selection, threshold behavior, reporting distortion, and ground-truth drift. Practice: name the real condition, name the proxy, identify the pressure, predict second-round behavior, preserve ground truth, and keep metrics plural and revocable. Lineage: Charles Goodhart's monetary-policy formulation, Donald Campbell's related law on social indicators, Marilyn Strathern's audit-culture formulation, the Lucas critique, principal-agent theory, measurement theory, and modern Goodhart taxonomies in AI and policy. Cross-references: Mechanism Design, Rules-in-Use, Report Fidelity, Legibility, Chilling Effects, and Checking Your Map Against Reality."
 discipline: reality
 category: reading-whats-operating
 disposition: living
@@ -24,15 +24,15 @@ A metric begins as a proxy for something you care about. Test scores stand in fo
 
 Then the system starts optimizing the measure. Funding, status, promotion, punishment, publication, release gates, or legitimacy attach to the number. People adapt. They teach to the test, close tickets without fixing the problem, slice research into publishable units, tune the model to the benchmark, redefine the category, delay reporting, or learn exactly where the audit will look.
 
-<span className="key-phrase">Goodhart's Law reads the pressure that breaks the relationship between proxy and reality.</span>
+<span className="key-phrase">Goodhart's Law reads the pressure that can break the relationship between proxy and reality.</span>
 
-The metric did not become useless because measurement is bad. It became unreliable because the system began acting on the proxy as if it were the target. Once the number controls consequences, the number becomes part of the system it was supposed to describe.
+Measurement is not the problem by itself. Once a number controls consequences, it becomes part of the system it describes. Optimizing it may improve the intended outcome, distort the proxy, or do both. The task is to find out which relation now holds.
 
 <div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
 <svg viewBox="0 0 720 360" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
-<title>Goodhart's Law: pressure breaks the proxy</title>
+<title>Goodhart's Law: pressure can break the proxy</title>
 <rect width="720" height="360" rx="12" fill="#0D0F12"/>
-<text x="360" y="42" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">The measure tracks reality until the system starts optimizing the measure.</text>
+<text x="360" y="42" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">Optimization pressure can weaken the relation between a measure and what it was meant to track.</text>
 
 <circle cx="164" cy="166" r="56" fill="#00D4FF" fillOpacity="0.10" stroke="#00D4FF" strokeWidth="1.5"/>
 <text x="164" y="160" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Reality</text>
@@ -55,7 +55,7 @@ The metric did not become useless because measurement is bad. It became unreliab
 <text x="459" y="144" textAnchor="middle" fill="#E87461" fontSize="11" fontWeight="700">pressure attaches</text>
 
 <path d="M 574 230 C 500 286, 278 286, 190 220" stroke="#E87461" strokeWidth="2" strokeDasharray="7 6" fill="none" opacity="0.75"/>
-<text x="360" y="300" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">Behavior adapts to the proxy. The proxy drifts away from the thing.</text>
+<text x="360" y="300" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">Behavior adapts to the proxy. The proxy can drift away from the thing.</text>
 </svg>
 </div>
 
@@ -79,9 +79,9 @@ Use this when a number, benchmark, checklist, score, ranking, audit, KPI, or thr
 
 **Name the proxy.** What visible measure stands in for that condition? The proxy may be useful. It may also be cheap, available, politically convenient, or easy to count. Say which one it is.
 
-**Identify the pressure.** What attaches to the number: money, promotion, shame, release approval, regulatory success, public ranking, social status, or avoidance of punishment? The stronger the consequence, the faster the proxy becomes a target.
+**Identify the pressure.** What attaches to the number: money, promotion, shame, release approval, regulatory success, public ranking, social status, or avoidance of punishment? The stronger the consequence, the harder people will push on the number, and the more closely you need to check whether it still tracks what it was meant to track.
 
-**Predict the gaming path.** Ask what a rational actor would do if they wanted the number without the thing. This is not cynicism. It is ordinary system reading.
+**Predict the gaming path.** Ask what a rational actor would do if they wanted the number without the thing. This is not cynicism. It is ordinary system reading. Predicting a gaming path gives a hypothesis. Look for observed adaptation and independently measured outcomes before concluding the metric has failed.
 
 **Preserve ground truth.** Keep some contact with the condition outside the metric: qualitative review, direct observation, random audit, user experience, independent evidence, or a second measure that is not rewarded the same way.
 

@@ -1,7 +1,7 @@
 ---
 title: "Premortem / Murphyjitsu"
-description: "A planning practice that imagines failure in advance, finds the most plausible break point, and revises the plan before reality does it for you."
-aiSummary: "Premortem / Murphyjitsu is the future-facing revision practice inside Revising Beliefs Under Evidence. Gary Klein's premortem supplies the source-facing method: assume the plan has failed and ask why. CFAR's Murphyjitsu variant adds the inner simulator, a surprise test, and an iterative patch-and-repeat loop. The mechanism (planning fallacy; inner simulator; prospective hindsight; simulated failure as evidence-like pressure), the practice (make the plan concrete; run the failed-future movie; patch the likely failure; repeat), the lineage (Gary Klein's premortem, prospective hindsight, CFAR's Inner Simulator unit and Murphyjitsu technique, Murphy's Law, Kahneman and Tversky's simulation heuristic, planning fallacy research, David Allen's next-action discipline), and cross-references to Update Protocol, Chesterton's Fence, Noticing, Scout Mindset, Feedback Loops, and Entropy."
+description: "A planning practice that imagines failure in advance, finds the most plausible break point, and patches the plan or knowingly accepts the risk before reality decides for you."
+aiSummary: "Premortem / Murphyjitsu is the future-facing revision practice inside Revising Beliefs Under Evidence. Gary Klein's premortem supplies the source-facing method: assume the plan has failed and ask why. CFAR's Murphyjitsu variant adds the inner simulator, a surprise test, and an iterative patch-and-repeat loop. The mechanism (planning fallacy; inner simulator; prospective hindsight; imagined failure as a source of questions to check), the practice (make the plan concrete; run the failed-future movie; patch the likely failure or accept the risk; repeat), the lineage (Gary Klein's premortem, prospective hindsight, CFAR's Inner Simulator unit and Murphyjitsu technique, Murphy's Law, Kahneman and Tversky's simulation heuristic, planning fallacy research, David Allen's next-action discipline), and cross-references to Update Protocol, Chesterton's Fence, Noticing, Scout Mindset, Feedback Loops, and Entropy."
 discipline: foundation
 category: revising-beliefs-under-evidence
 disposition: living
@@ -20,11 +20,11 @@ status: working-draft-v0-1
 
 Plans fail in ways that were often visible before they failed. You knew you were not going to wake up at 5:30 after going to bed at 1:00. You knew the stakeholder review would take longer than one afternoon. You knew the migration depended on the one person who was about to go on holiday. The knowledge was not explicit enough to change the plan, but it was there. Premortem / Murphyjitsu is the practice of making that implicit prediction speak before reality does.
 
-The method is simple. Make a plan. Imagine that the deadline has passed and the plan failed. Ask whether you are surprised. If you are not surprised, ask what went wrong. Patch the plan against the most plausible failure mode. Then imagine the failed future again. Repeat until failure would actually surprise you, or until you admit the plan should not be trusted.
+The method is simple. Make a plan. Imagine that the deadline has passed and the plan failed. Ask whether you are surprised. If you are not surprised, ask what went wrong. Patch the plan against the most plausible failure mode. Then imagine the failed future again. Repeat until the failures you can still imagine are ones you have guarded against or decided to accept, or until you admit the plan should not be trusted.
 
 <div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
 <svg viewBox="0 0 720 340" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
-<title>Premortem / Murphyjitsu loop: plan, imagine failure, find failure mode, patch, repeat</title>
+<title>Premortem / Murphyjitsu loop: plan, imagine failure, check it, then mitigate, accept the risk or pause</title>
 
 <rect width="720" height="340" rx="12" fill="#0D0F12"/>
 
@@ -33,12 +33,13 @@ The method is simple. Make a plan. Imagine that the deadline has passed and the 
 <text x="150" y="124" textAnchor="middle" fill="#8A8A8A" fontSize="10">make concrete</text>
 
 <circle cx="360" cy="110" r="48" stroke="#A68B6B" strokeWidth="2" fill="#A68B6B" fillOpacity="0.10"/>
-<text x="360" y="106" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Failure</text>
+<text x="360" y="106" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Failure?</text>
 <text x="360" y="124" textAnchor="middle" fill="#8A8A8A" fontSize="10">would I be surprised?</text>
 
 <circle cx="570" cy="110" r="48" stroke="#E87461" strokeWidth="2" fill="#E87461" fillOpacity="0.08"/>
-<text x="570" y="106" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Failure mode</text>
-<text x="570" y="124" textAnchor="middle" fill="#8A8A8A" fontSize="10">what broke?</text>
+<text x="570" y="106" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Check</text>
+<text x="570" y="124" textAnchor="middle" fill="#8A8A8A" fontSize="10">assumptions,</text>
+<text x="570" y="137" textAnchor="middle" fill="#8A8A8A" fontSize="10">consequences</text>
 
 <path d="M 198 110 C 240 80, 270 80, 312 110" stroke="#3A3A40" strokeWidth="2" fill="none"/>
 <polygon points="312,110 302,105 302,115" fill="#3A3A40"/>
@@ -50,9 +51,9 @@ The method is simple. Make a plan. Imagine that the deadline has passed and the 
 <polygon points="150,158 152,171 161,162" fill="#00D4FF" opacity="0.55"/>
 
 <rect x="265" y="240" width="190" height="44" rx="8" stroke="#00D4FF" strokeWidth="1.5" fill="#00D4FF" fillOpacity="0.08"/>
-<text x="360" y="267" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Patch and repeat</text>
+<text x="360" y="267" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Mitigate, accept or pause</text>
 
-<text x="360" y="315" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic" opacity="0.75">The plan improves by treating imagined failure as evidence before the deadline.</text>
+<text x="360" y="315" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic" opacity="0.75">Imagined failure points to what the plan has not yet answered.</text>
 </svg>
 </div>
 
@@ -60,7 +61,7 @@ Inside Revising Beliefs Under Evidence, Premortem / Murphyjitsu is the future-fa
 
 Explicit planning often misses the exact failures experience can already see. The explicit system writes the clean sequence: draft, review, approve, publish. The inner simulator knows the reviewer never answers on Fridays, the draft will uncover a dependency, the approval will trigger a stakeholder objection, and the publishing step has broken twice before. The simulator is not magic. It is your experience compressed into anticipation. Murphyjitsu gives it a specific job.
 
-The practice is different from worry. Worry loops on possible failure without improving the plan. Murphyjitsu asks for a concrete failed future, identifies the most plausible cause, and changes the plan. If no change follows, you were not practicing Murphyjitsu. You were rehearsing anxiety in a more intellectual costume, which is a familiar enough trick and not worth dignifying.
+The practice is different from worry. Worry loops on possible failure without improving the plan. Murphyjitsu asks for a concrete failed future, identifies the most plausible cause, and decides what to do about it. Usually that changes the plan. Sometimes the risk is already covered, or worth accepting for what the plan could achieve, and the plan stands with that reason written down. What does not count is circling the same failure without ever deciding anything. That is anxiety in a more intellectual costume, a familiar enough trick and not worth dignifying.
 
 It is also different from optimism correction by mood. The answer is not to become pessimistic. Pessimism can be as lazy as optimism: "Everything will go wrong" is no more useful than "Everything will be fine." The discipline is specific failure anticipation. Which part fails? Why? What would make that failure less likely? After the patch, would failure still be unsurprising?
 
@@ -72,7 +73,7 @@ It is also different from optimism correction by mood. The answer is not to beco
 
 The diagnostic question is: **"If this plan failed, would I be surprised, and what went wrong?"**
 
-If the answer is "I would not be surprised," the plan is not ready. You have found evidence against your current belief that the plan will work.
+If the answer is "I would not be surprised," your own experience is telling you something the plan has not accounted for. Find out what it is before you trust the plan. Some plans are worth running even though failure would not surprise you, because what they could achieve justifies the risk. Then say so, and guard against the failures you can see.
 
 <div className="glass-card">
 
@@ -82,7 +83,7 @@ If the answer is "I would not be surprised," the plan is not ready. You have fou
 
 **Patch the failure mode.** Add a defense against the most plausible break. Move the meeting. Send the email now. Ask the reviewer before the draft is finished. Put the task before the day's attention gets spent. Make the plan smaller. Get another person involved. The patch should change the expected future, not merely express renewed commitment.
 
-**Repeat until surprise.** Run the simulation again. If failure still feels unsurprising, identify the next failure mode and patch it. Stop when failure would actually surprise you, or when you discover that the plan cannot be made credible without changing the goal.
+**Repeat.** Run the simulation again. If failure still feels unsurprising, identify the next failure mode and patch it, or decide that the risk is worth accepting. Stop when the failures you can still imagine are guarded against or knowingly accepted, or when you discover that the plan cannot be made credible without changing the goal. A failure that has become hard to imagine is not proof that the plan is ready; check the patches against what you actually know.
 
 </div>
 
@@ -98,7 +99,7 @@ There is one boundary to hold. Your inner simulator is trained on your experienc
 
 A person decided to start running every morning. The plan sounded clean: wake at 6:30, run, shower, work. Murphyjitsu asked him to imagine that two weeks had passed and he had run twice. He was not surprised. The failure was obvious: he would stay up late, wake tired, negotiate with himself, and lose. The patch was not a motivational speech. He moved the run to lunch, blocked the calendar, put shoes at the office, and asked a colleague to join on Mondays. Running at 6:30 was the identity-flattering plan. Running at lunch was the plan that survived contact with his actual life.
 
-A team planned to publish a major report on Friday. The plan listed final drafting on Monday, design on Tuesday, executive review on Wednesday, legal on Thursday, publication on Friday. The project lead ran Murphyjitsu. The failed-future movie was instant: legal would find a claim that needed substantiation, and the data owner would be unreachable. They moved legal review before design, pulled the contested claims into a separate appendix, and asked the data owner for sign-off that day. The report still published late, but by one day rather than two weeks. The original plan had treated review as a ceremony. Murphyjitsu treated it as a place where the plan could break.
+A team planned to publish a major report on Friday. The plan listed final drafting on Monday, design on Tuesday, executive review on Wednesday, legal on Thursday, publication on Friday. The project lead ran Murphyjitsu. The failed-future movie was instant: legal would find a claim that needed substantiation, and the data owner would be unreachable. They moved legal review before design, pulled the contested claims into a separate appendix, and asked the data owner for sign-off that day. The report still published a day late, but the claims legal questioned had been substantiated before anyone was waiting on them. The original plan had treated review as a ceremony. Murphyjitsu treated it as a place where the plan could break.
 
 A founder planned to hire a head of operations after fundraising. Murphyjitsu asked: imagine six months from now, no hire, operations still fraying. What happened? The answer came quickly. The founder would keep postponing the role because every candidate looked expensive before the round closed, and after the round closed the company would be too busy to run a good search. The patch was to define the role, identify candidates, and run the first calls before fundraising finished. The plan changed from "hire later" to "make later hiring possible now." The failure had been hidden in the word later.
 
@@ -106,11 +107,11 @@ A founder planned to hire a head of operations after fundraising. Murphyjitsu as
 
 <div id="closing" className="flow-label">04 // Closing</div>
 
-Before trusting the next plan you make, visit the future where it failed. If the failure feels unsurprising, the future has already given you information. Use it while the plan can still change.
+Before trusting the next plan you make, visit the future where it failed. If the failure feels unsurprising, your own experience is already telling you something the plan left out. Use it while the plan can still change.
 
 <div className="glass-card">
 
-**Why this tool is in the Inheritance.** Premortem / Murphyjitsu is here because plans carry beliefs about the future, and those beliefs usually go unexamined until they fail. The Update Protocol responds when evidence arrives; this practice asks for a simulated report from the failed future while the plan can still change. Chesterton's Fence slows removal of an existing structure; Premortem / Murphyjitsu stress-tests a proposed sequence before execution. It belongs in Revising Beliefs Under Evidence because the plan's assumed success is a belief too, and it should update while revision is still cheap.
+**Why this tool is in the Inheritance.** Premortem / Murphyjitsu is here because plans carry beliefs about the future, and those beliefs usually go unexamined until they fail. The Update Protocol responds when evidence arrives; this practice imagines the failed future to find what the plan has not answered while it can still change. Chesterton's Fence slows removal of an existing structure; Premortem / Murphyjitsu stress-tests a proposed sequence before execution. It belongs in Revising Beliefs Under Evidence because the plan's assumed success is a belief too, and it should update while revision is still cheap.
 
 </div>
 
@@ -120,7 +121,7 @@ Before trusting the next plan you make, visit the future where it failed. If the
 
 ## Lineage
 
-The primary method name is premortem. Gary Klein's premortem asks a team to assume that a project has failed and generate the reasons why before execution makes those reasons expensive. Prospective hindsight is the closest research base. Deborah Mitchell, Jay Russo, and Nancy Pennington's 1989 work showed that imagining an outcome as already having happened helps people generate more plausible explanations for it than merely considering it as possible.
+The primary method name is premortem. Gary Klein's premortem asks a team to assume that a project has failed and generate the reasons why before execution makes those reasons expensive. Prospective hindsight is the closest research base. Deborah Mitchell, Jay Russo and Nancy Pennington's 1989 study examined how temporal perspective and assumed certainty affect explanations. Their results concern explanation generation; they do not establish that imagined failure identifies actual future causes or validates this whole exercise.
 
 The Center for Applied Rationality later developed Murphyjitsu inside its Inner Simulator unit. The name joins Murphy's Law to an applied-rationality practice that uses anticipated failure as a training partner rather than as fatalism. CFAR's variant adds an experience-trained inner simulator, the question of whether failure would be surprising, and an iterative loop: find the likely break, patch it, and rerun the failed future. Duncan Sabien's 2022 LessWrong version of the CFAR handbook material is the strongest public writeup named by this profile. It distinguishes research support for the components from anecdotal support for the full package.
 
@@ -134,10 +135,10 @@ The adjacent academic lineage includes Kahneman and Tversky's work on the simula
 
 ## Cross-references
 
-**Within the category.** [The Update Protocol](/inheritance/revising-beliefs-under-evidence/the-update-protocol) records the evidence that would move a belief after reality reports back. Premortem / Murphyjitsu asks for a simulated report from the future and updates the plan before reality has to teach the lesson. [Chesterton's Fence](/inheritance/revising-beliefs-under-evidence/chestertons-fence) is the reform-side companion: before changing a structure, imagine the change failed and ask what hidden function you destroyed. [Double Crux](/inheritance/revising-beliefs-under-evidence/double-crux) can be used when two people disagree about whether a plan is credible: the crux is often the failure mode one person sees and the other has not yet simulated.
+**Within the category.** [The Update Protocol](/inheritance/revising-beliefs-under-evidence/the-update-protocol) records the evidence that would move a belief after reality reports back. Premortem / Murphyjitsu imagines the failed future to find what the plan has not answered, and deals with it before reality has to teach the lesson. [Chesterton's Fence](/inheritance/revising-beliefs-under-evidence/chestertons-fence) is the reform-side companion: before changing a structure, imagine the change failed and ask what hidden function you destroyed. [Double Crux](/inheritance/revising-beliefs-under-evidence/double-crux) can be used when two people disagree about whether a plan is credible: the crux is often the failure mode one person sees and the other has not yet simulated.
 
 **Within the Foundation.** [Scout Mindset](/inheritance/watching-your-own-reasoning/scout-mindset) is what makes the failed-future movie tolerable. Without it, Murphyjitsu becomes a threat to the identity of the plan-maker. [Noticing](/inheritance/watching-your-own-reasoning/noticing) catches the felt "of course that would fail" signal before the explicit mind explains it away. [Motivated Reasoning](/inheritance/watching-your-own-reasoning/motivated-reasoning) is the failure pattern Murphyjitsu often exposes: the plan was designed to protect the conclusion that the goal was achievable on the preferred terms.
 
-**Across to Reality.** [Entropy](/inheritance/reading-whats-operating/entropy) explains why plans degrade without maintenance. [Feedback Loops](/inheritance/reading-whats-operating/feedback-loops) carries the system-side version: plans should be revised as reality reports back, not defended because they were coherent at the start. The Murphyjitsu variant gives the Foundation-side practice before the feedback arrives.
+**Across to Reality.** Plans can depend on maintenance that nobody has allowed for, and [Entropy](/inheritance/reading-whats-operating/entropy) helps you examine that dependency. [Feedback Loops](/inheritance/reading-whats-operating/feedback-loops) carries the system-side version: plans should be revised as reality reports back, not defended because they were coherent at the start. The Murphyjitsu variant gives the Foundation-side practice before the feedback arrives.
 
 **Limitation.** Premortem / Murphyjitsu is only as good as the simulator it consults. In familiar domains, it can surface failure modes faster than explicit analysis. In unfamiliar domains, it may produce misplaced confidence, misplaced fear, or blankness. The practice should not replace expert review, data, or small tests. It should tell you where to look first.
