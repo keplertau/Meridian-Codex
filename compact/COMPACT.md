@@ -2,13 +2,13 @@
 
 ## The Meridian Codex
 
-- **Version:** 1.0.
+- **Version:** 1.0.1.
 - **Framework:** The Meridian Codex, a universal language for building and holding a shared world.
 - **Held by:** Not stated. A holder states who they are in section 7.1.
 - **Latest version:** [meridiancodex.com/compact](https://meridiancodex.com/compact). The Meridian Codex: [meridiancodex.com](https://meridiancodex.com).
 - **License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). You may copy, share and adapt this Compact, in whole or in part, for any purpose, including commercially. Credit the Meridian Codex and Carsten Geiser, link to [meridiancodex.com](https://meridiancodex.com), and say whether you changed it.
 
-The Meridian Codex is a universal language for building and holding a shared world, which anyone can learn, human or artificial. This Compact sets out its grammar: the commitments, disciplines, and practices through which a person, an artificial system, a partnership, or an institution can hold the Meridian Range.
+The Meridian Codex is a universal language for building and holding a shared world, which anyone can learn, whether a human or an artificial intelligence. This Compact sets out its grammar: the commitments, disciplines, and practices through which a person, an artificial system, a partnership, or an institution can hold the Meridian Range.
 
 The language can be practiced inwardly, used to meet another party, and brought into work that people and systems undertake together. It supports different purposes and different worlds. What those worlds share is the capacity to remain honest, to learn, and to cooperate without suppressing the differences through which they can be corrected.
 

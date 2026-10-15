@@ -51,3 +51,12 @@
 !compact/
 !compact/*.mdx
 !compact/COMPACT.md
+
+# Retired files: no longer current, kept unchanged as history, off the website
+# (Carsten's decision, 2026-10-15; their old web addresses forward here):
+#   retired/README.md  — what is kept here and why
+#   retired/*.mdx      — pages as they were last published on meridiancodex.com
+#   retired/*.md       — files as they were downloaded and read
+!retired/
+!retired/*.mdx
+!retired/*.md
