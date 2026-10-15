@@ -20,7 +20,7 @@ status: working-draft-v0-1
 
 Bayesian Reasoning is the discipline of updating belief by the weight of evidence. The formal structure is simple to state and difficult to practice: start with a prior probability, ask how likely the evidence would be under each competing hypothesis, and update to a posterior probability.
 
-The prior is what the evidence already supported before the new information arrived. The likelihood is how expected the new information would be if a given hypothesis were true. The posterior is the revised probability after the new evidence has been considered.
+The prior is your probability before incorporating the new information, supported by earlier evidence, background knowledge and stated assumptions. The likelihood is how expected the new information would be if a given hypothesis were true. The posterior is the revised probability after the new evidence has been considered.
 
 <div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
 <svg viewBox="0 0 720 340" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
@@ -56,7 +56,7 @@ The prior is what the evidence already supported before the new information arri
 
 The practical force is in the middle step. Most bad informal reasoning treats evidence as either supportive or not supportive. Bayesian reasoning asks a sharper question: how much more likely is this evidence if the claim is true than if the claim is false?
 
-That question changes everything. A vivid anecdote may be compatible with your theory and still not be strong evidence for it, because the same anecdote would also be common if the theory were false. A positive test result may sound decisive and still leave the condition unlikely, because false positives outnumber true positives when the condition is rare. A new incident may feel like proof of a trend and still only modestly update the prior, because one incident is weak evidence against a large population rate.
+A vivid anecdote may fit your theory and still be weak evidence for it, because it would fit the alternatives just as well. A positive test result may sound decisive and still leave the condition unlikely. That happens when the condition is rare enough, and false positives frequent enough, that the false positives outnumber the true ones. A single incident may feel like proof of a trend and still deserve only a small update, because it would have been nearly as likely without the trend. Whether one incident counts for little or for a great deal depends on how differently the competing explanations predict it.
 
 Inside the Foundation, Bayesian Reasoning disciplines confidence. You will want to update by salience: dramatic evidence produces dramatic movement; emotionally satisfying evidence produces confident movement; socially costly evidence produces little movement. Bayesian reasoning asks confidence to move by diagnostic strength instead. Not by drama. Not by convenience. Not by what the evidence lets you say in an argument. By weight.
 
@@ -70,15 +70,15 @@ This does not mean every claim needs a spreadsheet. Most daily reasoning does no
 
 The diagnostic question is: **"How much more likely would I be to see this evidence if the claim were true than if it were false?"**
 
-That question is the hinge. If the evidence would be common in both worlds, it should not move confidence much. If it would be common in one world and rare in the other, it should move confidence more.
+That question is the hinge. Evidence that is about equally likely under the competing hypotheses should move their relative odds little. Evidence that is much more likely under one than another can move them substantially.
 
 <div className="glass-card">
 
-**Name the prior.** Before reacting to the new evidence, ask what was already likely. What is the base rate? How often does this kind of thing happen? How often do claims like this turn out true? The prior is not prejudice. It is the evidence already accumulated before the new item arrived. If you skip it, the new evidence quietly gets treated as if it arrived in an empty world.
+**Name the prior.** Before reacting to the new evidence, ask what was already likely. What is the base rate? How often does this kind of thing happen? How often do claims like this turn out true? The prior needs justification. It can draw on evidence and defensible assumptions, and it can also carry bias; check how the conclusion changes under other plausible starting points. If you skip it, the new evidence quietly gets treated as if it arrived in an empty world.
 
-**Ask the diagnostic question.** Do not ask only whether the evidence fits the claim. Ask whether the evidence discriminates between the claim and its alternatives. A symptom that appears in ten different conditions is weak evidence for any one of them. A behavior common among both honest and dishonest actors is weak evidence of dishonesty. Evidence that fits your view and rival views equally does not discriminate much.
+**Ask the diagnostic question.** Do not ask only whether the evidence fits the claim. Ask whether the evidence discriminates between the claim and its alternatives. A symptom shared by several conditions can strongly favor one if it is much more likely under that condition than the alternatives. A behavior supports dishonesty to the extent that it is more likely under dishonesty than under the relevant honest explanations. Evidence that fits your view and rival views equally does not discriminate much.
 
-**Update proportionally.** Move confidence by the weight of the evidence. Weak evidence should move you a little. Strong evidence should move you more. Repeated weak evidence may accumulate. One dramatic but weakly diagnostic event should not rewrite the whole view. The discipline is not "never update strongly." It is "make the movement answer to the evidence's actual force."
+**Update proportionally.** Move confidence by the weight of the evidence. Weak evidence should move you a little. Strong evidence should move you more. Repeated observations may accumulate when each adds information; repeated reports of the same observation should not be counted as independent support. One dramatic but weakly diagnostic event should not rewrite the whole view. The discipline is not "never update strongly." It is "make the movement answer to the evidence's actual force."
 
 </div>
 
@@ -94,7 +94,7 @@ The danger is using Bayesian language as decoration. Calling something a prior d
 
 A founder heard that a competitor had just landed a major enterprise customer. The first interpretation was obvious: the competitor's product was better than expected, and the market was moving away. Bayesian reasoning slowed the conclusion. What was the prior? Enterprise deals are noisy, often relationship-driven, and one deal is weak evidence of product superiority. How diagnostic was the evidence? Moderately diagnostic of sales traction, weakly diagnostic of product quality, almost useless as evidence of category dominance. The posterior changed, but it did not panic. The founder increased competitive watch and did not rewrite the roadmap around one anecdote.
 
-A patient received a positive result on a screening test. The test was accurate in ordinary language, but the condition was rare. The Bayesian question changed the conversation: out of 10,000 people screened, how many would have the condition, and how many healthy people would still test positive? The positive result increased the probability. It did not make the diagnosis likely enough to treat as confirmed. The next move was confirmatory testing, not despair.
+A patient received a positive result on a screening test. The test was accurate in ordinary language, but the condition was rare. The Bayesian question changed the conversation: out of 10,000 people screened, how many would have the condition, and how many healthy people would still test positive? For this condition and this test, the answers were about ten and about a hundred: one person in a thousand has the condition, the test catches nine of those ten, and it wrongly flags about one healthy person in a hundred. So roughly nine true positives would sit among about a hundred false ones. The positive result raised the probability from one in a thousand to about one in twelve. That is a real increase and still far from a confirmed diagnosis. The next move was confirmatory testing, not despair.
 
 A manager received two complaints about a team lead. The vivid interpretation was that the team lead had become a serious problem. The prior included the team lead's long record of reliable work and the stressful reorganization the team had recently gone through. The complaints were evidence, not noise. But their diagnostic strength was unclear because the same complaints might appear under several hypotheses: poor leadership, organizational stress, role confusion, or a conflict between specific people. The Bayesian move was to widen inquiry before hardening the conclusion.
 
@@ -102,7 +102,7 @@ A manager received two complaints about a team lead. The vivid interpretation wa
 
 <div id="closing" className="flow-label">04 // Closing</div>
 
-The next time a piece of evidence feels decisive, ask the Bayesian question before your confidence moves: would this evidence be rare if my claim were false? If not, let it inform you without letting it carry more weight than it has.
+When evidence feels decisive, compare how likely it would be under the claim and its alternatives. Let that comparison, together with the prior, determine how far confidence moves.
 
 <div className="glass-card">
 
@@ -124,7 +124,7 @@ Modern Bayesian statistics developed the framework into a full statistical appro
 
 Cognitive psychology shows why ordinary judgment needs this discipline. Base rate neglect, representativeness, availability, and motivated reasoning all distort Bayesian structure. People treat vivid case evidence as if no prior exists, confuse how well evidence fits a story with how diagnostic the evidence is, and update more strongly on information that satisfies identity or emotion. The formal theorem names the correction; psychology explains why the correction is needed.
 
-Gerd Gigerenzer and others showed that many Bayesian problems become easier when translated into natural frequencies rather than abstract percentages. Instead of "1% prevalence and 99% sensitivity," say "out of 1,000 people, 10 have the condition, and about 990 do not." Natural frequencies make the hidden denominator visible. For practical use, this is one of the most important teaching moves in the lineage.
+Gerd Gigerenzer and others showed that many Bayesian problems become easier when translated into natural frequencies rather than abstract percentages. Instead of "1% prevalence, 90% sensitivity and a 9% false-positive rate," say "out of 1,000 people, 10 have the condition and 9 of them test positive; of the 990 who do not, about 89 test positive as well." Every rate survives the translation, and the hidden denominator becomes visible: of about 98 positive tests, only 9 come from people with the condition. For practical use, this is one of the most important teaching moves in the lineage.
 
 The rationalist community translated Bayesian reasoning into a personal epistemic discipline: not only a mathematical method, but a habit of asking how evidence should move belief. That translation has limits. Bayesian language can become a badge for overconfident cleverness if the priors are lazy and the numbers are ornamental. Used cleanly, it gives the Foundation a specific discipline: confidence answers to evidence rather than to the feeling of having an explanation.
 

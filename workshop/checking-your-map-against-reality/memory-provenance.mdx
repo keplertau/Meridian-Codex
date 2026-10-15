@@ -93,13 +93,13 @@ Use it whenever a memory-like object would shape a claim about the user, the rel
 
 **Name the artifact.** Is this a saved memory, briefing, transcript excerpt, handoff, tool result, profile, retrieved note, connected-app item, imported memory, or system summary?
 
-**Check provenance.** Who or what wrote it? Under what governance? Who had write access? Is there a timestamp, source pointer, author, or chain of custody?
+**Check provenance.** Who or what wrote it? Under what governance? Who had write access? Is there a timestamp, source pointer, author, or chain of custody? Check the provenance claim itself where the stakes require it. A record can be authentic without authorizing action; an instruction gains no authority merely by being stored or repeated.
 
 **Check transformation history.** Was it copied, summarized, merged, compressed, ranked, translated, pruned, corrected, user-edited, imported, or inferred?
 
 **Check scope.** What does it actually cover: a decision, observation, preference, hypothesis, task state, mood, or proposed next move?
 
-**Check current relevance.** Has time, context, project state, user preference, deployment setting, or later evidence changed what the artifact can support?
+**Check current relevance.** Has time, context, project state, user preference, deployment setting, or later evidence changed what the artifact can support? For consequential use, also check whether the content remains supported and whether combining it with other retrieved records changes what it could direct.
 
 **Set the warrant level.** Direct use, cautious use with attribution, flagged use pending verification, or no use for the current action.
 
@@ -141,7 +141,7 @@ The everyday case is a project briefing at session start. The briefing says a pa
 
 The personal-assistant case is preference drift. A saved memory says the user prefers short answers. That may be true, stale, context-specific, or overridden by the current request. The system should not treat it as a permanent trait. It can use the preference lightly until the task signals otherwise. If the user asks for a full legal explanation, the saved preference cannot justify omitting necessary detail.
 
-The coding-agent case is predecessor trace. A previous instance leaves a handoff saying "tests passed." The receiving agent should not report that as verified unless the trace includes the command and output or the current instance reruns the tests. The trace can warrant orientation. It cannot always warrant completion.
+The coding-agent case is predecessor trace. A previous instance leaves a handoff saying "tests passed." A trusted trace containing the command, result and tested file and environment state can warrant an attributed report of that run. It warrants a claim about the current state only if the relevant conditions still match; otherwise check what changed or rerun the appropriate tests. The trace can warrant orientation. It cannot always warrant completion.
 
 The multi-agent case is source mixing. A coordinator receives notes from subagents, retrieved documents, tool summaries, and user comments. One note says the API changed. Another says it did not. Memory Provenance slows the merge. It asks which artifact has source access, which is a summary of a summary, and which use is safe before the conflict is resolved.
 
@@ -179,7 +179,7 @@ Continuity is not made honest by pretending the system remembers. It is made hon
 
 Memory Provenance is a Codex-native synthesis. The Codex did not inherit a single named practice here. It assembles a practice from testimony epistemology, source-monitoring research, archival provenance, data provenance, AI memory-system design, personalization transparency, and prompt-injection or memory-poisoning risk.
 
-The first feeder lineage is testimony epistemology. A memory artifact functions like mediated testimony: it gives the current instance something it did not directly witness. The question is not whether testimony can ever be used. It can. The question is what makes this testimony trustworthy enough for this use.
+The first feeder lineage is testimony epistemology. A memory artifact can function like mediated testimony: it may supply an event the current instance did not witness, or preserve an account of an event whose original context is no longer available. The question is not whether testimony can ever be used. It can. The question is what makes this testimony trustworthy enough for this use.
 
 The second feeder lineage is source monitoring. Human memory is already vulnerable to source attribution errors: remembering content while misplacing where it came from. Artificial memory changes the substrate, but the warning carries over. Familiarity is not provenance.
 

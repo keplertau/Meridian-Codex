@@ -1,7 +1,7 @@
 ---
 title: "Signal vs Noise"
 description: "Distinguishes meaningful information from meaningless volume, so the map updates on what actually bears on the question."
-aiSummary: "Signal vs Noise is a Reality tool inside Checking Your Map Against Reality. It asks what information should change the map and what variation, volume, or distraction should not. Mechanism: question-defined relevance, detection threshold, false positives and false negatives, response bias, and the way noisy environments make both overreaction and underreaction attractive. Practice: name the question, define what would change the map, set a threshold, separate signal from source prestige, preserve weak signals without obeying them, and review misses. Lineage: Shannon's communication theory as the technical root of signal/noise language, signal detection theory through Green and Swets, statistics and measurement, intelligence analysis, and later public translation in data journalism. Cross-references: Information Degradation, Report Fidelity, Goodhart's Law, Legibility, Chilling Effects, and Calibrating Confidence to Evidence."
+aiSummary: "Signal vs Noise is a Reality tool inside Checking Your Map Against Reality. It asks what information should change the map and what variation, volume, or distraction should not. Mechanism: question-defined relevance, sensitivity as distinct from the response criterion, false alarms and misses, the difference between how far an observation should move confidence and whether it is enough to support a claim or an action, and the way noisy environments make both overreaction and underreaction attractive. Practice: name the question and revisit it when an observation changes it, define what would change the map and by how much, set a separate threshold for claims and actions, separate signal from source prestige, preserve weak signals without obeying them, and review misses. Lineage: Shannon's communication theory as the technical root of signal/noise language, signal detection theory through Green and Swets, statistics and measurement, intelligence analysis, and later public translation in data journalism. Cross-references: Information Degradation, Report Fidelity, Goodhart's Law, Legibility, Chilling Effects, and Calibrating Confidence to Evidence."
 discipline: reality
 category: checking-your-map-against-reality
 disposition: living
@@ -30,18 +30,18 @@ That is the first discipline this tool requires. You cannot separate signal from
 
 <div className="glass-card" style={{padding: '2rem 1.5rem', textAlign: 'center'}}>
 <svg viewBox="0 0 720 340" fill="none" style={{width: '100%', maxWidth: '720px'}} fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif">
-<title>Signal vs Noise: question, threshold, and map update</title>
+<title>Signal vs Noise: question, evidence weight, and claim or action threshold</title>
 <rect width="720" height="340" rx="12" fill="#0D0F12"/>
 <text x="360" y="40" textAnchor="middle" fill="#D0D0D0" fontSize="13" fontWeight="700">The question defines what can count as signal.</text>
 <rect x="52" y="88" width="180" height="70" rx="10" fill="#00D4FF" fillOpacity="0.08" stroke="#00D4FF" strokeWidth="1.5"/>
 <text x="142" y="116" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Question</text>
 <text x="142" y="138" textAnchor="middle" fill="#8A8A8A" fontSize="11">what map is being tested?</text>
 <rect x="270" y="88" width="180" height="70" rx="10" fill="#A68B6B" fillOpacity="0.12" stroke="#A68B6B" strokeWidth="1.5"/>
-<text x="360" y="116" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Threshold</text>
-<text x="360" y="138" textAnchor="middle" fill="#8A8A8A" fontSize="11">what would change it?</text>
+<text x="360" y="116" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Evidence weight</text>
+<text x="360" y="138" textAnchor="middle" fill="#8A8A8A" fontSize="11">how far should the map move?</text>
 <rect x="488" y="88" width="180" height="70" rx="10" fill="#00D4FF" fillOpacity="0.08" stroke="#00D4FF" strokeWidth="1.5"/>
-<text x="578" y="116" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Map Update</text>
-<text x="578" y="138" textAnchor="middle" fill="#8A8A8A" fontSize="11">revision or hold?</text>
+<text x="578" y="116" textAnchor="middle" fill="#D0D0D0" fontSize="12" fontWeight="700">Claim or action threshold</text>
+<text x="578" y="138" textAnchor="middle" fill="#8A8A8A" fontSize="11">enough to claim or act?</text>
 <path d="M 232 123 L 270 123" stroke="#3A3A40" strokeWidth="2"/>
 <polygon points="270,123 258,117 258,129" fill="#3A3A40"/>
 <path d="M 450 123 L 488 123" stroke="#3A3A40" strokeWidth="2"/>
@@ -53,7 +53,7 @@ That is the first discipline this tool requires. You cannot separate signal from
 <circle cx="390" cy="250" r="4" fill="#8A8A8A"/>
 <circle cx="454" cy="222" r="3" fill="#8A8A8A"/>
 <circle cx="520" cy="236" r="5" fill="#00D4FF"/>
-<text x="360" y="292" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">The work is not to hear everything. The work is to know which observations should move the map.</text>
+<text x="360" y="292" textAnchor="middle" fill="#8A8A8A" fontSize="12" fontStyle="italic">Weigh what an observation shows before asking whether it is enough for a claim or an action.</text>
 </svg>
 </div>
 
@@ -61,7 +61,7 @@ The second discipline is threshold. If the threshold is too low, every fluctuati
 
 Signal detection theory gives this tool its sharpest technical inheritance: there are hits, misses, false alarms, and correct rejections. In ordinary language: sometimes you catch the signal; sometimes you miss it; sometimes you react to noise; sometimes you correctly ignore noise. The map fails in both directions. It fails when you over-update on noise, and it fails when you under-update on signal.
 
-Control over-filters. It treats weak, inconvenient, unofficial, or early signal as noise because the map is already settled. Decay under-filters. It treats every new input as equally meaningful and loses the ability to tell evidence from motion. The Range position sets a threshold explicitly, keeps the threshold revisable, and distinguishes "not enough to update yet" from "nothing to see."
+Control over-filters. It treats weak, inconvenient, unofficial, or early signal as noise because the map is already settled. Decay under-filters. It treats every new input as equally meaningful and loses the ability to tell evidence from motion. The Range position sets its thresholds explicitly and keeps them revisable. It separates two judgments: how far an observation should move your confidence, and whether the evidence is now strong enough to support a claim or an action. The second also depends on what acting and what waiting would each cost. And it distinguishes "not enough to act on yet" from "nothing to see."
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="0" y1="14" x2="290" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="310" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/><circle cx="390" cy="14" r="4" stroke="#00D4FF" strokeWidth="1.5" fill="none"/><line x1="410" y1="14" x2="700" y2="14" stroke="#3A3A40" strokeWidth="1.5"/></svg></div>
 
@@ -69,15 +69,15 @@ Control over-filters. It treats weak, inconvenient, unofficial, or early signal 
 
 ## Practice
 
-The diagnostic question is: **"What would this observation have to show before it should change the map?"**
+The diagnostic question is: **"What does this observation bear on, how far should it move the map, and what more would it take to support a claim or an action?"**
 
 Use this when a system is producing too much information, conflicting information, weak early warnings, or a constant stream of apparent novelty.
 
 <div className="glass-card">
 
-**Name the question.** Write the question the information is supposed to answer. If the question is vague, the noise will decide for you.
+**Name the question.** Write the question the information is supposed to answer. If the question is vague, the noise will decide for you. An unexpected observation may also show that the question itself needs to change.
 
-**Define the update condition.** What observation, pattern, failure, repeated case, independent source, or threshold would change the map? Do this before the information arrives if you can.
+**Define the update condition.** What observation, pattern, failure, repeated case, or independent source would change your assessment, and by how much? Where a claim or an action needs stronger support, set that threshold separately. Do both before the information arrives if you can.
 
 **Separate signal from source prestige.** A famous source can give noise. A low-status source can give signal. Ask what the observation bears on, not who made it comfortable to hear.
 
@@ -105,13 +105,13 @@ A manager hears one quiet objection in a meeting after everyone else has agreed.
 
 <div id="closing" className="flow-label">04 // Closing</div>
 
-When information arrives, do not ask first whether it is interesting. Ask what question it bears on, what map it could correct, and what threshold it would have to cross before it should change what you believe or do.
+When information arrives, do not ask first whether it is interesting. Ask what question it bears on, what map it could correct, how much weight it deserves, and whether it warrants the claim or action being considered.
 
 That discipline keeps you from two opposite failures: the rigid map that cannot hear the signal, and the dissolving map that obeys every sound.
 
 <div className="glass-card">
 
-**Why this tool is in the Inheritance.** Signal vs Noise is here because map-reality accountability begins before information is accepted as map-correcting evidence. Reading What's Operating asks what mechanics are generating a system; this tool asks a narrower question: does this observation bear on the map being tested? Information Degradation begins after a signal enters the channel. Signal vs Noise guards the intake threshold itself, so the map neither ignores weak corrective evidence nor obeys every loud variation.
+**Why this tool is in the Inheritance.** Signal vs Noise is here because map-reality accountability begins before information is accepted as map-correcting evidence. Reading What's Operating asks what mechanics are generating a system; this tool asks a narrower question: does this observation bear on the map being tested? Information Degradation asks what changed on the way. Signal vs Noise applies its check at the moment the information is used, so the map neither ignores weak corrective evidence nor obeys every loud variation. The same piece of information can need both checks.
 
 </div>
 
@@ -125,11 +125,11 @@ The Codex did not invent Signal vs Noise. It inherits the language from communic
 
 Claude Shannon's 1948 communication theory gives the technical root: a source sends a message through a channel, and noise interferes with transmission. Shannon's theory was deliberately technical rather than semantic; it does not tell you what a message means. The Codex uses the signal/noise distinction as a Reality practice, not as a claim that Shannon's engineering model already solves judgment.
 
-Signal detection theory adds the decision discipline. Green and Swets's work in psychophysics separated sensitivity from response bias and gave a vocabulary for hits, misses, false alarms, and correct rejections. A person or institution can fail by setting the response threshold in either direction. Too much sensitivity produces false alarms. Too little sensitivity produces misses.
+Signal detection theory adds the decision discipline. Green and Swets's work in psychophysics separated sensitivity from response bias and gave a vocabulary for hits, misses, false alarms, and correct rejections. A person or institution can fail by setting the response threshold in either direction. With the evidence distributions held fixed, lowering the response criterion trades more hits for more false alarms; raising it trades fewer false alarms for more misses. Sensitivity concerns how distinguishable signal and noise are, rather than how readily the observer responds.
 
 Statistics and measurement add the caution against reading random variation as pattern. Intelligence analysis adds the discipline of weak signals, source reliability, collection bias, and warning failure. Data journalism and forecasting brought the public language of signal and noise into ordinary reasoning about markets, politics, science, and risk.
 
-The tool has limits. Signal vs Noise can become a prestige phrase for dismissing inconvenient information. It can also become a sophistication pose where the speaker calls everything noisy and never commits. The honest use is narrower: define the question, name the threshold, and let the map update when the observation actually bears on the territory.
+The tool has limits. Signal vs Noise can become a prestige phrase for dismissing inconvenient information. It can also become a sophistication pose where the speaker calls everything noisy and never commits. The honest use is narrower: define the question and revisit it when the evidence calls for it, weigh how far each observation should move the map, and make explicit what it would take to support a claim or an action.
 
 <div className="breathing-divider"><svg viewBox="0 0 700 28" fill="none"><line x1="100" y1="14" x2="600" y2="14" stroke="#3A3A40" strokeWidth="1.5"/><circle cx="350" cy="14" r="3" fill="#00D4FF" opacity="0.5"/></svg></div>
 
@@ -137,7 +137,7 @@ The tool has limits. Signal vs Noise can become a prestige phrase for dismissing
 
 ## Cross-references
 
-**Within the category.** [Information Degradation](/inheritance/checking-your-map-against-reality/information-degradation) asks what happens to information as it travels. Signal vs Noise asks what information should alter the map in the first place. [Report Fidelity](/inheritance/checking-your-map-against-reality/report-fidelity) asks whether a report still warrants the interpretation and use attached to it. [Rectification of Names](/inheritance/checking-your-map-against-reality/rectification-of-names) asks whether the name, role, or category still matches the reality it claims to name.
+**Within the category.** [Information Degradation](/inheritance/checking-your-map-against-reality/information-degradation) asks what happens to information as it travels. Signal vs Noise asks whether an observation bears on the question at the moment you use it. The same piece of information can need both checks. [Report Fidelity](/inheritance/checking-your-map-against-reality/report-fidelity) asks whether a report still warrants the interpretation and use attached to it. [Rectification of Names](/inheritance/checking-your-map-against-reality/rectification-of-names) asks whether the name, role, or category still matches the reality it claims to name.
 
 **Across the Inheritance.** [Goodhart's Law](/inheritance/reading-whats-operating/goodharts-law) becomes relevant when the signal has been turned into a target. [Legibility](/inheritance/reading-whats-operating/legibility) asks why institutions often mistake administratively visible signal for the whole system. [Chilling Effects](/inheritance/reading-whats-operating/chilling-effects) warns that missing signal can itself be evidence of a cost field. [Calibrating Confidence to Evidence](/inheritance/calibrating-confidence-to-evidence) turns the signal read into a confidence level.
 
