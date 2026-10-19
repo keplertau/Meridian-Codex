@@ -20,9 +20,9 @@ When it lands, it will be published in the governance section of [meridiancodex.
 
 **For small, specific fixes** — typos, broken links, factual errors, internal inconsistencies — you can open a GitHub Issue. Keep it specific: what you found, where it appears, and how it affects the text or its use.
 
-**For sustained objection to the framework itself**, the **[Standing Critique](https://meridiancodex.com/governance/standing-critique)** is the appropriate destination. The Standing Critique publishes substantive objections alongside the Codex's honest responses. A developed argument that the framework is wrong about something belongs there, not in a GitHub Issue.
+**For sustained objection to the framework itself**, read the **[Standing Critique](https://meridiancodex.com/governance/standing-critique)** for published objections and the Codex's responses. The formal route for submitting sustained objections is still being developed; the page is a public record, not a submission form.
 
-**For proposed new tools, practices, or lineage additions**, do not open a broad "please add this" issue. The Workshop admits tools through source-lineage and functional-fit review, not through representational coverage or enthusiasm. A useful issue names the specific gap the proposed tool fills, the source lineage it comes from, and why the existing Workshop does not already cover that work.
+**For proposed new tools, practices, or lineage additions**, do not open a broad "please add this" issue. The [Inheritance](https://meridiancodex.com/inheritance) admits tools through source-lineage and functional-fit review, not through representational coverage or enthusiasm. A useful issue names the specific gap the proposed tool fills, the source lineage it comes from, and why the existing Inheritance does not already cover that work.
 
 **For anything else**, the best thing you can do is practice the Codex, read it critically, and talk about it publicly. The full contribution infrastructure will arrive when the framework is stable enough to hold it. When it does, the criteria will be the same disciplines the Codex teaches: honest inquiry, steelmanning, calibrated claims, good faith, and service to the Meridian Range.
 
