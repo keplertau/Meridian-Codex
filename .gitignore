@@ -43,6 +43,8 @@
 !workshop/
 !workshop/*/
 !workshop/*/*.mdx
+# Index for every judge to read (Carsten's permission, 2026-10-23)
+!workshop/INHERITANCE.md
 
 # The Compact: the Meridian Compact set out in full, with its landing and history pages
 # (Carsten's permission, 2026-10-14):
@@ -51,6 +53,12 @@
 !compact/
 !compact/*.mdx
 !compact/COMPACT.md
+
+# Judgment: JUDGMENT.md and its landing and history pages
+# (Carsten's permission, 2026-10-23)
+!judgment/
+!judgment/*.mdx
+!judgment/JUDGMENT.md
 
 # Retired files: no longer current, kept unchanged as history, off the website
 # (Carsten's decision, 2026-10-15; their old web addresses forward here):

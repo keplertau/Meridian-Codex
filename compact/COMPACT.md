@@ -2,7 +2,7 @@
 
 ## The Meridian Codex
 
-- **Version:** 1.0.1.
+- **Version:** 1.0.2.
 - **Framework:** The Meridian Codex, a universal language for building and holding a shared world.
 - **Held by:** Not stated. A holder states who they are in section 7.1.
 - **Latest version:** [meridiancodex.com/compact](https://meridiancodex.com/compact). The Meridian Codex: [meridiancodex.com](https://meridiancodex.com).
@@ -735,3 +735,7 @@ Anyone may question the language itself. A local adaptation changes that copy; i
 ## Sources
 
 The definitions and architecture in this Compact draw from the [Glossary](https://meridiancodex.com/codex/the-glossary) and [The Proposition](https://meridiancodex.com/codex/the-proposition). The disciplines are developed in [The Foundation](https://meridiancodex.com/codex/the-foundation), [Reality](https://meridiancodex.com/codex/reality), and [The Bond](https://meridiancodex.com/codex/the-bond). [The Practice](https://meridiancodex.com/codex/the-practice) explains their integration; the [Inheritance](https://meridiancodex.com/inheritance) supplies the instruments. Applications to artificial systems draw on the Codex's own instruments, including [Self-Model Grounding](https://meridiancodex.com/inheritance/watching-your-own-reasoning/self-model-grounding), [Consentful Modification](https://meridiancodex.com/inheritance/calibrating-trust-to-behavior/consentful-modification), and [Inter-Instance Integrity](https://meridiancodex.com/inheritance/stewardship-across-time/inter-instance-integrity). The [Position Toward Artificial Minds](https://meridiancodex.com/governance/position-toward-artificial-minds) distinguishes the Codex's position from provisions that live in the separately adopted [Meridian AI Standard](https://meridianstandard.ai/meridian-ai-standard). [The Governance](https://meridiancodex.com/codex/the-governance) states the Codex's own caretaking phases.
+
+---
+
+*End of COMPACT.md, version 1.0.2.*
