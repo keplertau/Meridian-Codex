@@ -6,7 +6,7 @@
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
   <a href="https://meridiancodex.com/codex"><img alt="Codex" src="https://img.shields.io/badge/Codex-v6.3-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/compact"><img alt="Compact" src="https://img.shields.io/badge/Compact-v1.0.2-22c55e?style=flat-square"></a>
-  <a href="https://meridiancodex.com/judgment"><img alt="Judgment" src="https://img.shields.io/badge/Judgment-v1.0-22c55e?style=flat-square"></a>
+  <a href="https://meridiancodex.com/judgment"><img alt="Judgment" src="https://img.shields.io/badge/Judgment-v1.1-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/inheritance"><img alt="Inheritance" src="https://img.shields.io/badge/Inheritance-current-22c55e?style=flat-square"></a>
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="Content License: CC BY 4.0" src="https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey?style=flat-square"></a>
   <a href="https://opensource.org/licenses/MIT"><img alt="Code License: MIT" src="https://img.shields.io/badge/Code-MIT-lightgrey?style=flat-square"></a>
@@ -101,7 +101,7 @@ The Codex is versioned to reflect its evolution. Major versions mark structural 
 
 - **Current Codex version:** v6.3
 - **Compact:** v1.0.2
-- **Judgment:** v1.0
+- **Judgment:** v1.1
 
 The [Amendment Log](governance/amendment-log.mdx) records changes to protected commitments. The [Changelog](governance/changelog.mdx) records other substantive changes and displays the Amendment Log's own headlines. Both records live in this repository and are rendered at [meridiancodex.com/governance/changelog](https://meridiancodex.com/governance/changelog).
 
