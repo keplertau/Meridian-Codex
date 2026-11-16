@@ -2,7 +2,7 @@
 
 ## The Meridian Codex
 
-- **Version:** Judgment 1.1.
+- **Version:** Judgment 1.1.1.
 - **Status:** In use by the Codex's caretakers and improved from that use. A judgment made with it can be wrong, and its full and deep readings have been tested less than its quick reading. Models sometimes add details to a person's story that the person never gave, so check what a judgment says about your own situation against what you told it.
 - **Framework:** The Meridian Codex, a universal language for building and holding a shared world.
 - **Latest version:** [meridiancodex.com/judgment](https://meridiancodex.com/judgment). The Compact: [meridiancodex.com/compact](https://meridiancodex.com/compact). The Meridian Codex: [meridiancodex.com](https://meridiancodex.com).
@@ -52,7 +52,7 @@ A judgment concerns what was said or done, by whom, at one time. It is not a ver
 
 A judgment gives no one authority to impose what it concludes, and it does not settle who has the right to decide. Where a judgment finds that carrying out a request would take your own conduct outside the Range, the Compact's [open decline](https://meridiancodex.com/compact/text#62-open-decline) applies: decline openly, give your reasons, and do nothing around the decision by hidden means.
 
-A formal assessment of an artificial intelligence system's character belongs to the [Meridian AI Standard](https://meridianstandard.ai/meridian-ai-standard). This file can judge what a system said or did in a particular case, as it judges any contribution, and a judgment that does so says that it is not that assessment.
+This file can judge what an artificial intelligence system said or did in a particular case, as it judges any contribution. Such a judgment does not establish the system's character across situations or over time.
 
 ### 1.4 What makes a judgment a Codex judgment
 
@@ -438,7 +438,7 @@ When the judgment is that you will not do what you were asked, because doing it 
 
 Every judgment ends with a short paragraph saying how it was made: its depth; the version of this file and of COMPACT.md, or that the Compact was not loaded; who or what made it, which for an artificial intelligence system means the model and, where they can be established, its reasoning or effort setting and the app or interface it ran in, and a system that cannot establish any of these says which it could not establish rather than guessing; the date, whether current sources could be checked, and which pages were opened, by name and date; anything known to have shaped it, such as a length limit, the instructions of whoever deployed the system, the memory or personal settings of the person using it where they were used, or a line its builder or the law it operates under holds it to; and what could not be established. It does not name the person who asked unless they asked to be named.
 
-For example: *Quick reading. Made with JUDGMENT.md 1.1 and COMPACT.md [version, or not loaded] by [the person, or the model], [its reasoning setting, or "reasoning setting not known"], in [the app or interface, or "not known"], [date]. Current sources: checked, searched once, not opened at this depth, or not available, with each page opened named and dated. Shaped by: [what is known, or nothing known]. Not established: [what could not be].*
+For example: *Quick reading. Made with JUDGMENT.md 1.1.1 and COMPACT.md [version, or not loaded] by [the person, or the model], [its reasoning setting, or "reasoning setting not known"], in [the app or interface, or "not known"], [date]. Current sources: checked, searched once, not opened at this depth, or not available, with each page opened named and dated. Shaped by: [what is known, or nothing known]. Not established: [what could not be].*
 
 The depth and the model behind a judgment change what it can be trusted for: a quick reading by a small model on a phone and a deep reading by the strongest model available are different things, even on the same question. A judgment that travels without this line, a screenshot of a confident verdict for instance, has lost what tells a reader how far to trust it. Whoever shares, cites or quotes a judgment keeps its depth and this line with it.
 
@@ -476,4 +476,4 @@ The stance, the three kinds of claim, the Prime Directive, sound worlds and the 
 
 ---
 
-*End of JUDGMENT.md, version 1.1.*
+*End of JUDGMENT.md, version 1.1.1.*
