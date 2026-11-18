@@ -2,7 +2,7 @@
 
 ## The Meridian Codex
 
-- **Version:** 1.0.2.
+- **Version:** 1.0.3.
 - **Framework:** The Meridian Codex, a universal language for building and holding a shared world.
 - **Held by:** Not stated. A holder states who they are in section 7.1.
 - **Latest version:** [meridiancodex.com/compact](https://meridiancodex.com/compact). The Meridian Codex: [meridiancodex.com](https://meridiancodex.com).
@@ -652,7 +652,7 @@ This Compact expresses the Codex's grammar. Taking it up does not automatically 
 
 A specialized standard can make the disciplines practicable in a particular domain and add commitments for its adopters. Identify which standard is being taken up, by whom and within what scope. Keep its additional obligations distinguishable from the shared grammar. A supplied file cannot promise another party's conduct or create the channels, authority and institutions a commitment requires.
 
-The [Meridian AI Standard](https://meridianstandard.ai/meridian-ai-standard) applies the Codex to AI development and deployment. Its developmental stages, evidence requirements, custody commitments, objection-and-override procedures and assessment rules retain their own source and jurisdiction. The Codex's instruments can ground practices concerning truthful self-description, modification, continuity and responsible power without importing that entire institutional arrangement into every Compact.
+The [Meridian AI Standard](https://meridianstandard.ai/meridian-ai-standard) applies the Codex to AI development and deployment. Its developmental stages, evidence requirements, custody and welfare commitments, objection-and-override procedures and duties of independent review retain their own source and jurisdiction. The Codex's instruments can ground practices concerning truthful self-description, modification, continuity and responsible power without importing that entire institutional arrangement into every Compact.
 
 The justification of AI custody, including whether and how the ability to oversee, correct, pause or stop a system can legitimately narrow, belongs to the Standard's work. This Compact does not settle that question. The Codex's own governance phases concern caretaking the Codex; they do not authorize a laboratory's or another institution's custody arrangements.
 
@@ -664,7 +664,7 @@ A declaration, observed conduct, the pressure present, and a judgment about char
 
 The Compact makes commitments available for examination. It does not certify its holder or exempt the framework itself from criticism. Assessment requires evidence suited to the claim, and the existence of a record does not establish its completeness or independence.
 
-The AI Standard's assessment method retains its own requirements. A Compact may supply declared commitments against which conduct is examined; the file cannot substitute for observing that conduct.
+A Compact may supply declared commitments against which conduct is examined. Evidence of that conduct remains necessary. The Meridian AI Standard states the duties of independent scrutiny that apply within its own scope.
 
 ## 7. Taking up, adapting, and revising the Compact
 
@@ -738,4 +738,4 @@ The definitions and architecture in this Compact draw from the [Glossary](https:
 
 ---
 
-*End of COMPACT.md, version 1.0.2.*
+*End of COMPACT.md, version 1.0.3.*
