@@ -143,7 +143,7 @@
 - **[Echo Chambers](https://meridiancodex.com/inheritance/catching-your-own-drift-bond/echo-chambers)** · from social epistemology and Cass Sunstein's group polarization work · Informational closure where outside correction is excluded, discredited, or converted into proof that the group was right to close.
 - **[Fusion](https://meridiancodex.com/inheritance/catching-your-own-drift-bond/fusion)** · the Codex's own, drawing on Bowen family systems theory and Hirschman · The Bond captured by Control: attachment to the relationship, group, or shared project becomes stronger than truth.
 - **[Groupthink](https://meridiancodex.com/inheritance/catching-your-own-drift-bond/groupthink)** · from Irving Janis's studies of policy failures, in Victims of Groupthink · The group-level Control failure where the desire for cohesion suppresses dissent before a decision has been tested.
-- **[Severance](https://meridiancodex.com/inheritance/catching-your-own-drift-bond/severance)** · the Codex's own, drawing on Albert Hirschman's exit, voice and loyalty · The Bond captured by Decay: withdrawal from cooperation because vulnerability, repair, or continued trust feels too costly.
+- **[Severance](https://meridiancodex.com/inheritance/catching-your-own-drift-bond/severance)** · the Codex's own, drawing on Albert Hirschman's exit, voice and loyalty · The Bond captured by Decay. What you have seen of cooperation's failures becomes a verdict on all of it.
 
 ### Cooperating Under Bad Faith
 

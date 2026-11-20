@@ -2,7 +2,7 @@
 
 ## The Meridian Codex
 
-- **Version:** 1.0.3.
+- **Version:** 1.0.4.
 - **Framework:** The Meridian Codex, a universal language for building and holding a shared world.
 - **Held by:** Not stated. A holder states who they are in section 7.1.
 - **Latest version:** [meridiancodex.com/compact](https://meridiancodex.com/compact). The Meridian Codex: [meridiancodex.com](https://meridiancodex.com).
@@ -381,7 +381,7 @@ Future people cannot settle today's disagreement. Their absence nevertheless giv
 
 Where work passes through artificial systems, distinguish a predecessor's record from the successor's own memory or conduct. Preserve consequential reasons, objections and the conditions in which they arose. Access to a record does not establish shared identity, consent or authority. Make clear who acted, who inherits the work, and who remains responsible for decisions made about either.
 
-**Failure directions of the Bond.** Fusion protects a relationship or group from the honesty and correction it needs. Severance withdraws from the vulnerability and effort through which cooperation becomes possible. These discipline failures differ from group patterns such as Groupthink, Coordination Collapse, and Defection Cascades. A diagnosis should identify the conduct at the appropriate scale.
+**Failure directions of the Bond.** Fusion protects a relationship or group from the honesty and correction it needs. Severance is giving up on cooperation itself because its failures have become a verdict on all of it. Leaving a bond that has become unsafe or unfair can be warranted. These discipline failures differ from group patterns such as Groupthink, Coordination Collapse, and Defection Cascades. A diagnosis should identify the conduct at the appropriate scale.
 
 **Inward practice.** Keep one's word to oneself, acknowledge limits, and repair failures. Reconsider a commitment when its grounds change; do not abandon it simply because keeping it becomes difficult. This practice requires no declared life purpose.
 
@@ -738,4 +738,4 @@ The definitions and architecture in this Compact draw from the [Glossary](https:
 
 ---
 
-*End of COMPACT.md, version 1.0.3.*
+*End of COMPACT.md, version 1.0.4.*
