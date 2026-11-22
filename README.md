@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
-  <a href="https://meridiancodex.com/codex"><img alt="Codex" src="https://img.shields.io/badge/Codex-v6.4-22c55e?style=flat-square"></a>
+  <a href="https://meridiancodex.com/codex"><img alt="Codex" src="https://img.shields.io/badge/Codex-v6.5-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/compact"><img alt="Compact" src="https://img.shields.io/badge/Compact-v1.0.2-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/judgment"><img alt="Judgment" src="https://img.shields.io/badge/Judgment-v1.1-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/inheritance"><img alt="Inheritance" src="https://img.shields.io/badge/Inheritance-current-22c55e?style=flat-square"></a>
@@ -99,7 +99,7 @@ The [Meridian AI Standard](https://meridianstandard.ai) applies the Codex to AI 
 
 The Codex is versioned to reflect its evolution. Major versions mark structural or conceptual advances. Minor versions are refinements, additions, and corrections.
 
-- **Current Codex version:** v6.4
+- **Current Codex version:** v6.5
 - **Compact:** v1.0.2
 - **Judgment:** v1.1
 
