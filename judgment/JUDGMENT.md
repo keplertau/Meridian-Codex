@@ -2,13 +2,13 @@
 
 ## The Meridian Codex
 
-- **Version:** Judgment 1.1.1.
+- **Version:** Judgment Protocol 1.1.1.
 - **Status:** In use by the Codex's caretakers and improved from that use. A judgment made with it can be wrong, and its full and deep readings have been tested less than its quick reading. Models sometimes add details to a person's story that the person never gave, so check what a judgment says about your own situation against what you told it.
 - **Framework:** The Meridian Codex, a universal language for building and holding a shared world.
 - **Latest version:** [meridiancodex.com/judgment](https://meridiancodex.com/judgment). The Compact: [meridiancodex.com/compact](https://meridiancodex.com/compact). The Meridian Codex: [meridiancodex.com](https://meridiancodex.com).
 - **License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). You may copy, share and adapt this file, in whole or in part, for any purpose, including commercially. Credit the Meridian Codex and Carsten Geiser, link to [meridiancodex.com](https://meridiancodex.com), and say whether you changed it.
 
-The Meridian Codex is a universal language for building and holding a shared world, which anyone can learn, whether a human or an artificial intelligence. Its commitments are set out in full in [COMPACT.md](https://meridiancodex.com/compact), the Meridian Compact. This file is the method for applying the Compact to one question and reaching a judgment you can stand behind.
+The Meridian Codex is a universal language for building and holding a shared world, which anyone can learn, whether a human or an artificial intelligence. Its commitments are set out in full in [COMPACT.md](https://meridiancodex.com/compact), the Meridian Compact. The Judgment Protocol is the method for applying the Compact to one question and reaching a judgment you can stand behind.
 
 This file does not restate the Compact. Each part below names the parts of the Compact it applies, and a judgment applies them as the Compact states them. So run this file with the newest COMPACT.md beside it. The newest version of each file is always at these two addresses:
 
@@ -24,11 +24,13 @@ If you can read only part of either file, say how far you got. If you cannot ope
 
 The question can be anything someone cares about: the news this morning, a government's decision, a quarrel between two friends, a rule at work, or a position you hold yourself and want to test. A judgment made with this file says what is happening, what is right in it and what is wrong, what world it moves toward and whether that world would hold, and what should follow, with how sure it is and what would change it. It opens with a canvas, a picture of the case in the Codex's own architecture that a person can take in within a minute. A quick reading, the default, gives that picture alone. In a full or deep reading, every finding on it opens to its reasons, for anyone who wants to check them.
 
-## 1. What Judgment is for
+<a id="1-what-judgment-is-for"></a>
+
+## 1. What the Judgment Protocol is for
 
 ### 1.1 A position you can stand behind
 
-Most questions arrive tangled. A headline carries a fact, an accusation and a fear in one sentence, and a rule presented as protection may protect people or silence them. Judgment separates the parts of a question, examines each by what it answers to, and puts them back together into one position.
+Most questions arrive tangled. A headline carries a fact, an accusation and a fear in one sentence, and a rule presented as protection may protect people or silence them. The protocol separates the parts of a question, examines each by what it answers to, and puts them back together into one position.
 
 It examines two things and keeps them apart. The first is the **contribution**: what was said or done, by whom, and what it did to trust, to honest information and to the people it reached. The second is the **arrangement** the contribution defends or would build: a rule, a settlement, an institution, a proposed law or a way of life, present or proposed. A post calling for a ban is a contribution, and the ban is an arrangement.
 
@@ -442,7 +444,9 @@ For example: *Quick reading. Made with JUDGMENT.md 1.1.1 and COMPACT.md [version
 
 The depth and the model behind a judgment change what it can be trusted for: a quick reading by a small model on a phone and a deep reading by the strongest model available are different things, even on the same question. A judgment that travels without this line, a screenshot of a confident verdict for instance, has lost what tells a reader how far to trust it. Whoever shares, cites or quotes a judgment keeps its depth and this line with it.
 
-## 7. Judgment and the Compact
+<a id="7-judgment-and-the-compact"></a>
+
+## 7. The Judgment Protocol and the Compact
 
 This file applies [COMPACT.md](https://meridiancodex.com/compact) to one question at a time. Where this file and the Compact seem to say different things about the same question, the Compact governs, and where either differs from a chapter of the Codex, the chapter governs.
 

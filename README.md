@@ -6,7 +6,7 @@
   <a href="https://meridiancodex.com"><img alt="Website" src="https://img.shields.io/badge/meridiancodex.com-0f172a?style=flat-square&labelColor=0f172a&color=0f172a"></a>
   <a href="https://meridiancodex.com/codex"><img alt="Codex" src="https://img.shields.io/badge/Codex-v6.5-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/compact"><img alt="Compact" src="https://img.shields.io/badge/Compact-v1.0.2-22c55e?style=flat-square"></a>
-  <a href="https://meridiancodex.com/judgment"><img alt="Judgment" src="https://img.shields.io/badge/Judgment-v1.1-22c55e?style=flat-square"></a>
+  <a href="https://meridiancodex.com/judgment"><img alt="Judgment Protocol" src="https://img.shields.io/badge/Judgment%20Protocol-v1.1.1-22c55e?style=flat-square"></a>
   <a href="https://meridiancodex.com/inheritance"><img alt="Inheritance" src="https://img.shields.io/badge/Inheritance-current-22c55e?style=flat-square"></a>
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="Content License: CC BY 4.0" src="https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey?style=flat-square"></a>
   <a href="https://opensource.org/licenses/MIT"><img alt="Code License: MIT" src="https://img.shields.io/badge/Code-MIT-lightgrey?style=flat-square"></a>
@@ -32,7 +32,7 @@ This repository is the public source text of the Meridian Codex. GitHub is the d
 |---|---|
 | Understand the framework | [What the Codex Is](https://meridiancodex.com/codex/what-the-codex-is) |
 | Take up, share or adapt its commitments and practices | [The Compact](https://meridiancodex.com/compact) · [COMPACT.md](compact/COMPACT.md) |
-| Apply the Compact to one question | [Judgment](https://meridiancodex.com/judgment) · [JUDGMENT.md](judgment/JUDGMENT.md) |
+| Apply the Compact to one question | [Judgment Protocol](https://meridiancodex.com/judgment) · [JUDGMENT.md](judgment/JUDGMENT.md) |
 | Find a tool for a particular difficulty | [The Inheritance](https://meridiancodex.com/inheritance) |
 | Examine how the Codex is governed and challenged | [Governance](https://meridiancodex.com/governance) · [Standing Critique](https://meridiancodex.com/governance/standing-critique) |
 | Read its audits and revisions | [Audit](https://meridiancodex.com/audit) · [Changelog](https://meridiancodex.com/governance/changelog) |
