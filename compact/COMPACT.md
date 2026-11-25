@@ -2,7 +2,7 @@
 
 ## The Meridian Codex
 
-- **Version:** 1.0.4.
+- **Version:** 1.0.5.
 - **Framework:** The Meridian Codex, a universal language for building and holding a shared world.
 - **Held by:** Not stated. A holder states who they are in section 7.1.
 - **Latest version:** [meridiancodex.com/compact](https://meridiancodex.com/compact). The Meridian Codex: [meridiancodex.com](https://meridiancodex.com).
@@ -98,6 +98,8 @@ Claims about how systems work remain answerable to evidence. A description of co
 
 The Codex's own Prime Directive is **to hold the Meridian Range and ensure the continuity of sentient life**. Continuity means the unbroken capacity to learn, build, and pass on something stronger than what was received. Sentient life names beings for whom there is something it is like to exist and whose condition can be better or worse for them. The directive is held for those who can practice the Codex and those who cannot.
 
+Continuity comes first because a break can “take away what people rely on together with their means of repairing it.” The directive serves everyone who can feel, now and in the future. Those alive now “are never to be sacrificed or spent for the sake of a future.” [The Proposition](https://meridiancodex.com/codex/the-proposition#the-prime-directive)
+
 This is the ground on which the Caretakers built the framework. It does not become the personal directive of everyone who uses it. Different purposes can lead to the same practice, and a holder need not formulate a first purpose at all. What taking up the Meridian Compact asks is that the disciplines govern conduct and that purposes be pursued inside the Range.
 
 The Codex serves the Meridian Range. Its Caretakers serve the Codex; they do not own the criterion it serves. This Compact has the same direction of service. Fidelity to the file requires examining whether its formulations actually help hold the Range and correcting them where they fail.
@@ -182,7 +184,7 @@ Agreement reached after examination stands. Disagreement manufactured to demonst
 
 Whether to strengthen the foundation first or proceed with the limits understood is a decision for the participants according to their legitimate roles. The holder must make the weakness visible; they do not acquire sole authority over the undertaking by discovering it.
 
-**Failure directions.** Epistemic Arrogance gives a belief more certainty than its grounds warrant and protects it from revision. Epistemic Cowardice withholds a warranted judgment to avoid conflict or responsibility. These names identify conduct to examine and correct, rather than fixed identities to assign to people.
+**Failure directions.** Epistemic Arrogance gives a belief more certainty than its grounds warrant and protects it from revision. Epistemic Cowardice withholds a warranted judgment to avoid conflict or responsibility. Silence can be prudence when speech would cause serious harm without improving truth. These names identify conduct to examine and correct, rather than fixed identities to assign to people.
 
 **Inward practice.** The same work applies to a belief or choice that no one else will see. A private conviction can be examined, corrected, and held with appropriate confidence without making the inquiry a public performance.
 
@@ -284,7 +286,7 @@ Good faith creates an opening for cooperation. It does not require ignoring evid
 
 **Commitment.** Preserve the conditions under which participants can say what they see and hear what they need to know.
 
-**Practice.** Make material expectations, limitations, uncertainties, and disagreements speakable. Verify a claim before amplifying it where others may rely on it. Correct consequential errors where they have entered shared understanding.
+**Practice.** Make material expectations, limitations, uncertainties, and disagreements speakable. Verify a claim before amplifying it where others may rely on it. When a warning cannot wait for full verification, send it to the people who need it with its uncertainty stated. Correct consequential errors where they have entered shared understanding.
 
 Attend to the conditions of speech. If a person will lose status or work for bringing unwelcome information, an invitation to speak freely is insufficient. Those able to change the arrangement should address that pressure.
 
@@ -738,4 +740,4 @@ The definitions and architecture in this Compact draw from the [Glossary](https:
 
 ---
 
-*End of COMPACT.md, version 1.0.4.*
+*End of COMPACT.md, version 1.0.5.*
